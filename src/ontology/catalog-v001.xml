@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://purl.org/ccf/ccf-bso.owl" uri="ccf-bso.owl"/>
+    <uri name="http://purl.org/ccf/ccf-spo.owl" uri="ccf-spo.owl"/>
+    <uri name="http://purl.org/ccf/ccf-sco.owl" uri="ccf-sco.owl"/>
+    <uri name="http://purl.org/ccf/ccf-relations.owl" uri="ccf-relations.owl"/>
+    <uri name="http://purl.org/ccf/data/asctb.owl" uri="data/asctb.owl"/>
+    <uri name="http://purl.org/ccf/data/spatial_entities.owl" uri="data/spatial_entities.owl"/>
+    <uri name="http://purl.org/ccf/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+    <uri name="http://purl.org/ccf/imports/fma_import.owl" uri="imports/fma_import.owl"/>
+    <uri name="http://purl.org/ccf/imports/cl_import.owl" uri="imports/cl_import.owl"/>
+    <uri name="http://purl.org/ccf/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+    <uri name="http://purl.org/ccf/imports/hgnc_import.owl" uri="imports/hgnc_import.owl"/>
+    <uri name="http://purl.org/ccf/imports/efo_import.owl" uri="imports/efo_import.owl"/>
+    <uri name="http://purl.org/ccf/imports/loinc_import.owl" uri="imports/loinc_import.owl"/>
+    <uri name="http://purl.org/ccf/imports/uo_import.owl" uri="imports/uo_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
+</catalog>

@@ -1,0 +1,9 @@
+http://purl.bioontology.org/ontology/LNC/LA10608-0
+http://purl.bioontology.org/ontology/LNC/LA10610-6
+http://purl.bioontology.org/ontology/LNC/LA10611-4
+http://purl.bioontology.org/ontology/LNC/LA19555-4
+http://purl.bioontology.org/ontology/LNC/LA2-8
+http://purl.bioontology.org/ontology/LNC/LA3-6
+http://purl.bioontology.org/ontology/LNC/LA4457-3
+http://purl.bioontology.org/ontology/LNC/LA6156-9
+http://purl.bioontology.org/ontology/LNC/LA6214-6

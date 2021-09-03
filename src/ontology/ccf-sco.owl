@@ -1,0 +1,208 @@
+Prefix(:=<http://purl.org/ccf/ccf-spo.owl#>)
+Prefix(cl:=<http://purl.obolibrary.org/obo/cl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(go:=<http://purl.obolibrary.org/obo/go#>)
+Prefix(hp:=<http://purl.obolibrary.org/obo/hp#>)
+Prefix(efo:=<http://www.ebi.ac.uk/efo/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(core:=<http://purl.obolibrary.org/obo/uberon/core#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(obo1:=<http://data.bioontology.org/metadata/obo/>)
+Prefix(obo2:=<http://purl.obolibrary.org/obo#>)
+Prefix(pato:=<http://purl.obolibrary.org/obo/pato#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(umls:=<http://bioportal.bioontology.org/ontologies/umls/>)
+Prefix(chebi:=<http://purl.obolibrary.org/obo/chebi/>)
+Prefix(mondo:=<http://purl.obolibrary.org/obo/mondo#>)
+Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(chebi3:=<http://purl.obolibrary.org/obo/chebi#3>)
+Prefix(ubprop:=<http://purl.obolibrary.org/obo/ubprop#>)
+Prefix(subsets:=<http://purl.obolibrary.org/obo/ro/subsets#>)
+Prefix(metadata:=<http://data.bioontology.org/metadata/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
+
+
+Ontology(<http://purl.org/ccf/ccf-sco.owl>
+<http://purl.org/ccf/releases/1.0.0-alpha/ccf-sco.owl>
+Import(<http://purl.org/ccf/imports/efo_import.owl>)
+Import(<http://purl.org/ccf/imports/loinc_import.owl>)
+Import(<http://purl.org/ccf/imports/obi_import.owl>)
+
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10608-0>))
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10610-6>))
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10611-4>))
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA19555-4>))
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA2-8>))
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA3-6>))
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA4457-3>))
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA6156-9>))
+Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA6214-6>))
+Declaration(Class(obo:OBI_0001472))
+Declaration(Class(obo:UBERON_0001062))
+Declaration(Class(<http://purl.org/ccf/biological_sex>))
+Declaration(Class(<http://purl.org/ccf/collection>))
+Declaration(Class(<http://purl.org/ccf/dataset>))
+Declaration(Class(<http://purl.org/ccf/donor>))
+Declaration(Class(<http://purl.org/ccf/ethnicity>))
+Declaration(Class(<http://purl.org/ccf/operator>))
+Declaration(Class(<http://purl.org/ccf/person>))
+Declaration(Class(<http://purl.org/ccf/pi>))
+Declaration(Class(<http://purl.org/ccf/protocol>))
+Declaration(Class(<http://purl.org/ccf/publication>))
+Declaration(Class(<http://purl.org/ccf/race>))
+Declaration(Class(<http://purl.org/ccf/sample>))
+Declaration(Class(<http://purl.org/ccf/sample_type>))
+Declaration(Class(<http://purl.org/ccf/tissue_block>))
+Declaration(Class(<http://purl.org/ccf/tissue_mapping_center>))
+Declaration(ObjectProperty(<http://purl.org/ccf/created_by>))
+Declaration(ObjectProperty(<http://purl.org/ccf/donated_by>))
+Declaration(ObjectProperty(<http://purl.org/ccf/extracted_by>))
+Declaration(ObjectProperty(<http://purl.org/ccf/generates_dataset>))
+Declaration(ObjectProperty(<http://purl.org/ccf/has_biological_sex>))
+Declaration(ObjectProperty(<http://purl.org/ccf/has_dataset>))
+Declaration(ObjectProperty(<http://purl.org/ccf/has_derived_sample>))
+Declaration(ObjectProperty(<http://purl.org/ccf/has_ethnicity>))
+Declaration(ObjectProperty(<http://purl.org/ccf/has_race>))
+Declaration(ObjectProperty(<http://purl.org/ccf/has_sample_type>))
+Declaration(ObjectProperty(<http://purl.org/ccf/has_specimen_type>))
+Declaration(ObjectProperty(<http://purl.org/ccf/produced_from_assay>))
+Declaration(ObjectProperty(<http://purl.org/ccf/provided_by>))
+Declaration(ObjectProperty(<http://purl.org/ccf/representation_of>))
+Declaration(ObjectProperty(<http://purl.org/ccf/subdivided_into>))
+Declaration(ObjectProperty(<http://purl.org/ccf/ccf-relations.owl#has_derived_dataset>))
+Declaration(AnnotationProperty(dc:source))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA10608-0> (<http://purl.bioontology.org/ontology/LNC/LA10608-0>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA10608-0> <http://purl.org/ccf/race>)
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA10610-6> (<http://purl.bioontology.org/ontology/LNC/LA10610-6>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA10610-6> <http://purl.org/ccf/race>)
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA10611-4> (<http://purl.bioontology.org/ontology/LNC/LA10611-4>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA10611-4> <http://purl.org/ccf/race>)
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA19555-4> (<http://purl.bioontology.org/ontology/LNC/LA19555-4>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA19555-4> <http://purl.org/ccf/ethnicity>)
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA2-8> (<http://purl.bioontology.org/ontology/LNC/LA2-8>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA2-8> <http://purl.org/ccf/biological_sex>)
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA3-6> (<http://purl.bioontology.org/ontology/LNC/LA3-6>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA3-6> <http://purl.org/ccf/biological_sex>)
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA4457-3> (<http://purl.bioontology.org/ontology/LNC/LA4457-3>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA4457-3> <http://purl.org/ccf/race>)
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA6156-9> (<http://purl.bioontology.org/ontology/LNC/LA6156-9>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA6156-9> <http://purl.org/ccf/race>)
+
+# Class: <http://purl.bioontology.org/ontology/LNC/LA6214-6> (<http://purl.bioontology.org/ontology/LNC/LA6214-6>)
+
+SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA6214-6> <http://purl.org/ccf/ethnicity>)
+
+# Class: obo:UBERON_0001062 (anatomical entity)
+
+AnnotationAssertion(rdfs:label obo:UBERON_0001062 "anatomical entity"@en)
+
+# Class: <http://purl.org/ccf/biological_sex> (biological sex)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/biological_sex> "biological sex"@en)
+
+# Class: <http://purl.org/ccf/collection> (collection)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/collection> "collection"@en)
+SubClassOf(<http://purl.org/ccf/collection> ObjectSomeValuesFrom(<http://purl.org/ccf/has_dataset> <http://purl.org/ccf/dataset>))
+
+# Class: <http://purl.org/ccf/dataset> (dataset)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/dataset> "dataset"@en)
+SubClassOf(<http://purl.org/ccf/dataset> ObjectSomeValuesFrom(<http://purl.org/ccf/created_by> <http://purl.org/ccf/operator>))
+SubClassOf(<http://purl.org/ccf/dataset> ObjectSomeValuesFrom(<http://purl.org/ccf/produced_from_assay> efo:EFO_0002772))
+SubClassOf(<http://purl.org/ccf/dataset> ObjectSomeValuesFrom(<http://purl.org/ccf/provided_by> <http://purl.org/ccf/tissue_mapping_center>))
+SubClassOf(<http://purl.org/ccf/dataset> ObjectSomeValuesFrom(<http://purl.org/ccf/ccf-relations.owl#has_derived_dataset> <http://purl.org/ccf/dataset>))
+
+# Class: <http://purl.org/ccf/donor> (donor)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/donor> "donor"@en)
+SubClassOf(<http://purl.org/ccf/donor> <http://purl.org/ccf/person>)
+
+# Class: <http://purl.org/ccf/ethnicity> (ethnicity)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/ethnicity> "ethnicity"@en)
+
+# Class: <http://purl.org/ccf/operator> (operator)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/operator> "operator"@en)
+SubClassOf(<http://purl.org/ccf/operator> <http://purl.org/ccf/person>)
+
+# Class: <http://purl.org/ccf/person> (person)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/person> "person"@en)
+SubClassOf(<http://purl.org/ccf/person> ObjectSomeValuesFrom(<http://purl.org/ccf/has_biological_sex> <http://purl.org/ccf/biological_sex>))
+SubClassOf(<http://purl.org/ccf/person> ObjectSomeValuesFrom(<http://purl.org/ccf/has_ethnicity> <http://purl.org/ccf/ethnicity>))
+SubClassOf(<http://purl.org/ccf/person> ObjectSomeValuesFrom(<http://purl.org/ccf/has_race> <http://purl.org/ccf/race>))
+
+# Class: <http://purl.org/ccf/pi> (principal investigator)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/pi> "principal investigator"@en)
+SubClassOf(<http://purl.org/ccf/pi> <http://purl.org/ccf/person>)
+
+# Class: <http://purl.org/ccf/protocol> (protocol)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/protocol> "protocol"@en)
+
+# Class: <http://purl.org/ccf/publication> (publication)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/publication> "publication"@en)
+
+# Class: <http://purl.org/ccf/race> (race)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/race> "race"@en)
+
+# Class: <http://purl.org/ccf/sample> (sample)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/sample> "sample"@en)
+SubClassOf(<http://purl.org/ccf/sample> ObjectSomeValuesFrom(<http://purl.org/ccf/donated_by> <http://purl.org/ccf/donor>))
+SubClassOf(<http://purl.org/ccf/sample> ObjectSomeValuesFrom(<http://purl.org/ccf/extracted_by> <http://purl.org/ccf/operator>))
+SubClassOf(<http://purl.org/ccf/sample> ObjectSomeValuesFrom(<http://purl.org/ccf/generates_dataset> <http://purl.org/ccf/dataset>))
+SubClassOf(<http://purl.org/ccf/sample> ObjectSomeValuesFrom(<http://purl.org/ccf/has_derived_sample> <http://purl.org/ccf/sample>))
+SubClassOf(<http://purl.org/ccf/sample> ObjectSomeValuesFrom(<http://purl.org/ccf/has_sample_type> <http://purl.org/ccf/sample_type>))
+SubClassOf(<http://purl.org/ccf/sample> ObjectSomeValuesFrom(<http://purl.org/ccf/has_specimen_type> obo:OBI_0001472))
+SubClassOf(<http://purl.org/ccf/sample> ObjectSomeValuesFrom(<http://purl.org/ccf/provided_by> <http://purl.org/ccf/tissue_mapping_center>))
+SubClassOf(<http://purl.org/ccf/sample> ObjectSomeValuesFrom(<http://purl.org/ccf/representation_of> obo:UBERON_0001062))
+
+# Class: <http://purl.org/ccf/sample_type> (sample type)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/sample_type> "sample type"@en)
+
+# Class: <http://purl.org/ccf/tissue_block> (tissue block)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/tissue_block> "tissue block"@en)
+SubClassOf(<http://purl.org/ccf/tissue_block> <http://purl.org/ccf/sample_type>)
+
+# Class: <http://purl.org/ccf/tissue_mapping_center> (tissue mapping center)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/tissue_mapping_center> "tissue mapping center"@en)
+
+
+)

@@ -1,0 +1,13 @@
+format-version: 1.2
+data-version: ccf/releases/2021-08-30/ccf-base.owl
+ontology: ccf/ccf-base
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Common Coordinate Framework Atlas ontology" xsd:string
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: owl:versionInfo "2021-08-30" xsd:string
+
+[Term]
+id: CCF:00000000
+name: root node
+

@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ccf
+
+idspace: CCF
+base_url: /obo/ccf
+
+products:
+- ccf.owl: https://raw.githubusercontent.com/hubmapconsortium/ccf-ontology/main/ccf.owl
+- ccf.obo: https://raw.githubusercontent.com/hubmapconsortium/ccf-ontology/main/ccf.obo
+
+term_browser: ontobee
+example_terms:
+- CCF_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/hubmapconsortium/ccf-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/hubmapconsortium/ccf-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CCF?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/hubmapconsortium/ccf-ontology/main/

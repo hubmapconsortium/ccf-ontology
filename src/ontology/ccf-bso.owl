@@ -1,0 +1,46 @@
+Prefix(:=<http://purl.org/ccf/ccf-bso.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.org/ccf/ccf-bso.owl>
+<http://purl.org/ccf/releases/1.0.0-alpha/ccf-bso.owl>
+Import(<http://purl.org/ccf/data/asctb.owl>)
+Import(<http://purl.org/ccf/imports/cl_import.owl>)
+Import(<http://purl.org/ccf/imports/fma_import.owl>)
+Import(<http://purl.org/ccf/imports/hgnc_import.owl>)
+Import(<http://purl.org/ccf/imports/uberon_import.owl>)
+
+Declaration(Class(<http://purl.org/ccf/characterizing_biomarker_set>))
+Declaration(AnnotationProperty(dcterms:source))
+
+############################
+#   Classes
+############################
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#non-coding_RNA_group> (<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#non-coding_RNA_group>)
+
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#non-coding_RNA_group> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#other_group> (<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#other_group>)
+
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#other_group> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#protein-coding_gene_group> (<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#protein-coding_gene_group>)
+
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#protein-coding_gene_group> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#pseudogene_group> (<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#pseudogene_group>)
+
+SubClassOf(<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#pseudogene_group> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.org/ccf/characterizing_biomarker_set> (<http://purl.org/ccf/characterizing_biomarker_set>)
+
+SubClassOf(<http://purl.org/ccf/characterizing_biomarker_set> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+
+)

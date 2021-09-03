@@ -1,0 +1,19 @@
+id: ccf
+title: Common Coordinate Framework Atlas ontology
+github_org: johardi
+repo: ccf-ontology
+use_dosdps: FALSE
+export_formats:
+  - owl
+  - json
+namespaces: 
+  - http://purl.org/ccf/
+edit_format: owl
+import_group:
+  products:
+    - id: uberon
+    - id: cl
+    - id: obi
+    - id: uo
+robot_java_args: '-Xmx16G'
+create_obo_metadata: FALSE

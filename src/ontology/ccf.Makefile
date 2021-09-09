@@ -3,8 +3,19 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+# ----------------------------------------
+# Top-level targets
+# ----------------------------------------
+
 .PHONY: all_things
 all_things: odkversion all_imports all_data all_main all_subsets sparql_test all_reports all_assets
+
+
+# ----------------------------------------
+# Import modules
+# ----------------------------------------
+# Most ontologies are modularly constructed using portions of other ontologies
+# These live in the imports/ folder
 
 ## ONTOLOGY: fma
 imports/fma_import.owl: mirror/fma.owl
@@ -81,7 +92,10 @@ mirror/loinc.owl: mirror/loinc.trigger
 			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://purl.bioontology.org/ontology/LNC/loinc.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/loinc.owl
 
-## -- data targets --
+
+# ----------------------------------------
+# Data modules
+# ----------------------------------------
 
 DATADIR = data
 

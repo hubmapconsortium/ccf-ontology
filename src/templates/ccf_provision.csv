@@ -1,0 +1,626 @@
+entity,label,preferred_label,asctb_type,is_provisional,database_cross_reference,parent_entity
+ID,LABEL,A skos:prefLabel,A ccf:asctb_type,A ccf:is_provisional,A oboInOwl:hasDbXref,SC %
+ccfp:78307eaad46e14c7b139c325c23ab9b1,anterior intermediate orbital gyrus,anterior intermediate orbital gyrus,AS,true,,ccfp:provisional_entity
+ccfp:a4408f60b6c86067c69da630b5f09cce,posterior intermediate orbital gyrus,posterior intermediate orbital gyrus,AS,true,,ccfp:provisional_entity
+ccfp:5ed02f56a7dd24994fe64269797b9ada,frontomarginal gyrus,frontomarginal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:41c9b0825785e46464408958f064defd,frontal pole,frontal pole,AS,true,,ccfp:provisional_entity
+ccfp:13b0e45997e0b83204e1c83404da0c93,postcentral gyrus,postcentral gyrus,AS,true,,ccfp:provisional_entity
+ccfp:a2099ef368835c73a2d2351a61d61c91,supraparietal lobule,supraparietal lobule,AS,true,,ccfp:provisional_entity
+ccfp:552e7fbc33c8eb6678a3cfa745d88ab7,inferior parietal lobule,inferior parietal lobule,AS,true,,ccfp:provisional_entity
+ccfp:3fbfdbd03483e13012decd3a7c6f927b,precuneus,precuneus,AS,true,,ccfp:provisional_entity
+ccfp:e36cd0a9ebb66b1c6ec556402679a3cc,"paracentral lobule, caudal part","paracentral lobule, caudal part",AS,true,,ccfp:provisional_entity
+ccfp:905ca0acbdeaab68e59be60b5ff68169,parietal operculum,parietal operculum,AS,true,,ccfp:provisional_entity
+ccfp:e5d4ab1601e0e6ab0ae5a95f894a4af1,superior temporal gyrus,superior temporal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:7ae32a0134df1ac1b5d0f2ced63886ab,middle temporal gyrus,middle temporal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:e6524bdf62f111d395cc2c2bce996e84,inferior temporal gyrus,inferior temporal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:71529bd1b34ddd6e26c603472df7e7a7,"occipitotemporal (fusiform) gyrus, temporal part","occipitotemporal (fusiform) gyrus, temporal part",AS,true,,ccfp:provisional_entity
+ccfp:fe8b619e4aa8401692e606c5159f50c5,perirhinal gyrus ( rostral part of FuGt),perirhinal gyrus ( rostral part of FuGt),AS,true,,ccfp:provisional_entity
+ccfp:b032b32d1ed46fbb790dd8e88b758ae9,transverse temporal gyrus (Heschl's gyrus),transverse temporal gyrus (Heschl's gyrus),AS,true,,ccfp:provisional_entity
+ccfp:cb18195a62a8b46c9f44604a78f010a8,rostral (anterior) transverse temporal gyrus,rostral (anterior) transverse temporal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:327257075a147bb5d08c571ea2c5b20c,caudal (posterior) transverse temporal gyrus,caudal (posterior) transverse temporal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:cc4284e346499679ef4aa824b123d21f,planum temporale,planum temporale,AS,true,,ccfp:provisional_entity
+ccfp:95e196e8859bbc8a2d048d026e87efa1,temporal pole,temporal pole,AS,true,,ccfp:provisional_entity
+ccfp:43f0e6487054de8b312285de99ca4096,perirhinal lobule,perirhinal lobule,AS,true,,ccfp:provisional_entity
+ccfp:30d3923a9d1c0771e08db200a6b5a339,planum polare,planum polare,AS,true,,ccfp:provisional_entity
+ccfp:a6f28941cec88db714cbacaccb4c4f91,occipital pole,occipital pole,AS,true,,ccfp:provisional_entity
+ccfp:e2fef0b45f8b2e900ec98908259a0d73,occipitoparietal transition region,occipitoparietal transition region,AS,true,,ccfp:provisional_entity
+ccfp:f91079f5a1b7af26e19fc087550027c1,occipitotemporal transition region,occipitotemporal transition region,AS,true,,ccfp:provisional_entity
+ccfp:fcba45395b5225a87f5af79e33bbba50,cuneus,cuneus,AS,true,,ccfp:provisional_entity
+ccfp:9aee665109214c84ffba6dde4b0bf38a,lingual gyrus,lingual gyrus,AS,true,,ccfp:provisional_entity
+ccfp:360bd394bd49f287a3b98673b7b3b9c0,"occipitotemporal (fusiform) gyrus, occipital part","occipitotemporal (fusiform) gyrus, occipital part",AS,true,,ccfp:provisional_entity
+ccfp:34828500eb251615b5d0551ca66d554e,inferior occipital gyrus,inferior occipital gyrus,AS,true,,ccfp:provisional_entity
+ccfp:4b131277abb6a7285281d05c07ecca13,superior occipital gyrus,superior occipital gyrus,AS,true,,ccfp:provisional_entity
+ccfp:f648065c86013b0edbe15f7ca633aee9,long insular gyri,long insular gyri,AS,true,,ccfp:provisional_entity
+ccfp:be922116202ebd34db28bfdc4f9c1b4d,short insular gyri,short insular gyri,AS,true,,ccfp:provisional_entity
+ccfp:09326bda3ad29aa5a6c4f711cd80a5a4,cingulate gyrus,cingulate gyrus,AS,true,,ccfp:provisional_entity
+ccfp:413cdd48b9dd4a9f33b15df898201c5a,"cingulate gyrus, rostral (anterior) part","cingulate gyrus, rostral (anterior) part",AS,true,,ccfp:provisional_entity
+ccfp:94e795dd881152bbe9072420f10f5efb,"cingulate gyrus, caudal (posterior) part","cingulate gyrus, caudal (posterior) part",AS,true,,ccfp:provisional_entity
+ccfp:9ced73353f49185e644483cfcb665bbf,"cingulate gyrus, retrospleninal part","cingulate gyrus, retrospleninal part",AS,true,,ccfp:provisional_entity
+ccfp:0ed9fa43d8adb942bcde8f7ab5d06cbf,cingulo-parahippocampal isthmus,cingulo-parahippocampal isthmus,AS,true,,ccfp:provisional_entity
+ccfp:0025bc70f25fcb9dd96a92d22d81e3f6,subcallosal gyrus (parolfactory gyrus),subcallosal gyrus (parolfactory gyrus),AS,true,,ccfp:provisional_entity
+ccfp:b111156f81d94d5a4fe3a3e5b8e1c025,paraterminal gyrus,paraterminal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:0559d0bb837f3bd0c384939903be5068,parahippocampal gyrus,parahippocampal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:5bec19759c2d1c5d641a5b19baa694fb,anterior parahippocampal gyrus,anterior parahippocampal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:154b48fae47dd4fc9e52d3654a698afc,posterior parahippocampal gyrus,posterior parahippocampal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:ce997fb5a38040250c93b60aacd84c71,uncus of parahippocampal gyrus,uncus of parahippocampal gyrus,AS,true,,ccfp:provisional_entity
+ccfp:187787a6452a25db34baf3a62ebcad99,hippocampal gyrus (formation),hippocampal gyrus (formation),AS,true,,ccfp:provisional_entity
+ccfp:ca2c023a3bdfec7797f1afc62ff17684,head of hippocampus,head of hippocampus,AS,true,,ccfp:provisional_entity
+ccfp:fa01ddee1bc59372dec3e76cb69a1676,body of hippocampus,body of hippocampus,AS,true,,ccfp:provisional_entity
+ccfp:28678b1dc4074c24d468a34ea7f7e1e9,subicular complex,subicular complex,AS,true,,ccfp:provisional_entity
+ccfp:80c98272a287b5d90c20592ccb4b2065,prepiriform region,prepiriform region,AS,true,,ccfp:provisional_entity
+ccfp:149e28f6aec19ddd5f0c82cc5cd3ba93,Olfactory bulb,Olfactory bulb,AS,true,,ccfp:provisional_entity
+ccfp:a8fbca99e29b7ccdbfcde45c360b73e2,amygdaloid complex,amygdaloid complex,AS,true,,ccfp:provisional_entity
+ccfp:a6e745ed779f335b7338372aaf4a3a2e,anterior amygdalar area,anterior amygdalar area,AS,true,,ccfp:provisional_entity
+ccfp:438c2f6587ab7d48c5a38e80a9e08869,anterior cortical nucleus,anterior cortical nucleus,AS,true,,ccfp:provisional_entity
+ccfp:ef6a96e1530568353d9872fce441a628,posterior cortical nucleus,posterior cortical nucleus,AS,true,,ccfp:provisional_entity
+ccfp:34cd63979d9d8b7f5a5b9e5c441e995c,medial nucleus,medial nucleus,AS,true,,ccfp:provisional_entity
+ccfp:d3b9adf79fa3e2636a2d6ca6c1b7d9fd,lateral nucleus,lateral nucleus,AS,true,,ccfp:provisional_entity
+ccfp:52f1f0ba56581b3878e0df590de3ead4,basolateral nucleus,basolateral nucleus,AS,true,,ccfp:provisional_entity
+ccfp:55225a868235036b802caa85b68be8c9,basomedial nucleus,basomedial nucleus,AS,true,,ccfp:provisional_entity
+ccfp:3572bbb5c04f4cfa79890d860192302d,central nuclear group,central nuclear group,AS,true,,ccfp:provisional_entity
+ccfp:011c174a081b3406b766ca165c343f65,amygdalohippocampal area,amygdalohippocampal area,AS,true,,ccfp:provisional_entity
+ccfp:5a1ea9c0a1f84ad97d7f3e4c0af4f6f2,bed nucleus of stria terminalis,bed nucleus of stria terminalis,AS,true,,ccfp:provisional_entity
+ccfp:ee2743ca16a69ca75028baccd8fe731b,basal nuclei (basal ganglia),basal nuclei (basal ganglia),AS,true,,ccfp:provisional_entity
+ccfp:d6c94d6c33756eb544afd8090eeba4fd,caudate nucleus,caudate nucleus,AS,true,,ccfp:provisional_entity
+ccfp:c5beee4211fe2bdf98ad2c8ab5836bd6,putamen,putamen,AS,true,,ccfp:provisional_entity
+ccfp:d4b94ac67dabde9d5c3cc6c73e1b015d,mucleus accumbens,mucleus accumbens,AS,true,,ccfp:provisional_entity
+ccfp:a8f70a1be8f4845cb26a1ec785ad3a51,"globus pallidus, internal","globus pallidus, internal",AS,true,,ccfp:provisional_entity
+ccfp:8630583206d1ea63a13c84a08904ae77,"globus pallidus, external","globus pallidus, external",AS,true,,ccfp:provisional_entity
+ccfp:b218c4997785481de6c249662cedfcf2,claustrum,claustrum,AS,true,,ccfp:provisional_entity
+ccfp:a010fb9b572b3873e416819c90dbc69b,basal forebrain,basal forebrain,AS,true,,ccfp:provisional_entity
+ccfp:ffecc1efe12997baf5a19fe86343e336,septal nuclei,septal nuclei,AS,true,,ccfp:provisional_entity
+ccfp:cbe54c5d892fceb932752e7f92cae71b,substantia Innominata,substantia Innominata,AS,true,,ccfp:provisional_entity
+ccfp:9fece22b720ac29b0e3cd3b05f991acc,thalamus,thalamus,AS,true,,ccfp:provisional_entity
+ccfp:3cc25186cfb90c77c5abd8eaed137c01,dorsal thalamus,dorsal thalamus,AS,true,,ccfp:provisional_entity
+ccfp:e6a8a3881a7d9e6690be855c0f077fea,anterior nuclear complex,anterior nuclear complex,AS,true,,ccfp:provisional_entity
+ccfp:2bd89442df71fb1b9c3351fcec9976cc,mediodorsal nucleus of thalamus,mediodorsal nucleus of thalamus,AS,true,,ccfp:provisional_entity
+ccfp:5da8a180a40b6ea75c3a920c80e16a11,reunions nucleus of thalamus,reunions nucleus of thalamus,AS,true,,ccfp:provisional_entity
+ccfp:e80a5ed838567ca4d4d35ec186211f9f,lateral posterior nucleus,lateral posterior nucleus,AS,true,,ccfp:provisional_entity
+ccfp:f210318659878dd8c334e395e22d7f2f,pulvinar of thalamus,pulvinar of thalamus,AS,true,,ccfp:provisional_entity
+ccfp:16538cc8e7e501cd980ca65767272d6b,ventral anterior nucleus,ventral anterior nucleus,AS,true,,ccfp:provisional_entity
+ccfp:823b8781880b46dcfee32065bb200ea7,ventral lateral nucleus,ventral lateral nucleus,AS,true,,ccfp:provisional_entity
+ccfp:00d90d470135fd0ec5601a0928b3c0ca,ventral posterior medial nucleus,ventral posterior medial nucleus,AS,true,,ccfp:provisional_entity
+ccfp:0ed1234420fd28814155db3d227f9151,ventral posterior lateral nucleus,ventral posterior lateral nucleus,AS,true,,ccfp:provisional_entity
+ccfp:d22f66dfa289432eff3e0330588b779d,lateral geniculate nuclei,lateral geniculate nuclei,AS,true,,ccfp:provisional_entity
+ccfp:34ea8c40b3405a3dbddefb27601f451f,medial geniculate nuclei,medial geniculate nuclei,AS,true,,ccfp:provisional_entity
+ccfp:40a3b7c46fba80579c4a43ff8442d7f7,parafascicular nucleus,parafascicular nucleus,AS,true,,ccfp:provisional_entity
+ccfp:a6169a98c194fc6cb973c5c530ac2486,centromedian nucleus,centromedian nucleus,AS,true,,ccfp:provisional_entity
+ccfp:70a076e5f1525110202cedbcd260534b,midline nuclear complex,midline nuclear complex,AS,true,,ccfp:provisional_entity
+ccfp:66812575eb92ed47f85aac3b8ea619f5,ventral thalamus,ventral thalamus,AS,true,,ccfp:provisional_entity
+ccfp:fbaf8801df64bd79c97cbf449d0e9fb3,zona Incerta,zona Incerta,AS,true,,ccfp:provisional_entity
+ccfp:fd8853661cc0b9b38ff37b699e9d1669,epithalamus,epithalamus,AS,true,,ccfp:provisional_entity
+ccfp:198935afd0986132d866131abb5657d8,habenular nuclei,habenular nuclei,AS,true,,ccfp:provisional_entity
+ccfp:589e7bbfa0634702b813ffbda72d3326,paraventricular nucleus of thalamus,paraventricular nucleus of thalamus,AS,true,,ccfp:provisional_entity
+ccfp:7986b1b7f835472020d52742796ef193,pineal body,pineal body,AS,true,,ccfp:provisional_entity
+ccfp:e45f853f8aeddbbfc03e970d31e5bc1e,reticular formation of thalamus,reticular formation of thalamus,AS,true,,ccfp:provisional_entity
+ccfp:04341318da26e74714d1ca731474270c,subthalamic nucleus (subthalamus),subthalamic nucleus (subthalamus),AS,true,,ccfp:provisional_entity
+ccfp:ffe31cf4abbf81dca687f3eb9ed67a31,hypothalamus,hypothalamus,AS,true,,ccfp:provisional_entity
+ccfp:d549e6dd9988978befc38b6817f4924c,preoptic region,preoptic region,AS,true,,ccfp:provisional_entity
+ccfp:c02a0866e8ab1c1097b9d18a15e0bd10,supraoptic region,supraoptic region,AS,true,,ccfp:provisional_entity
+ccfp:02f83a4d55791cedaf518bc2417a5a6d,tuberal region,tuberal region,AS,true,,ccfp:provisional_entity
+ccfp:38be9e65b8599383c4a0374bc132e216,mammillary region,mammillary region,AS,true,,ccfp:provisional_entity
+ccfp:022f1c1b356c2520dd0804d417184d1a,mammillary nucleus,mammillary nucleus,AS,true,,ccfp:provisional_entity
+ccfp:f007685bc1e8c9620d5e987856935d57,anterior commissure,anterior commissure,AS,true,,ccfp:provisional_entity
+ccfp:1d649bef70f5061283b660eef4463bdb,corpus callosum (midline portion),corpus callosum (midline portion),AS,true,,ccfp:provisional_entity
+ccfp:879ed89c5c903f77fbbb4a822d6bf6a0,fornix,fornix,AS,true,,ccfp:provisional_entity
+ccfp:21075ae9901b2c9b6aa0beabdfea6066,internal capsule,internal capsule,AS,true,,ccfp:provisional_entity
+ccfp:1ac0b2cd564c7af44e51d106d2b37da3,mammillothalamic tract,mammillothalamic tract,AS,true,,ccfp:provisional_entity
+ccfp:6d3e59f3f3488e0ea930b2c7cb36c07a,olfactory tract,olfactory tract,AS,true,,ccfp:provisional_entity
+ccfp:d0bbcd35dd0b1df5334d3c35bc019ff6,optic radiation,optic radiation,AS,true,,ccfp:provisional_entity
+ccfp:e33cd98278b548081c65947e7ab07494,optic tract,optic tract,AS,true,,ccfp:provisional_entity
+ccfp:95c0f08f1b203455a12125557303b851,ventricle of forebrain,ventricle of forebrain,AS,true,,ccfp:provisional_entity
+ccfp:b505e4aae0e4e5b9e11b77cbd1ef08ac,atrium of lateral ventricle,atrium of lateral ventricle,AS,true,,ccfp:provisional_entity
+ccfp:c4ed103b98d9751427a498f7bc7e9f8a,red nucleus,red nucleus,AS,true,,ccfp:provisional_entity
+ccfp:bb55272e02a2ade39d4ecb56d013522d,substantia nigra,substantia nigra,AS,true,,ccfp:provisional_entity
+ccfp:5c2c40ec077c07dfacb25827ce0b8435,superior colliculus,superior colliculus,AS,true,,ccfp:provisional_entity
+ccfp:010654924aa574b8a154d32e27743204,inferior colliculus,inferior colliculus,AS,true,,ccfp:provisional_entity
+ccfp:46233b6a60030721787157c9dd712d20,cerebral peduncle,cerebral peduncle,AS,true,,ccfp:provisional_entity
+ccfp:f6b9137993a632aa209d060e4e8d300d,cerebellar cortex,cerebellar cortex,AS,true,,ccfp:provisional_entity
+ccfp:9307a2123ddc7b0e008b4f06ac7556b4,paravermis of cerebellum,paravermis of cerebellum,AS,true,,ccfp:provisional_entity
+ccfp:fed6732fe2b75cb3882038d3aa272e02,lateral hemisphere of cerebellum,lateral hemisphere of cerebellum,AS,true,,ccfp:provisional_entity
+ccfp:00dbecd37be306576c945d78ca8796a0,cerebellar deep nuclei,cerebellar deep nuclei,AS,true,,ccfp:provisional_entity
+ccfp:ee3271ac1559d8afb4329377ef6f2852,inferior olive,inferior olive,AS,true,,ccfp:provisional_entity
+ccfp:e743f79095c07e12b4311f6d3c520e36,"capillaries, venules",vasculature,AS,true,,ccfp:provisional_entity
+ccfp:92751f4bf4b8ac5c4ac582480e736312,septal perforating arteries,septal perforating arteries,AS,true,,ccfp:provisional_entity
+ccfp:0519bbe10f1546953ab71a1f6d2e05f8,connective tissue,Connective Tissue,AS,true,,ccfp:provisional_entity
+ccfp:f7e58681e0c0cb572b1883e9217104cf,blood vessels,Blood Vessels,AS,true,,ccfp:provisional_entity
+ccfp:7fc0fdba5dddca15964990f7f5b98fe9,sinus,Sinus,AS,true,,ccfp:provisional_entity
+ccfp:0302a63af29acf37a7eb7578a3265ce3,lymphatic vessels,Lymphatic Vessels,AS,true,,ccfp:provisional_entity
+ccfp:c5e9d4f3f676bc8d43477253399496ae,transverse sinus,Transverse Sinus,AS,true,,ccfp:provisional_entity
+ccfp:2514142d316b61fcaf65d582b8bddd87,venule,Venule,AS,true,,ccfp:provisional_entity
+ccfp:3e3ad47f6562f533ac9d9ecaa5ed9b54,arteriole,Arteriole,AS,true,,ccfp:provisional_entity
+ccfp:443b5964edbbe84f4262c3ab06d93daf,light zone,Light Zone,AS,true,,ccfp:provisional_entity
+ccfp:02d5df4e7a33522e067e2725fcc6b731,mantle zone,Mantle Zone,AS,true,,ccfp:provisional_entity
+ccfp:5ab0ec7bf4f67a7b65c33b28b1fb13c7,marginal zone,Marginal Zone,AS,true,,ccfp:provisional_entity
+ccfp:5bdd77270df95cde8615c099775c7076,interfollicular cortex,Interfollicular Cortex,AS,true,,ccfp:provisional_entity
+ccfp:b922e70a89ed79f71bc6880b9d1f2966,paracortex,Paracortex,AS,true,,ccfp:provisional_entity
+ccfp:dfee7f68411e10421c06155f3b1305ba,paracortical sinus,Paracortical Sinus,AS,true,,ccfp:provisional_entity
+ccfp:40e17db802347f29b84925459b2685d0,arterioles,Arterioles,AS,true,,ccfp:provisional_entity
+ccfp:d0d7ccc2f58ea09ec26e13a0d6ffd34a,capillaries,Capillaries,AS,true,,ccfp:provisional_entity
+ccfp:5474aeadd2222e2984de21d28b8b00c3,high endothelial venule,High Endothelial Venule,AS,true,,ccfp:provisional_entity
+ccfp:6735aadc15b06587fc7b42616cb1ef3e,paracortical cord,Paracortical Cord,AS,true,,ccfp:provisional_entity
+ccfp:61ddeccb72b96ea29171b869f29c1a59,subcapsular sinus,Medulla,AS,true,,ccfp:provisional_entity
+ccfp:f079c49ef5b623ebeabc5db5320851b1,Lymphatic Vessels,Lymphatic Vessels,AS,true,,ccfp:provisional_entity
+ccfp:bb2e44d0736e6284175305ea5504b601,Innervation,Innervation,AS,true,,ccfp:provisional_entity
+ccfp:fd944f469792ed288df4601ed9f1b30a,Lymphatic Artery,Lymphatic Artery,AS,true,,ccfp:provisional_entity
+ccfp:f918ddd3107d62f69daae77bdb25dd20,Lymphatic Vein,Lymphatic Vein,AS,true,,ccfp:provisional_entity
+ccfp:7948468dc42927d6fe715b06ca0a525d,Proximal convoluted tubule segment 3,Proximal convoluted tubule segment 3,AS,true,,ccfp:provisional_entity
+ccfp:d5082bf946cae93e384f6b1030f88167,descending thin limb of loop of Henle 1,descending thin limb of loop of Henle 1,AS,true,,ccfp:provisional_entity
+ccfp:d310bbbdea1a7c8068733b26e98f9ccf,descending thin limb of loop of Henle 2,descending thin limb of loop of Henle 2,AS,true,,ccfp:provisional_entity
+ccfp:18551188ab7c841355e2219c6b11d2fe,descending thin limb of loop of Henle 3,descending thin limb of loop of Henle 3,AS,true,,ccfp:provisional_entity
+ccfp:60547dd418ea5b451719155cfa0b434b,Endothelium/Juxtaglomerular apparatus,Endothelium/Juxtaglomerular apparatus,AS,true,,ccfp:provisional_entity
+ccfp:013dd479789869f802edd54c3e4a7dab,Endothelium (non glomerular),Endothelium (non glomerular),AS,true,,ccfp:provisional_entity
+ccfp:d0fe875159b8000c8dd6bb43489b763d,kidney mesenchyme,Stroma (non glomerular),AS,true,,ccfp:provisional_entity
+ccfp:9ef69f48f751342bb563666bdbc224fb,Immune,Immune,AS,true,,ccfp:provisional_entity
+ccfp:d57c4c63f943fc1fa3323838f85e086f,terminal ciliated ducts of tracheal submucosal gland,terminal ciliated ducts of tracheal submucosal gland,AS,true,,ccfp:provisional_entity
+ccfp:ddb7ff7b8a72424a4c571232f5b4de78,collecting ducts of tracheal submucosal gland,collecting ducts of tracheal submucosal gland,AS,true,,ccfp:provisional_entity
+ccfp:767f5e925962bf98e323a5fe84c50cdd,mucous tubules of tracheal submucosal gland,mucous tubules of tracheal submucosal gland,AS,true,,ccfp:provisional_entity
+ccfp:7302ab4ebb16068d51ab29c940e1413d,distal acini of tracheal submucosal gland,distal acini of tracheal submucosal gland,AS,true,,ccfp:provisional_entity
+ccfp:2cf83be9ff47ef266af88b2d1bbeb4a5,myoepithelial cells of tracheal submucosal gland,myoepithelial cells of tracheal submucosal gland,AS,true,,ccfp:provisional_entity
+ccfp:fef8bc53a7ce3e084a1dd5a5e9c38de4,ciliated ducts of bronchial submucosal gland,ciliated ducts of bronchial submucosal gland,AS,true,,ccfp:provisional_entity
+ccfp:577d5ee593393e8488aa6af38942b4ee,pulmonary artery smooth muscle,Pulmonary arterial smooth muscle,AS,true,,ccfp:provisional_entity
+ccfp:b11555e900850779d8d6e628109f1b8b,pulmonary artery fibroblast,Pulmonary arterial fibroblasts,AS,true,,ccfp:provisional_entity
+ccfp:675fa4b5c43a1926c39d9d2dba4695e2,Pulmonary vein endothelium,Pulmonary vein endothelium,AS,true,,ccfp:provisional_entity
+ccfp:b98c9dc94bcc255189fcc1746513f743,Pulmonary vein smooth muscle,Pulmonary vein smooth muscle,AS,true,,ccfp:provisional_entity
+ccfp:73be7e0966df545d2997c4be1ce1af08,Pulmonary vein fibroblasts,Pulmonary vein fibroblasts,AS,true,,ccfp:provisional_entity
+ccfp:6e85d778413fb70a0bcbb4c23593ff66,Pulmonary Vein endotheliim,Pulmonary Vein endotheliim,AS,true,,ccfp:provisional_entity
+ccfp:fa282ca202061c23178f792e9fd6db81,Lobe of Lung,Right or Left Lung Lobe,AS,true,,ccfp:provisional_entity
+ccfp:41d4619e71ab097d532e98ac3a404634,Lung Interstitium,Lung interstitium,AS,true,,ccfp:provisional_entity
+ccfp:4817e25a00edf82b6071103b129ff0d2,Lung Immune system,Lung Immune system,AS,true,,ccfp:provisional_entity
+ccfp:a274fcb214e54255ec36e7cd0f98bad2,red pulp vasculature,Red pulp vasculature,AS,true,,ccfp:provisional_entity
+ccfp:04c455ca8fb4ee7cd80072797c0ce97f,arterial capillary,Arterial Capillary,AS,true,,ccfp:provisional_entity
+ccfp:08af6ae7e542993ce079d57b6a2a00c5,sheathed capillary,Sheathed Capillary,AS,true,,ccfp:provisional_entity
+ccfp:04f137878723bbfd3f65d7cbe8b3ebab,venous sinus basement membrane,Venous sinus basement membrane,AS,true,,ccfp:provisional_entity
+ccfp:200b9ecec79544dcd5fce42797066d6a,venous sinus lining,Venous Sinus Lining,AS,true,,ccfp:provisional_entity
+ccfp:041a8f87e5967a255f5ae393e08cf00f,stroma,Stroma,AS,true,,ccfp:provisional_entity
+ccfp:80de6209357e2cf8e01ac58824ee1473,splenic venules,Red pulp vasculature,AS,true,,ccfp:provisional_entity
+ccfp:52667e9ba63c971e067c5869a522471e,red pulp-white pulp border,Red Pulp-White Pulp Border,AS,true,,ccfp:provisional_entity
+ccfp:8396c24692e5ecbdb384d79b24f4a7d8,central arteries,Central arteries,AS,true,,ccfp:provisional_entity
+ccfp:6c0d46c5c711d88c24bdc137808d2504,lymphatic vessel,Lymphatic Vessel,AS,true,,ccfp:provisional_entity
+ccfp:c0494fb2aef864778bd8356d2ef92626,splenic plexus,Splenic Plexus,AS,true,,ccfp:provisional_entity
+ccfp:1f2fa0281d2cd923ee65737f52011ac9,subcapsule,Subcapsule,AS,true,,ccfp:provisional_entity
+ccfp:02aa99a0659401426563c5baf98062f6,trabeculae innervation,Trabeculae innervation,AS,true,,ccfp:provisional_entity
+ccfp:3bdfc25c681685c476cf700f6eaa1d95,clival branch of ascending pharyngeal artery,clival branch of ascending pharyngeal artery,AS,true,,ccfp:provisional_entity
+ccfp:d5d6857729a56bc04fce3c293a8fbf7a,neuromeningeal trunk,neuromeningeal trunk,AS,true,,ccfp:provisional_entity
+ccfp:a77ed052d92daf35e175491de9a33e69,hypoglossal branch of ascending pharyngeal artery,hypoglossal branch of ascending pharyngeal artery,AS,true,,ccfp:provisional_entity
+ccfp:854069a9131d760aae944726549b20a8,jugular branch of ascending pharyngeal artery,jugular branch of ascending pharyngeal artery,AS,true,,ccfp:provisional_entity
+ccfp:ae044ff54d9df4cd468d52bb88f44447,odontoid arcade,odontoid arcade,AS,true,,ccfp:provisional_entity
+ccfp:cc24c428b5ede6514ec391a753869121,pharyngeal trunk,pharyngeal trunk,AS,true,,ccfp:provisional_entity
+ccfp:cccfceb9894b0983165a6b2340cb5b5b,eustachian branch of ascending pharyngeal artery,eustachian branch of ascending pharyngeal artery,AS,true,,ccfp:provisional_entity
+ccfp:2e828d7fc5ffb03cc334073caa77a599,inferior pharyngeal artery,inferior pharyngeal artery,AS,true,,ccfp:provisional_entity
+ccfp:a67bc10b07c3a4977448564bfaf3fc72,middle pharyngeal artery,middle pharyngeal artery,AS,true,,ccfp:provisional_entity
+ccfp:759926f4735d751679a3988463e46362,superior pharyngeal artery,superior pharyngeal artery,AS,true,,ccfp:provisional_entity
+ccfp:f9912b8320b4672bec252aa523ac46c3,pterygovaginal artery,pterygovaginal artery,AS,true,,ccfp:provisional_entity
+ccfp:3c0bbc891f0ed1e3383d7c93a487d32c,incisor artery,incisor artery,AS,true,,ccfp:provisional_entity
+ccfp:0689d63aa10c7a0ff8a68c374ac16a8c,stylomastoid branch of occipital artery,stylomastoid branch of occipital artery,AS,true,,ccfp:provisional_entity
+ccfp:6652804b04c581b392e6c68f4c0c5169,anterior internal frontal artery,anterior internal frontal artery,AS,true,,ccfp:provisional_entity
+ccfp:42a58b83f7e986dc4be50e0736fdc9d6,inferior parietal artery,inferior parietal artery,AS,true,,ccfp:provisional_entity
+ccfp:272cbbe72734ad2729848684597ad959,medial lenticulostriate artery,medial lenticulostriate artery,AS,true,,ccfp:provisional_entity
+ccfp:9baeddac4077527185114dc8ae03e895,middle internal frontal artery,middle internal frontal artery,AS,true,,ccfp:provisional_entity
+ccfp:dc6983aff3abad59233297a0339dbb78,orbitofrontal branch of anterior cerebral artery,orbitofrontal branch of anterior cerebral artery,AS,true,,ccfp:provisional_entity
+ccfp:94f0aced98a4b6803617557749cd24c4,paracentral artery,paracentral artery,AS,true,,ccfp:provisional_entity
+ccfp:828a89e4d2c9360698a8adf72e48377a,posterior internal frontal artery,posterior internal frontal artery,AS,true,,ccfp:provisional_entity
+ccfp:4914aada270cadee9044233ce9abfa17,superior parietal artery,superior parietal artery,AS,true,,ccfp:provisional_entity
+ccfp:a855193b26bb206086357b617fdaa9ed,meningohypophysial artery,meningohypophysial artery,AS,true,,ccfp:provisional_entity
+ccfp:54fa85428c81b4f4598051d1a4f51c79,dorsal meningeal artery,dorsal meningeal artery,AS,true,,ccfp:provisional_entity
+ccfp:c1385ab2296cdaee13915560665aeafc,tentorial artery,tentorial artery,AS,true,,ccfp:provisional_entity
+ccfp:5e49c336c86c9d6b266776b08ba14ad7,dural artery,dural artery,AS,true,,ccfp:provisional_entity
+ccfp:df79e6b3b5d71c3f0a41e73dbbabab3b,inferolateral trunk of internal carotid artery,inferolateral trunk of internal carotid artery,AS,true,,ccfp:provisional_entity
+ccfp:aa8a320c7c52d463eb4ca70db5b0473a,angular branch of middle cerebral artery,angular branch of middle cerebral artery,AS,true,,ccfp:provisional_entity
+ccfp:fbb75d07ca9a39f3dad570d19b9bf0a8,lateral lenticulostriate artery,lateral lenticulostriate artery,AS,true,,ccfp:provisional_entity
+ccfp:1f5491600e1bf655c9c08c1e20837a20,orbitofrontal branch of middle cerebral artery,orbitofrontal branch of middle cerebral artery,AS,true,,ccfp:provisional_entity
+ccfp:1d23c55fcff7726bef21c838740cd65e,zygomaticofacial artery,zygomaticofacial artery,AS,true,,ccfp:provisional_entity
+ccfp:c1ba873903d93235d35db7fbbba1ff80,zygomaticotemporal artery,zygomaticotemporal artery,AS,true,,ccfp:provisional_entity
+ccfp:5604e07e0226c239074eca47b5b79ad3,right artery of caudate lobe,right artery of caudate lobe,AS,true,,ccfp:provisional_entity
+ccfp:5d56384be3ac1d8358cf85a37531de36,transverse pancreatic artery,transverse pancreatic artery,AS,true,,ccfp:provisional_entity
+ccfp:452304a9bfcc292e732d7e3b6480f2ed,lateral supramalleolar artery,lateral supramalleolar artery,AS,true,,ccfp:provisional_entity
+ccfp:85a2506ed9e74d1dba2d27a747234e47,seminal vesicle arterial branches of prostatic artery,seminal vesicle arterial branches of prostatic artery,AS,true,,ccfp:provisional_entity
+ccfp:c920e9708464f053a45adec4e106d69c,bulbourethral artery,bulbourethral artery,AS,true,,ccfp:provisional_entity
+ccfp:c88e2cd96fb913061b1bc18c50f22b64,cavernosal artery,cavernosal artery,AS,true,,ccfp:provisional_entity
+ccfp:aaa6f4fdd943b3e9bcf90cd8b264e5a6,posterior branch of obturator artery,posterior branch of obturator artery,AS,true,,ccfp:provisional_entity
+ccfp:fce1b0ab1fc31f7bfac4d45ab253537d,radial artery of uterus,radial artery of uterus,AS,true,,ccfp:provisional_entity
+ccfp:eb34e1df9a697d7206c896e05b053d13,vasa recta of colon,vasa recta of colon,AS,true,,ccfp:provisional_entity
+ccfp:583c9df9a8ff3b7b840f69327f0c35b6,long branch of vasa recta of colon,long branch of vasa recta of colon,AS,true,,ccfp:provisional_entity
+ccfp:3bddaa6f7dfa698b0f7e189b44e6fddc,short branch of vasa recta of colon,short branch of vasa recta of colon,AS,true,,ccfp:provisional_entity
+ccfp:e089d2da2639d2e683a6c6f5f26fd089,meandering mesenteric artery,meandering mesenteric artery,AS,true,,ccfp:provisional_entity
+ccfp:04ad379fbcbdb43deb7be9a4f37935e4,segmental spinal artery #3,segmental spinal artery #3,AS,true,,ccfp:provisional_entity
+ccfp:ce44c28977eaa53da27328ee8156afe9,vasa recta of ileum,vasa recta of ileum,AS,true,,ccfp:provisional_entity
+ccfp:5dfe02d0fc38ca1710203f5969508414,jejunal arcade,jejunal arcade,AS,true,,ccfp:provisional_entity
+ccfp:82b9454ae1bfde943b6f75b17f2b187d,vasa recta of jejunum,vasa recta of jejunum,AS,true,,ccfp:provisional_entity
+ccfp:750887d2e08d0c6d5c86a1f1920a86be,segmental spinal artery #4,segmental spinal artery #4,AS,true,,ccfp:provisional_entity
+ccfp:50c635eb8bdb1b2fc5b2a25afad3ef85,proper dorsal digital artery of hand,proper dorsal digital artery of hand,AS,true,,ccfp:provisional_entity
+ccfp:c2412d5116d02536e8b3c4d61fd7482d,segmental spinal artery #2,segmental spinal artery #2,AS,true,,ccfp:provisional_entity
+ccfp:db579bfd239649705ebb0e69c71ba4f7,segmental spinal artery,segmental spinal artery,AS,true,,ccfp:provisional_entity
+ccfp:171d266c47fb6834ae2e8f23a13388e0,anterior segmental medullary artery,anterior segmental medullary artery,AS,true,,ccfp:provisional_entity
+ccfp:8c2a0b22819c3cd1d2eff08f93a32098,posterior segmental medullary artery,posterior segmental medullary artery,AS,true,,ccfp:provisional_entity
+ccfp:2daabd170c92c0fe641d6d240ce5f7e2,sulcal arteries,sulcal arteries,AS,true,,ccfp:provisional_entity
+ccfp:7bd62a77323a88dde3c33ac4812b2994,main cochlear artery,main cochlear artery,AS,true,,ccfp:provisional_entity
+ccfp:b060ff026790330571c3c7605a5a7802,posterior vestibular artery,posterior vestibular artery,AS,true,,ccfp:provisional_entity
+ccfp:15314549391b763a43b184303885e9a3,segmental spinal artery #5,segmental spinal artery #5,AS,true,,ccfp:provisional_entity
+ccfp:13c2a756ba0eeead9c1b5e1c2641f94c,posterolateral artery,posterolateral artery,AS,true,,ccfp:provisional_entity
+ccfp:b292e64ebea3d8a7f5b28cbff2d05006,anterior accessory saphenous vein,anterior accessory saphenous vein,AS,true,,ccfp:provisional_entity
+ccfp:ff9f68df85eb7bc07fd5f2335a7e8be4,posterior accessory saphenous vein,posterior accessory saphenous vein,AS,true,,ccfp:provisional_entity
+ccfp:190606226d0642cd876b4fd13f6199e5,lateral plantar vein,lateral plantar vein,AS,true,,ccfp:provisional_entity
+ccfp:40e483c2c1b7e55d7e8d101f7f923230,bulbar vein,bulbar vein,AS,true,,ccfp:provisional_entity
+ccfp:ec087be3d08904ddca70d59fc3d447cf,inferior vein of Sappey,inferior vein of Sappey,AS,true,,ccfp:provisional_entity
+ccfp:87d5a630cc3761d85205f09f336ed02c,rectosigmoid vein,rectosigmoid vein,AS,true,,ccfp:provisional_entity
+ccfp:5a1471cf85f605fee72592ed0f1361a3,superior vein of Sappey,superior vein of Sappey,AS,true,,ccfp:provisional_entity
+ccfp:2d85d84b7bf7d5bfe88fa4c5f7458f25,vein of Burow,vein of Burow,AS,true,,ccfp:provisional_entity
+ccfp:f5a5bf92ebd2316b96c300c09e865382,anterior radicular vein,anterior radicular vein,AS,true,,ccfp:provisional_entity
+ccfp:114212982fd55d09f4b563873ca2bcaa,intramedullary radial vein,intramedullary radial vein,AS,true,,ccfp:provisional_entity
+ccfp:ffc49bbbfdfe04d1db655275e80836d4,posterior radicular vein,posterior radicular vein,AS,true,,ccfp:provisional_entity
+ccfp:c1f9c425b6c0a52f455dc49a25cda652,intramedullary radial vein #2,intramedullary radial vein #2,AS,true,,ccfp:provisional_entity
+ccfp:1329e5082a7afd92fe3592950bf1a4d7,posterolateral spinal vein,posterolateral spinal vein,AS,true,,ccfp:provisional_entity
+ccfp:c6ba0d545b000feb437f90ec623496f0,intramedullary radial vein #3,intramedullary radial vein #3,AS,true,,ccfp:provisional_entity
+ccfp:884a9d7e3b8861645295235126d19575,vein of ductus deferens,vein of ductus deferens,AS,true,,ccfp:provisional_entity
+ccfp:1c22f5035369d8ed7a3331526f075bb5,common facial vein,common facial vein,AS,true,,ccfp:provisional_entity
+ccfp:80a57d4086dc6914dab5329ae636190f,anterior branch of retromandibular vein,anterior branch of retromandibular vein,AS,true,,ccfp:provisional_entity
+ccfp:7d2471cdc6151534d51f0ebb104c6c58,infraorbital vein,infraorbital vein,AS,true,,ccfp:provisional_entity
+ccfp:b90380d6d209e92f7da97e79ba218ee1,transverse nasal root vein,transverse nasal root vein,AS,true,,ccfp:provisional_entity
+ccfp:4d38520c6c70950324e1205a4033c8d9,mental vein,mental vein,AS,true,,ccfp:provisional_entity
+ccfp:826ea52951fb4b0a3d28a41b3fc1f115,sphenopalatine sinus,sphenopalatine sinus,AS,true,,ccfp:provisional_entity
+ccfp:88046cbf5024d90d65b4445a7c330b25,inferior striate vein,inferior striate vein,AS,true,,ccfp:provisional_entity
+ccfp:704bd95d4dfdc539dd790e5cc3ca6a6c,superior striate vein,superior striate vein,AS,true,,ccfp:provisional_entity
+ccfp:7df9d21a4220eb2276e20892843bd951,glandular venous plexus,glandular venous plexus,AS,true,,ccfp:provisional_entity
+ccfp:0538f0fe3bce0c0a3059dfb6d0062e92,circumflex humeral vein,circumflex humeral vein,AS,true,,ccfp:provisional_entity
+ccfp:3cdd5437165b311c7d6a63df35ed1bd6,small thyroid vein,small thyroid vein,AS,true,,ccfp:provisional_entity
+ccfp:ca12a8a5429026701ba583f1c8414716,superficial submandibular vein,superficial submandibular vein,AS,true,,ccfp:provisional_entity
+ccfp:cdea4069d18297282b59448ed9f9ac9a,posterior branch of retromandibular vein,posterior branch of retromandibular vein,AS,true,,ccfp:provisional_entity
+ccfp:ec36461e7020974c960e932c4ec3e1a4,Inh L1 LAMP5 PVRL2,Inh L1 LAMP5 PVRL2,CT,true,,ccfp:provisional_entity
+ccfp:91bcd0ef283a7f62bff80260bc099881,Inh L1 LAMP5 RAB11FIP1,Inh L1 LAMP5 RAB11FIP1,CT,true,,ccfp:provisional_entity
+ccfp:764d60a03f6d642b5f7f893b4062ff02,Inh L1-6 LAMP5 AARD,Inh L1-6 LAMP5 AARD,CT,true,,ccfp:provisional_entity
+ccfp:e1637f2ccf89d0d1cca1ce7473139592,Inh L1-6 LAMP5 NES,Inh L1-6 LAMP5 NES,CT,true,,ccfp:provisional_entity
+ccfp:f7cc5434da3465ef5a6a26ef62959d31,Inh L1-6 LAMP5 CA1,Inh L1-6 LAMP5 CA1,CT,true,,ccfp:provisional_entity
+ccfp:1dab6e8f4a123c30bcee616929132648,Inh L5-6 LAMP5 CRABP1,Inh L5-6 LAMP5 CRABP1,CT,true,,ccfp:provisional_entity
+ccfp:a7b8008690ad9fad32372dae17aa7f5f,Inh L3-6 PAX6 LINC01497,Inh L3-6 PAX6 LINC01497,CT,true,,ccfp:provisional_entity
+ccfp:1fdce0415f6f471a57515d4fd43fbb2e,Inh L1 PAX6 MIR101-1,Inh L1 PAX6 MIR101-1,CT,true,,ccfp:provisional_entity
+ccfp:f7187419d1657eae5390485fd220d61b,Inh L1 LAMP5 BMP2,Inh L1 LAMP5 BMP2,CT,true,,ccfp:provisional_entity
+ccfp:d72a5f5fdf060552d65eaacc24679b4c,Inh L1 LAMP5 NMBR,Inh L1 LAMP5 NMBR,CT,true,,ccfp:provisional_entity
+ccfp:52732ff81ff28a3e758c6270eaaf95dc,Inh L1 PAX6 CHRFAM7A,Inh L1 PAX6 CHRFAM7A,CT,true,,ccfp:provisional_entity
+ccfp:4715b7e26b3b92d4d9e2adee0a7c9286,Inh L1-6 VIP SLC7A6OS,Inh L1-6 VIP SLC7A6OS,CT,true,,ccfp:provisional_entity
+ccfp:e31a4b9636c7646ff39bac352c10c688,Inh L2 PAX6 FREM2,Inh L2 PAX6 FREM2,CT,true,,ccfp:provisional_entity
+ccfp:a408525b5cfcbc9c32fdc6bd76472c1b,Inh L1-2 VIP HTR3A,Inh L1-2 VIP HTR3A,CT,true,,ccfp:provisional_entity
+ccfp:6eb56280f3023b4af7a5918489100a84,Inh L1-2 VIP WNT4,Inh L1-2 VIP WNT4,CT,true,,ccfp:provisional_entity
+ccfp:25fea2693cfc8a889f551de33f9577f3,Inh L1 PVALB SST ASIC4,Inh L1 PVALB SST ASIC4,CT,true,,ccfp:provisional_entity
+ccfp:577689e282b84ed6893e9ccf05a975cc,Inh L1 SST P4HA3,Inh L1 SST P4HA3,CT,true,,ccfp:provisional_entity
+ccfp:9358d385a0dfa772d291a4f8c67bd44e,Inh L1 SST DEFB108B,Inh L1 SST DEFB108B,CT,true,,ccfp:provisional_entity
+ccfp:b1ce6287307615feb21dec4832200d32,Inh L1-3 VIP CBLN1,Inh L1-3 VIP CBLN1,CT,true,,ccfp:provisional_entity
+ccfp:cc9641b7964502684990b734bd2f7a90,Inh L1-2 VIP EXPH5,Inh L1-2 VIP EXPH5,CT,true,,ccfp:provisional_entity
+ccfp:b6b918e8fcae7ccdcdfc27d520575de8,Inh L1-3 VIP HSPB6,Inh L1-3 VIP HSPB6,CT,true,,ccfp:provisional_entity
+ccfp:83ec8fb1914ccaea6d5f4343093a1a60,Inh L1-2 VIP PTGER3,Inh L1-2 VIP PTGER3,CT,true,,ccfp:provisional_entity
+ccfp:828f3d62809b3370d4ee2c7350270959,Inh L1-2 VIP SCML4,Inh L1-2 VIP SCML4,CT,true,,ccfp:provisional_entity
+ccfp:d65ba962a57b90c117bd3f4136b4a882,Inh L1-3 VIP FNDC1,Inh L1-3 VIP FNDC1,CT,true,,ccfp:provisional_entity
+ccfp:51a96db5f7012e47d9a341eb85e90d9e,Inh L1-3 VIP CHRNA2,Inh L1-3 VIP CHRNA2,CT,true,,ccfp:provisional_entity
+ccfp:1fd8e3149947ea51123f6e9a4ff59366,Inh L2 VIP SLC6A16,Inh L2 VIP SLC6A16,CT,true,,ccfp:provisional_entity
+ccfp:da3a4705fb57a3c2c25c63cccc17245f,Inh L1 VIP KLHDC8B,Inh L1 VIP KLHDC8B,CT,true,,ccfp:provisional_entity
+ccfp:73fb8ffadb873895f1fd722aad3b5df3,Inh L3-5 VIP IGDCC3,Inh L3-5 VIP IGDCC3,CT,true,,ccfp:provisional_entity
+ccfp:0bef8809e0d76fd54c9ea8ec46d00aa5,Inh L1-5 VIP SMOC1,Inh L1-5 VIP SMOC1,CT,true,,ccfp:provisional_entity
+ccfp:232312fb3e3ef32a02f149b13c9f3f06,Inh L3-5 VIP HS3ST3A1,Inh L3-5 VIP HS3ST3A1,CT,true,,ccfp:provisional_entity
+ccfp:751e6d371b702ffba93f679ea396175d,Inh L5-6 VIP COL4A3,Inh L5-6 VIP COL4A3,CT,true,,ccfp:provisional_entity
+ccfp:2b45974c84dde322e1b8a9722f1fe13f,Inh L1-5 VIP CD27-AS1,Inh L1-5 VIP CD27-AS1,CT,true,,ccfp:provisional_entity
+ccfp:86936d8702e59412d73b1decc7bea079,Inh L2-5 VIP BSPRY,Inh L2-5 VIP BSPRY,CT,true,,ccfp:provisional_entity
+ccfp:e136190f656e35742fe65f9e8ada5e9d,Inh L2-5 VIP SOX11,Inh L2-5 VIP SOX11,CT,true,,ccfp:provisional_entity
+ccfp:94e834e624a3b0bb2cf31a41d7ff82f8,Inh L3-6 VIP ZIM2-AS1,Inh L3-6 VIP ZIM2-AS1,CT,true,,ccfp:provisional_entity
+ccfp:50279fdee660f8e6c3ccc588047337ab,Inh L1-5 VIP PHLDB3,Inh L1-5 VIP PHLDB3,CT,true,,ccfp:provisional_entity
+ccfp:fe4388408b4ab6231fe52899fde50629,Inh L1-5 VIP LINC01013,Inh L1-5 VIP LINC01013,CT,true,,ccfp:provisional_entity
+ccfp:c22ea97f9896747d59c0e8067d161628,Inh L3-6 VIP UG0898H09,Inh L3-6 VIP UG0898H09,CT,true,,ccfp:provisional_entity
+ccfp:6a8b66108ede1f50f9afa740becb02ad,Inh L3-5 VIP TAC3,Inh L3-5 VIP TAC3,CT,true,,ccfp:provisional_entity
+ccfp:cac017c7737feed047e17bcd0800cde3,Inh L1-6 SST NPY (Sset Chodl),Inh L1-6 SST NPY (Sset Chodl),CT,true,,ccfp:provisional_entity
+ccfp:b81ff41a36a3171b8b35c34dc625ac3e,Inh L3-5 SST CDH3,Inh L3-5 SST CDH3,CT,true,,ccfp:provisional_entity
+ccfp:47449eb1dbd7ffdc2a4f25a376de3819,Inh L5 SST RPL35AP11,Inh L5 SST RPL35AP11,CT,true,,ccfp:provisional_entity
+ccfp:0629dc37f9f71372515be509e345ed5c,Inh L5-6 SST ISX,Inh L5-6 SST ISX,CT,true,,ccfp:provisional_entity
+ccfp:635b8611223f582678d835a1d589a9c8,Inh L5-6 PVALB SST CRHR2,Inh L5-6 PVALB SST CRHR2,CT,true,,ccfp:provisional_entity
+ccfp:611cf492ecca35f6a2a9576135955e07,Inh L3-5 SST OR5AH1P,Inh L3-5 SST OR5AH1P,CT,true,,ccfp:provisional_entity
+ccfp:2c747ead269bc1e877de297d35944796,Inh L3-5 SST GGTLC3,Inh L3-5 SST GGTLC3,CT,true,,ccfp:provisional_entity
+ccfp:d0cf3fc17fa6c8fb62860d247fdf29ca,Inh L2-3 SST NMU,Inh L2-3 SST NMU,CT,true,,ccfp:provisional_entity
+ccfp:81bf0a992a196a06b96c8b5436f43ebf,Inh L5-6 SST PAWR,Inh L5-6 SST PAWR,CT,true,,ccfp:provisional_entity
+ccfp:7a3a733f293ce33893f43fa6d6139286,Inh L5-6 SST PIK3CD,Inh L5-6 SST PIK3CD,CT,true,,ccfp:provisional_entity
+ccfp:47af6aaa8ac27360af749b1b2045ee74,Inh L1-2 SST CCNJL,Inh L1-2 SST CCNJL,CT,true,,ccfp:provisional_entity
+ccfp:5b176c47b6a561912f50725c0fe533f2,Inh L1-3 SST FAM20A,Inh L1-3 SST FAM20A,CT,true,,ccfp:provisional_entity
+ccfp:5b6dc7a0602152e65a865c7954e37575,Inh L1-2 SST PRRT4,Inh L1-2 SST PRRT4,CT,true,,ccfp:provisional_entity
+ccfp:d0e4652a3d61dc8ea1c30b202040d1b4,Inh L5-6 SST BEAN1,Inh L5-6 SST BEAN1,CT,true,,ccfp:provisional_entity
+ccfp:19abf907eebd6fb368e8c858c1c11c4e,Inh L5-6 SST DNAJC14,Inh L5-6 SST DNAJC14,CT,true,,ccfp:provisional_entity
+ccfp:385d1d747694429d7cae2559c7723bab,Inh L5-6 SST C4orf26,Inh L5-6 SST C4orf26,CT,true,,ccfp:provisional_entity
+ccfp:50a42afdd1fae855ae0f59264ee080bd,Inh L5-6 SST FBN2,Inh L5-6 SST FBN2,CT,true,,ccfp:provisional_entity
+ccfp:eaa790f05fc10dada057669eae2e471e,Inh L5-6 SST KLHL1,Inh L5-6 SST KLHL1,CT,true,,ccfp:provisional_entity
+ccfp:79a8a3fdb911d02c50efd6eeef963a4f,Inh L6 SST TH,Inh L6 SST TH,CT,true,,ccfp:provisional_entity
+ccfp:d155159b7f1ad38b85c46107e46a7c6b,Inh L5-6 PVALB KCNIP2,Inh L5-6 PVALB KCNIP2,CT,true,,ccfp:provisional_entity
+ccfp:c58b057dfe40ff4c9069d92233e01cda,Inh L5-6 PVALB ZFPM2-AS1,Inh L5-6 PVALB ZFPM2-AS1,CT,true,,ccfp:provisional_entity
+ccfp:a3c6975bbbc3b80de4a5271e6e52aef2,Inh L3-5 PVALB ISG20,Inh L3-5 PVALB ISG20,CT,true,,ccfp:provisional_entity
+ccfp:8eee1d21c7805298b34b5424779713a7,Inh L5 PVALB LRIG3,Inh L5 PVALB LRIG3,CT,true,,ccfp:provisional_entity
+ccfp:8c6167416763abc71845454574f16b62,Inh L2-5 PVALB HHIPL1,Inh L2-5 PVALB HHIPL1,CT,true,,ccfp:provisional_entity
+ccfp:8b845afed1b1bbce194345d837f4005e,Inh L2-5 PVALB RPH3AL,Inh L2-5 PVALB RPH3AL,CT,true,,ccfp:provisional_entity
+ccfp:7fe5d9976947e4c4c10d419f16f136c5,Inh L3 PVALB SAMD13,Inh L3 PVALB SAMD13,CT,true,,ccfp:provisional_entity
+ccfp:6d578fb7f245ee1e321fc88e5e4d988b,Inh L1-2 PVALB CDK20,Inh L1-2 PVALB CDK20,CT,true,,ccfp:provisional_entity
+ccfp:0cc002c18f11367b7fd70361befade34,Inh L2 PVALB FRZB,Inh L2 PVALB FRZB,CT,true,,ccfp:provisional_entity
+ccfp:11551be226c9766f0c034cf679f5a67d,Inh L1-2 SST CLIC6,Inh L1-2 SST CLIC6,CT,true,,ccfp:provisional_entity
+ccfp:3f97b02f1e65afeea0c2261772d2f6af,Inh L5-6 PVALB GAPDHP60,Inh L5-6 PVALB GAPDHP60,CT,true,,ccfp:provisional_entity
+ccfp:ef66b580a0948d026481205cb29214cf,Inh L5-6 PVALB FAM150B,Inh L5-6 PVALB FAM150B,CT,true,,ccfp:provisional_entity
+ccfp:91ee7a6e487b4de8d4ce9d8e6b14bc22,Inh L5-6 PVALB MEPE,Inh L5-6 PVALB MEPE,CT,true,,ccfp:provisional_entity
+ccfp:4e692d27f9faa5aa08393119e9e18fa1,Inh L1-6 PVALB COL15A1 (Chandelier),Inh L1-6 PVALB COL15A1 (Chandelier),CT,true,,ccfp:provisional_entity
+ccfp:2309da8d6e39773969306bc5234987fa,Exc L2 LAMP5 KCNG3,Exc L2 LAMP5 KCNG3,CT,true,,ccfp:provisional_entity
+ccfp:04a036f090c858986a1f81e717f5f6d9,Exc L2 LINC00507 ATP7B,Exc L2 LINC00507 ATP7B,CT,true,,ccfp:provisional_entity
+ccfp:c95573577f9115aeee8242b078f0f0b5,Exc L2 LINC00507 GLRA3,Exc L2 LINC00507 GLRA3,CT,true,,ccfp:provisional_entity
+ccfp:8cf9b7adcd4e5dcb8729941d2f2477f0,Exc L2-3 RORB RTKN2,Exc L2-3 RORB RTKN2,CT,true,,ccfp:provisional_entity
+ccfp:ed489557a5bf07cf9387c43467a4637e,Exc L2-3 LINC00507 DSG3,Exc L2-3 LINC00507 DSG3,CT,true,,ccfp:provisional_entity
+ccfp:b2be57188ea151194d026b99f2de9130,Exc L3 LAMP5 CARM1P1,Exc L3 LAMP5 CARM1P1,CT,true,,ccfp:provisional_entity
+ccfp:b65d6013579d6eb500580f8cfa23b079,Exc L2-3 RORB CCDC68,Exc L2-3 RORB CCDC68,CT,true,,ccfp:provisional_entity
+ccfp:0ad9539850919754385b75bec28afd77,Exc L2-3 RORB PTPN3,Exc L2-3 RORB PTPN3,CT,true,,ccfp:provisional_entity
+ccfp:f388f762ce9a8a1269ceecb40efd7819,Exc L3 THEMIS ENPEP,Exc L3 THEMIS ENPEP,CT,true,,ccfp:provisional_entity
+ccfp:cb12c3b78145ca19e190716121b4b63d,Exc L3-5 RORB TNNT2,Exc L3-5 RORB TNNT2,CT,true,,ccfp:provisional_entity
+ccfp:be624f7e0e4e3b0651371c8cf53882f8,Exc L3-5 RORB LAMA4,Exc L3-5 RORB LAMA4,CT,true,,ccfp:provisional_entity
+ccfp:c2767322eb22760b014c924fd284f351,Exc L5 THEMIS VILL,Exc L5 THEMIS VILL,CT,true,,ccfp:provisional_entity
+ccfp:8234a2101fb620e0d3b9438136650c44,Exc L3 RORB OTOGL,Exc L3 RORB OTOGL,CT,true,,ccfp:provisional_entity
+ccfp:8a5ca46a3b5b289c2569d97c1cddec8b,Exc L3-5 RORB LINC01202,Exc L3-5 RORB LINC01202,CT,true,,ccfp:provisional_entity
+ccfp:351913f84413e1eb86f982b7fe1c7320,Exc L5 THEMIS SLC22A18,Exc L5 THEMIS SLC22A18,CT,true,,ccfp:provisional_entity
+ccfp:9445cdce9e71e088224aaeb9df75a86e,Exc L5-6 THEMIS TNFAIP6,Exc L5-6 THEMIS TNFAIP6,CT,true,,ccfp:provisional_entity
+ccfp:6d2ca82c5912dcb7cfe0d8f51ebb8707,Exc L3-5 RORB LNX2,Exc L3-5 RORB LNX2,CT,true,,ccfp:provisional_entity
+ccfp:8eba0e92883cf8dc0c5212ad4de7a82c,Exc L3-5 RORB RPRM,Exc L3-5 RORB RPRM,CT,true,,ccfp:provisional_entity
+ccfp:d544991fc614b77b5cfbfeb392e93493,Exc L5 RORB MED8,Exc L5 RORB MED8,CT,true,,ccfp:provisional_entity
+ccfp:088bbab3087803269d4093cb38e4c20a,Exc L5 THEMIS FGF10,Exc L5 THEMIS FGF10,CT,true,,ccfp:provisional_entity
+ccfp:5a9164266843e5c8f418ba765a1d7b31,Exc L6 THEMIS LINC00343,Exc L6 THEMIS LINC00343,CT,true,,ccfp:provisional_entity
+ccfp:087e056c13f8c95a534b9ce5d0c13c21,Exc L6 THEMIS SLN,Exc L6 THEMIS SLN,CT,true,,ccfp:provisional_entity
+ccfp:e4668554886f80afc43905a9d4688cbb,Exc L6 THEMIS SNTG2,Exc L6 THEMIS SNTG2,CT,true,,ccfp:provisional_entity
+ccfp:e22fe204fd7f112b58703f41e7e8a6c7,Exc L5-6 THEMIS SMYD1 (L6 IT Car3),Exc L5-6 THEMIS SMYD1 (L6 IT Car3),CT,true,,ccfp:provisional_entity
+ccfp:afce7c43b5508b978570d15023826474,Exc L5-6 FEZF2 OR1L8,Exc L5-6 FEZF2 OR1L8,CT,true,,ccfp:provisional_entity
+ccfp:cd52f81604e34f9ddc69157498b74fb8,Exc L5 THEMIS LINC01116,Exc L5 THEMIS LINC01116,CT,true,,ccfp:provisional_entity
+ccfp:203ffe99f13f546b38abb4dfd20c89bd,Exc L5 THEMIS RGPD6,Exc L5 THEMIS RGPD6,CT,true,,ccfp:provisional_entity
+ccfp:c3fab4cac19d46729d14657656ea0853,Exc L5-6 FEZF2 C9orf135-AS1,Exc L5-6 FEZF2 C9orf135-AS1,CT,true,,ccfp:provisional_entity
+ccfp:0509dff57731657ef7442d38b33838de,Exc L5-6 FEZF2 FILIP1L,Exc L5-6 FEZF2 FILIP1L,CT,true,,ccfp:provisional_entity
+ccfp:352d6d2901c1398a5e82fb924e53813f,Exc L5-6 FEZF2 SH2D1B,Exc L5-6 FEZF2 SH2D1B,CT,true,,ccfp:provisional_entity
+ccfp:8c7d49050f0ebb19144cd43ab7ffac7d,Exc L6 FEZF2 PDYN,Exc L6 FEZF2 PDYN,CT,true,,ccfp:provisional_entity
+ccfp:53a82d498ce8cb57d4b4161b48350238,Exc L6 FEZF2 FFAR4,Exc L6 FEZF2 FFAR4,CT,true,,ccfp:provisional_entity
+ccfp:c8dc278ade6df8c35316ceb156ce8d7c,Exc L6 FEZF2 PROKR2,Exc L6 FEZF2 PROKR2,CT,true,,ccfp:provisional_entity
+ccfp:26905622bb9e36248c59e9c121292bf9,Exc L5-6 FEZF2 CFTR,Exc L5-6 FEZF2 CFTR,CT,true,,ccfp:provisional_entity
+ccfp:5f131dd111bfaf4bf5d4fd0dd97cf056,Exc L6 FEZF2 KLK7,Exc L6 FEZF2 KLK7,CT,true,,ccfp:provisional_entity
+ccfp:a739e96d7142ab2b4c1a8d8d7127cd5d,Exc L6 FEZF2 POGK,Exc L6 FEZF2 POGK,CT,true,,ccfp:provisional_entity
+ccfp:57eacf7e023d8abe02cf8bf55cb92378,Exc L5 FEZF2 CSN1S1,Exc L5 FEZF2 CSN1S1,CT,true,,ccfp:provisional_entity
+ccfp:bd3e3658ab8bd6ce73bea25a0184c41d,Exc L3-5 FEZF2 ASGR2,Exc L3-5 FEZF2 ASGR2,CT,true,,ccfp:provisional_entity
+ccfp:bbd301555f9fd5705d2892e5f3ec4d0a,Exc L3-5 FEZF2 LINC01107,Exc L3-5 FEZF2 LINC01107,CT,true,,ccfp:provisional_entity
+ccfp:8468be0a9e9c4dd287f72975efa589d4,Exc L5 FEZF2 PKD2L1,Exc L5 FEZF2 PKD2L1,CT,true,,ccfp:provisional_entity
+ccfp:763ae29c4de0e0f628870a36b3d55023,Exc L5 FEZF2 NREP-AS1,Exc L5 FEZF2 NREP-AS1,CT,true,,ccfp:provisional_entity
+ccfp:da60a8a8868d8bd507cb1adc81abd970,Exc L5 FEZF2 RNF144A-AS1,Exc L5 FEZF2 RNF144A-AS1,CT,true,,ccfp:provisional_entity
+ccfp:4c33ddcf6a5cfd21f28d92468a41bc38,Exc L5-6 FEZF2 IFNG-AS1,Exc L5-6 FEZF2 IFNG-AS1,CT,true,,ccfp:provisional_entity
+ccfp:9313b389b8bb9a4f52f004b0205dbaea,Exc L5-6 FEZF2 LPO,Exc L5-6 FEZF2 LPO,CT,true,,ccfp:provisional_entity
+ccfp:3cc9a6e4b56eb3c08cef2a43f63818b3,OPC L1-6 PDGFRA COL20A1,OPC L1-6 PDGFRA COL20A1,CT,true,,ccfp:provisional_entity
+ccfp:27d5d5d83facb3cf08610538389e87cf,Oligo L2-6 OPALIN MAP6D1,Oligo L2-6 OPALIN MAP6D1,CT,true,,ccfp:provisional_entity
+ccfp:b734303f34b046263f68d6266b38e1d9,Oligo L3-6 OPALIN ENPP6,Oligo L3-6 OPALIN ENPP6,CT,true,,ccfp:provisional_entity
+ccfp:812553e03ae7645e7812bbefdb3bd367,Oligo L2-6 OPALIN FTH1P3,Oligo L2-6 OPALIN FTH1P3,CT,true,,ccfp:provisional_entity
+ccfp:1da828f38d48aa377dd8e23029254135,Oligo L5-6 OPALIN LDLRAP1,Oligo L5-6 OPALIN LDLRAP1,CT,true,,ccfp:provisional_entity
+ccfp:541ef29e7d98b0e10c326bbfccec7e87,Astro L1-6 FGFR3 AQP1,Astro L1-6 FGFR3 AQP1,CT,true,,ccfp:provisional_entity
+ccfp:2e3723d67824ecf6e6e0cb274ec870e0,Astro L1 FGFR3 SERPINI2,Astro L1 FGFR3 SERPINI2,CT,true,,ccfp:provisional_entity
+ccfp:4fabcdbc06a17592fe5c4338fff4008a,Astro L1-6 FGFR3 PLCG1,Astro L1-6 FGFR3 PLCG1,CT,true,,ccfp:provisional_entity
+ccfp:b891c0d8b3ef8a1f9316b57e644f8a79,Endo L2-5 NOSTRIN SRGN,Endo L2-5 NOSTRIN SRGN,CT,true,,ccfp:provisional_entity
+ccfp:b2a6e9032a3ac7e2c02d5f6681f5091a,VLMC L1-5 PDGFRA COLEC12,VLMC L1-5 PDGFRA COLEC12,CT,true,,ccfp:provisional_entity
+ccfp:654ef0a99c8222daf23c53954bae328c,Micro L1-6 TYROBP CD74,Micro L1-6 TYROBP CD74,CT,true,,ccfp:provisional_entity
+ccfp:a55ad4e18663bfdebe10abec0e845bb0,dendritic cell type 1 (DC1),dendritic cell type 1 (DC1),CT,true,,ccfp:provisional_entity
+ccfp:6e0c3d3a369774b4c46a9528bbef5493,dendritic cell type 2 (DC2),dendritic cell type 2 (DC2),CT,true,,ccfp:provisional_entity
+ccfp:f0e93b6e1dc78942cb08e045a65f238e,dendritic cell type 3 (DC3),dendritic cell type 3 (DC3),CT,true,,ccfp:provisional_entity
+ccfp:d6c6d29251542de5b30ee4a165577b86,transitional dendritic cell,transitional Dendritic Cell (tDC),CT,true,,ccfp:provisional_entity
+ccfp:d6c6d29251542de5b30ee4a165577b86,transitional dendritic cell,transitionalDendritic Cell (tDC),CT,true,,ccfp:provisional_entity
+ccfp:de88c261d3a0854638fec2a9749753c5,early erythroid,early erythroid,CT,true,,ccfp:provisional_entity
+ccfp:dbcd1071cebf4701dcbc2792f0a40ae3,mid erythroid,mid erythroid,CT,true,,ccfp:provisional_entity
+ccfp:a17e56a5b570f2514fcf2ca5f2fcdeb4,late erythroid,late erythroid,CT,true,,ccfp:provisional_entity
+ccfp:bedab8a9336a2a88b0a3392357050b0f,Megakaryocyte (MK),Megakaryocyte (MK),CT,true,,ccfp:provisional_entity
+ccfp:6e488d4be02f15c015f908f2f9290e49,early Megakaryocyte (MK),early Megakaryocyte (MK),CT,true,,ccfp:provisional_entity
+ccfp:44735564d5c8393e813defb867c7f7f1,ME(M)P,ME(M)P,CT,true,,ccfp:provisional_entity
+ccfp:03408249b26aa80be6a58d7048cd7af5,common lymphoid progenitor (CLP),common lymphoid progenitor (CLP),CT,true,,ccfp:provisional_entity
+ccfp:4b857c3da77f0d0343a0c92935340aa3,common myeloid progenitor (CMP),common myeloid progenitor (CMP),CT,true,,ccfp:provisional_entity
+ccfp:1e4d8117533e0187095a968998348440,granulocyte-macrophage progenitor cell (GMP),granulocyte-macrophage progenitor cell (GMP),CT,true,,ccfp:provisional_entity
+ccfp:ff1cef00d79ee8bea697b6eb1b820566,hemopoietic stem cell (HSC),hemopoietic stem cell (HSC),CT,true,,ccfp:provisional_entity
+ccfp:3b0f40b891516b0f9b5ef92d1ff70e62,lympho-myeloid progenitor cell (LMPP),lympho-myeloid progenitor cell (LMPP),CT,true,,ccfp:provisional_entity
+ccfp:a5dcaf4549edfd8b2d2e1e14ea8f9ee5,multipotent progenitor cell (MPP),multipotent progenitor cell (MPP),CT,true,,ccfp:provisional_entity
+ccfp:406391553d86ace03e090121c4d56a7f,CD16 monocyte,CD16 monocyte,CT,true,,ccfp:provisional_entity
+ccfp:3e3e196efc3a63cc1a671800d297af22,promonocyte,promonocyte,CT,true,,ccfp:provisional_entity
+ccfp:985bb783d55fe8c4065c0a27e1782bb2,Myeloid progenitor (MOP),Myeloid progenitor (MOP),CT,true,,ccfp:provisional_entity
+ccfp:150af56e8415cb0fad9ab888df789794,myelocyte,myelocyte,CT,true,,ccfp:provisional_entity
+ccfp:efab9e49c3738401a991b646fd531f83,promyelocyte,promyelocyte,CT,true,,ccfp:provisional_entity
+ccfp:a15e73802d264aba77a7d242dc2ecae3,eosinophil of blood,eosinophil of blood,CT,true,,ccfp:provisional_entity
+ccfp:d61414f046de69bb160339a6349da710,eosinophil of bone marrow,eosinophil of bone marrow,CT,true,,ccfp:provisional_entity
+ccfp:3f5c10611c98214dcab841a3873c9502,basophil of blood,basophil of blood,CT,true,,ccfp:provisional_entity
+ccfp:3f5c10611c98214dcab841a3873c9502,basophil of blood,basophil of bone marrow,CT,true,,ccfp:provisional_entity
+ccfp:3e1f649f6734d5acb75e1d18d9f6aff0,mast cell of bone marrow,mast cell of bone marrow,CT,true,,ccfp:provisional_entity
+ccfp:591da7a02527f5af88083d4b284fe949,CD4 naïve,CD4 naïve,CT,true,,ccfp:provisional_entity
+ccfp:34d2c10677caf869d52db32f8ce4c9d5,CD4 T cell memory,CD4 T cell memory,CT,true,,ccfp:provisional_entity
+ccfp:d072242b86936ffd1a0cc55b3bf7d5c0,CD4 T cell effector memory CD45RA,CD4 T cell effector memory CD45RA,CT,true,,ccfp:provisional_entity
+ccfp:20bb03f924d25c8d0408ed1d9f2e7299,CD8 naïve,CD8 naïve,CT,true,,ccfp:provisional_entity
+ccfp:9888e9270143b2cb79d686d6b4a9bf9b,CD8 T cell memory,CD8 T cell memory,CT,true,,ccfp:provisional_entity
+ccfp:5a5f3cacc946e101f988b5cb13cd397e,CD8 T cell effector memory,CD8 T cell effector memory,CT,true,,ccfp:provisional_entity
+ccfp:baf1a214bbd192b7de21f14983432dc6,mature CD8 T cell,mature CD8 T cell,CT,true,,ccfp:provisional_entity
+ccfp:99a4bcda8d0b71e301959cbbc22230dd,endothelial cell of artery of heart,endothelial cell of artery of heart,CT,true,,ccfp:provisional_entity
+ccfp:1786dd4d6698c9bde7f967b675a11171,fibroblast of heart,fibroblast of heart,CT,true,,ccfp:provisional_entity
+ccfp:9df6e7b6764b948df1818a7cf9f77e14,macrophage of myocardium,macrophage of myocardium,CT,true,,ccfp:provisional_entity
+ccfp:6dec76f4d8de877f15e66b1a97a1127a,neuronal,neuronal,CT,true,,ccfp:provisional_entity
+ccfp:a314c3fee77e66ccee1f58e1f8e22660,pericyte cell of heart,pericyte cell of heart,CT,true,,ccfp:provisional_entity
+ccfp:36a306debb423f62565e92693a2217b8,telocyte (interstitial like cell of cajal),telocyte (interstitial like cell of cajal),CT,true,,ccfp:provisional_entity
+ccfp:c582ed6caa3df7b00c7993d63e434e90,dendritic cell of myocardium,dendritic cell of myocardium,CT,true,,ccfp:provisional_entity
+ccfp:dc9c46da119747c27ef2d43d9e505104,fat cell of heart,fat cell of heart,CT,true,,ccfp:provisional_entity
+ccfp:a2e994c500001bd1db3e2fb3c3fccab8,blood vessel endothelial cell of heart,blood vessel endothelial cell of heart,CT,true,,ccfp:provisional_entity
+ccfp:8402720088839cac2067fef41b426b23,Purkinje fiber cell,Purkinje fiber cell,CT,true,,ccfp:provisional_entity
+ccfp:e07e478f35b30d9eaf32741b762f028a,blood vessel smooth muscle cell of heart,blood vessel smooth muscle cell of heart,CT,true,,ccfp:provisional_entity
+ccfp:f622760361113d458bfe694857e942d8,macrophage of moderator band,macrophage of moderator band,CT,true,,ccfp:provisional_entity
+ccfp:b3e001ecf8b5cb578da94722876335c8,dendritic cell of septomarginal trabecula,dendritic cell of septomarginal trabecula,CT,true,,ccfp:provisional_entity
+ccfp:5b0b28836c04905f12700395eaa2b2f9,valve interstitial cell,valve interstitial cell,CT,true,,ccfp:provisional_entity
+ccfp:192593b3487f9d2b634e083f3629d84e,macrophage of epicardium,macrophage of epicardium,CT,true,,ccfp:provisional_entity
+ccfp:50dc59c9908564714f14532d72403576,blood vessel endothelial cell of blood vessels,blood vessel endothelial cell of blood vessels,CT,true,,ccfp:provisional_entity
+ccfp:8254a3b6750037de2f6028565e5666ff,pericyte cell of lymph node,pericyte cell of lymph node,CT,true,,ccfp:provisional_entity
+ccfp:7a703114a8533246ce04d37292370000,lymphatic endothelial cell,Lymphatic Endothelial Cell,CT,true,,ccfp:provisional_entity
+ccfp:91a9452155dd1608f5d430bc7c680971,lymphatic endothelial cell of lymphatic vessel,lymphatic endothelial cell of lymphatic vessel,CT,true,,ccfp:provisional_entity
+ccfp:c695b9ce10700339341b006b053fef07,blood vessel endothelial cell of subcapsular sinus of lymph node,blood vessel endothelial cell of subcapsular sinus of lymph node,CT,true,,ccfp:provisional_entity
+ccfp:89061b3eb9bf9e106b0ac97826d152ce,Fibroblastic Reticular Cell,Fibroblastic Reticular Cell,CT,true,,ccfp:provisional_entity
+ccfp:884390417ffe1354f78b85baef956859,Lymphatic Endothelial Cell -Subcapsular Sinus Ceiling,Lymphatic Endothelial Cell -Subcapsular Sinus Ceiling,CT,true,,ccfp:provisional_entity
+ccfp:05b55ec026b72b5a19ff33d89be4ac35,Lymphatic Endothelial Cell-Subcapsular Sinus Floor,Lymphatic Endothelial Cell-Subcapsular Sinus Floor,CT,true,,ccfp:provisional_entity
+ccfp:5e8ec77967e9985d62a5a76c1b6b05eb,Lymphatic Endothelial Cell-Trabeculae,Lymphatic Endothelial Cell-Trabeculae,CT,true,,ccfp:provisional_entity
+ccfp:bfafb510143d6e67d61fd6ba89619e3d,Blood Vessel Endothelial Cell,Blood Vessel Endothelial Cell,CT,true,,ccfp:provisional_entity
+ccfp:b5f999902c173e93dcdf9ba7a1b80e23,macrophage of lymph node primary follicle,macrophage of lymph node primary follicle,CT,true,,ccfp:provisional_entity
+ccfp:c55d8726f92c633cfb654a355d565783,Centrocyte,Centrocyte,CT,true,,ccfp:provisional_entity
+ccfp:abdc64de15515ed9147950bf799682ec,T Follicular Regulatory Cell,T Follicular Regulatory Cell,CT,true,,ccfp:provisional_entity
+ccfp:bef2451986ca6ef3912f02f8eecdb8fc,Centroblast,Centroblast,CT,true,,ccfp:provisional_entity
+ccfp:a137e3886f0d8f2d8befaa251d8ac4df,Marginal B Cell,Marginal B Cell,CT,true,,ccfp:provisional_entity
+ccfp:ef138f6b279f5dcb9ccd90c2a04dc678,Naive CD4+ T cell,Naive CD4+ T cell,CT,true,,ccfp:provisional_entity
+ccfp:a26de7dee1948419ad348778ebb51302,Memory CD4+ T cell,Memory CD4+ T cell,CT,true,,ccfp:provisional_entity
+ccfp:00d096db52a14bf7e7a85cb91b1d6982,Th1 cell,Th1 cell,CT,true,,ccfp:provisional_entity
+ccfp:ee6e9e9970a2a7251617b3f11b45d0da,Th2 cell,Th2 cell,CT,true,,ccfp:provisional_entity
+ccfp:2704097bd392a7de6751dd4d9c1134e1,Th17 cell,Th17 cell,CT,true,,ccfp:provisional_entity
+ccfp:04cdb043d6a2eee975034c997a2fc5cf,T Regulatory Cell,T Regulatory Cell,CT,true,,ccfp:provisional_entity
+ccfp:807616e98bc0c0fa55b94d90b1b054cc,T Cytotoxic Cell,T Cytotoxic Cell,CT,true,,ccfp:provisional_entity
+ccfp:8496adfbf1d66ef8cb0a7e71620c6e4a,Naive CD8+ T cell,Naive CD8+ T cell,CT,true,,ccfp:provisional_entity
+ccfp:91c3c2282f39745c27e364cecebdb459,Memory CD8+ T cell,Memory CD8+ T cell,CT,true,,ccfp:provisional_entity
+ccfp:383fa63eb5ba8813fa1729b2f5e3f5e9,NK cell,NK Cell,CT,true,,ccfp:provisional_entity
+ccfp:1b4c4cb5de434fe5c993b50feff645e3,interdigitating dendritic cell,Interdigitating Dendritic Cell,CT,true,,ccfp:provisional_entity
+ccfp:e08c8f31d8d9eed22c97bda466d9cf40,interdigitating dendritic cell of interfollicular cortex,interdigitating dendritic cell of interfollicular cortex,CT,true,,ccfp:provisional_entity
+ccfp:fc168d892f93fad009722fb29596c6ae,endothelial cell of lymphatic vessel of lymph node,endothelial cell of lymphatic vessel of lymph node,CT,true,,ccfp:provisional_entity
+ccfp:405e13dd5f57a9150b5225a862b62b53,macrophage of paracortical sinus,macrophage of paracortical sinus,CT,true,,ccfp:provisional_entity
+ccfp:9642e3f4decd223bc97de4d775a8f1de,Dendritic Cells-cDC1,Dendritic Cells-cDC1,CT,true,,ccfp:provisional_entity
+ccfp:e08c8f31d8d9eed22c97bda466d9cf40,interdigitating dendritic cell of interfollicular cortex,interdigitating dendritic cell of paracortex,CT,true,,ccfp:provisional_entity
+ccfp:20b31b2d433ead1613ec7d20202dac62,Gamma/Delta T cells,Gamma/Delta T cells,CT,true,,ccfp:provisional_entity
+ccfp:524bac71f76e7eacf72a02c91aff7856,mast cell of lymph node,mast cell of lymph node,CT,true,,ccfp:provisional_entity
+ccfp:f0f8e95e84903c30c0e29c8d731082e4,Monocytoid B-Cell,Monocytoid B-Cell,CT,true,,ccfp:provisional_entity
+ccfp:610cd86cce8da1f256576fa0e3225354,B cell of paracortical cord,B cell of paracortical cord,CT,true,,ccfp:provisional_entity
+ccfp:b3c0cae10f9e47607ed5a0132e02b158,macrophage of lymph node medullary sinus,macrophage of lymph node medullary sinus,CT,true,,ccfp:provisional_entity
+ccfp:3a810e34166e4c0285bdc9bf46e5914b,lymphatic endothelial cell of lymph node medullary sinus,lymphatic endothelial cell of lymph node medullary sinus,CT,true,,ccfp:provisional_entity
+ccfp:77d2c2adf91a01695bb8e615e7c08af4,B cell of medullary cord,B cell of medullary cord,CT,true,,ccfp:provisional_entity
+ccfp:2b294634c27ccfa4ed5dd8d93c2a1cd3,macrophage of lymph node medullary cord,macrophage of lymph node medullary cord,CT,true,,ccfp:provisional_entity
+ccfp:8723a2346d3e2a1646bd1ef78c57115b,dendritic cell of lymph node,dendritic cell of lymph node,CT,true,,ccfp:provisional_entity
+ccfp:84b72d990991b47f16e83f85d7ea9942,Lymphatic Endothelial Cell of Medulla Ceiling,Lymphatic Endothelial Cell of Medulla Ceiling,CT,true,,ccfp:provisional_entity
+ccfp:7f50302cbfc598f5466704cbe68d4b84,Nerve,Nerve,CT,true,,ccfp:provisional_entity
+ccfp:be417622b083d8b28adebf17980a5f79,blood vessel endothelial cell of lymphatic artery,blood vessel endothelial cell of lymphatic artery,CT,true,,ccfp:provisional_entity
+ccfp:a0748908b9def684da7d5fdf44b6da67,blood vessel endothelial cell of lymphatic vein,blood vessel endothelial cell of lymphatic vein,CT,true,,ccfp:provisional_entity
+ccfp:02329ff0985f32fd38edec915636984f,capsule mesenchymal stromal cell,capsule mesenchymal stromal cell,CT,true,,ccfp:provisional_entity
+ccfp:2e5660a67b35f828ea015fefba4b61f6,Proximal Tubule Epithelial Cell Segment 1,Proximal Tubule Epithelial Cell Segment 1,CT,true,,ccfp:provisional_entity
+ccfp:b6f2221de817df9a2c12c5ef38fe1c37,Proximal Tubule Epithelial Cell Segment 2,Proximal Tubule Epithelial Cell Segment 2,CT,true,,ccfp:provisional_entity
+ccfp:e9e7f653ce3c1461dedda473cce99c04,Proximal Tubule Cell Epithelial Segment 3,Proximal Tubule Cell Epithelial Segment 3,CT,true,,ccfp:provisional_entity
+ccfp:329118acd32626c7f78b5221745009c7,Descending Thin Limb Cell Type 1,Descending Thin Limb Cell Type 1,CT,true,,ccfp:provisional_entity
+ccfp:99788a12c8f045699e091b7f7964b334,Descending Thin Limb Cell Type 2,Descending Thin Limb Cell Type 2,CT,true,,ccfp:provisional_entity
+ccfp:6d383607bcc1cc70c4dc1640473f5c38,Descending Thin Limb Cell Type 3,Descending Thin Limb Cell Type 3,CT,true,,ccfp:provisional_entity
+ccfp:e2d4b2a3a683785acaf2299003a2ead7,Distal Convoluted Tubule Cell Type 1,Distal Convoluted Tubule Cell Type 1,CT,true,,ccfp:provisional_entity
+ccfp:bb78fe97f5eb48da2f2d12f08af0b9e4,Distal Convoluted Tubule Cell Type 2,Distal Convoluted Tubule Cell Type 2,CT,true,,ccfp:provisional_entity
+ccfp:8269f6c1157c1987bba5c71fd69b97f5,Connecting Tubule Principal Cell,Connecting Tubule Principal Cell,CT,true,,ccfp:provisional_entity
+ccfp:d41c9d989c8abccca0ae4b1cc1fe63ea,Connecting Tubule Intercalated Cell,Connecting Tubule Intercalated Cell,CT,true,,ccfp:provisional_entity
+ccfp:af8df5b7f2f7da979ec941a0453fea34,Connecting Tubule Intercalated Cell Type A,Connecting Tubule Intercalated Cell Type A,CT,true,,ccfp:provisional_entity
+ccfp:b8e311da1a566ed81c3a1df6ccaf8e5f,Connecting Tubule Intercalated Cell Type B,Connecting Tubule Intercalated Cell Type B,CT,true,,ccfp:provisional_entity
+ccfp:e6cd230d1420acf57d2d307c57205bd0,Transitional principal-intercalated cell,Transitional principal-intercalated cell,CT,true,,ccfp:provisional_entity
+ccfp:df4ce5c4cee0156d8f62ff96c82c4514,Collecting Duct Intercalated Cell Type A,Collecting Duct Intercalated Cell Type A,CT,true,,ccfp:provisional_entity
+ccfp:f6c7e6e936263ce7fe4afc5252fcd0cd,Intercalated Cell Type B,Intercalated Cell Type B,CT,true,,ccfp:provisional_entity
+ccfp:6677388a055d930ad2b303dc7e08ab4e,endothelial cell of kidney,endothelial cell of kidney,CT,true,,ccfp:provisional_entity
+ccfp:0551e05dd48f05606b652ceea8b2713c,endothelial cell of lymphatic vessel of kidney,endothelial cell of lymphatic vessel of kidney,CT,true,,ccfp:provisional_entity
+ccfp:952236df67733ac05e67772794114c3f,dendritic cell of kidney,dendritic cell of kidney,CT,true,,ccfp:provisional_entity
+ccfp:1495c5bd328b5ab87ff0ab9fe1ee7ef9,B cell of kidney,B cell of kidney,CT,true,,ccfp:provisional_entity
+ccfp:7df47bd84c629dd40b369c17e279c5ef,mast cell of kidney,mast cell of kidney,CT,true,,ccfp:provisional_entity
+ccfp:5de7d0a7824b0529d94580b80e9c1d4a,subepithelial membrane,subepithelial membrane,CT,true,,ccfp:provisional_entity
+ccfp:7cdc338367d53bf5a274482ba22b8d2c,pericryptal fibroblastic sheath,pericryptal fibroblastic sheath,CT,true,,ccfp:provisional_entity
+ccfp:bf46294c8627434e5dfe9460c57c730e,endothelial cell of lymphatic vessel of large intestine,endothelial cell of lymphatic vessel of large intestine,CT,true,,ccfp:provisional_entity
+ccfp:ddffa379f91f5eca81f3ca2a56931dd7,pericyte cell off large intestine,pericyte cell off large intestine,CT,true,,ccfp:provisional_entity
+ccfp:28f527f56922ec4dede5d238f2c9ff41,fibroblast of large intestine,fibroblast of large intestine,CT,true,,ccfp:provisional_entity
+ccfp:168471b9834847eb901ab1ea2b5af8cb,ganglion,ganglion,CT,true,,ccfp:provisional_entity
+ccfp:4888fc2308049b3d96918c65534001b6,macrophage of large intestine,macrophage of large intestine,CT,true,,ccfp:provisional_entity
+ccfp:59c74902e913d0dbf543777abbbde177,endothelial cell of lymphatic vessel of gut-associated lymphoid tissue,endothelial cell of lymphatic vessel of gut-associated lymphoid tissue,CT,true,,ccfp:provisional_entity
+ccfp:291462110586cb8fa4a6ab8f9fc3e0f5,mast cell of large intestine,mast cell of large intestine,CT,true,,ccfp:provisional_entity
+ccfp:6198419573bbc4c940a83ca12cf770ea,dendritic cell of gut-associated lymphoid tissue,dendritic cell of gut-associated lymphoid tissue,CT,true,,ccfp:provisional_entity
+ccfp:54f340fec2a8c55d8d86dc7527fa573b,fat cell of large intestine,fat cell of large intestine,CT,true,,ccfp:provisional_entity
+ccfp:29b68ef5b07c7d1ac8863bbc191abc75,endothelial cell of lymphatic vessel of myenteric nerve plexus,endothelial cell of lymphatic vessel of myenteric nerve plexus,CT,true,,ccfp:provisional_entity
+ccfp:9e5deccac8dbaace9b656019f9ac0abc,pericyte cell of longitudinal muscle layer,pericyte cell of longitudinal muscle layer,CT,true,,ccfp:provisional_entity
+ccfp:bf6507eef25a113f35b553e88b201a29,keratinocyte of large intestine,keratinocyte of large intestine,CT,true,,ccfp:provisional_entity
+ccfp:b9a5dcb621b1f230bd5fdb2bd9b3ddd3,dendritic cell of mucosa-associated lymphoid tissue,dendritic cell of mucosa-associated lymphoid tissue,CT,true,,ccfp:provisional_entity
+ccfp:341eba08d45f8e9f88964454c9f0ddcc,B cell of dermal skin-associated lymphoid tissue,B cell of dermal skin-associated lymphoid tissue,CT,true,,ccfp:provisional_entity
+ccfp:a759ca63531f3b7cabd5782bc4e91fea,pericyte cell of vessel,pericyte cell of vessel,CT,true,,ccfp:provisional_entity
+ccfp:87be97ab69108144673d2a94c1097ec6,B cell of subcutaneous skin-associated lymphoid tissue,B cell of subcutaneous skin-associated lymphoid tissue,CT,true,,ccfp:provisional_entity
+ccfp:220b8999d4e58080f0d3d1c85c5a5f30,blood vessel smooth muscle cell of lung,blood vessel smooth muscle cell of lung,CT,true,,ccfp:provisional_entity
+ccfp:a8c660deab1d65f586385ad25e089788,Pulmonary vein smooth muscle cell,Pulmonary vein smooth muscle cell,CT,true,,ccfp:provisional_entity
+ccfp:f56c9d70b3d4e74642af29086d620b18,Pulmonary vein fibroblast,Pulmonary vein fibroblast,CT,true,,ccfp:provisional_entity
+ccfp:ec03152b23788d7ba4a92f3dc0c23a75,ciliated cuboidal epithelium,ciliated cuboidal epithelium,CT,true,,ccfp:provisional_entity
+ccfp:cbd2956034cf5a9ab966cce18cbcb1f1,airway smooth muscle cells,smooth muscle cells,CT,true,,ccfp:provisional_entity
+ccfp:7380f850988d5d0ccdf8b86a87d20c08,Fibroblast type 2 (F2),lung matrix fibroblast 2,CT,true,,ccfp:provisional_entity
+ccfp:64bd7143474eb16d53b2325c5ca9fb79,lung matrix fibroblast 2,lung matrix fibroblast 2,CT,true,,ccfp:provisional_entity
+ccfp:c9fda3208dd323037755110d7db3a488,pericyte cell of lung,pericyte cell of lung,CT,true,,ccfp:provisional_entity
+ccfp:6d73c0a26cda1d6d452ffa28b4780b77,capillary endothelial cell 1,CAP1,CT,true,,ccfp:provisional_entity
+ccfp:f5cc96ef700d7715d61f4fbc627a50fd,capillary endothelial cell 2,CAP2,CT,true,,ccfp:provisional_entity
+ccfp:065e6065c28c9b653c07525d741debc7,endothelial cell of lymphatic vessel of lung,endothelial cell of lymphatic vessel of lung,CT,true,,ccfp:provisional_entity
+ccfp:7669b5b4b283b0f74ad8ea0ecab2f2e0,lung matrix fibroblast 1/(Lipofibroblast?),matrix fibroblast 1/(Lipofibroblast),CT,true,,ccfp:provisional_entity
+ccfp:5e5f74cb3cd87edcedd0e6719e9a4d20,basophil of lung,basophil of lung,CT,true,,ccfp:provisional_entity
+ccfp:f9930781d348c4e9f668b68ab4093228,resident memory CD4 T cell,resident memory CD4 T cell,CT,true,,ccfp:provisional_entity
+ccfp:7fa02d0713f40396ec278824a6db7c33,resident memory CD8 T cell,resident memory CD8 T cell,CT,true,,ccfp:provisional_entity
+ccfp:da91ee298203acaac7ff16f4efff9f67,B cell of lung,B cell of lung,CT,true,,ccfp:provisional_entity
+ccfp:51852a63f7738bac3cbf6a81417d0e39,corneocyte,Keratinocyte (Corneocyte),CT,true,,ccfp:provisional_entity
+ccfp:e8bb7dac5355d318919d119aa9cf2ef3,keratinocyte of skin,keratinocyte of skin,CT,true,,ccfp:provisional_entity
+ccfp:b65cd9d97c88d59428543f6b872d32f8,Onychocyte,Keratinocyte (Onychocyte),CT,true,,ccfp:provisional_entity
+ccfp:ac0ba3e75df835d1e7ee08a035cd49ee,mast cell of skin,mast cell of skin,CT,true,,ccfp:provisional_entity
+ccfp:641977ab3c42a4c6bb102cd0416392e6,macrophage of skin,macrophage of skin,CT,true,,ccfp:provisional_entity
+ccfp:9cc6353a0bf64db47d4bcc57a384a1f9,B cell of skin,B cell of skin,CT,true,,ccfp:provisional_entity
+ccfp:68aeb98242668ec0cd7b3c0d8b4af94d,eosinophil of skin,eosinophil of skin,CT,true,,ccfp:provisional_entity
+ccfp:aa891f06af39a7230e59c1c8a455a0dd,perineurial cell,perineurial cells,CT,true,,ccfp:provisional_entity
+ccfp:354d625530b057840d68bfdbba36efd1,endothelial cell of skin,endothelial cell of skin,CT,true,,ccfp:provisional_entity
+ccfp:9c40ffb0d1faa3266b951fa3fdcb6000,pericyte cell of skin,pericyte cell of skin,CT,true,,ccfp:provisional_entity
+ccfp:386f603430173e35130bce98da8205ff,endothelial cell of lymphatic vessel of skin,endothelial cell of lymphatic vessel of skin,CT,true,,ccfp:provisional_entity
+ccfp:aa891f06af39a7230e59c1c8a455a0dd,perineurial cell,Perineural cell,CT,true,,ccfp:provisional_entity
+ccfp:ae4c087d26b47de98313d525bb84960e,dendritic cell of spleen,dendritic cell of spleen,CT,true,,ccfp:provisional_entity
+ccfp:cfad3842c691ee671de5ca98b09ee451,macrophage of spleen,macrophage of spleen,CT,true,,ccfp:provisional_entity
+ccfp:c071e59857644fdd7b67f147aaeb598d,pericyte cell of spleen,pericyte cell of spleen,CT,true,,ccfp:provisional_entity
+ccfp:5e44c8496d677c96b5f6c01ee71c6c83,interdigitating denditic cell of spleen,interdigitating denditic cell of spleen,CT,true,,ccfp:provisional_entity
+ccfp:a9f0dc816109cd1d346a40defcfaf427,endothelial cell of artery of spleen,endothelial cell of artery of spleen,CT,true,,ccfp:provisional_entity
+ccfp:75d3accd80ea905cf204a140dfa3c665,endothelial cell of lymphatic vessel of spleen,endothelial cell of lymphatic vessel of spleen,CT,true,,ccfp:provisional_entity
+ccfp:d8918573ef6c5bdd815af6e2896996d5,fibroblast type 1,fibroblast type 1,CT,true,,ccfp:provisional_entity
+ccfp:9e7606b2f893e603003b159647743984,macrophage of thymus,macrophage of thymus,CT,true,,ccfp:provisional_entity
+ccfp:3b4ef6cb2f3a202eb6792246993f4175,parasympathetic cholinergic nerve,parasympathetic cholinergic nerve,CT,true,,ccfp:provisional_entity
+ccfp:c3e301e8092691a75901c7672578b3e9,sympathetic noradrenergic nerve,sympathetic noradrenergic nerve,CT,true,,ccfp:provisional_entity
+ccfp:c815d1a3a39920aef2c22d30cfaf6c3c,blood endothelial cell,blood endothelial cell,CT,true,,ccfp:provisional_entity
+ccfp:23ec412fe4fbe1bc5867ad756c618a0b,beige adipocyte,beige adipocyte,CT,true,,ccfp:provisional_entity
+ccfp:ad54d91d9b2164e500f2acb9fb7e18f7,fibroblasts type 2,fibroblasts type 2,CT,true,,ccfp:provisional_entity
+ccfp:b6a6232c8d41368207cf4d2ccb2a3a41,erythroid cell,erythroid,CT,true,,ccfp:provisional_entity
+ccfp:5a64d3bb86c918b1e61e3660252436a4,mast cell of thymus,mast cell of thymus,CT,true,,ccfp:provisional_entity
+ccfp:c9a39be4399a26b41d22e9892e4ccb79,eosinophil of thymus,eosinophil of thymus,CT,true,,ccfp:provisional_entity
+ccfp:922974eb75dd8cb1bf819b5db3d3fd18,subcapsular epithelial cell,subcapsular epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:74d8450dc75c5e69eadaef74451191c6,early thymic progenitor,ETP (early thymic progenitor),CT,true,,ccfp:provisional_entity
+ccfp:85743ab15e0b86d51ab9acc5d1d5bc9d,specified DN thymocyte,DN thymocyte,CT,true,,ccfp:provisional_entity
+ccfp:5b25d2d39ff23b62e77bfe3315044232,committed DN thymocyte,DN thymocyte,CT,true,,ccfp:provisional_entity
+ccfp:319beccb9279a7cc7ef866d7efd224b7,rearranging DN thymocyte,DN thymocyte,CT,true,,ccfp:provisional_entity
+ccfp:e012925bd3532711db88edb8aeb563c4,subcapsular macrophage,macrophage,CT,true,,ccfp:provisional_entity
+ccfp:011e70a5d28dc35cc98d1b77ef1e385c,proliferating DP,DP thymocyte,CT,true,,ccfp:provisional_entity
+ccfp:faba06ef4aa41c1ce9ada56b35d9ad33,quiescent DP,DP thymocyte,CT,true,,ccfp:provisional_entity
+ccfp:790d5c8b0c12d7aa7db9c5e9af99c28d,cortical plasmacytoid DC,plasmacytoid DC,CT,true,,ccfp:provisional_entity
+ccfp:5e0f60091a40e5b56c92d7d013afe441,thymic cortical dendritic macrophage,macrophage (tingible body macrophage?),CT,true,,ccfp:provisional_entity
+ccfp:b6a6232c8d41368207cf4d2ccb2a3a41,erythroid cell,erythroid cell,CT,true,,ccfp:provisional_entity
+ccfp:1ef1e85f1a3b97e2a817da13746be827,cTECs,cortical thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:278303296e8882d018c70baaf7536d7b,thymic nurse cells,cortical thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:9e4543793e48191ff328cbecca1a45c2,unswitched memory B cell,memory B cell,CT,true,,ccfp:provisional_entity
+ccfp:d09701787fb63a7c770057d4b4467526,switched memory B cell,memory B cell,CT,true,,ccfp:provisional_entity
+ccfp:a9de860e131301b11b66b233ff035320,CD4+ T single positive,CD4+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:83c54f4a22dcbf52c698009e464136d5,CD8+ T single positive,CD8+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:f323d3dc2812f75c69fc0171ad62fd00,abT entry,abT entry,CT,true,,ccfp:provisional_entity
+ccfp:8735482806be8ccc3ef6f12b0b3c6136,TSP1,putative TSP (thymic seeding progenitor),CT,true,,ccfp:provisional_entity
+ccfp:58d4185564cb4df75574c247d6a214bb,TSP2,putative TSP (thymic seeding progenitor),CT,true,,ccfp:provisional_entity
+ccfp:1b3cae7c613237169519c5c29e57198b,DC1,conventional DC,CT,true,,ccfp:provisional_entity
+ccfp:4bc63579a6a458660308880f3cc42147,DC2,conventional DC,CT,true,,ccfp:provisional_entity
+ccfp:df8c646abf2191af06622ecc94150a16,mcTEC,medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:68b7467a797ed40592c98315c6989b38,CD4+ T cell,CD4+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:5f80147cc3dbdc4ed7b5aae4de08b50d,cytotoxic CD4 T cell,CD4+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:b7797644b90fd2b269e9692ab00ff248,CD4+ PD-1+,CD4+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:98c0008b7eacef7b2f7d4618ab3c63fc,CD4+ T memory,CD4+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:e3457d30d25fbff7dc3a6594a3546f30,CD8+ T cell,CD8+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:8cc948615d4972707d67651c48501d36,CD8+ T memory,CD8+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:4b1010b7514c41e0d6332058df921763,CD8aa(I) T cell,CD8+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:d1d6f692154e02f7b5a6bde7ed2eeda7,CD8aa(II) T cell,CD8+ T single positive,CT,true,,ccfp:provisional_entity
+ccfp:b2e94b4b31937741a28c78907f636bab,Treg,Treg,CT,true,,ccfp:provisional_entity
+ccfp:d219406703000b2ea8082874f75bec30,Treg (differentiated),Treg,CT,true,,ccfp:provisional_entity
+ccfp:dd0d44fd821f56218396a00148889b9a,gd T cell,gd T cell,CT,true,,ccfp:provisional_entity
+ccfp:2704097bd392a7de6751dd4d9c1134e1,Th17 cell,Th17,CT,true,,ccfp:provisional_entity
+ccfp:dfaa2d385e1b1c66085daffa370c9787,MAIT,MAIT,CT,true,,ccfp:provisional_entity
+ccfp:c9aa4ed42b70d1a7923a47d2a301e8b1,immature NKT cell,NKT cell,CT,true,,ccfp:provisional_entity
+ccfp:ead00d14760ced0a0b0575cc20ca2362,T agonist,T agonist,CT,true,,ccfp:provisional_entity
+ccfp:664dc2bf9f3a5490887baf6af7630cfe,plasmacytoid DC,plasmacytoid DC,CT,true,,ccfp:provisional_entity
+ccfp:999610929cd846a56bd2ca39eb6a14f2,aDC1,activated DC,CT,true,,ccfp:provisional_entity
+ccfp:2d79fb54c94c1f96900e68e6d2e7b7aa,aDC2,activated DC,CT,true,,ccfp:provisional_entity
+ccfp:eab52a3b770ab32d0b02e9e5aebc9e74,aDC3,activated DC,CT,true,,ccfp:provisional_entity
+ccfp:f35a37b6f58bd88cfb4d211d5502056b,naive B cell,naive B cell,CT,true,,ccfp:provisional_entity
+ccfp:b737dca06d6cc07fd18cccf67739b22f,myoid cell,myoid cell,CT,true,,ccfp:provisional_entity
+ccfp:f7c6424fe1276af857b13d236690fa50,ILC3,ILC,CT,true,,ccfp:provisional_entity
+ccfp:8c209f22494610a1dd6c1eb95d03caf1,mTEC(I),medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:cacd3d62f6329973e01face77523e9fa,mTEC(II),medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:8d48787b59d010bfe109d559afb06f40,mTEC(III),medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:9ae28f043e6264b7f6b092cd48fa9311,mTEC(IV),medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:cb9575134dcd2a876ceed698a0eca819,myoTEC,medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:078989b07d37e50705a85e18725921c3,neuroTEC,medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:60e73834e61a4cf14c06fd535412d47c,myelin+ TEC,medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:c0c0e5f325133311fb0b190a60f9ec54,ciliated TEC,medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:c91d908d763fa90ce1ea2fbcf904e894,ionocytes,medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
+ccfp:acb2c229abcd894444811f08242053f1,blood vessel endothelial cell of vasculature,blood vessel endothelial cell of vasculature,CT,true,,ccfp:provisional_entity

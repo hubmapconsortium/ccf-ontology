@@ -8,7 +8,7 @@
 # ----------------------------------------
 
 .PHONY: all_things
-all_things: odkversion all_imports all_data all_main all_subsets sparql_test all_reports all_assets
+all_things: odkversion all_imports all_data all_templates all_main all_subsets sparql_test all_reports all_assets
 
 
 # ----------------------------------------
@@ -125,3 +125,29 @@ data/spatial_entities.owl: check
 	rui2ccf https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld \
         https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/reference-spatial-entities.jsonld \
         --ontology-iri $(ONTBASE)/$@ -o $@
+
+
+# ----------------------------------------
+# Templates
+# ----------------------------------------
+
+TEMPLATES =  ccf_provision
+
+TEMPLATE_FILES = $(patsubst %, $(TEMPLATEDIR)/%.csv, $(TEMPLATES))
+EXTRA_FILES = $(patsubst %, extras/%.owl, $(TEMPLATES))
+
+TMP = true
+
+.PHONY: all_templates
+all_templates: $(EXTRA_FILES)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish generating extra files:)
+	$(foreach n, $(EXTRA_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
+
+extras/%.owl: $(TEMPLATE_FILES)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	if [ $(IMP) = true ] && [ $(TMP) = true ]; then $(ROBOT) template --template $< \
+		--prefix "ccfp: http://purl.org/ccf/provisional/" \
+		--prefix "ccf: http://purl.org/ccf/" \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: extras/%.owl

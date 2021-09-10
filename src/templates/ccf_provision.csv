@@ -266,6 +266,10 @@ ccfp:0538f0fe3bce0c0a3059dfb6d0062e92,circumflex humeral vein,circumflex humeral
 ccfp:3cdd5437165b311c7d6a63df35ed1bd6,small thyroid vein,small thyroid vein,AS,true,,ccfp:provisional_entity
 ccfp:ca12a8a5429026701ba583f1c8414716,superficial submandibular vein,superficial submandibular vein,AS,true,,ccfp:provisional_entity
 ccfp:cdea4069d18297282b59448ed9f9ac9a,posterior branch of retromandibular vein,posterior branch of retromandibular vein,AS,true,,ccfp:provisional_entity
+ccfp:8e3ac8708f163ae52f83ab98cb52bf63,inner mantle zone,Inner Mantle Zone,AS,true,,ccfp:provisional_entity
+ccfp:8d0f71a827d8df34be75a4e71223061a,superficial mantle zone,Superficial Mantle Zone,AS,true,,ccfp:provisional_entity
+ccfp:a467eed538c67978d6dbe0d59d42e87d,inner PALS,Inner PALS,AS,true,,ccfp:provisional_entity
+ccfp:5c0212f7e64d7438cbb35cc494d213f7,outer PALS,Outer PALS,AS,true,,ccfp:provisional_entity
 ccfp:ec36461e7020974c960e932c4ec3e1a4,Inh L1 LAMP5 PVRL2,Inh L1 LAMP5 PVRL2,CT,true,,ccfp:provisional_entity
 ccfp:91bcd0ef283a7f62bff80260bc099881,Inh L1 LAMP5 RAB11FIP1,Inh L1 LAMP5 RAB11FIP1,CT,true,,ccfp:provisional_entity
 ccfp:764d60a03f6d642b5f7f893b4062ff02,Inh L1-6 LAMP5 AARD,Inh L1-6 LAMP5 AARD,CT,true,,ccfp:provisional_entity
@@ -624,3 +628,27 @@ ccfp:60e73834e61a4cf14c06fd535412d47c,myelin+ TEC,medullary thymic epithelial ce
 ccfp:c0c0e5f325133311fb0b190a60f9ec54,ciliated TEC,medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
 ccfp:c91d908d763fa90ce1ea2fbcf904e894,ionocytes,medullary thymic epithelial cell,CT,true,,ccfp:provisional_entity
 ccfp:acb2c229abcd894444811f08242053f1,blood vessel endothelial cell of vasculature,blood vessel endothelial cell of vasculature,CT,true,,ccfp:provisional_entity
+ccfp:a4d4b8da5f27c882ed2155dc406467a7,neuron,Catecholaminergic Nerve,CT,true,,ccfp:provisional_entity
+ccfp:4c8da603ff28b69c6294d2d846544d1c,memory-like B cell,Memory-Like B Cell,CT,true,,ccfp:provisional_entity
+ccfp:4886e21d4d78622b24780293db046507,adventitial stromal cell,Adventitial Stromal Cell,CT,true,,ccfp:provisional_entity
+ccfp:f677ca3b2e1dd57ff94f14337d5f1ada,stromal cell (non-FRC/non-FDC),Stromal Cell (non-FRC/non-FDC),CT,true,,ccfp:provisional_entity
+ccfp:485b47c007b7923c9d9306ae595d9ca6,stromal sheath cell,Stromal Sheath Cell,CT,true,,ccfp:provisional_entity
+ccfp:3a4d1ab7a4f283e4cbb5ed17b19a0445,ring fiber,Ring Fiber,CT,true,,ccfp:provisional_entity
+ccfp:da820ab84164fd1c8dca6aede3c5455f,littoral cell,Littoral Cell,CT,true,,ccfp:provisional_entity
+ccfp:aab0e918e151a1b47d9c2ebbb6a3c66c,stromal cell,Stromal Cell,CT,true,,ccfp:provisional_entity
+ccfp:63102025db3b8d01eb276316e4847378,aged erythrocytes,Aged Erythrocytes,CT,true,,ccfp:provisional_entity
+ccfp:d01e179ee80890dc8a7361c381da159a,dendritic cells-cDC1,Dendritic Cells-cDC1,CT,true,,ccfp:provisional_entity
+ccfp:25bbb357e8aff481bb15a2c1855663ab,dendritic cells-cDC2,Dendritic Cells-cDC2,CT,true,,ccfp:provisional_entity
+ccfp:9f9649601cea6f5733ef68c3336671ee,monocyte-derived DC,Monocyte-Derived DC,CT,true,,ccfp:provisional_entity
+ccfp:df61b9fd5fcbfe48c20372cb608c99f1,DEC205+ DC,DEC205+ DC,CT,true,,ccfp:provisional_entity
+ccfp:c815d1a3a39920aef2c22d30cfaf6c3c,blood endothelial cell,Blood Endothelial Cells,CT,true,,ccfp:provisional_entity
+ccfp:08dd31b375782a584f5efada7cbbe65e,T follicular regulatory cell,T Follicular Regulatory Cell,CT,true,,ccfp:provisional_entity
+ccfp:3cc85fca775e8a38b17306950ff5d7ed,mantle zone B cell,Mantle Zone B Cell,CT,true,,ccfp:provisional_entity
+ccfp:21da5adfbe2f1dd4b0aa253f75a5c185,blood endothelial cell (capillary),Blood Endothelial Cells (capillary),CT,true,,ccfp:provisional_entity
+ccfp:2bf860060220f6b480f316526e41f415,immature dendritic cell,Immature Dendritic Cell,CT,true,,ccfp:provisional_entity
+ccfp:e4d5498046b4517f8c42d3361796ff33,Adventitial Stromal Cell,Adventitial Stromal Cell,CT,true,,ccfp:provisional_entity
+ccfp:5334105b7d31d19afc37f2233e8f3c42,interdigitating denditic cell,Interdigitating Denditic Cells,CT,true,,ccfp:provisional_entity
+ccfp:9c12948d5ef67f59c2bbb383af7ea333,autonomous nerve processes,Autonomous Nerve Processes,CT,true,,ccfp:provisional_entity
+ccfp:2b18efd86de4fdb46f6fb2cf52b08292,cytotoxic memory T cell,Cytotoxic Memory T Cell,CT,true,,ccfp:provisional_entity
+ccfp:b370dfe5dfa2de5011d4ec1c8901ee86,DEC205+ DC (Immature),DEC205+ DC (Immature),CT,true,,ccfp:provisional_entity
+ccfp:027785f63438ed74c9061e9ea9d6050b,subcapsular dendritic cell,Subcapsular Dendritic Cell,CT,true,,ccfp:provisional_entity

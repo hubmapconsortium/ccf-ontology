@@ -211,6 +211,30 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/a467eed538c67978d6dbe0d59d42e87d -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/a467eed538c67978d6dbe0d59d42e87d">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AS</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inner PALS</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner PALS</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/a4d4b8da5f27c882ed2155dc406467a7 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/a4d4b8da5f27c882ed2155dc406467a7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neuron</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Catecholaminergic Nerve</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/a55ad4e18663bfdebe10abec0e845bb0 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/a55ad4e18663bfdebe10abec0e845bb0">
@@ -440,6 +464,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/aab0e918e151a1b47d9c2ebbb6a3c66c -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/aab0e918e151a1b47d9c2ebbb6a3c66c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stromal cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stromal Cell</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/abdc64de15515ed9147950bf799682ec -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/abdc64de15515ed9147950bf799682ec">
@@ -652,6 +688,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treg</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treg</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/b370dfe5dfa2de5011d4ec1c8901ee86 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/b370dfe5dfa2de5011d4ec1c8901ee86">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEC205+ DC (Immature)</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEC205+ DC (Immature)</skos:prefLabel>
     </owl:Class>
     
 
@@ -1300,6 +1348,7 @@
         <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood endothelial cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Endothelial Cells</skos:prefLabel>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood endothelial cell</skos:prefLabel>
     </owl:Class>
     
@@ -1613,6 +1662,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macrophage of spleen</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">macrophage of spleen</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/d01e179ee80890dc8a7361c381da159a -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/d01e179ee80890dc8a7361c381da159a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cells-cDC1</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dendritic Cells-cDC1</skos:prefLabel>
     </owl:Class>
     
 
@@ -1954,6 +2015,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/da820ab84164fd1c8dca6aede3c5455f -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/da820ab84164fd1c8dca6aede3c5455f">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">littoral cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Littoral Cell</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/da91ee298203acaac7ff16f4efff9f67 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/da91ee298203acaac7ff16f4efff9f67">
@@ -2070,6 +2143,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting Duct Intercalated Cell Type A</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collecting Duct Intercalated Cell Type A</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/df61b9fd5fcbfe48c20372cb608c99f1 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/df61b9fd5fcbfe48c20372cb608c99f1">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEC205+ DC</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEC205+ DC</skos:prefLabel>
     </owl:Class>
     
 
@@ -2299,6 +2384,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exc L6 THEMIS SNTG2</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exc L6 THEMIS SNTG2</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/e4d5498046b4517f8c42d3361796ff33 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/e4d5498046b4517f8c42d3361796ff33">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adventitial Stromal Cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adventitial Stromal Cell</skos:prefLabel>
     </owl:Class>
     
 
@@ -2731,6 +2828,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long insular gyri</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long insular gyri</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/f677ca3b2e1dd57ff94f14337d5f1ada -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/f677ca3b2e1dd57ff94f14337d5f1ada">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stromal cell (non-FRC/non-FDC)</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stromal Cell (non-FRC/non-FDC)</skos:prefLabel>
     </owl:Class>
     
 
@@ -3305,6 +3414,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/027785f63438ed74c9061e9ea9d6050b -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/027785f63438ed74c9061e9ea9d6050b">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subcapsular dendritic cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subcapsular Dendritic Cell</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/0302a63af29acf37a7eb7578a3265ce3 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/0302a63af29acf37a7eb7578a3265ce3">
@@ -3541,6 +3662,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sheathed capillary</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheathed Capillary</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/08dd31b375782a584f5efada7cbbe65e -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/08dd31b375782a584f5efada7cbbe65e">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T follicular regulatory cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T Follicular Regulatory Cell</skos:prefLabel>
     </owl:Class>
     
 
@@ -3989,6 +4122,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/2b18efd86de4fdb46f6fb2cf52b08292 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/2b18efd86de4fdb46f6fb2cf52b08292">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cytotoxic memory T cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytotoxic Memory T Cell</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/2b294634c27ccfa4ed5dd8d93c2a1cd3 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/2b294634c27ccfa4ed5dd8d93c2a1cd3">
@@ -4021,6 +4166,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediodorsal nucleus of thalamus</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mediodorsal nucleus of thalamus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/2bf860060220f6b480f316526e41f415 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/2bf860060220f6b480f316526e41f415">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immature dendritic cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immature Dendritic Cell</skos:prefLabel>
     </owl:Class>
     
 
@@ -4169,6 +4326,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/21da5adfbe2f1dd4b0aa253f75a5c185 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/21da5adfbe2f1dd4b0aa253f75a5c185">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood endothelial cell (capillary)</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood Endothelial Cells (capillary)</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/21075ae9901b2c9b6aa0beabdfea6066 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/21075ae9901b2c9b6aa0beabdfea6066">
@@ -4225,6 +4394,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inh L3-5 VIP HS3ST3A1</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inh L3-5 VIP HS3ST3A1</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/25bbb357e8aff481bb15a2c1855663ab -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/25bbb357e8aff481bb15a2c1855663ab">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cells-cDC2</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dendritic Cells-cDC2</skos:prefLabel>
     </owl:Class>
     
 
@@ -4362,6 +4543,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/3a4d1ab7a4f283e4cbb5ed17b19a0445 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/3a4d1ab7a4f283e4cbb5ed17b19a0445">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ring fiber</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ring Fiber</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/3a810e34166e4c0285bdc9bf46e5914b -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/3a810e34166e4c0285bdc9bf46e5914b">
@@ -4442,6 +4635,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dorsal thalamus</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dorsal thalamus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/3cc85fca775e8a38b17306950ff5d7ed -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/3cc85fca775e8a38b17306950ff5d7ed">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mantle zone B cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mantle Zone B Cell</skos:prefLabel>
     </owl:Class>
     
 
@@ -4831,6 +5036,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/4c8da603ff28b69c6294d2d846544d1c -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/4c8da603ff28b69c6294d2d846544d1c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">memory-like B cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Memory-Like B Cell</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/4d38520c6c70950324e1205a4033c8d9 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/4d38520c6c70950324e1205a4033c8d9">
@@ -5095,6 +5312,30 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/485b47c007b7923c9d9306ae595d9ca6 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/485b47c007b7923c9d9306ae595d9ca6">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stromal sheath cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stromal Sheath Cell</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/4886e21d4d78622b24780293db046507 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/4886e21d4d78622b24780293db046507">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adventitial stromal cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adventitial Stromal Cell</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/4888fc2308049b3d96918c65534001b6 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/4888fc2308049b3d96918c65534001b6">
@@ -5259,6 +5500,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anterior parahippocampal gyrus</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anterior parahippocampal gyrus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/5c0212f7e64d7438cbb35cc494d213f7 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/5c0212f7e64d7438cbb35cc494d213f7">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AS</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">outer PALS</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer PALS</skos:prefLabel>
     </owl:Class>
     
 
@@ -5547,6 +5800,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exc L6 FEZF2 FFAR4</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exc L6 FEZF2 FFAR4</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/5334105b7d31d19afc37f2233e8f3c42 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/5334105b7d31d19afc37f2233e8f3c42">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interdigitating denditic cell</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interdigitating Denditic Cells</skos:prefLabel>
     </owl:Class>
     
 
@@ -5943,6 +6208,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cell of gut-associated lymphoid tissue</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dendritic cell of gut-associated lymphoid tissue</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/63102025db3b8d01eb276316e4847378 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/63102025db3b8d01eb276316e4847378">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aged erythrocytes</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aged Erythrocytes</skos:prefLabel>
     </owl:Class>
     
 
@@ -6595,6 +6872,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/8d0f71a827d8df34be75a4e71223061a -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/8d0f71a827d8df34be75a4e71223061a">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AS</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superficial mantle zone</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Superficial Mantle Zone</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/8d48787b59d010bfe109d559afb06f40 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/8d48787b59d010bfe109d559afb06f40">
@@ -6603,6 +6892,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mTEC(III)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medullary thymic epithelial cell</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/8e3ac8708f163ae52f83ab98cb52bf63 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/8e3ac8708f163ae52f83ab98cb52bf63">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AS</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inner mantle zone</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inner Mantle Zone</skos:prefLabel>
     </owl:Class>
     
 
@@ -7087,6 +7388,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/9c12948d5ef67f59c2bbb383af7ea333 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/9c12948d5ef67f59c2bbb383af7ea333">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">autonomous nerve processes</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Autonomous Nerve Processes</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/9c40ffb0d1faa3266b951fa3fdcb6000 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/9c40ffb0d1faa3266b951fa3fdcb6000">
@@ -7179,6 +7492,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immune</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Immune</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/9f9649601cea6f5733ef68c3336671ee -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/9f9649601cea6f5733ef68c3336671ee">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monocyte-derived DC</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monocyte-Derived DC</skos:prefLabel>
     </owl:Class>
     
 

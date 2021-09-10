@@ -9,8 +9,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:umls="http://bioportal.bioontology.org/ontologies/umls/">
     <owl:Ontology rdf:about="http://purl.org/ccf/imports/loinc_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-02/imports/loinc_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-02</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-03/imports/loinc_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-03</owl:versionInfo>
     </owl:Ontology>
     
 

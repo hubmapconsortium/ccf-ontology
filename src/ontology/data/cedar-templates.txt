@@ -1,3 +1,11 @@
+https://repo.metadatacenter.org/templates/0521e710-22c3-49e6-94f8-250099dc852e
+https://repo.metadatacenter.org/templates/bae4cdea-9376-4319-a5df-9049a36bddbd
 https://repo.metadatacenter.org/templates/b68faec4-551b-465d-b613-338336e98f3c
 https://repo.metadatacenter.org/templates/28101f7b-ed60-4a97-9aba-d77518c83e73
-https://repo.metadatacenter.org/templates/bae4cdea-9376-4319-a5df-9049a36bddbd
+https://repo.metadatacenter.org/templates/8b47bae6-db32-4b13-9d12-d012f0be9412
+https://repo.metadatacenter.org/templates/217b8a1d-3533-4a8a-89f1-44e0a882f81d
+https://repo.metadatacenter.org/templates/f427acf3-0d13-473e-997a-a2a6b8e8c580
+https://repo.metadatacenter.org/templates/15e166bc-63f4-4c24-9fb7-30de6068bf9c
+https://repo.metadatacenter.org/templates/044470b2-9fe5-483c-8917-eed01d0429d5
+https://repo.metadatacenter.org/templates/7340b5c8-b849-43c6-9f06-c4b06e1466fb
+https://repo.metadatacenter.org/templates/9fa04a3d-dab9-40f8-9420-862ba4a4c96a

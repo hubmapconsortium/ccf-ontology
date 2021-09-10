@@ -118,7 +118,8 @@ check:
 
 data/asctb.owl: check
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then cedar2ccf data/cedar-templates.txt --ontology-iri $(ONTBASE)/$@ -o $@; fi
+	if [ $(DAT) = true ]; then cedar2ccf data/cedar-templates.txt --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
+		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 ## GENERATE-DATA: spatial_entities
 
@@ -126,7 +127,8 @@ data/spatial_entities.owl: check
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	if [ $(DAT) = true ]; then rui2ccf https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld \
         https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/reference-spatial-entities.jsonld \
-        --ontology-iri $(ONTBASE)/$@ -o $@; fi
+        --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
+		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 
 # ----------------------------------------

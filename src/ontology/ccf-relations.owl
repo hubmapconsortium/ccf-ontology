@@ -26,6 +26,22 @@
     
 
 
+    <!-- http://purl.org/ccf/asctb_type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/asctb_type">
+        <rdfs:label xml:lang="en">ASCT+B type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/is_provisional -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/is_provisional">
+        <rdfs:label xml:lang="en">is provisional</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/ccf/unit_of_measurement -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/ccf/unit_of_measurement">

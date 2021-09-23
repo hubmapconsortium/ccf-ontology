@@ -1,0 +1,16 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX ccfp: <http://purl.org/ccf/provisional/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?x WHERE {
+   ccfp:a314c3fee77e66ccee1f58e1f8e22660 rdfs:subClassOf [   # pericyte cell of heart
+      owl:onProperty ccf:cell_type_has_characterizing_biomarker_set ;
+      owl:someValuesFrom ?characterizing_biomarker_set ] .
+   ?characterizing_biomarker_set owl:equivalentClass [
+      owl:intersectionOf [ rdf:rest*/rdf:first ?list ] ] .
+   ?list owl:onProperty ccf:has_member ;
+      owl:someValuesFrom ?x .
+}

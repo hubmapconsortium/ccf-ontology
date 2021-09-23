@@ -1,0 +1,13 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?spatial_entity ?x_dimension ?y_dimension ?z_dimension ?dimension_unit WHERE {
+   ?spatial_entity a ccf:spatial_entity_of_left_cardiac_atrium ;
+      ccf:x_dimension ?x_dimension ;
+      ccf:y_dimension ?y_dimension ;
+      ccf:z_dimension ?z_dimension ;
+      ccf:dimension_unit ?dimension_unit .
+}

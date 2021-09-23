@@ -521,10 +521,26 @@
     
 
 
+    <!-- http://purl.org/ccf/scaling_unit -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ccf/scaling_unit">
+        <rdfs:label xml:lang="en">scaling unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/ccf/section_count -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ccf/section_count">
         <rdfs:label xml:lang="en">section count</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ccf/section_number -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ccf/section_number">
+        <rdfs:label xml:lang="en">section number</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -545,10 +561,34 @@
     
 
 
+    <!-- http://purl.org/ccf/technology -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ccf/technology">
+        <rdfs:label xml:lang="en">technology</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ccf/thumbnail -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ccf/thumbnail">
+        <rdfs:label xml:lang="en">thumbnail</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/ccf/title -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ccf/title">
         <rdfs:label xml:lang="en">title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ccf/translation_unit -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ccf/translation_unit">
+        <rdfs:label xml:lang="en">translation unit</rdfs:label>
     </owl:DatatypeProperty>
     
 

@@ -8,7 +8,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.org/ccf/ccf-bso.owl>
-<http://purl.org/ccf/releases/1.0.0-alpha/ccf-bso.owl>
+<http://purl.org/ccf/releases/2.0.0-alpha/ccf-bso.owl>
 Import(<http://purl.org/ccf/data/asctb.owl>)
 Import(<http://purl.org/ccf/extras/ccf_provision.owl>)
 Import(<http://purl.org/ccf/imports/cl_import.owl>)

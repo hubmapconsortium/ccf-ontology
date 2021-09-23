@@ -6,7 +6,6 @@ Prefix(hp:=<http://purl.obolibrary.org/obo/hp#>)
 Prefix(w3:=<http://www.w3.org/>)
 Prefix(bfo:=<http://www.ifomis.org/bfo/1.1#>)
 Prefix(ccf:=<http://purl.org/ccf/>)
-Prefix(ccfp:=<http://purl.org/ccf/provisional/>)
 Prefix(efo:=<http://www.ebi.ac.uk/efo/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
@@ -15,6 +14,7 @@ Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(Hugo:=<http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#>)
 Prefix(base:=<http://www.ifomis.org/bfo/1.1>)
+Prefix(ccfp:=<http://purl.org/ccf/provisional/>)
 Prefix(cito:=<http://purl.org/spar/cito/>)
 Prefix(core:=<http://purl.obolibrary.org/obo/core#>)
 Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
@@ -42,7 +42,8 @@ Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
 Prefix(oboInOwl1:=<http://geneontology.org/formats/oboInOwl#>)
 
 
-Ontology(<http://purl.org/ccf/ccf.owl>
+Ontology(<http://purl.org/ccf/ccf-edit.owl>
+<http://purl.org/ccf/releases/2.0.0-alpha/ccf-edit.owl>
 Import(<http://purl.org/ccf/ccf-bso.owl>)
 Import(<http://purl.org/ccf/ccf-relations.owl>)
 Import(<http://purl.org/ccf/ccf-sco.owl>)
@@ -143,7 +144,7 @@ AnnotationAssertion(obo:IAO_0000232 obo:BFO_0000180 "Really of interest to devel
 AnnotationAssertion(rdfs:label obo:BFO_0000180 "BFO CLIF specification label"@en)
 SubAnnotationPropertyOf(obo:BFO_0000180 rdfs:label)
 
-# Annotation Property: obo:IAO_0000111 (editor preferred term)
+# Annotation Property: obo:IAO_0000111 (editor preferred label)
 
 AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000111 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term"@en)
@@ -178,7 +179,7 @@ AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative term"@en)
 AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000119 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
 
-# Annotation Property: obo:IAO_0000232 (curator note)
+# Annotation Property: obo:IAO_0000232 (curator notes)
 
 AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000232 obo:iao.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000232 "curator note"@en)

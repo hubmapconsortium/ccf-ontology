@@ -27,7 +27,7 @@ Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
 
 
 Ontology(<http://purl.org/ccf/ccf-sco.owl>
-<http://purl.org/ccf/releases/1.0.0-alpha/ccf-sco.owl>
+<http://purl.org/ccf/releases/2.0.0-alpha/ccf-sco.owl>
 Import(<http://purl.org/ccf/imports/efo_import.owl>)
 Import(<http://purl.org/ccf/imports/loinc_import.owl>)
 Import(<http://purl.org/ccf/imports/obi_import.owl>)

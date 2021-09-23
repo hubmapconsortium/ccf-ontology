@@ -314,9 +314,9 @@ subsets/%.obo: subsets/%.owl
 # ----------------------------------------
 # copy from staging area (this directory) to top-level
 .PHONY: release
-release: $(ONT).owl $(ONT).obo
+release: $(ONT).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release)
-	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
+	cp $^ $(RELEASEDIR) && cp imports/*.owl $(RELEASEDIR)/imports
 
 # ----------------------------------------
 # Sparql queries: Q/C

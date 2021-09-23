@@ -8,8 +8,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/ccf/data/asctb.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-09/data/asctb.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-23/data/asctb.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -20968,7 +20968,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/ccf/is_gene_marker_of_cell_type"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/provisional/ddffa379f91f5eca81f3ca2a56931dd7"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/provisional/bcc0610eb748545014c22d3957615032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ccf/is_gene_marker_of_cell_type"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/provisional/e7ad287f6ea0ce5253f3dbb5add0f083"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -20998,7 +21004,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/ccf/is_protein_marker_of_cell_type"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/provisional/ddffa379f91f5eca81f3ca2a56931dd7"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/provisional/bcc0610eb748545014c22d3957615032"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ccf/is_protein_marker_of_cell_type"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/provisional/e7ad287f6ea0ce5253f3dbb5add0f083"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -23156,31 +23168,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4715"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4715"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49911"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49911"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49913"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49913"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49916"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49916"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/7272"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma7272"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -23598,25 +23610,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/7272"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma7272"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83532"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83532"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83539"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -24014,7 +24026,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -28649,19 +28661,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/3823"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma3823"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/3851"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma3851"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/76767"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma76767"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -29619,7 +29631,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/7272"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma7272"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -32031,37 +32043,37 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4715"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4715"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49911"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49911"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49913"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49913"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49916"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49916"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83532"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83532"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -46051,6 +46063,25 @@
     
 
 
+    <!-- http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_of_ascending_colon -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_of_ascending_colon">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ccf/has_member"/>
+                        <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/characterizing_biomarker_set"/>
+        <rdfs:label>characterizing biomarker set of pericyte cell of ascending colon</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_of_heart -->
 
     <owl:Class rdf:about="http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_of_heart">
@@ -46074,6 +46105,25 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ccf/characterizing_biomarker_set"/>
         <rdfs:label>characterizing biomarker set of pericyte cell of heart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_of_hepatic_flexure_of_colon -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_of_hepatic_flexure_of_colon">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ccf/has_member"/>
+                        <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/characterizing_biomarker_set"/>
+        <rdfs:label>characterizing biomarker set of pericyte cell of hepatic flexure of colon</rdfs:label>
     </owl:Class>
     
 
@@ -46176,25 +46226,6 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ccf/characterizing_biomarker_set"/>
         <rdfs:label>characterizing biomarker set of pericyte cell of spleen</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_off_large_intestine -->
-
-    <owl:Class rdf:about="http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_off_large_intestine">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/ccf/has_member"/>
-                        <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/characterizing_biomarker_set"/>
-        <rdfs:label>characterizing biomarker set of pericyte cell off large intestine</rdfs:label>
     </owl:Class>
     
 
@@ -50770,31 +50801,31 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49911"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49911"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49913"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49913"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49914"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49914"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49916"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49916"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/7272"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma7272"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -51648,313 +51679,313 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/10787"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma10787"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/12852"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma12852"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/13279"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma13279"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/13281"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma13281"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/14290"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma14290"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/14296"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma14296"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/14319"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma14319"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/14324"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma14324"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/22911"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma22911"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/22914"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma22914"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/22947"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma22947"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/22950"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma22950"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/22954"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma22954"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/22958"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma22958"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/22967"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma22967"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/23058"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma23058"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4733"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4733"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4734"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4734"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4735"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4735"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4736"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4736"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4737"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4737"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4738"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4738"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4739"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4739"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4740"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4740"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4741"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4741"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4744"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4744"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4746"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4746"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4751"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4751"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4761"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4761"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4799"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4799"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/4800"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma4800"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49474"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49474"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49477"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49477"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49480"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49480"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49483"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49483"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49628"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49628"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49660"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49660"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/49669"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma49669"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/50329"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma50329"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/50330"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma50330"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/50337"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma50337"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/50802"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma50802"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/50803"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma50803"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/50855"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma50855"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/50858"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma50858"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/67977"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma67977"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/68848"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma68848"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/76736"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma76736"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/8644"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma8644"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/8645"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma8645"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/8646"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma8646"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/9284"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma9284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -52290,7 +52321,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/7272"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma7272"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -52911,6 +52942,56 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/bcc0610eb748545014c22d3957615032 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/bcc0610eb748545014c22d3957615032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001962"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002439"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012375"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012398"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_characterizing_biomarker_set"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_of_ascending_colon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_gene_marker"/>
+                <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_protein_marker"/>
+                <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/bef2451986ca6ef3912f02f8eecdb8fc -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/bef2451986ca6ef3912f02f8eecdb8fc">
@@ -53362,19 +53443,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83532"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83532"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83539"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -54922,19 +55003,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83532"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83532"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83539"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -55091,62 +55172,6 @@
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/ddb7ff7b8a72424a4c571232f5b4de78">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ccf/provisional/ddffa379f91f5eca81f3ca2a56931dd7 -->
-
-    <owl:Class rdf:about="http://purl.org/ccf/provisional/ddffa379f91f5eca81f3ca2a56931dd7">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001962"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002439"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007177"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012375"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012398"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_characterizing_biomarker_set"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_off_large_intestine"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_gene_marker"/>
-                <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_protein_marker"/>
-                <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -55592,7 +55617,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/15736"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma15736"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -55925,6 +55950,38 @@
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/e743f79095c07e12b4311f6d3c520e36">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/e7ad287f6ea0ce5253f3dbb5add0f083 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/e7ad287f6ea0ce5253f3dbb5add0f083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0007177"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_characterizing_biomarker_set"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/characterizing_biomarker_set_of_pericyte_cell_of_hepatic_flexure_of_colon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_gene_marker"/>
+                <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/ccf/cell_type_has_protein_marker"/>
+                <owl:someValuesFrom rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl#HGNC_8804"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -58668,37 +58725,37 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/15736"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma15736"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/3823"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma3823"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/3851"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma3851"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/7272"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma7272"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/76767"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma76767"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83539"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -60538,19 +60595,19 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83532"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83532"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83539"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -62730,7 +62787,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -65266,13 +65323,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83531"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/83539"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma83539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -66262,25 +66319,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/15736"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma15736"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/3823"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma3823"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/3851"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma3851"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/76767"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/sig/ont/fma/fma76767"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -66447,393 +66504,393 @@
     
 
 
-    <!-- http://purl.org/sig/ont/fma/10787 -->
+    <!-- http://purl.org/sig/ont/fma/fma10787 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/10787"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma10787"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/12852 -->
+    <!-- http://purl.org/sig/ont/fma/fma12852 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/12852"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma12852"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/13279 -->
+    <!-- http://purl.org/sig/ont/fma/fma13279 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/13279"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma13279"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/13281 -->
+    <!-- http://purl.org/sig/ont/fma/fma13281 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/13281"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma13281"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/14290 -->
+    <!-- http://purl.org/sig/ont/fma/fma14290 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/14290"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma14290"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/14296 -->
+    <!-- http://purl.org/sig/ont/fma/fma14296 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/14296"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma14296"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/14319 -->
+    <!-- http://purl.org/sig/ont/fma/fma14319 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/14319"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma14319"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/14324 -->
+    <!-- http://purl.org/sig/ont/fma/fma14324 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/14324"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma14324"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/15736 -->
+    <!-- http://purl.org/sig/ont/fma/fma15736 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/15736"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma15736"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/22911 -->
+    <!-- http://purl.org/sig/ont/fma/fma22911 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/22911"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma22911"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/22914 -->
+    <!-- http://purl.org/sig/ont/fma/fma22914 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/22914"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma22914"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/22947 -->
+    <!-- http://purl.org/sig/ont/fma/fma22947 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/22947"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma22947"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/22950 -->
+    <!-- http://purl.org/sig/ont/fma/fma22950 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/22950"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma22950"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/22954 -->
+    <!-- http://purl.org/sig/ont/fma/fma22954 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/22954"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma22954"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/22958 -->
+    <!-- http://purl.org/sig/ont/fma/fma22958 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/22958"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma22958"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/22967 -->
+    <!-- http://purl.org/sig/ont/fma/fma22967 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/22967"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma22967"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/23058 -->
+    <!-- http://purl.org/sig/ont/fma/fma23058 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/23058"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23058"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/3823 -->
+    <!-- http://purl.org/sig/ont/fma/fma3823 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/3823"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma3823"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/3851 -->
+    <!-- http://purl.org/sig/ont/fma/fma3851 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/3851"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma3851"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4715 -->
+    <!-- http://purl.org/sig/ont/fma/fma4715 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4715"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4715"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4733 -->
+    <!-- http://purl.org/sig/ont/fma/fma4733 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4733"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4733"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4734 -->
+    <!-- http://purl.org/sig/ont/fma/fma4734 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4734"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4734"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4735 -->
+    <!-- http://purl.org/sig/ont/fma/fma4735 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4735"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4735"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4736 -->
+    <!-- http://purl.org/sig/ont/fma/fma4736 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4736"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4736"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4737 -->
+    <!-- http://purl.org/sig/ont/fma/fma4737 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4737"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4737"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4738 -->
+    <!-- http://purl.org/sig/ont/fma/fma4738 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4738"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4738"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4739 -->
+    <!-- http://purl.org/sig/ont/fma/fma4739 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4739"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4739"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4740 -->
+    <!-- http://purl.org/sig/ont/fma/fma4740 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4740"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4740"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4741 -->
+    <!-- http://purl.org/sig/ont/fma/fma4741 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4741"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4741"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4744 -->
+    <!-- http://purl.org/sig/ont/fma/fma4744 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4744"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4744"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4746 -->
+    <!-- http://purl.org/sig/ont/fma/fma4746 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4746"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4746"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4751 -->
+    <!-- http://purl.org/sig/ont/fma/fma4751 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4751"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4751"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4761 -->
+    <!-- http://purl.org/sig/ont/fma/fma4761 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4761"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4761"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4799 -->
+    <!-- http://purl.org/sig/ont/fma/fma4799 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4799"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4799"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/4800 -->
+    <!-- http://purl.org/sig/ont/fma/fma4800 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/4800"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma4800"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49474 -->
+    <!-- http://purl.org/sig/ont/fma/fma49474 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49474"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49474"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49477 -->
+    <!-- http://purl.org/sig/ont/fma/fma49477 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49477"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49477"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49480 -->
+    <!-- http://purl.org/sig/ont/fma/fma49480 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49480"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49480"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49483 -->
+    <!-- http://purl.org/sig/ont/fma/fma49483 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49483"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49483"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49628 -->
+    <!-- http://purl.org/sig/ont/fma/fma49628 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49628"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49628"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49660 -->
+    <!-- http://purl.org/sig/ont/fma/fma49660 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49660"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49660"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49669 -->
+    <!-- http://purl.org/sig/ont/fma/fma49669 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49669"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49669"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49911 -->
+    <!-- http://purl.org/sig/ont/fma/fma49911 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49911"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49911"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49913 -->
+    <!-- http://purl.org/sig/ont/fma/fma49913 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49913"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49913"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49914 -->
+    <!-- http://purl.org/sig/ont/fma/fma49914 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49914"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49914"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/49916 -->
+    <!-- http://purl.org/sig/ont/fma/fma49916 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/49916"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma49916"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/50329 -->
+    <!-- http://purl.org/sig/ont/fma/fma50329 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/50329"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50329"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/50330 -->
+    <!-- http://purl.org/sig/ont/fma/fma50330 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/50330"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50330"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/50337 -->
+    <!-- http://purl.org/sig/ont/fma/fma50337 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/50337"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50337"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/50802 -->
+    <!-- http://purl.org/sig/ont/fma/fma50802 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/50802"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50802"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/50803 -->
+    <!-- http://purl.org/sig/ont/fma/fma50803 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/50803"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50803"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/50855 -->
+    <!-- http://purl.org/sig/ont/fma/fma50855 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/50855"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50855"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/50858 -->
+    <!-- http://purl.org/sig/ont/fma/fma50858 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/50858"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50858"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/67977 -->
+    <!-- http://purl.org/sig/ont/fma/fma67977 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/67977"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma67977"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/68848 -->
+    <!-- http://purl.org/sig/ont/fma/fma68848 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/68848"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma68848"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/7272 -->
+    <!-- http://purl.org/sig/ont/fma/fma7272 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/7272"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma7272"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/76736 -->
+    <!-- http://purl.org/sig/ont/fma/fma76736 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/76736"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma76736"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/76767 -->
+    <!-- http://purl.org/sig/ont/fma/fma76767 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/76767"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma76767"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/83531 -->
+    <!-- http://purl.org/sig/ont/fma/fma83531 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/83531"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma83531"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/83532 -->
+    <!-- http://purl.org/sig/ont/fma/fma83532 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/83532"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma83532"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/83539 -->
+    <!-- http://purl.org/sig/ont/fma/fma83539 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/83539"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma83539"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/8644 -->
+    <!-- http://purl.org/sig/ont/fma/fma8644 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/8644"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma8644"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/8645 -->
+    <!-- http://purl.org/sig/ont/fma/fma8645 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/8645"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma8645"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/8646 -->
+    <!-- http://purl.org/sig/ont/fma/fma8646 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/8646"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma8646"/>
     
 
 
-    <!-- http://purl.org/sig/ont/fma/9284 -->
+    <!-- http://purl.org/sig/ont/fma/fma9284 -->
 
-    <owl:Class rdf:about="http://purl.org/sig/ont/fma/9284"/>
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma9284"/>
 </rdf:RDF>
 
 

@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.org/ccf/extras/ccf_provision.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-13/extras/ccf_provision.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-13</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-23/extras/ccf_provision.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-23</owl:versionInfo>
     </owl:Ontology>
     
 

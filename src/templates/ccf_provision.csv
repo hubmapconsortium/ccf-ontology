@@ -514,7 +514,18 @@ ccfp:7df47bd84c629dd40b369c17e279c5ef,mast cell of kidney,mast cell of kidney,CT
 ccfp:5de7d0a7824b0529d94580b80e9c1d4a,subepithelial membrane,subepithelial membrane,CT,true,,ccfp:provisional_entity
 ccfp:7cdc338367d53bf5a274482ba22b8d2c,pericryptal fibroblastic sheath,pericryptal fibroblastic sheath,CT,true,,ccfp:provisional_entity
 ccfp:bf46294c8627434e5dfe9460c57c730e,endothelial cell of lymphatic vessel of large intestine,endothelial cell of lymphatic vessel of large intestine,CT,true,,ccfp:provisional_entity
-ccfp:ddffa379f91f5eca81f3ca2a56931dd7,pericyte cell off large intestine,pericyte cell off large intestine,CT,true,,ccfp:provisional_entity
+ccfp:13949fe4f94f21d1b12dee7d6e3c1c1c,pericyte cell of anal canal,pericyte cell of anal canal,CT,true,,ccfp:provisional_entity
+ccfp:bcc0610eb748545014c22d3957615032,pericyte cell of ascending colon,pericyte cell of ascending colon,CT,true,,ccfp:provisional_entity
+ccfp:345d6cbf8fd1c360327dc2f98bd6d647,pericyte cell of cecum,pericyte cell of cecum,CT,true,,ccfp:provisional_entity
+ccfp:bcf0bf6c246ed1404082ea23aeaa19ae,pericyte cell of descending colon,pericyte cell of descending colon,CT,true,,ccfp:provisional_entity
+ccfp:e7ad287f6ea0ce5253f3dbb5add0f083,pericyte cell of hepatic flexure of colon,pericyte cell of hepatic flexure of colon,CT,true,,ccfp:provisional_entity
+ccfp:d91da0ef4a89bc2d384772b58cb0fa14,pericyte cell of ileocecal valve,pericyte cell of ileocecal valve,CT,true,,ccfp:provisional_entity
+ccfp:9e5deccac8dbaace9b656019f9ac0abc,pericyte cell of longitudinal muscle layer,pericyte cell of longitudinal muscle layer,CT,true,,ccfp:provisional_entity
+ccfp:855172240c45a0e456dd39fa22559720,pericyte cell of rectum,pericyte cell of rectum,CT,true,,ccfp:provisional_entity
+ccfp:25c0837c8145651f17eca44598ff513d,pericyte cell of sigmoid colon,pericyte cell of sigmoid colon,CT,true,,ccfp:provisional_entity
+ccfp:b4f6b0380ddf03272889228840c04eee,pericyte cell of splenic flexure of colon,pericyte cell of splenic flexure of colon,CT,true,,ccfp:provisional_entity
+ccfp:a755b66412d64b2a6ac362a415a8e3d4,pericyte cell of transverse colon,pericyte cell of transverse colon,CT,true,,ccfp:provisional_entity
+ccfp:3152831458430dce496cf6618256e5b0,pericyte cell of vermiform appendix,pericyte cell of vermiform appendix,CT,true,,ccfp:provisional_entity
 ccfp:28f527f56922ec4dede5d238f2c9ff41,fibroblast of large intestine,fibroblast of large intestine,CT,true,,ccfp:provisional_entity
 ccfp:168471b9834847eb901ab1ea2b5af8cb,ganglion,ganglion,CT,true,,ccfp:provisional_entity
 ccfp:4888fc2308049b3d96918c65534001b6,macrophage of large intestine,macrophage of large intestine,CT,true,,ccfp:provisional_entity

@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://purl.org/ccf/extras/ccf_provision.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-09/extras/ccf_provision.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-13/extras/ccf_provision.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -315,6 +315,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exc L6 FEZF2 POGK</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exc L6 FEZF2 POGK</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/a755b66412d64b2a6ac362a415a8e3d4 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/a755b66412d64b2a6ac362a415a8e3d4">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of transverse colon</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of transverse colon</skos:prefLabel>
     </owl:Class>
     
 
@@ -728,6 +740,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/b4f6b0380ddf03272889228840c04eee -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/b4f6b0380ddf03272889228840c04eee">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of splenic flexure of colon</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of splenic flexure of colon</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/b505e4aae0e4e5b9e11b77cbd1ef08ac -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/b505e4aae0e4e5b9e11b77cbd1ef08ac">
@@ -989,6 +1013,30 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exc L3-5 FEZF2 LINC01107</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exc L3-5 FEZF2 LINC01107</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/bcc0610eb748545014c22d3957615032 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/bcc0610eb748545014c22d3957615032">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of ascending colon</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of ascending colon</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/bcf0bf6c246ed1404082ea23aeaa19ae -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/bcf0bf6c246ed1404082ea23aeaa19ae">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of descending colon</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of descending colon</skos:prefLabel>
     </owl:Class>
     
 
@@ -1991,6 +2039,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/d91da0ef4a89bc2d384772b58cb0fa14 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/d91da0ef4a89bc2d384772b58cb0fa14">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of ileocecal valve</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of ileocecal valve</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/da3a4705fb57a3c2c25c63cccc17245f -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/da3a4705fb57a3c2c25c63cccc17245f">
@@ -2107,18 +2167,6 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collecting ducts of tracheal submucosal gland</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collecting ducts of tracheal submucosal gland</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ccf/provisional/ddffa379f91f5eca81f3ca2a56931dd7 -->
-
-    <owl:Class rdf:about="http://purl.org/ccf/provisional/ddffa379f91f5eca81f3ca2a56931dd7">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
-        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
-        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell off large intestine</rdfs:label>
-        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell off large intestine</skos:prefLabel>
     </owl:Class>
     
 
@@ -2456,6 +2504,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capillaries, venules</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vasculature</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/e7ad287f6ea0ce5253f3dbb5add0f083 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/e7ad287f6ea0ce5253f3dbb5add0f083">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of hepatic flexure of colon</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of hepatic flexure of colon</skos:prefLabel>
     </owl:Class>
     
 
@@ -3942,6 +4002,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/13949fe4f94f21d1b12dee7d6e3c1c1c -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/13949fe4f94f21d1b12dee7d6e3c1c1c">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of anal canal</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of anal canal</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/149e28f6aec19ddd5f0c82cc5cd3ba93 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/149e28f6aec19ddd5f0c82cc5cd3ba93">
@@ -4410,6 +4482,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/25c0837c8145651f17eca44598ff513d -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/25c0837c8145651f17eca44598ff513d">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of sigmoid colon</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of sigmoid colon</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/25fea2693cfc8a889f551de33f9577f3 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/25fea2693cfc8a889f551de33f9577f3">
@@ -4760,6 +4844,18 @@
     
 
 
+    <!-- http://purl.org/ccf/provisional/3152831458430dce496cf6618256e5b0 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/3152831458430dce496cf6618256e5b0">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of vermiform appendix</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of vermiform appendix</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ccf/provisional/319beccb9279a7cc7ef866d7efd224b7 -->
 
     <owl:Class rdf:about="http://purl.org/ccf/provisional/319beccb9279a7cc7ef866d7efd224b7">
@@ -4840,6 +4936,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B cell of dermal skin-associated lymphoid tissue</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B cell of dermal skin-associated lymphoid tissue</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/345d6cbf8fd1c360327dc2f98bd6d647 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/345d6cbf8fd1c360327dc2f98bd6d647">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of cecum</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of cecum</skos:prefLabel>
     </owl:Class>
     
 
@@ -7204,6 +7312,18 @@
         <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jugular branch of ascending pharyngeal artery</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jugular branch of ascending pharyngeal artery</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/provisional/855172240c45a0e456dd39fa22559720 -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/provisional/855172240c45a0e456dd39fa22559720">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/provisional/provisional_entity"/>
+        <ccf:asctb_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CT</ccf:asctb_type>
+        <ccf:is_provisional rdf:datatype="http://www.w3.org/2001/XMLSchema#string">true</ccf:is_provisional>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of rectum</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pericyte cell of rectum</skos:prefLabel>
     </owl:Class>
     
 

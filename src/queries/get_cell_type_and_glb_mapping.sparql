@@ -1,0 +1,20 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?cell_type ?label ?file_name WHERE {
+   ?cell_type rdfs:subClassOf obo:CL_0000000 , [
+         owl:onProperty obo:RO_0001025 ;  # located_in
+         owl:someValuesFrom ?anatomical_structure ] ;
+              rdfs:label ?label .
+   ?spatial_entity rdfs:subClassOf [
+         owl:onProperty ccf:representation_of ;
+         owl:someValuesFrom ?anatomical_structure ] .
+   OPTIONAL {
+      ?instance rdf:type ?spatial_entity ;
+                ccf:has_object_reference ?obj_ref .
+      ?obj_ref ccf:file_name ?file_name
+   }
+}

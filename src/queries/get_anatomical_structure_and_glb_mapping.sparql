@@ -4,7 +4,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?spatial_entity ?anatomical_structure ?instance ?file_name WHERE {
+SELECT DISTINCT ?anatomical_structure ?file_name WHERE {
    ?spatial_entity rdfs:subClassOf [
          owl:onProperty ccf:representation_of ;
          owl:someValuesFrom ?anatomical_structure ] ;

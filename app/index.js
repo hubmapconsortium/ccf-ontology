@@ -32,7 +32,7 @@ app.get('/getCellType', function(req, res) {
     if (code === 0)
       res.send(Buffer.concat(output));
     else
-      res.send(500); // when the script fails, generate a Server Error HTTP response
+      res.send([]); // when the script fails, suppress it!
   });
 });
 

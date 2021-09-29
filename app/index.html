@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      .container {
+        width: 650px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="biomarkers">Biomarkers:</label><br/>
+      <textarea id="biomarkers" name="biomarkers" rows="4" cols="80"></textarea><br/>
+      <button type="button" id="find">Find</button><br/><br/>
+    </form>
+    <label for="cell-type">Cell type:</label><br/>
+    <select type="text" id="cell-type-dropdown" name="cell-type"></select><br/>
+    <label for="anatomical-structures">The locations of the cell type:</label><br/>
+    <textarea id="anatomical-structures" name="anatomical-structures" rows="5" cols="80" disabled></textarea><br/>
+    <label for="as-model"></label>Organ visual:<br/>
+    <div class="container">
+      <babylon id="as-model" model="https://raw.githubusercontent.com/hubmapconsortium/ccf-ontology/main/app/resources/empty.glb"></babylon>
+    </div>
+
+    <script>
+      $('#find').click(function() {
+        $('#cell-type-dropdown').empty();
+        $.getJSON('http://localhost:3000/getCellType', { symbols : $('#biomarkers').val() },
+          function(response) {
+            $.each(response, function (index, value) {
+              $('#cell-type-dropdown').append($('<option></option>')
+                .attr('value', JSON.stringify(value))
+                .text(value['cell_type']));
+            });
+
+            var anatomical_structures = response[0]['anatomical_structures'];
+            var glb_files = response[0]['glb_files'];
+            var first_glb_file = null;
+            if (glb_files != null) {
+              first_glb_file = glb_files.split(", ")[0];
+            }
+
+            $('#anatomical-structures').val(anatomical_structures);
+            if (first_glb_file != null) {
+              BabylonViewer.viewerManager
+                .getViewerPromiseById("as-model")
+                .then(function (viewer) {
+                    viewer.loadModel({
+                     url: first_glb_file
+                    });
+                  });
+            }
+          });
+      });
+
+      $('#cell-type-dropdown').change(function(e) {
+          var value = JSON.parse(e.target.value);
+          var anatomical_structures = value['anatomical_structures'];
+          var glb_files = value['glb_files'];
+          var first_glb_file = null;
+          if (glb_files != null) {
+            first_glb_file = glb_files.split(", ")[0];
+          }
+
+          $('#anatomical-structures').val(anatomical_structures);
+          if (first_glb_file != null) {
+            BabylonViewer.viewerManager
+              .getViewerPromiseById("as-model")
+              .then(function (viewer) {
+                viewer.loadModel({
+                 url: first_glb_file
+                });
+              });
+          } else {
+            BabylonViewer.viewerManager
+              .getViewerPromiseById("as-model")
+              .then(function (viewer) {
+                viewer.loadModel({
+                  url: "https://raw.githubusercontent.com/hubmapconsortium/ccf-ontology/main/app/resources/empty.glb"
+                });
+              });
+          }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "CCF Query Service",
+  "version": "1.0.0",
+  "description": "An example of an ontology-based application driven by the CCF.owl ontology",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubmapconsortium/ccf-ontology.git"
+  },
+  "author": "Josef Hardi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hubmapconsortium/ccf-ontology/issues"
+  },
+  "homepage": "https://github.com/hubmapconsortium/ccf-ontology",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

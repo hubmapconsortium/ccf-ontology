@@ -1,0 +1,32 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?cell_type (GROUP_CONCAT(DISTINCT ?anatomical_structure; SEPARATOR=", ") AS ?anatomical_structures) (GROUP_CONCAT(DISTINCT ?glb_file; SEPARATOR=", ") AS ?glb_files) WHERE {
+   ?ct rdfs:subClassOf [
+      owl:onProperty ccf:cell_type_has_characterizing_biomarker_set ;
+      owl:someValuesFrom ?characterizing_biomarker_set ] .
+   ?characterizing_biomarker_set owl:equivalentClass/owl:intersectionOf ?list .
+   ?list rdf:rest*/rdf:first/owl:someValuesFrom ?x .
+   FILTER NOT EXISTS {
+      ?list rdf:rest*/rdf:first/owl:someValuesFrom ?element .
+      FILTER ( !(?element IN ({{biomarkers}}) ))
+   } .
+
+   ?ct rdfs:label ?cell_type ;
+       rdfs:subClassOf [
+            owl:onProperty obo:RO_0001025 ;  # located_in
+            owl:someValuesFrom ?as ] .
+   ?as rdfs:label ?anatomical_structure .
+   OPTIONAL {
+      ?spatial_entity rdfs:subClassOf [
+         owl:onProperty ccf:representation_of ;
+         owl:someValuesFrom ?as ] .
+      ?instance rdf:type ?spatial_entity ;
+                ccf:has_object_reference ?obj_ref .
+      ?obj_ref ccf:file_name ?glb_file
+   }
+}
+GROUP BY ?cell_type

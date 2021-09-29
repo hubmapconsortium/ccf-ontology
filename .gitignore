@@ -2,6 +2,9 @@
 .tdb/
 semantic.cache
 bin/
+node_modules/
+
+package-lock.json
 
 *.tmp
 *.tmp.obo

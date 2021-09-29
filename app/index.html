@@ -8,8 +8,8 @@
         font-family: sans-serif;
       }
       .model-container {
-        width: 650px;
-        height: 500px;
+        width: 660px;
+        height: 460px;
         display: none;
       }
     </style>
@@ -40,7 +40,8 @@
       <div id="model-container" class="model-container">
         <label for="as-model"></label>Organ visual:<br/>
         <babylon id="as-model"></babylon>
-      </div>
+      </div><br/>
+      <textarea id="reference-organs" name="reference-organs" row="5" cols="80" disabled></textarea>
     </div>
 
     <script>
@@ -66,9 +67,11 @@
             });
             var anatomical_structures = response[0]['anatomical_structures'];
             var glb_files = response[0]['glb_files'];
+            var reference_organs = response[0]['reference_organs'];
 
             updateAnatomicalStructuresTextArea(anatomical_structures);
             updateOrganVisualViewer(glb_files);
+            updateReferenceOrganTextArea(reference_organs);
           });
       });
 
@@ -76,9 +79,11 @@
           var value = JSON.parse(e.target.value);
           var anatomical_structures = value['anatomical_structures'];
           var glb_files = value['glb_files'];
+          var reference_organs = value['reference_organs'];
 
           updateAnatomicalStructuresTextArea(anatomical_structures);
           updateOrganVisualViewer(glb_files);
+          updateReferenceOrganTextArea(reference_organs);
       });
 
       $('#biomarkers').on('input', function(e) {
@@ -105,6 +110,10 @@
         } else {
           $('#model-container').hide();
         }
+      }
+
+      function updateReferenceOrganTextArea(value) {
+        $('#reference-organs').val(value);
       }
 
       function loadModel(glb_file) {

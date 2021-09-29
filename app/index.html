@@ -32,28 +32,33 @@
       <label id="message" style="color:red;"></label>
     </form>
     <br/><br/>
-    <label for="cell-type">Cell type:</label><br/>
-    <select type="text" id="cell-type-dropdown" name="cell-type"></select><br/>
-    <label for="anatomical-structures">The locations of the cell type:</label><br/>
-    <textarea id="anatomical-structures" name="anatomical-structures" rows="5" cols="80" disabled></textarea><br/>
-    <label for="as-model"></label>Organ visual:<br/>
-    <div id="model-container" class="model-container">
-      <babylon id="as-model"></babylon>
+    <div id="result-container" class="result-container" style="display:none;">
+      <label for="cell-type">Cell type:</label><br/>
+      <select type="text" id="cell-type-dropdown" name="cell-type"></select><br/>
+      <label for="anatomical-structures">The locations of the cell type:</label><br/>
+      <textarea id="anatomical-structures" name="anatomical-structures" rows="5" cols="80" disabled></textarea><br/>
+      <div id="model-container" class="model-container">
+        <label for="as-model"></label>Organ visual:<br/>
+        <babylon id="as-model"></babylon>
+      </div>
     </div>
 
     <script>
       $('#find').click(function() {
         $('#cell-type-dropdown').empty();
         $('#anatomical-structures').val("");
+        $('#result-container').hide();
         $('#model-container').hide();
         $('#message').text("Processing, please wait...")
         $.getJSON('http://localhost:3000/getCellType', { symbols : $('#biomarkers').val() },
           function(response) {
             if (response.length == 0) {
               $('#message').text("No result");
+              $('#result-container').hide();
               return;
             }
             $('#message').text("")
+            $('#result-container').show();
             $.each(response, function (index, value) {
               $('#cell-type-dropdown').append($('<option></option>')
                 .attr('value', JSON.stringify(value))

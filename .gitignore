@@ -1,4 +1,5 @@
 .DS_Store
+.tdb/
 semantic.cache
 bin/
 

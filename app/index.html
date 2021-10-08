@@ -14,7 +14,7 @@
       .organ-visual {
         float: left;
         width: 500px;
-        height: 500px;
+        height: 495px;
         display: none;
       }
       #cell-type-dropdown {
@@ -26,9 +26,32 @@
         font-size: 12pt;
         width: 360px;
       }
-      #glb-model-dropdown, #glb-file-name {
+      #glb-model-dropdown {
         font-size: 12pt;
         width: 500px;
+        padding-bottom: 3px;
+      }
+      /* Tooltip container */
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      /* Tooltip text */
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 500px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+      }
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
       }
     </style>
     <title>Cell Type Finder</title>
@@ -61,8 +84,10 @@
         <div id="model-container" class="organ-visual">
           <label for="as-model"></label>Organ visual:<br/>
           <select type="text" id="glb-model-dropdown" name="glb-model"></select><br/>
-          <input type="text" id="glb-file-name" name="glb-file-name" disabled><br/>
-          <babylon id="as-model"></babylon><br/>
+          <div class="tooltip">
+            <babylon id="as-model"></babylon>
+            <span id="tooltiptext" class="tooltiptext">Tooltip text</span>
+          </div>
         </div>
       </div>
     </div>
@@ -168,7 +193,7 @@
              url: glb_file
             });
           });
-        $('#glb-file-name').val(glb_file);
+        $('#tooltiptext').text("Source file: " + glb_file);
       }
 
       function getFirstGlbFile(glb_files) {

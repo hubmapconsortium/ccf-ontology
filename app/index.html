@@ -26,6 +26,10 @@
         font-size: 12pt;
         width: 360px;
       }
+      #glb-model-dropdown, #glb-file-name {
+        font-size: 12pt;
+        width: 500px;
+      }
     </style>
     <title>Cell Type Finder</title>
   </head>
@@ -56,7 +60,8 @@
         </div>
         <div id="model-container" class="organ-visual">
           <label for="as-model"></label>Organ visual:<br/>
-          <select type="text" id="glb-file-dropdown" name="glb-file"></select><br/>
+          <select type="text" id="glb-model-dropdown" name="glb-model"></select><br/>
+          <input type="text" id="glb-file-name" name="glb-file-name" disabled><br/>
           <babylon id="as-model"></babylon><br/>
         </div>
       </div>
@@ -102,22 +107,22 @@
       });
 
       $('#anatomical-structure-dropdown').change(function(e) {
-        $('#glb-file-dropdown').empty();
-        if (e.target.value != "") {
+        $('#glb-model-dropdown').empty();
+        var glb_data = JSON.parse(e.target.value);
+        if (glb_data.length > 0) {
           $('#model-container').show();
-          var glb_files = e.target.value.split(", ");
-          $.each(glb_files, function (index, value) {
-            $('#glb-file-dropdown').append($('<option></option>')
-                .attr('value', value)
-                .text(value));
+          $.each(glb_data, function (index, arr) {
+            $('#glb-model-dropdown').append($('<option></option>')
+                .attr('value', arr[0])
+                .text(arr[1]));
           });
-          loadModel(glb_files[0]);
+          loadModel(glb_data[0][0]);
         } else {
           $('#model-container').hide();
         }
       });
 
-      $('#glb-file-dropdown').change(function(e) {
+      $('#glb-model-dropdown').change(function(e) {
         updateOrganVisualViewer(e.target.value);
       });
 
@@ -132,12 +137,17 @@
             var anatomical_structure = object['anatomical_structure'];
             if (!$('#anatomical-structure-dropdown option[value="' + anatomical_structure + '"]').length) {
               // var glb_file = getFirstGlbFile(object['glb_files']);
-              glb_files = "";
+              glb_files = [];
               if (object['glb_files'] != null) {
-                glb_files = object['glb_files'];
+                glb_files = object['glb_files'].split(", ");
               }
+              subpaths = [];
+              if (object['subpaths'] != null) {
+                subpaths = object['subpaths'].split(", ");
+              }
+              glb_data = alternateMerging(glb_files, subpaths);
               $('#anatomical-structure-dropdown').append($('<option></option>')
-                  .attr('value', glb_files)
+                  .attr('value', JSON.stringify(glb_data))
                   .text(anatomical_structure));
             }
           }
@@ -158,6 +168,7 @@
              url: glb_file
             });
           });
+        $('#glb-file-name').val(glb_file);
       }
 
       function getFirstGlbFile(glb_files) {
@@ -166,6 +177,14 @@
           first_glb_file = glb_files.split(", ")[0];
         }
         return first_glb_file;
+      }
+
+      function alternateMerging(arr1, arr2) {
+        arr3 = [];
+        for (var i = 0; i < arr1.length; i++) {
+          arr3.push([arr1[i], arr2[i]]);
+        }
+        return arr3;
       }
     </script>
   </body>

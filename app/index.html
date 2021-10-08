@@ -7,14 +7,20 @@
       body {
         font-family: sans-serif;
       }
+      .cell-type-name {
+        float: left;
+        width: 380px;
+        height: 500px;
+      }
       .organ-name {
         float: left;
         width: 380px;
+        height: 500px;
       }
       .organ-visual {
         float: left;
         width: 500px;
-        height: 495px;
+        height: 500px;
         display: none;
       }
       #cell-type-dropdown {
@@ -74,9 +80,11 @@
     </form>
     <br/><br/>
     <div id="result-container" class="result-container" style="display:none;">
-      <label for="cell-type">Cell types that are characterized by the biomarkers:</label><br/>
-      <select type="text" id="cell-type-dropdown" name="cell-type" size="5"></select><br/>
       <div>
+        <div class="cell-type-name">
+          <label for="cell-type">Cell types that are characterized by the biomarkers:</label><br/>
+          <select type="text" id="cell-type-dropdown" name="cell-type" size="26"></select><br/>
+        </div>
         <div class="organ-name">
           <label for="anatomical-structures">The locations of the selected cell type:</label><br/>
           <select type="text" id="anatomical-structure-dropdown" name="anatomical-structure" size="26"></select><br/>

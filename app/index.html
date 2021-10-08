@@ -7,18 +7,32 @@
       body {
         font-family: sans-serif;
       }
-      .model-container {
-        width: 660px;
-        height: 460px;
+      .organ-name {
+        float: left;
+        width: 380px;
+      }
+      .organ-visual {
+        float: left;
+        width: 500px;
+        height: 500px;
         display: none;
+      }
+      #cell-type-dropdown {
+        font-size: 12pt;
+        width: 360px;
+        margin-bottom: 10px;
+      }
+      #anatomical-structure-dropdown {
+        font-size: 12pt;
+        width: 360px;
       }
     </style>
     <title>Cell Type Finder</title>
   </head>
   <body>
-    <h1>Cell Type Finder</h1>
+    <h2>Cell Type Finder</h2>
     <form>
-      <label for="biomarkers">Biomarkers (separated by commas):</label><br/>
+      <label for="biomarkers">Enter a set of biomarkers to characterize cell types (separated by commas):</label><br/>
       <textarea id="biomarkers" name="biomarkers" rows="4" cols="80"></textarea><br/>
       <label for="examples-dropdown">Use example: </label>
       <select type="text" id="examples-dropdown" name="examples">
@@ -33,24 +47,29 @@
     </form>
     <br/><br/>
     <div id="result-container" class="result-container" style="display:none;">
-      <label for="cell-type">Cell type:</label><br/>
-      <select type="text" id="cell-type-dropdown" name="cell-type"></select><br/>
-      <label for="anatomical-structures">The locations of the cell type:</label><br/>
-      <textarea id="anatomical-structures" name="anatomical-structures" rows="5" cols="80" disabled></textarea><br/>
-      <div id="model-container" class="model-container">
-        <label for="as-model"></label>Organ visual:<br/>
-        <babylon id="as-model"></babylon>
-      </div><br/>
-      <textarea id="reference-organs" name="reference-organs" row="5" cols="80" disabled></textarea>
+      <label for="cell-type">Cell types that are characterized by the biomarkers:</label><br/>
+      <select type="text" id="cell-type-dropdown" name="cell-type" size="5"></select><br/>
+      <div>
+        <div class="organ-name">
+          <label for="anatomical-structures">The locations of the selected cell type:</label><br/>
+          <select type="text" id="anatomical-structure-dropdown" name="anatomical-structure" size="26"></select><br/>
+        </div>
+        <div id="model-container" class="organ-visual">
+          <label for="as-model"></label>Organ visual:<br/>
+          <select type="text" id="glb-file-dropdown" name="glb-file"></select><br/>
+          <babylon id="as-model"></babylon><br/>
+        </div>
+      </div>
     </div>
 
     <script>
       $('#find').click(function() {
         $('#cell-type-dropdown').empty();
-        $('#anatomical-structures').val("");
+        $('#anatomical-structure-dropdown').empty();
         $('#result-container').hide();
         $('#model-container').hide();
         $('#message').text("Processing, please wait...")
+
         $.getJSON('http://localhost:3000/getCellType', { symbols : $('#biomarkers').val() },
           function(response) {
             if (response.length == 0) {
@@ -60,30 +79,18 @@
             }
             $('#message').text("")
             $('#result-container').show();
-            $.each(response, function (index, value) {
-              $('#cell-type-dropdown').append($('<option></option>')
-                .attr('value', JSON.stringify(value))
-                .text(value['cell_type']));
+            $.each(response, function (index, object) {
+              var cell_type = object['cell_type'];
+              if (!$('#cell-type-dropdown option[value="' + cell_type + '"]').length) {
+                $('#cell-type-dropdown').append($('<option></option>')
+                  .attr('value', cell_type)
+                  .text(cell_type));
+              }
             });
-            var anatomical_structures = response[0]['anatomical_structures'];
-            var glb_files = response[0]['glb_files'];
-            var reference_organs = response[0]['reference_organs'];
-
-            updateAnatomicalStructuresTextArea(anatomical_structures);
-            updateOrganVisualViewer(glb_files);
-            updateReferenceOrganTextArea(reference_organs);
+            $('#cell-type-dropdown').change(function(e) {
+              updateAnatomicalStructureModelsDropDown(e.target.value, response);
+            });
           });
-      });
-
-      $('#cell-type-dropdown').change(function(e) {
-          var value = JSON.parse(e.target.value);
-          var anatomical_structures = value['anatomical_structures'];
-          var glb_files = value['glb_files'];
-          var reference_organs = value['reference_organs'];
-
-          updateAnatomicalStructuresTextArea(anatomical_structures);
-          updateOrganVisualViewer(glb_files);
-          updateReferenceOrganTextArea(reference_organs);
       });
 
       $('#biomarkers').on('input', function(e) {
@@ -94,26 +101,53 @@
         updateBiomarkersTextArea(e.target.value);
       });
 
+      $('#anatomical-structure-dropdown').change(function(e) {
+        $('#glb-file-dropdown').empty();
+        if (e.target.value != "") {
+          $('#model-container').show();
+          var glb_files = e.target.value.split(", ");
+          $.each(glb_files, function (index, value) {
+            $('#glb-file-dropdown').append($('<option></option>')
+                .attr('value', value)
+                .text(value));
+          });
+          loadModel(glb_files[0]);
+        } else {
+          $('#model-container').hide();
+        }
+      });
+
+      $('#glb-file-dropdown').change(function(e) {
+        updateOrganVisualViewer(e.target.value);
+      });
+
       function updateBiomarkersTextArea(value) {
         $('#biomarkers').val(value);
       }
 
-      function updateAnatomicalStructuresTextArea(value) {
-        $('#anatomical-structures').val(value);
+      function updateAnatomicalStructureModelsDropDown(value, response) {
+        $('#anatomical-structure-dropdown').empty();
+        $.each(response, function (index, object) {
+          if (object['cell_type'] == value) {
+            var anatomical_structure = object['anatomical_structure'];
+            if (!$('#anatomical-structure-dropdown option[value="' + anatomical_structure + '"]').length) {
+              // var glb_file = getFirstGlbFile(object['glb_files']);
+              glb_files = "";
+              if (object['glb_files'] != null) {
+                glb_files = object['glb_files'];
+              }
+              $('#anatomical-structure-dropdown').append($('<option></option>')
+                  .attr('value', glb_files)
+                  .text(anatomical_structure));
+            }
+          }
+        });
       }
 
       function updateOrganVisualViewer(value) {
-        var first_glb_file = getFirstGlbFile(value);
-        if (first_glb_file != null) {
-          $('#model-container').show();
-          loadModel(first_glb_file);
-        } else {
-          $('#model-container').hide();
+        if (value != "") {
+          loadModel(value);
         }
-      }
-
-      function updateReferenceOrganTextArea(value) {
-        $('#reference-organs').val(value);
       }
 
       function loadModel(glb_file) {
@@ -127,7 +161,7 @@
       }
 
       function getFirstGlbFile(glb_files) {
-        var first_glb_file = null;
+        var first_glb_file = "";
         if (glb_files != null) {
           first_glb_file = glb_files.split(", ")[0];
         }

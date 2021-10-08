@@ -4,9 +4,10 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?cell_type 
-   (GROUP_CONCAT(DISTINCT ?anatomical_structure; SEPARATOR=", ") AS ?anatomical_structures)
+SELECT DISTINCT ?cell_type ?anatomical_structure
+#   (GROUP_CONCAT(DISTINCT ?anatomical_structure; SEPARATOR=", ") AS ?anatomical_structures)
    (GROUP_CONCAT(DISTINCT ?glb_file; SEPARATOR=", ") AS ?glb_files)
+   (GROUP_CONCAT(DISTINCT ?subpath; SEPARATOR=", ") AS ?subpaths)
    (GROUP_CONCAT(DISTINCT ?reference_organ; SEPARATOR=", ") AS ?reference_organs) 
 WHERE {
    ?ct rdfs:subClassOf [
@@ -25,14 +26,17 @@ WHERE {
             owl:someValuesFrom ?as ] .
    ?as rdfs:label ?anatomical_structure .
 
-   ?spatial_entity rdfs:subClassOf [
-         owl:onProperty ccf:representation_of ;
-         owl:someValuesFrom ?as ] .
-   
-   ?instance rdf:type ?spatial_entity ;
-             ccf:has_object_reference ?obj_ref ;
-             ccf:has_reference_organ ?reference_organ .
+   OPTIONAL {
+      ?spatial_entity rdfs:subClassOf [
+            owl:onProperty ccf:representation_of ;
+            owl:someValuesFrom ?as ] .
+      
+      ?instance rdf:type ?spatial_entity ;
+                ccf:has_object_reference ?obj_ref ;
+                ccf:has_reference_organ ?reference_organ .
 
-   ?obj_ref ccf:file_name ?glb_file .
+      ?obj_ref ccf:file_name ?glb_file ;
+               ccf:file_subpath ?subpath .
+   }
 }
-GROUP BY ?cell_type
+GROUP BY ?cell_type ?anatomical_structure

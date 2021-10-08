@@ -7,6 +7,9 @@
       body {
         font-family: sans-serif;
       }
+      h2 {
+        margin-bottom: 5px;
+      }
       .cell-type-name {
         float: left;
         width: 380px;
@@ -22,6 +25,9 @@
         width: 500px;
         height: 500px;
         display: none;
+      }
+      #biomarkers {
+        font-size: 18pt;
       }
       #cell-type-dropdown {
         font-size: 12pt;
@@ -64,9 +70,10 @@
   </head>
   <body>
     <h2>Cell Type Finder</h2>
+    <span style="font-size:11pt;padding-bottom:30px;"><i>A proof-of-concept application that finds the connections between anatomical structures, cell types and biomarkers based on the CCF ontology</i></span>
     <form>
-      <label for="biomarkers">Enter a set of biomarkers to characterize cell types (separated by commas):</label><br/>
-      <textarea id="biomarkers" name="biomarkers" rows="4" cols="80"></textarea><br/>
+      <label for="biomarkers">Enter a set of biomarkers that characterizes a cell type (separated by commas):</label><br/>
+      <textarea id="biomarkers" name="biomarkers" rows="4" cols="50"></textarea><br/>
       <label for="examples-dropdown">Use example: </label>
       <select type="text" id="examples-dropdown" name="examples">
         <option value="">--- Please select an example ---</option>
@@ -78,19 +85,20 @@
       <button type="button" id="find">Find</button>&nbsp;&nbsp;
       <label id="message" style="color:red;"></label>
     </form>
-    <br/><br/>
+    <br/>
     <div id="result-container" class="result-container" style="display:none;">
+      <h3>Query result</h3>
       <div>
         <div class="cell-type-name">
           <label for="cell-type">Cell types that are characterized by the biomarkers:</label><br/>
           <select type="text" id="cell-type-dropdown" name="cell-type" size="26"></select><br/>
         </div>
         <div class="organ-name">
-          <label for="anatomical-structures">The locations of the selected cell type:</label><br/>
+          <label for="anatomical-structures">The organs of the selected cell type:</label><br/>
           <select type="text" id="anatomical-structure-dropdown" name="anatomical-structure" size="26"></select><br/>
         </div>
         <div id="model-container" class="organ-visual">
-          <label for="as-model"></label>Organ visual:<br/>
+          <label for="as-model"></label>Organ visualization:<br/>
           <select type="text" id="glb-model-dropdown" name="glb-model"></select><br/>
           <div class="tooltip">
             <babylon id="as-model"></babylon>

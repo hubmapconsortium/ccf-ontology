@@ -2,8 +2,12 @@ let exec    = require('child_process').exec;
 let spawn   = require('child_process').spawn;
 let express = require('express');
 let lookup  = require('./lookup.js');
+let path    = require("path");
 let app     = express();
 
+app.get('/', function(req, res){
+  res.sendFile(path.join(__dirname + '/index.html'));
+});
 
 app.get('/getCellType', function(req, res) {
   let symbols = req.query.symbols || '';

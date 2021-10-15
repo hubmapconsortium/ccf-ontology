@@ -5,6 +5,9 @@ let lookup  = require('./lookup.js');
 let path    = require("path");
 let app     = express();
 
+const port     = 3000
+const hostname = "localhost"
+
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname + '/index.html'));
 });
@@ -40,4 +43,6 @@ app.get('/getCellType', function(req, res) {
   });
 });
 
-app.listen(3000);
+app.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

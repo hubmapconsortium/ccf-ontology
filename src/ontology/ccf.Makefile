@@ -17,11 +17,29 @@ all_things: odkversion all_imports all_data all_templates all_main all_subsets s
 # Most ontologies are modularly constructed using portions of other ontologies
 # These live in the imports/ folder
 
+## ONTOLOGY: uberon
+imports/uberon_import.owl: mirror/uberon.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -u "obo:UBERON_0001062" -L imports/uberon_terms.txt --force true --copy-ontology-annotations true --method MIREOT \
+		remove --axioms structural-tautologies \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+## ONTOLOGY: cl
+imports/cl_import.owl: mirror/cl.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -u "obo:CL_0000000" -L imports/cl_terms.txt --force true --copy-ontology-annotations true --method MIREOT \
+		remove --axioms structural-tautologies \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 ## ONTOLOGY: fma
 imports/fma_import.owl: mirror/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -L imports/fma_terms.txt --force true --copy-ontology-annotations true --individuals include --method MIREOT \
+		extract -u "http://purl.org/sig/ont/fma/fma62955" -L imports/fma_terms.txt --force true --copy-ontology-annotations true --method MIREOT \
 		remove --axioms structural-tautologies \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi

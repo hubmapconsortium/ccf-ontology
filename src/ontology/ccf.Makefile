@@ -168,7 +168,7 @@ all_templates: $(EXTRA_FILES)
 extras/%.owl: $(TEMPLATE_FILES)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	if [ $(TMP) = true ]; then $(ROBOT) template --template $< \
-		--prefix "ccfp: http://purl.org/ccf/provisional/" \
+		--prefix "ASCTB-TEMP: http://purl.org/ccf/ASCTB-TEMP_" \
 		--prefix "ccf: http://purl.org/ccf/" \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 

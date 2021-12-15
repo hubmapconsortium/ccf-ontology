@@ -15,5 +15,6 @@
     <uri name="http://purl.org/ccf/imports/efo_import.owl" uri="imports/efo_import.owl"/>
     <uri name="http://purl.org/ccf/imports/loinc_import.owl" uri="imports/loinc_import.owl"/>
     <uri name="http://purl.org/ccf/imports/uo_import.owl" uri="imports/uo_import.owl"/>
+    <uri name="http://purl.org/ccf/components/CCF_AS_CT.owl" uri="components/CCF_AS_CT.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>

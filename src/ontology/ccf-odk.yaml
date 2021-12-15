@@ -11,9 +11,11 @@ namespaces:
 edit_format: owl
 import_group:
   products:
-    - id: uberon
     - id: cl
     - id: obi
     - id: uo
 robot_java_args: '-Xmx16G'
 create_obo_metadata: FALSE
+components:
+  products:
+    - filename: CCF_AS_CT.owl

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ccf/imports/obi_import.owl#"
-     xml:base="http://purl.org/ccf/imports/obi_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ccf/imports/obi_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ccf/imports/obi_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,10 +8,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.org/ccf/imports/obi_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2021-09-23/imports/obi_import.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ccf/imports/obi_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ccf/releases/2021-12-15/imports/obi_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/obi/2021-08-18/obi.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-09-23</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-15</owl:versionInfo>
     </owl:Ontology>
     
 

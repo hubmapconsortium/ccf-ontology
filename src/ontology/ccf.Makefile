@@ -110,6 +110,8 @@ mirror/loinc.owl: mirror/loinc.trigger
 			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://purl.bioontology.org/ontology/LNC/loinc.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/loinc.owl
 
+$(COMPONENTSDIR)/CCF_AS_CT.owl: $(SRC)
+	wget https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/CCF_AS_CT.owl -O $@.tmp.owl && mv $@.tmp.owl $@
 
 # ----------------------------------------
 # Data modules
@@ -173,3 +175,10 @@ extras/%.owl: $(TEMPLATE_FILES)
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: extras/%.owl
+
+$(ONT)-full.owl: $(SRC) $(OTHER_SRC)
+	$(ROBOT) merge --input $< \
+		reason --reasoner ELK --exclude-tautologies structural \
+		relax \
+		reduce -r ELK \
+		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@

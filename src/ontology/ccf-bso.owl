@@ -14,7 +14,7 @@ Import(<http://purl.org/ccf/extras/ccf_provision.owl>)
 Import(<http://purl.org/ccf/imports/cl_import.owl>)
 Import(<http://purl.org/ccf/imports/fma_import.owl>)
 Import(<http://purl.org/ccf/imports/hgnc_import.owl>)
-Import(<http://purl.org/ccf/imports/uberon_import.owl>)
+Import(<http://purl.org/ccf/components/CCF_AS_CT.owl>)
 
 Declaration(Class(<http://purl.org/ccf/characterizing_biomarker_set>))
 Declaration(AnnotationProperty(dcterms:source))

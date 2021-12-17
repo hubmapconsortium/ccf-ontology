@@ -7,7 +7,6 @@
     <uri name="http://purl.org/ccf/data/asctb.owl" uri="data/asctb.owl"/>
     <uri name="http://purl.org/ccf/data/spatial_entities.owl" uri="data/spatial_entities.owl"/>
     <uri name="http://purl.org/ccf/extras/ccf_provision.owl" uri="extras/ccf_provision.owl"/>
-    <uri name="http://purl.org/ccf/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
     <uri name="http://purl.org/ccf/imports/fma_import.owl" uri="imports/fma_import.owl"/>
     <uri name="http://purl.org/ccf/imports/cl_import.owl" uri="imports/cl_import.owl"/>
     <uri name="http://purl.org/ccf/imports/obi_import.owl" uri="imports/obi_import.owl"/>

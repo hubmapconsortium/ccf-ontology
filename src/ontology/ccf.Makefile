@@ -274,13 +274,13 @@ all_data: $(DATA_FILES)
 
 ## GENERATE-DATA: reference_spatial_entities
 
-.PHONY: check_rui2ccf
-check_rui2ccf:
-	@type rui2ccf > /dev/null 2>&1 || (echo "ERROR: rui2ccf is required, please visit https://github.com/hubmapconsortium/rui2ccf to install"; exit 1)
+.PHONY: check_spatial2ccf
+check_spatial2ccf:
+	@type spatial2ccf > /dev/null 2>&1 || (echo "ERROR: spatial2ccf is required, please visit https://github.com/hubmapconsortium/spatial2ccf to install"; exit 1)
 
-$(DATADIR)/reference_spatial_entities.owl: check_rui2ccf
+$(DATADIR)/reference_spatial_entities.owl: check_spatial2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then rui2ccf https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld \
+	if [ $(DAT) = true ]; then spatial2ccf https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld \
         https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/reference-spatial-entities.jsonld \
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi

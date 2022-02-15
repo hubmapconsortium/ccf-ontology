@@ -16,9 +16,8 @@
 # these can be overwritten on the command line
 
 URIBASE=                    http://purl.obolibrary.org/obo
-ALT_URIBASE=                http://purl.org
 ONT=                        ccf
-ONTBASE=                    $(ALT_URIBASE)/$(ONT)
+ONTBASE=                    http://purl.org/$(ONT)
 EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 CATALOG=                    catalog-v001.xml
@@ -60,7 +59,7 @@ all: odkversion all_imports all_main all_subsets sparql_test all_reports all_ass
 
 .PHONY: test
 test: odkversion sparql_test all_reports 
-	$(ROBOT) reason --input $(SRC) --reasoner ELK  --equivalent-classes-allowed all --exclude-tautologies structural --output test.owl && rm test.owl && echo "Success"
+	$(ROBOT) reason --input $(SRC) --reasoner ELK  --equivalent-classes-allowed asserted-only --exclude-tautologies structural --output test.owl && rm test.owl && echo "Success"
 
 .PHONY: odkversion
 odkversion:
@@ -87,7 +86,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  uberon cl obi hgnc efo loinc
+IMPORTS = obi hgnc efo loinc
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -402,7 +401,7 @@ $(ONT)-base.owl: $(SRC) $(OTHER_SRC)
 $(ONT)-full.owl: $(SRC) $(OTHER_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Creating $(ONT)-full.owl)
 	$(ROBOT) merge --input $< \
-		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural \
+		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@

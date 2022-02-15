@@ -28,9 +28,6 @@ Prefix(ncbitaxon:=<http://purl.obolibrary.org/obo/ncbitaxon#>)
 
 Ontology(<http://purl.org/ccf/ccf-sco.owl>
 <http://purl.org/ccf/releases/2.0.0-alpha/ccf-sco.owl>
-Import(<http://purl.org/ccf/imports/efo_import.owl>)
-Import(<http://purl.org/ccf/imports/loinc_import.owl>)
-Import(<http://purl.org/ccf/imports/obi_import.owl>)
 
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10608-0>))
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10610-6>))
@@ -41,8 +38,6 @@ Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA3-6>))
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA4457-3>))
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA6156-9>))
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA6214-6>))
-Declaration(Class(obo:OBI_0001472))
-Declaration(Class(obo:UBERON_0001062))
 Declaration(Class(ccf:biological_sex))
 Declaration(Class(ccf:collection))
 Declaration(Class(ccf:dataset))
@@ -55,27 +50,25 @@ Declaration(Class(ccf:protocol))
 Declaration(Class(ccf:publication))
 Declaration(Class(ccf:race))
 Declaration(Class(ccf:sample))
-Declaration(Class(ccf:sample_type))
 Declaration(Class(ccf:tissue_block))
 Declaration(Class(ccf:tissue_mapping_center))
+Declaration(Class(ccf:tissue_section))
 Declaration(ObjectProperty(ccf:created_by))
 Declaration(ObjectProperty(ccf:donated_by))
 Declaration(ObjectProperty(ccf:extracted_by))
 Declaration(ObjectProperty(ccf:generates_dataset))
 Declaration(ObjectProperty(ccf:has_biological_sex))
-Declaration(ObjectProperty(ccf:has_dataset))
+Declaration(ObjectProperty(ccf:has_dataset_item))
 Declaration(ObjectProperty(ccf:has_derived_sample))
 Declaration(ObjectProperty(ccf:has_ethnicity))
 Declaration(ObjectProperty(ccf:has_race))
-Declaration(ObjectProperty(ccf:has_sample_type))
-Declaration(ObjectProperty(ccf:has_specimen_type))
-Declaration(ObjectProperty(ccf:produced_from_assay))
 Declaration(ObjectProperty(ccf:provided_by))
-Declaration(ObjectProperty(ccf:representation_of))
-Declaration(ObjectProperty(ccf:subdivided_into))
+Declaration(ObjectProperty(ccf:subdivided_into_sections))
 Declaration(ObjectProperty(<http://purl.org/ccf/ccf-relations.owl#has_derived_dataset>))
 Declaration(DataProperty(ccf:age))
+Declaration(DataProperty(ccf:age_range))
 Declaration(DataProperty(ccf:age_unit))
+Declaration(DataProperty(ccf:assay_type))
 Declaration(DataProperty(ccf:blood_type))
 Declaration(DataProperty(ccf:bmi))
 Declaration(DataProperty(ccf:height))
@@ -86,10 +79,171 @@ Declaration(DataProperty(ccf:section_size))
 Declaration(DataProperty(ccf:section_size_unit))
 Declaration(DataProperty(ccf:technology))
 Declaration(DataProperty(ccf:thumbnail))
+Declaration(DataProperty(ccf:tissue_provider_name))
+Declaration(DataProperty(ccf:tissue_provider_uuid))
 Declaration(DataProperty(ccf:weight))
 Declaration(DataProperty(ccf:weight_unit))
 Declaration(AnnotationProperty(dc:source))
 
+############################
+#   Object Properties
+############################
+
+# Object Property: ccf:created_by (created by)
+
+AnnotationAssertion(rdfs:comment ccf:created_by "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:created_by "created by")
+
+# Object Property: ccf:donated_by (donated by)
+
+AnnotationAssertion(rdfs:comment ccf:donated_by "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:donated_by "donated by")
+
+# Object Property: ccf:extracted_by (extracted by)
+
+AnnotationAssertion(rdfs:comment ccf:extracted_by "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:extracted_by "extracted by")
+
+# Object Property: ccf:generates_dataset (generates dataset)
+
+AnnotationAssertion(rdfs:comment ccf:generates_dataset "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:generates_dataset "generates dataset")
+
+# Object Property: ccf:has_biological_sex (has biological sex)
+
+AnnotationAssertion(rdfs:comment ccf:has_biological_sex "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_biological_sex "has biological sex")
+
+# Object Property: ccf:has_dataset_item (has dataset item)
+
+AnnotationAssertion(rdfs:comment ccf:has_dataset_item "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_dataset_item "has dataset item")
+
+# Object Property: ccf:has_derived_sample (has derived sample)
+
+AnnotationAssertion(rdfs:comment ccf:has_derived_sample "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_derived_sample "has derived sample")
+
+# Object Property: ccf:has_ethnicity (has ethnicity)
+
+AnnotationAssertion(rdfs:comment ccf:has_ethnicity "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_ethnicity "has ethnicity")
+
+# Object Property: ccf:has_race (has race)
+
+AnnotationAssertion(rdfs:comment ccf:has_race "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_race "has race")
+
+# Object Property: ccf:provided_by (provided by)
+
+AnnotationAssertion(rdfs:comment ccf:provided_by "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:provided_by "provided by")
+
+# Object Property: ccf:subdivided_into_sections (subdivided into sections)
+
+AnnotationAssertion(rdfs:comment ccf:subdivided_into_sections "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:subdivided_into_sections "subdivided into sections")
+
+# Object Property: <http://purl.org/ccf/ccf-relations.owl#has_derived_dataset> (has derived dataset)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/ccf/ccf-relations.owl#has_derived_dataset> "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/ccf/ccf-relations.owl#has_derived_dataset> "has derived dataset")
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: ccf:age (age)
+
+AnnotationAssertion(rdfs:comment ccf:age "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:age "age")
+
+# Data Property: ccf:age_range (age range)
+
+AnnotationAssertion(rdfs:comment ccf:age_range "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:age_range "age range")
+
+# Data Property: ccf:age_unit (age unit)
+
+AnnotationAssertion(rdfs:comment ccf:age_unit "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:age_unit "age unit")
+
+# Data Property: ccf:assay_type (assay type)
+
+AnnotationAssertion(rdfs:comment ccf:assay_type "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:assay_type "assay type")
+
+# Data Property: ccf:blood_type (blood type)
+
+AnnotationAssertion(rdfs:comment ccf:blood_type "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:blood_type "blood type")
+
+# Data Property: ccf:bmi (bmi)
+
+AnnotationAssertion(rdfs:comment ccf:bmi "Measured in kg/m2")
+AnnotationAssertion(rdfs:comment ccf:bmi "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:bmi "bmi")
+
+# Data Property: ccf:height (height)
+
+AnnotationAssertion(rdfs:comment ccf:height "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:height "height")
+
+# Data Property: ccf:height_unit (height unit)
+
+AnnotationAssertion(rdfs:comment ccf:height_unit "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:height_unit "height unit")
+
+# Data Property: ccf:section_count (section count)
+
+AnnotationAssertion(rdfs:comment ccf:section_count "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:section_count "section count")
+
+# Data Property: ccf:section_number (section number)
+
+AnnotationAssertion(rdfs:comment ccf:section_number "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:section_number "section number")
+
+# Data Property: ccf:section_size (section size)
+
+AnnotationAssertion(rdfs:comment ccf:section_size "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:section_size "section size")
+
+# Data Property: ccf:section_size_unit (section size unit)
+
+AnnotationAssertion(rdfs:comment ccf:section_size_unit "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:section_size_unit "section size unit")
+
+# Data Property: ccf:technology (technology)
+
+AnnotationAssertion(rdfs:comment ccf:technology "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:technology "technology")
+
+# Data Property: ccf:thumbnail (thumbnail)
+
+AnnotationAssertion(rdfs:comment ccf:thumbnail "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:thumbnail "thumbnail")
+
+# Data Property: ccf:tissue_provider_name (tissue provider name)
+
+AnnotationAssertion(rdfs:comment ccf:tissue_provider_name "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:tissue_provider_name "tissue provider name")
+
+# Data Property: ccf:tissue_provider_uuid (tissue provider uuid)
+
+AnnotationAssertion(rdfs:comment ccf:tissue_provider_uuid "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:tissue_provider_uuid "tissue provider uuid")
+
+# Data Property: ccf:weight (weight)
+
+AnnotationAssertion(rdfs:comment ccf:weight "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:weight "weight")
+
+# Data Property: ccf:weight_unit (weight unit)
+
+AnnotationAssertion(rdfs:comment ccf:weight_unit "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:weight_unit "weight unit")
 
 
 
@@ -133,43 +287,45 @@ SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA6156-9> ccf:race)
 
 SubClassOf(<http://purl.bioontology.org/ontology/LNC/LA6214-6> ccf:ethnicity)
 
-# Class: obo:UBERON_0001062 (anatomical entity)
-
-AnnotationAssertion(rdfs:label obo:UBERON_0001062 "anatomical entity"@en)
-
 # Class: ccf:biological_sex (biological sex)
 
+AnnotationAssertion(rdfs:comment ccf:biological_sex "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:biological_sex "biological sex"@en)
 
 # Class: ccf:collection (collection)
 
+AnnotationAssertion(rdfs:comment ccf:collection "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:collection "collection"@en)
-SubClassOf(ccf:collection ObjectSomeValuesFrom(ccf:has_dataset ccf:dataset))
+SubClassOf(ccf:collection ObjectSomeValuesFrom(ccf:has_dataset_item ccf:dataset))
 
 # Class: ccf:dataset (dataset)
 
+AnnotationAssertion(rdfs:comment ccf:dataset "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:dataset "dataset"@en)
 SubClassOf(ccf:dataset ObjectSomeValuesFrom(ccf:created_by ccf:operator))
-SubClassOf(ccf:dataset ObjectSomeValuesFrom(ccf:produced_from_assay efo:EFO_0002772))
 SubClassOf(ccf:dataset ObjectSomeValuesFrom(ccf:provided_by ccf:tissue_mapping_center))
 SubClassOf(ccf:dataset ObjectSomeValuesFrom(<http://purl.org/ccf/ccf-relations.owl#has_derived_dataset> ccf:dataset))
 
 # Class: ccf:donor (donor)
 
+AnnotationAssertion(rdfs:comment ccf:donor "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:donor "donor"@en)
 SubClassOf(ccf:donor ccf:person)
 
 # Class: ccf:ethnicity (ethnicity)
 
+AnnotationAssertion(rdfs:comment ccf:ethnicity "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:ethnicity "ethnicity"@en)
 
 # Class: ccf:operator (operator)
 
+AnnotationAssertion(rdfs:comment ccf:operator "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:operator "operator"@en)
 SubClassOf(ccf:operator ccf:person)
 
 # Class: ccf:person (person)
 
+AnnotationAssertion(rdfs:comment ccf:person "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:person "person"@en)
 SubClassOf(ccf:person ObjectSomeValuesFrom(ccf:has_biological_sex ccf:biological_sex))
 SubClassOf(ccf:person ObjectSomeValuesFrom(ccf:has_ethnicity ccf:ethnicity))
@@ -177,45 +333,52 @@ SubClassOf(ccf:person ObjectSomeValuesFrom(ccf:has_race ccf:race))
 
 # Class: ccf:pi (principal investigator)
 
+AnnotationAssertion(rdfs:comment ccf:pi "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:pi "principal investigator"@en)
 SubClassOf(ccf:pi ccf:person)
 
 # Class: ccf:protocol (protocol)
 
+AnnotationAssertion(rdfs:comment ccf:protocol "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:protocol "protocol"@en)
 
 # Class: ccf:publication (publication)
 
+AnnotationAssertion(rdfs:comment ccf:publication "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:publication "publication"@en)
 
 # Class: ccf:race (race)
 
+AnnotationAssertion(rdfs:comment ccf:race "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:race "race"@en)
 
 # Class: ccf:sample (sample)
 
+AnnotationAssertion(rdfs:comment ccf:sample "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:sample "sample"@en)
 SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:donated_by ccf:donor))
 SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:extracted_by ccf:operator))
 SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:generates_dataset ccf:dataset))
 SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:has_derived_sample ccf:sample))
-SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:has_sample_type ccf:sample_type))
-SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:has_specimen_type obo:OBI_0001472))
 SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:provided_by ccf:tissue_mapping_center))
-SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:representation_of obo:UBERON_0001062))
-
-# Class: ccf:sample_type (sample type)
-
-AnnotationAssertion(rdfs:label ccf:sample_type "sample type"@en)
 
 # Class: ccf:tissue_block (tissue block)
 
+AnnotationAssertion(rdfs:comment ccf:tissue_block "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:tissue_block "tissue block"@en)
-SubClassOf(ccf:tissue_block ccf:sample_type)
+SubClassOf(ccf:tissue_block ccf:sample)
+SubClassOf(ccf:tissue_block ObjectSomeValuesFrom(ccf:subdivided_into_sections ccf:tissue_section))
 
 # Class: ccf:tissue_mapping_center (tissue mapping center)
 
+AnnotationAssertion(rdfs:comment ccf:tissue_mapping_center "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:tissue_mapping_center "tissue mapping center"@en)
+
+# Class: ccf:tissue_section (tissue section)
+
+AnnotationAssertion(rdfs:comment ccf:tissue_section "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:tissue_section "tissue section")
+SubClassOf(ccf:tissue_section ccf:sample)
 
 
 )

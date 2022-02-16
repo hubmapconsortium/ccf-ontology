@@ -261,7 +261,7 @@ $(EXTRACTSDIR)/cl_heart.owl: $(COMPONENTSDIR)/ccf_heart.owl $(MIRRORDIR)/cl.owl
 
 DATADIR = data
 
-DATA = reference_spatial_entities
+DATA = reference_spatial_entities specimen_spatial_entities
 DATA_FILES = $(patsubst %, $(DATADIR)/%.owl, $(DATA))
 
 DAT = true
@@ -285,3 +285,10 @@ $(DATADIR)/reference_spatial_entities.owl: check_spatial2ccf
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATADIR)/reference_spatial_entities.owl
+
+$(DATADIR)/specimen_spatial_entities.owl: check_spatial2ccf
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	if [ $(DAT) = true ]; then spatial2ccf https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld \
+        --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
+		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: $(DATADIR)/specimen_spatial_entities.owl

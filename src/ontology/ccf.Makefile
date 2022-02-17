@@ -120,49 +120,76 @@ $(MIRRORDIR)/loinc.owl: $(MIRRORDIR)/loinc.trigger
 
 COMPONENTSDIR = components
 
-COMPONENTS = ccf_as_ct ccf_kidney ccf_heart ccf_brain
+COMPONENTS = ccf_as_ct \
+			 ccf_partonomy_kidney ccf_partonomy_heart ccf_partonomy_brain \
+			 ccf_cell_biomarkers_kidney ccf_cell_biomarkers_heart ccf_cell_biomarkers_brain
 COMPONENT_FILES = $(patsubst %, $(COMPONENTSDIR)/%.owl, $(COMPONENTS))
 
 COMP = true
 
 .PHONY: all_components
 all_components: $(COMPONENT_FILES)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish generating component files:)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish making component files:)
 	$(foreach n, $(COMPONENT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
+
+define download_ccf_partonomy_component
+	if [ $(COMP) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/ccf_${1}_classes.owl -O $@.tmp.owl && \
+	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+endef
 
 ## DOWNLOAD-COMPONENT: CCF_AS_CT
 $(COMPONENTSDIR)/ccf_as_ct.owl:
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading CCF_AS_CT.owl)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
 	wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/CCF_AS_CT.owl -O $@.tmp.owl && \
 	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@;
 .PRECIOUS: $(COMPONENTSDIR)/ccf_as_ct.owl
+
+## DOWNLOAD-FILE: ccf_partonomy_kidney
+$(COMPONENTSDIR)/ccf_partonomy_kidney.owl:
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
+	$(call download_ccf_partonomy_component,Kidney)
+.PRECIOUS: $(COMPONENTSDIR)/ccf_partonomy_kidney.owl
+
+## DOWNLOAD-FILE: ccf_partonomy_heart
+$(COMPONENTSDIR)/ccf_partonomy_heart.owl:
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
+	$(call download_ccf_partonomy_component,Heart)
+.PRECIOUS: $(COMPONENTSDIR)/ccf_partonomy_heart.owl
+
+## DOWNLOAD-FILE: ccf_partonomy_brain
+$(COMPONENTSDIR)/ccf_partonomy_brain.owl:
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
+	$(call download_ccf_partonomy_component,Brain)
+.PRECIOUS: $(COMPONENTSDIR)/ccf_partonomy_brain.owl
+
+# ----------
 
 .PHONY: check_asctb2ccf
 check_asctb2ccf:
 	@type asctb2ccf > /dev/null 2>&1 || (echo "ERROR: asctb2ccf is required, please visit https://github.com/hubmapconsortium/asctb2ccf to install"; exit 1)
 
-define generate_cell_biomarkers_component
+define generate_ccf_cell_biomarkers_component
 	if [ $(COMP) = true ]; then asctb2ccf --organ-name $(1) --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 endef
 
-## GENERATE-DATA: ccf_kidney
-$(COMPONENTSDIR)/ccf_kidney.owl: check_asctb2ccf
+## GENERATE-DATA: ccf_cell_biomarkers_kidney
+$(COMPONENTSDIR)/ccf_cell_biomarkers_kidney.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_cell_biomarkers_component, Kidney)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_kidney.owl
+	$(call generate_ccf_cell_biomarkers_component,Kidney)
+.PRECIOUS: $(COMPONENTSDIR)/ccf_cell_biomarkers_kidney.owl
 
-## GENERATE-DATA: ccf_heart
-$(COMPONENTSDIR)/ccf_heart.owl: check_asctb2ccf
+## GENERATE-DATA: ccf_cell_biomarkers_heart
+$(COMPONENTSDIR)/ccf_cell_biomarkers_heart.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_cell_biomarkers_component, Heart)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_heart.owl
+	$(call generate_ccf_cell_biomarkers_component,Heart)
+.PRECIOUS: $(COMPONENTSDIR)/ccf_cell_biomarkers_heart.owl
 
-## GENERATE-DATA: ccf_brain
-$(COMPONENTSDIR)/ccf_brain.owl: check_asctb2ccf
+## GENERATE-DATA: ccf_cell_biomarkers_brain
+$(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_cell_biomarkers_component, Brain)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_heart.owl
+	$(call generate_ccf_cell_biomarkers_component,Brain)
+.PRECIOUS: $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl
 
 # ----------------------------------------
 # Extract modules

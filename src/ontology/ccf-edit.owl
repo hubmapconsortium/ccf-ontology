@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.org/ccf/>f)
+Prefix(:=<http://purl.org/ccf/>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(ccf:=<http://purl.org/ccf/>)
 Prefix(efo:=<http://www.ebi.ac.uk/efo/>)

@@ -23,6 +23,8 @@ src/ontology/ccf-full.*
 src/ontology/ccf-simple.*
 src/ontology/ccf-simple-non-classified.*
 
+src/ontology/data/mirror
+
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log
 src/ontology/ed_definitions_merged.owl

@@ -14,77 +14,6 @@ CCF_SPO_SRC = $(CCF_SPO)-edit.owl
 CCF_SRC = $(CCF)-edit.owl
 
 # ----------------------------------------
-# Import modules
-# ----------------------------------------
-# Most ontologies are modularly constructed using portions of other ontologies
-# These live in the imports/ folder
-
-IMPORTSDIR = imports
-MIRRORDIR = mirror
-
-## ONTOLOGY: uberon
-$(IMPORTSDIR)/uberon_import.owl: $(MIRRORDIR)/uberon.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -u "obo:UBERON_0001062" -L imports/uberon_terms.txt --force true --copy-ontology-annotations true --method MIREOT \
-		remove --axioms structural-tautologies \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## ONTOLOGY: cl
-$(IMPORTSDIR)/cl_import.owl: $(MIRRORDIR)/cl.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -u "obo:CL_0000000" -L imports/cl_terms.txt --force true --copy-ontology-annotations true --method MIREOT \
-		remove --axioms structural-tautologies \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## ONTOLOGY: fma
-$(IMPORTSDIR)/fma_import.owl: $(MIRRORDIR)/fma.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -u "fma:fma62955" -L imports/fma_terms.txt --force true --copy-ontology-annotations true --method MIREOT \
-		remove --axioms structural-tautologies \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## ONTOLOGY: obi
-$(IMPORTSDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -u OBI:0100051 -L imports/obi_terms.txt --force true --copy-ontology-annotations true --individuals exclude --method MIREOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## ONTOLOGY: hgnc
-$(IMPORTSDIR)/hgnc_import.owl: $(MIRRORDIR)/hgnc.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -L imports/hgnc_terms.txt --force true --copy-ontology-annotations true --individuals exclude --method MIREOT \
-		remove --axioms structural-tautologies \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## ONTOLOGY: efo
-$(IMPORTSDIR)/efo_import.owl: $(MIRRORDIR)/efo.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -u http://www.ebi.ac.uk/efo/EFO_0002694 -L imports/efo_terms.txt --force true --copy-ontology-annotations true --individuals include --method MIREOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## ONTOLOGY: loinc
-$(IMPORTSDIR)/loinc_import.owl: $(MIRRORDIR)/loinc.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
-		extract -L imports/loinc_terms.txt --force true --copy-ontology-annotations true --individuals exclude --method MIREOT \
-		remove --axioms structural-tautologies \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-
-# ----------------------------------------
 # Component modules
 # ----------------------------------------
 
@@ -241,19 +170,19 @@ define extract_cl_terms
 endef
 
 ## GENERATE-DATA: uberon_kidney
-$(EXTRACTSDIR)/uberon_kidney.owl: $(COMPONENTSDIR)/asctb_kidney.owl $(MIRRORDIR)/uberon.owl
+$(EXTRACTSDIR)/uberon_kidney.owl: $(COMPONENTSDIR)/asctb_kidney.owl mirror/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/uberon_kidney.owl
 
 ## GENERATE-DATA: uberon_heart
-$(EXTRACTSDIR)/uberon_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl $(MIRRORDIR)/uberon.owl
+$(EXTRACTSDIR)/uberon_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl mirror/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/uberon_heart.owl
 
 ## GENERATE-DATA: uberon_brain
-$(EXTRACTSDIR)/uberon_brain.owl: $(COMPONENTSDIR)/asctb_brain.owl $(MIRRORDIR)/uberon.owl
+$(EXTRACTSDIR)/uberon_brain.owl: $(COMPONENTSDIR)/asctb_brain.owl mirror/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/uberon_brain.owl
@@ -261,7 +190,7 @@ $(EXTRACTSDIR)/uberon_brain.owl: $(COMPONENTSDIR)/asctb_brain.owl $(MIRRORDIR)/u
 # ----------------------------------------
 
 ## GENERATE-DATA: fma_heart
-$(EXTRACTSDIR)/fma_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl $(MIRRORDIR)/fma.owl
+$(EXTRACTSDIR)/fma_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl mirror/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_fma_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/fma_heart.owl
@@ -269,13 +198,13 @@ $(EXTRACTSDIR)/fma_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl $(MIRRORDIR)/fma.
 # ----------------------------------------
 
 ## GENERATE-DATA: cl_kidney
-$(EXTRACTSDIR)/cl_kidney.owl: $(COMPONENTSDIR)/asctb_kidney.owl $(MIRRORDIR)/cl.owl
+$(EXTRACTSDIR)/cl_kidney.owl: $(COMPONENTSDIR)/asctb_kidney.owl mirror/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/cl_kidney.owl
 
 ## GENERATE-DATA: cl_heart
-$(EXTRACTSDIR)/cl_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl $(MIRRORDIR)/cl.owl
+$(EXTRACTSDIR)/cl_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl mirror/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/cl_heart.owl

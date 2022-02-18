@@ -417,17 +417,17 @@ release_all_ccf: $(CCF_RELEASE_FILES)
 
 .PHONY: release_ccf_bso
 release_ccf_bso: $(ONT)-bso.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-BSO ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Biological Structure (CCF-BSO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_sco
 release_ccf_sco: $(ONT)-sco.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-SCO ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Specimen (CCF-SCO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_spo
 release_ccf_spo: $(ONT)-spo.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-SPO ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Spatial (CCF-SPO) ontology)
 	mv $^ $(RELEASEDIR)
 
 
@@ -439,9 +439,9 @@ release_ccf_spo: $(ONT)-spo.owl
 ccf_bso: $(ONT)-bso.owl
 
 $(ONT)-bso.owl: $(CCF_BSO_SRC)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF-BSO ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Biological Structure (CCF-BSO) ontology)
 	$(ROBOT) merge --input $< \
-		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural -vvv\
+		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
@@ -451,9 +451,9 @@ $(ONT)-bso.owl: $(CCF_BSO_SRC)
 ccf_sco: $(ONT)-sco.owl
 
 $(ONT)-sco.owl: $(CCF_SCO_SRC)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF-SCO ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Specimen (CCF-SCO) ontology)
 	$(ROBOT) merge --input $< \
-		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural -vvv\
+		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
@@ -463,9 +463,9 @@ $(ONT)-sco.owl: $(CCF_SCO_SRC)
 ccf_spo: $(ONT)-spo.owl
 
 $(ONT)-spo.owl: $(CCF_SPO_SRC)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF-SPO ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Spatial (CCF-SPO) ontology)
 	$(ROBOT) merge --input $< \
-		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural -vvv\
+		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@

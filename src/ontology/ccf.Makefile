@@ -49,16 +49,8 @@ $(IMPORTSDIR)/fma_import.owl: $(MIRRORDIR)/fma.owl
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-## Copy of fma is re-downloaded whenever source changes
-$(MIRRORDIR)/fma.trigger: $(SRC)
-$(MIRRORDIR)/fma.owl: $(MIRRORDIR)/fma.trigger
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading fma.owl)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://data.bioontology.org/ontologies/FMA/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
-			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://purl.org/sig/ont/fma.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: $(MIRRORDIR)/fma.owl
-
 ## ONTOLOGY: obi
-$(IMPORTSDIR)/obi_import.owl: mirror/obi.owl
+$(IMPORTSDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
 		extract -u OBI:0100051 -L imports/obi_terms.txt --force true --copy-ontology-annotations true --individuals exclude --method MIREOT \
@@ -74,14 +66,6 @@ $(IMPORTSDIR)/hgnc_import.owl: $(MIRRORDIR)/hgnc.owl
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-## Copy of hgnc is re-downloaded whenever source changes
-$(MIRRORDIR)/hgnc.trigger: $(SRC)
-$(MIRRORDIR)/hgnc.owl: $(MIRRORDIR)/hgnc.trigger
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading hgnc.owl)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://data.bioontology.org/ontologies/HGNC/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
-			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: $(MIRRORDIR)/hgnc.owl
-
 ## ONTOLOGY: efo
 $(IMPORTSDIR)/efo_import.owl: $(MIRRORDIR)/efo.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
@@ -89,14 +73,6 @@ $(IMPORTSDIR)/efo_import.owl: $(MIRRORDIR)/efo.owl
 		extract -u http://www.ebi.ac.uk/efo/EFO_0002694 -L imports/efo_terms.txt --force true --copy-ontology-annotations true --individuals include --method MIREOT \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## Copy of efo is re-downloaded whenever source changes
-$(MIRRORDIR)/efo.trigger: $(SRC)
-$(MIRRORDIR)/efo.owl: $(MIRRORDIR)/efo.trigger
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading efo.owl)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://data.bioontology.org/ontologies/EFO/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
-			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://www.ebi.ac.uk/efo.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: $(MIRRORDIR)/efo.owl
 
 ## ONTOLOGY: loinc
 $(IMPORTSDIR)/loinc_import.owl: $(MIRRORDIR)/loinc.owl
@@ -106,14 +82,6 @@ $(IMPORTSDIR)/loinc_import.owl: $(MIRRORDIR)/loinc.owl
 		remove --axioms structural-tautologies \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-## Copy of loinc is re-downloaded whenever source changes
-$(MIRRORDIR)/loinc.trigger: $(SRC)
-$(MIRRORDIR)/loinc.owl: $(MIRRORDIR)/loinc.trigger
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading loinc.owl)
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then wget -nc https://data.bioontology.org/ontologies/LOINC/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
-			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://purl.bioontology.org/ontology/LNC/loinc.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: $(MIRRORDIR)/loinc.owl
 
 
 # ----------------------------------------

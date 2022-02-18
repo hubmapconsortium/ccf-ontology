@@ -290,6 +290,47 @@ mirror/uo.owl: mirror/uo.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/uo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/%.owl
 
+
+## ONTOLOGY: fma
+## Copy of fma is re-downloaded whenever source changes
+mirror/fma.trigger: $(SRC)
+mirror/fma.owl: mirror/fma.trigger
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading fma.owl)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://data.bioontology.org/ontologies/FMA/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
+			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://purl.org/sig/ont/fma.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/fma.owl
+
+
+## ONTOLOGY: hgnc
+## Copy of hgnc is re-downloaded whenever source changes
+mirror/hgnc.trigger: $(SRC)
+mirror/hgnc.owl: mirror/hgnc.trigger
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading hgnc.owl)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://data.bioontology.org/ontologies/HGNC/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
+			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/hgnc.owl
+
+
+## ONTOLOGY: efo
+## Copy of efo is re-downloaded whenever source changes
+mirror/efo.trigger: $(SRC)
+mirror/efo.owl: mirror/efo.trigger
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading efo.owl)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://data.bioontology.org/ontologies/EFO/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
+			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://www.ebi.ac.uk/efo.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/efo.owl
+
+
+## ONTOLOGY: loinc
+## Copy of loinc is re-downloaded whenever source changes
+mirror/loinc.trigger: $(SRC)
+mirror/loinc.owl: mirror/loinc.trigger
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading loinc.owl)
+	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then wget -nc https://data.bioontology.org/ontologies/LOINC/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
+			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://purl.bioontology.org/ontology/LNC/loinc.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/loinc.owl
+
+
 # ----------------------------------------
 # Subsets
 # ----------------------------------------

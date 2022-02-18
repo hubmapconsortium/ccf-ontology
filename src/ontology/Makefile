@@ -462,4 +462,4 @@ update_repo:
 	
 
 include imports.make
-include ccf.Makefile
+include ccf.make

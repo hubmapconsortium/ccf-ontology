@@ -22,16 +22,31 @@ COMPONENTS_DIR = components
 ASCTB_ORGANS = kidney heart brain
 
 ASCTB_FILES = $(patsubst %, $(COMPONENTS_DIR)/asctb_%.owl, $(ASCTB_ORGANS))
+PARTONOMY_FILES = $(patsubst %, $(COMPONENTS_DIR)/ccf_partonomy_%.owl, $(ASCTB_ORGANS))
+CELL_BIOMARKERS_FILES = $(patsubst %, $(COMPONENTS_DIR)/ccf_cell_biomarkers_%.owl, $(ASCTB_ORGANS))
 
 COMP = true
 
+COMPONENT_FILES = \
+	$(ASCTB_FILES) \
+	$(PARTONOMY_FILES) \
+	$(CELL_BIOMARKERS_FILES)
+
 .PHONY: all_components
-all_components: $(ASCTB_FILES)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish making component files:)
+all_components: $(COMPONENT_FILES)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish generating component files:)
+	$(foreach n, $(ASCTB_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
+	$(foreach n, $(PARTONOMY_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
+	$(foreach n, $(CELL_BIOMARKERS_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
+
+.PHONY: all_asctb
+all_asctb: $(ASCTB_FILES)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish generating ASCT+B files:)
 	$(foreach n, $(ASCTB_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 
 define make_asctb_component
-	if [ $(COMP) = true ]; then $(ROBOT) annotate -i $(COMPONENTS_DIR)/$(1) --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv -f $@.tmp.owl $@; fi
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input $(COMPONENTS_DIR)/$(1) \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv -f $@.tmp.owl $@; fi
 endef
 
 $(COMPONENTS_DIR)/asctb_kidney.owl: $(COMPONENTS_DIR)/ccf_partonomy_kidney.owl $(COMPONENTS_DIR)/ccf_cell_biomarkers_kidney.owl
@@ -49,9 +64,7 @@ $(COMPONENTS_DIR)/asctb_brain.owl: $(COMPONENTS_DIR)/ccf_partonomy_brain.owl $(C
 	$(call make_asctb_component,asctb_brain-edit.owl )
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_brain.owl
 
-# ----
-
-PARTONOMY_FILES = $(patsubst %, $(COMPONENTS_DIR)/ccf_partonomy_%.owl, $(ASCTB_ORGANS))
+# ----------------------------------------
 
 define download_ccf_partonomy_component
 	if [ $(COMP) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/ccf_${1}_classes.owl -O $@.tmp.owl && \
@@ -83,9 +96,7 @@ $(COMPONENTS_DIR)/ccf_partonomy_brain.owl:
 	$(call download_ccf_partonomy_component,Brain)
 .PRECIOUS: $(COMPONENTS_DIR)/ccf_partonomy_brain.owl
 
-# ----------
-
-CELL_BIOMARKERS_FILES = $(patsubst %, $(COMPONENTS_DIR)/ccf_cell_biomarkers_%.owl, $(ASCTB_ORGANS))
+# ----------------------------------------
 
 .PHONY: check_asctb2ccf
 check_asctb2ccf:
@@ -143,7 +154,7 @@ EXTRACT_FILES = \
 EXT = true
 
 .PHONY: all_extracts
-all_extracts: $(UBERON_EXTRACT_FILES) $(FMA_EXTRACT_FILES) $(CL_EXTRACT_FILES)
+all_extracts: $(EXTRACT_FILES)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish generating extract files:)
 	$(foreach n, $(UBERON_EXTRACT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 	$(foreach n, $(FMA_EXTRACT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
@@ -225,7 +236,10 @@ $(EXTRACTS_DIR)/cl_heart.owl: $(COMPONENTS_DIR)/asctb_heart.owl mirror/cl.owl
 
 DATA_MIRROR_DIR = data/mirror
 
-DATAMIRRORS = reference-spatial-entities generated-reference-spatial-entities hubmap-datasets
+DATAMIRRORS = \
+	reference-spatial-entities \
+	generated-reference-spatial-entities \
+	hubmap-datasets
 
 DATMIR = true
 
@@ -313,10 +327,10 @@ prepare_ccf: $(ASCTB_FILES) $(EXTRACT_FILES) $(DATA_FILES)
 # ----------------------------------------
 
 CCF_ARTEFACTS = $(CCF_BSO) $(CCF_SCO) $(CCF_SPO) $(CCF)
-CCF_ARTEFACT_FILES = $(patsubst %, %.owl, $(CCF_ARTEFACTS))
+PRE_RELEASED_FILES = $(patsubst %, %.owl, $(CCF_ARTEFACTS))
 
 .PHONY: release_all_ccf
-release_all_ccf: $(CCF_ARTEFACT_FILES)
+release_all_ccf: $(PRE_RELEASED_FILES)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for all CCF artifacts)
 	mv $^ $(RELEASEDIR)
 
@@ -402,7 +416,7 @@ GENERATED_FILES = \
 	$(COMPONENT_FILES) \
 	$(EXTRACT_FILES) \
 	$(DATA_FILES) \
-	$(CCF_ARTEFACT_FILES) 
+	$(PRE_RELEASED_FILES) 
 
 .PHONY: clean_all
 clean_all:

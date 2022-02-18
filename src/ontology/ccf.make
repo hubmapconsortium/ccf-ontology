@@ -329,29 +329,29 @@ prepare_ccf: $(ASCTB_FILES) $(EXTRACT_FILES) $(DATA_FILES)
 CCF_ARTEFACTS = $(CCF_BSO) $(CCF_SCO) $(CCF_SPO) $(CCF)
 PRE_RELEASED_FILES = $(patsubst %, %.owl, $(CCF_ARTEFACTS))
 
-.PHONY: release_all_ccf
-release_all_ccf: $(PRE_RELEASED_FILES)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for all CCF artifacts)
-	mv $^ $(RELEASEDIR)
-
 .PHONY: release_ccf_bso
 release_ccf_bso: $(CCF-BSO).owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Biological Structure (CCF-BSO) ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF Biological Structure (CCF-BSO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_sco
 release_ccf_sco: $(CCF-SCO).owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Specimen (CCF-SCO) ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF Specimen (CCF-SCO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_spo
 release_ccf_spo: $(CCF-SPO).owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Spatial (CCF-SPO) ontology)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF Spatial (CCF-SPO) ontology)
+	mv $^ $(RELEASEDIR)
+
+.PHONY: release_only_ccf
+release_only_ccf: $(CCF).owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF ontology only)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf
-release_ccf: $(CCF).owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF ontology)
+release_ccf: $(PRE_RELEASED_FILES)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF ontology, including all its modules)
 	mv $^ $(RELEASEDIR)
 
 

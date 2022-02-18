@@ -366,12 +366,13 @@ $(ONT)-base.obo: $(ONT)-base.owl
 # Release artefacts: main release artefacts
 # ----------------------------------------
 
-$(ONT).owl: $(ONT)-full.owl
-	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		convert -o $@.tmp.owl && mv $@.tmp.owl $@
+# $(ONT).owl: $(ONT)-full.owl
+# 	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+# 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
-$(ONT).obo: $(ONT).owl
-	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+# $(ONT).obo: $(ONT).owl
+# 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+
 # -----------------------------------------------------
 # Release artefacts: variants (base, full, simple, etc)
 # -----------------------------------------------------

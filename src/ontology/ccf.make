@@ -19,9 +19,9 @@ CCF_SRC = $(CCF)-edit.owl
 
 COMPONENTSDIR = components
 
-ASCTB_ORGANS = asctb_kidney asctb_heart asctb_brain
+ASCTB_ORGANS = kidney heart brain
 
-ASCTB_FILES = $(patsubst %, $(COMPONENTSDIR)/%.owl, $(ASCTB_ORGANS))
+ASCTB_FILES = $(patsubst %, $(COMPONENTSDIR)/asctb_%.owl, $(ASCTB_ORGANS))
 
 COMP = true
 
@@ -50,6 +50,8 @@ $(COMPONENTSDIR)/asctb_brain.owl: $(COMPONENTSDIR)/ccf_partonomy_brain.owl $(COM
 .PRECIOUS: $(COMPONENTSDIR)/asctb_brain.owl
 
 # ----
+
+PARTONOMY_FILES = $(patsubst %, $(COMPONENTSDIR)/ccf_partonomy_%.owl, $(ASCTB_ORGANS))
 
 define download_ccf_partonomy_component
 	if [ $(COMP) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/ccf_${1}_classes.owl -O $@.tmp.owl && \
@@ -83,6 +85,8 @@ $(COMPONENTSDIR)/ccf_partonomy_brain.owl:
 
 # ----------
 
+CELL_BIOMARKER_FILES = $(patsubst %, $(COMPONENTSDIR)/ccf_cell_biomarker_%.owl, $(ASCTB_ORGANS))
+
 .PHONY: check_asctb2ccf
 check_asctb2ccf:
 	@type asctb2ccf > /dev/null 2>&1 || (echo "ERROR: asctb2ccf is required, please visit https://github.com/hubmapconsortium/asctb2ccf to install"; exit 1)
@@ -110,6 +114,11 @@ $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf
 	$(call generate_ccf_cell_biomarkers_component,Brain)
 .PRECIOUS: $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl
 
+
+COMPONENT_FILES =\
+	$(ASCTB_FILES) \
+	$(PARTONOMY_FILES) \
+	$(CL_EXTRACT_FILES)
 
 # ----------------------------------------
 # Extract modules
@@ -288,11 +297,6 @@ $(DATADIR)/specimen_dataset.owl: check_specimen2ccf $(DATASOURCESDIR)/hubmap-dat
 # Prepare the ontology components
 # ----------------------------------------
 
-ALL_COMPONENT_FILES =\
-	$(ASCTB_FILES) \
-	$(EXTRACT_FILES) \
-	$(DATA_FILES) \
-
 .PHONY: prepare_ccf_bso
 prepare_ccf_bso: $(ASCTB_FILES) $(EXTRACT_FILES)
 
@@ -303,17 +307,17 @@ prepare_ccf_sco: $(DATADIR)/specimen_dataset.owl
 prepare_ccf_spo: $(DATADIR)/reference_spatial_entities.owl $(DATADIR)/specimen_spatial_entities.owl
 
 .PHONY: prepare_ccf
-prepare_ccf: $(ALL_COMPONENT_FILES)
+prepare_ccf: $(ASCTB_FILES) $(EXTRACT_FILES) $(DATA_FILES)
 
 # ----------------------------------------
 # Create the releases
 # ----------------------------------------
 
-CCF_RELEASE_ARTEFACTS = $(CCF_BSO) $(CCF_SCO) $(CCF_SPO) $(CCF)
-CCF_RELEASE_FILES = $(patsubst %, %.owl, $(CCF_RELEASE_ARTEFACTS))
+CCF_ARTEFACTS = $(CCF_BSO) $(CCF_SCO) $(CCF_SPO) $(CCF)
+CCF_ARTEFACT_FILES = $(patsubst %, %.owl, $(CCF_ARTEFACTS))
 
 .PHONY: release_all_ccf
-release_all_ccf: $(CCF_RELEASE_FILES)
+release_all_ccf: $(CCF_ARTEFACT_FILES)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for all CCF artifacts)
 	mv $^ $(RELEASEDIR)
 
@@ -389,3 +393,18 @@ $(ONT).owl: $(CCF_SRC)
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(ONT).owl
+
+
+# ----------------------------------------
+# Clean up
+# ----------------------------------------
+
+GENERATED_FILES = \
+	$(COMPONENT_FILES) \
+	$(EXTRACT_FILES) \
+	$(DATA_FILES) \
+	$(CCF_ARTEFACT_FILES) 
+
+.PHONY: clean_all
+clean_all: $(GENERATED_FILES)
+	rm -f $^

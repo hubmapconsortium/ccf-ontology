@@ -46,7 +46,7 @@ ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
 FORMATS = $(sort  owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
-RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base $(ONT)-base $(ONT)-full)
+RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-base)
 
 # ----------------------------------------
 # Top-level targets

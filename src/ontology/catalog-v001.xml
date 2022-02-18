@@ -4,6 +4,8 @@
     <uri name="http://purl.org/ccf/ccf-spo.owl" uri="ccf-spo.owl"/>
     <uri name="http://purl.org/ccf/ccf-sco.owl" uri="ccf-sco.owl"/>
     <uri name="http://purl.org/ccf/data/specimen_dataset.owl" uri="data/specimen_dataset.owl"/>
+    <uri name="http://purl.org/ccf/data/reference_spatial_entities.owl" uri="data/reference_spatial_entities.owl"/>
+    <uri name="http://purl.org/ccf/data/specimen_spatial_entities.owl" uri="data/specimen_spatial_entities.owl"/>
     <uri name="http://purl.org/ccf/extracts/uberon_kidney.owl" uri="extracts/uberon_kidney.owl"/>
     <uri name="http://purl.org/ccf/extracts/uberon_heart.owl" uri="extracts/uberon_heart.owl"/>
     <uri name="http://purl.org/ccf/extracts/uberon_brain.owl" uri="extracts/uberon_brain.owl"/>

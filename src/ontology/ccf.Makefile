@@ -5,6 +5,7 @@
 
 CCF_BSO_SRC = $(ONT)-bso-edit.owl
 CCF_SCO_SRC = $(ONT)-sco-edit.owl
+CCF_SPO_SRC = $(ONT)-spo-edit.owl
 
 
 # ----------------------------------------
@@ -399,6 +400,9 @@ prepare_ccf_bso: $(ASCTB_FILES) $(EXTRACT_FILES)
 .PHONY: prepare_ccf_sco
 prepare_ccf_sco: $(DATADIR)/specimen_dataset.owl
 
+.PHONY: prepare_ccf_spo
+prepare_ccf_spo: $(DATADIR)/reference_spatial_entities.owl $(DATADIR)/specimen_spatial_entities.owl
+
 
 # ----------------------------------------
 # Create the releases
@@ -419,6 +423,11 @@ release_ccf_bso: $(ONT)-bso.owl
 .PHONY: release_ccf_sco
 release_ccf_sco: $(ONT)-sco.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-SCO ontology)
+	mv $^ $(RELEASEDIR)
+
+.PHONY: release_ccf_spo
+release_ccf_spo: $(ONT)-spo.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-SPO ontology)
 	mv $^ $(RELEASEDIR)
 
 
@@ -450,3 +459,14 @@ $(ONT)-sco.owl: $(CCF_SCO_SRC)
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(ONT)-sco.owl
 
+.PHONY: ccf_spo
+ccf_spo: $(ONT)-spo.owl
+
+$(ONT)-spo.owl: $(CCF_SPO_SRC)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF-SPO ontology)
+	$(ROBOT) merge --input $< \
+		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural -vvv\
+		relax \
+		reduce -r ELK \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: $(ONT)-spo.owl

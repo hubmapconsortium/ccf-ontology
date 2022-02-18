@@ -85,7 +85,7 @@ $(COMPONENTSDIR)/ccf_partonomy_brain.owl:
 
 # ----------
 
-CELL_BIOMARKER_FILES = $(patsubst %, $(COMPONENTSDIR)/ccf_cell_biomarker_%.owl, $(ASCTB_ORGANS))
+CELL_BIOMARKERS_FILES = $(patsubst %, $(COMPONENTSDIR)/ccf_cell_biomarkers_%.owl, $(ASCTB_ORGANS))
 
 .PHONY: check_asctb2ccf
 check_asctb2ccf:
@@ -118,7 +118,7 @@ $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf
 COMPONENT_FILES =\
 	$(ASCTB_FILES) \
 	$(PARTONOMY_FILES) \
-	$(CL_EXTRACT_FILES)
+	$(CELL_BIOMARKERS_FILES)
 
 # ----------------------------------------
 # Extract modules
@@ -406,5 +406,5 @@ GENERATED_FILES = \
 	$(CCF_ARTEFACT_FILES) 
 
 .PHONY: clean_all
-clean_all: $(GENERATED_FILES)
-	rm -f $^
+clean_all:
+	rm -f $(GENERATED_FILES)

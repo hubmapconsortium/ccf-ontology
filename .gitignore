@@ -14,6 +14,9 @@ package-lock.json
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*
+src/ontology/ccf-bso.owl
+src/ontology/ccf-sco.owl
+src/ontology/ccf-spo.owl
 src/ontology/ccf.owl
 src/ontology/ccf.obo
 src/ontology/ccf.json
@@ -39,6 +42,12 @@ src/ontology/tmp/*
 
 src/ontology/imports/*_terms_combined.txt
 src/ontology/imports/*_import.owl
+
+src/ontology/components/asctb_*.owl
+src/ontology/components/ccf_partonomy_*.owl
+src/ontology/components/ccf_cell_biomarkers_*.owl
+src/ontology/data/*.owl
+src/ontology/extracts/*.owl
 
 src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt

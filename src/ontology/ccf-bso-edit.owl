@@ -1,0 +1,122 @@
+Prefix(:=<http://purl.org/ccf/ccf-bso.owl#>)
+Prefix(ccf:=<http://purl.org/ccf/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.org/ccf/ccf-bso-edit.owl>
+<http://purl.org/ccf/releases/latest/ccf-bso-edit.owl>
+Import(<http://purl.org/ccf/components/asctb_heart.owl>)
+Import(<http://purl.org/ccf/components/asctb_kidney.owl>)
+Import(<http://purl.org/ccf/extracts/cl_heart.owl>)
+Import(<http://purl.org/ccf/extracts/cl_kidney.owl>)
+Import(<http://purl.org/ccf/extracts/fma_heart.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_brain.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_heart.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_kidney.owl>)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
+Declaration(Class(ccf:anatomical_entity))
+Declaration(Class(ccf:biomarker))
+Declaration(Class(ccf:characterizing_biomarker_set))
+Declaration(Class(<http://purl.org/sig/ont/fma/fma62955>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))
+Declaration(ObjectProperty(ccf:has_characterizing_biomarker_set))
+Declaration(ObjectProperty(ccf:has_gene_marker))
+Declaration(ObjectProperty(ccf:has_member))
+Declaration(ObjectProperty(ccf:has_protein_marker))
+Declaration(ObjectProperty(ccf:is_characterizing_biomarker_set_of))
+Declaration(ObjectProperty(ccf:is_gene_marker_of))
+Declaration(ObjectProperty(ccf:is_protein_marker_of))
+Declaration(AnnotationProperty(dcterms:source))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0001025> (located in)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001025> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001025> "located in")
+
+# Object Property: ccf:has_characterizing_biomarker_set (has characterizing biomarker set)
+
+AnnotationAssertion(rdfs:comment ccf:has_characterizing_biomarker_set "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_characterizing_biomarker_set "has characterizing biomarker set")
+
+# Object Property: ccf:has_gene_marker (has gene marker)
+
+AnnotationAssertion(rdfs:comment ccf:has_gene_marker "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_gene_marker "has gene marker")
+SubObjectPropertyOf(ccf:has_gene_marker owl:topObjectProperty)
+
+# Object Property: ccf:has_member (has member)
+
+AnnotationAssertion(rdfs:comment ccf:has_member "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_member "has member")
+
+# Object Property: ccf:has_protein_marker (has protein marker)
+
+AnnotationAssertion(rdfs:comment ccf:has_protein_marker "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_protein_marker "has protein marker")
+
+# Object Property: ccf:is_characterizing_biomarker_set_of (is characterizing biomarker set of)
+
+AnnotationAssertion(rdfs:comment ccf:is_characterizing_biomarker_set_of "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:is_characterizing_biomarker_set_of "is characterizing biomarker set of")
+
+# Object Property: ccf:is_gene_marker_of (is gene marker of)
+
+AnnotationAssertion(rdfs:comment ccf:is_gene_marker_of "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:is_gene_marker_of "is gene marker of")
+
+# Object Property: ccf:is_protein_marker_of (is protein marker of)
+
+AnnotationAssertion(rdfs:comment ccf:is_protein_marker_of "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:is_protein_marker_of "is protein marker of")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/CL_0000000> (cell)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000000> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell"@en)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity (from UBERON))
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UBERON_0001062> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity (from UBERON)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> ccf:anatomical_entity)
+
+# Class: ccf:anatomical_entity (anatomical entity)
+
+AnnotationAssertion(rdfs:comment ccf:anatomical_entity "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:anatomical_entity "anatomical entity"@en)
+
+# Class: ccf:biomarker (biomarker)
+
+AnnotationAssertion(rdfs:comment ccf:biomarker "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:biomarker "biomarker"@en)
+
+# Class: ccf:characterizing_biomarker_set (characterizing biomarker set)
+
+AnnotationAssertion(rdfs:comment ccf:characterizing_biomarker_set "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:characterizing_biomarker_set "characterizing biomarker set"@en)
+
+# Class: <http://purl.org/sig/ont/fma/fma62955> (anatomical entity (from FMA))
+
+AnnotationAssertion(rdfs:comment <http://purl.org/sig/ont/fma/fma62955> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label <http://purl.org/sig/ont/fma/fma62955> "anatomical entity (from FMA)"@en)
+SubClassOf(<http://purl.org/sig/ont/fma/fma62955> ccf:anatomical_entity)
+
+
+)

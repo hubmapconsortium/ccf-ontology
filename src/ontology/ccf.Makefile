@@ -1,14 +1,11 @@
-## Customize Makefile settings for ccf
+## Customize Makefile settings for CCF ontology
 ## 
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-# ----------------------------------------
-# Top-level targets
-# ----------------------------------------
+CCF_BSO_SRC = $(ONT)-bso-edit.owl
 
-.PHONY: all_things
-all_things: odkversion all_imports all_data all_templates all_main all_subsets sparql_test all_reports all_assets
+CCF_RELEASE_ARTEFACTS = $(sort $(ONT)-bso)
 
 
 # ----------------------------------------
@@ -120,29 +117,49 @@ $(MIRRORDIR)/loinc.owl: $(MIRRORDIR)/loinc.trigger
 
 COMPONENTSDIR = components
 
-COMPONENTS = ccf_as_ct \
-			 ccf_partonomy_kidney ccf_partonomy_heart ccf_partonomy_brain \
-			 ccf_cell_biomarkers_kidney ccf_cell_biomarkers_heart ccf_cell_biomarkers_brain
-COMPONENT_FILES = $(patsubst %, $(COMPONENTSDIR)/%.owl, $(COMPONENTS))
+ASCTB_ORGANS = asctb_kidney asctb_heart asctb_brain
+
+ASCTB_FILES = $(patsubst %, $(COMPONENTSDIR)/%.owl, $(ASCTB_ORGANS))
 
 COMP = true
 
 .PHONY: all_components
-all_components: $(COMPONENT_FILES)
+all_components: $(ASCTB_FILES)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish making component files:)
-	$(foreach n, $(COMPONENT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
+	$(foreach n, $(ASCTB_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
+
+define make_asctb_component
+	if [ $(COMP) = true ]; then $(ROBOT) annotate -i $(1) --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv -f $@.tmp.owl $@; fi
+endef
+
+$(COMPONENTSDIR)/asctb_kidney.owl: $(COMPONENTSDIR)/ccf_partonomy_kidney.owl $(COMPONENTSDIR)/ccf_cell_biomarkers_kidney.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
+	$(call make_asctb_component,asctb_kidney-edit.owl)
+.PRECIOUS: $(COMPONENTSDIR)/asctb_kidney.owl
+
+$(COMPONENTSDIR)/asctb_heart.owl: $(COMPONENTSDIR)/ccf_partonomy_heart.owl $(COMPONENTSDIR)/ccf_cell_biomarkers_heart.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
+	$(call make_asctb_component,asctb_heart-edit.owl)
+.PRECIOUS: $(COMPONENTSDIR)/asctb_heart.owl
+
+$(COMPONENTSDIR)/asctb_brain.owl: $(COMPONENTSDIR)/ccf_partonomy_brain.owl $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
+	$(call make_asctb_component,asctb_brain-edit.owl )
+.PRECIOUS: $(COMPONENTSDIR)/asctb_brain.owl
+
+# ----
 
 define download_ccf_partonomy_component
 	if [ $(COMP) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/ccf_${1}_classes.owl -O $@.tmp.owl && \
-	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+		$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 endef
 
 ## DOWNLOAD-COMPONENT: CCF_AS_CT
-$(COMPONENTSDIR)/ccf_as_ct.owl:
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
-	wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/CCF_AS_CT.owl -O $@.tmp.owl && \
-	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@;
-.PRECIOUS: $(COMPONENTSDIR)/ccf_as_ct.owl
+# $(COMPONENTSDIR)/ccf_as_ct.owl:
+# 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
+# 	wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/CCF_AS_CT.owl -O $@.tmp.owl && \
+# 	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@;
+# .PRECIOUS: $(COMPONENTSDIR)/ccf_as_ct.owl
 
 ## DOWNLOAD-FILE: ccf_partonomy_kidney
 $(COMPONENTSDIR)/ccf_partonomy_kidney.owl:
@@ -191,6 +208,7 @@ $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf
 	$(call generate_ccf_cell_biomarkers_component,Brain)
 .PRECIOUS: $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl
 
+
 # ----------------------------------------
 # Extract modules
 # ----------------------------------------
@@ -206,6 +224,11 @@ FMA_EXTRACT_FILES = $(patsubst %, $(EXTRACTSDIR)/%.owl, $(FMA_EXTRACTS))
 CL_EXTRACTS = cl_kidney cl_heart
 CL_EXTRACT_FILES = $(patsubst %, $(EXTRACTSDIR)/%.owl, $(CL_EXTRACTS))
 
+EXTRACT_FILES = \
+	$(UBERON_EXTRACT_FILES) \
+	$(FMA_EXTRACT_FILES) \
+	$(CL_EXTRACT_FILES)
+
 EXT = true
 
 .PHONY: all_extracts
@@ -218,7 +241,8 @@ all_extracts: $(UBERON_EXTRACT_FILES) $(FMA_EXTRACT_FILES) $(CL_EXTRACT_FILES)
 INTERMEDIATES_OPT = none
 
 define extract_uberon_terms
-	if [ $(EXT) = true ]; then $(ROBOT) query --input $(1) --query queries/get_uberon_entities.sparql /tmp/entities.csv && \
+	if [ $(EXT) = true ]; then $(ROBOT) merge --input $(1) \
+			query --query queries/get_uberon_entities.sparql /tmp/entities.csv && \
 		sed -i '' 1d /tmp/entities.csv && \
 		$(ROBOT) extract --method MIREOT --input $(2) --upper-term "obo:UBERON_0001062" --lower-terms /tmp/entities.csv --intermediates $(INTERMEDIATES_OPT) \
 		  		 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@ && \
@@ -226,15 +250,17 @@ define extract_uberon_terms
 endef
 
 define extract_fma_terms
-	if [ $(EXT) = true ]; then $(ROBOT) query --input $(1) --query queries/get_fma_entities.sparql /tmp/entities.csv && \
+	if [ $(EXT) = true ]; then $(ROBOT) merge --input $(1) \
+	    	query --query queries/get_fma_entities.sparql /tmp/entities.csv && \
 		sed -i '' 1d /tmp/entities.csv && \
-		$(ROBOT) extract --method MIREOT --input $(2) --upper-term "fma:fma62955" --lower-terms /tmp/entities.csv --intermediates $(INTERMEDIATES_OPT) \
+		$(ROBOT) extract --method MIREOT --input $(2) --upper-term "http://purl.org/sig/ont/fma/fma62955" --lower-terms /tmp/entities.csv --intermediates $(INTERMEDIATES_OPT) \
 		  		 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@ && \
 		rm /tmp/entities.csv; fi
 endef
 
 define extract_cl_terms
-	if [ $(EXT) = true ]; then $(ROBOT) query --input $(1) --query queries/get_cl_entities.sparql /tmp/entities.csv && \
+	if [ $(EXT) = true ]; then $(ROBOT) merge --input $(1) \
+	    	query --query queries/get_cl_entities.sparql /tmp/entities.csv && \
 		sed -i '' 1d /tmp/entities.csv && \
 		$(ROBOT) extract --method MIREOT --input $(2) --upper-term "obo:CL_0000000" --lower-terms /tmp/entities.csv --intermediates $(INTERMEDIATES_OPT) \
 		  		 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@ && \
@@ -242,19 +268,19 @@ define extract_cl_terms
 endef
 
 ## GENERATE-DATA: uberon_kidney
-$(EXTRACTSDIR)/uberon_kidney.owl: $(COMPONENTSDIR)/ccf_kidney.owl $(MIRRORDIR)/uberon.owl
+$(EXTRACTSDIR)/uberon_kidney.owl: $(COMPONENTSDIR)/asctb_kidney.owl $(MIRRORDIR)/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/uberon_kidney.owl
 
 ## GENERATE-DATA: uberon_heart
-$(EXTRACTSDIR)/uberon_heart.owl: $(COMPONENTSDIR)/ccf_heart.owl $(MIRRORDIR)/uberon.owl
+$(EXTRACTSDIR)/uberon_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl $(MIRRORDIR)/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/uberon_heart.owl
 
 ## GENERATE-DATA: uberon_brain
-$(EXTRACTSDIR)/uberon_brain.owl: $(COMPONENTSDIR)/ccf_brain.owl $(MIRRORDIR)/uberon.owl
+$(EXTRACTSDIR)/uberon_brain.owl: $(COMPONENTSDIR)/asctb_brain.owl $(MIRRORDIR)/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/uberon_brain.owl
@@ -262,7 +288,7 @@ $(EXTRACTSDIR)/uberon_brain.owl: $(COMPONENTSDIR)/ccf_brain.owl $(MIRRORDIR)/ube
 # ----------------------------------------
 
 ## GENERATE-DATA: fma_heart
-$(EXTRACTSDIR)/fma_heart.owl: $(COMPONENTSDIR)/ccf_heart.owl $(MIRRORDIR)/fma.owl
+$(EXTRACTSDIR)/fma_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl $(MIRRORDIR)/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_fma_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/fma_heart.owl
@@ -270,13 +296,13 @@ $(EXTRACTSDIR)/fma_heart.owl: $(COMPONENTSDIR)/ccf_heart.owl $(MIRRORDIR)/fma.ow
 # ----------------------------------------
 
 ## GENERATE-DATA: cl_kidney
-$(EXTRACTSDIR)/cl_kidney.owl: $(COMPONENTSDIR)/ccf_kidney.owl $(MIRRORDIR)/cl.owl
+$(EXTRACTSDIR)/cl_kidney.owl: $(COMPONENTSDIR)/asctb_kidney.owl $(MIRRORDIR)/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/cl_kidney.owl
 
 ## GENERATE-DATA: cl_heart
-$(EXTRACTSDIR)/cl_heart.owl: $(COMPONENTSDIR)/ccf_heart.owl $(MIRRORDIR)/cl.owl
+$(EXTRACTSDIR)/cl_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl $(MIRRORDIR)/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTSDIR)/cl_heart.owl
@@ -354,3 +380,45 @@ $(DATADIR)/specimen_dataset.owl: check_specimen2ccf $(DATASOURCESDIR)/hubmap-dat
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATADIR)/specimen_dataset.owl
+
+
+# ----------------------------------------
+# Prepare the ontology components
+# ----------------------------------------
+
+.PHONY: prepare_all_ccf
+prepare_all_ccf: $(ASCTB_FILES) $(EXTRACT_FILES) $(DATA_FILES)
+
+.PHONY: prepare_ccf_bso
+prepare_ccf_bso: $(ASCTB_FILES) $(EXTRACT_FILES)
+
+
+# ----------------------------------------
+# Create the releases
+# ----------------------------------------
+
+CCF_RELEASE_FILES = $(patsubst %, %.owl, $(CCF_RELEASE_ARTEFACTS))
+
+.PHONY: release_all_ccf
+release_all_ccf: $(CCF_RELEASE_FILES)
+
+.PHONY: release_ccf_bso
+release_ccf_bso: $(ONT)-bso.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-BSO ontology)
+	cp $^ $(RELEASEDIR)
+
+
+# ----------------------------------------
+# Create the ontology
+# ----------------------------------------
+
+.PHONY: ccf_bso
+ccf_bso: $(ONT)-bso.owl
+
+$(ONT)-bso.owl: $(CCF_BSO_SRC)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF-BSO ontology)
+	$(ROBOT) merge --input $< \
+		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural -vvv\
+		relax \
+		reduce -r ELK \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@

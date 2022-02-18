@@ -414,12 +414,12 @@ release_all_ccf: $(CCF_RELEASE_FILES)
 .PHONY: release_ccf_bso
 release_ccf_bso: $(ONT)-bso.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-BSO ontology)
-	cp $^ $(RELEASEDIR)
+	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_sco
 release_ccf_sco: $(ONT)-sco.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-SCO ontology)
-	cp $^ $(RELEASEDIR)
+	mv $^ $(RELEASEDIR)
 
 
 # ----------------------------------------

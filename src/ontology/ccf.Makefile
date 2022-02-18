@@ -4,8 +4,7 @@
 ## changes here rather than in the main Makefile
 
 CCF_BSO_SRC = $(ONT)-bso-edit.owl
-
-CCF_RELEASE_ARTEFACTS = $(sort $(ONT)-bso)
+CCF_SCO_SRC = $(ONT)-sco-edit.owl
 
 
 # ----------------------------------------
@@ -386,16 +385,26 @@ $(DATADIR)/specimen_dataset.owl: check_specimen2ccf $(DATASOURCESDIR)/hubmap-dat
 # Prepare the ontology components
 # ----------------------------------------
 
+ALL_COMPONENT_FILES =\
+	$(ASCTB_FILES) \
+	$(EXTRACT_FILES) \
+	$(DATA_FILES) \
+
 .PHONY: prepare_all_ccf
 prepare_all_ccf: $(ASCTB_FILES) $(EXTRACT_FILES) $(DATA_FILES)
 
 .PHONY: prepare_ccf_bso
 prepare_ccf_bso: $(ASCTB_FILES) $(EXTRACT_FILES)
 
+.PHONY: prepare_ccf_sco
+prepare_ccf_sco: $(DATADIR)/specimen_dataset.owl
+
 
 # ----------------------------------------
 # Create the releases
 # ----------------------------------------
+
+CCF_RELEASE_ARTEFACTS = $(sort $(ONT)-bso $(ONT)-cso)
 
 CCF_RELEASE_FILES = $(patsubst %, %.owl, $(CCF_RELEASE_ARTEFACTS))
 
@@ -405,6 +414,11 @@ release_all_ccf: $(CCF_RELEASE_FILES)
 .PHONY: release_ccf_bso
 release_ccf_bso: $(ONT)-bso.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-BSO ontology)
+	cp $^ $(RELEASEDIR)
+
+.PHONY: release_ccf_sco
+release_ccf_sco: $(ONT)-sco.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF-SCO ontology)
 	cp $^ $(RELEASEDIR)
 
 
@@ -422,3 +436,17 @@ $(ONT)-bso.owl: $(CCF_BSO_SRC)
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: $(ont)-bso.owl
+
+.PHONY: ccf_sco
+ccf_sco: $(ONT)-sco.owl
+
+$(ONT)-sco.owl: $(CCF_SCO_SRC)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF-SCO ontology)
+	$(ROBOT) merge --input $< \
+		reason --reasoner ELK --equivalent-classes-allowed all --exclude-tautologies structural -vvv\
+		relax \
+		reduce -r ELK \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: $(ONT)-sco.owl
+

@@ -3,6 +3,7 @@
     <uri name="http://purl.org/ccf/ccf-bso.owl" uri="ccf-bso.owl"/>
     <uri name="http://purl.org/ccf/ccf-spo.owl" uri="ccf-spo.owl"/>
     <uri name="http://purl.org/ccf/ccf-sco.owl" uri="ccf-sco.owl"/>
+    <uri name="http://purl.org/ccf/data/specimen_dataset.owl" uri="data/specimen_dataset.owl"/>
     <uri name="http://purl.org/ccf/extracts/uberon_kidney.owl" uri="extracts/uberon_kidney.owl"/>
     <uri name="http://purl.org/ccf/extracts/uberon_heart.owl" uri="extracts/uberon_heart.owl"/>
     <uri name="http://purl.org/ccf/extracts/uberon_brain.owl" uri="extracts/uberon_brain.owl"/>
@@ -18,5 +19,6 @@
     <uri name="http://purl.org/ccf/components/asctb_kidney.owl" uri="components/asctb_kidney.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_heart.owl" uri="components/asctb_heart.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_brain.owl" uri="components/asctb_brain.owl"/>
+
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>

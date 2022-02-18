@@ -220,27 +220,26 @@ $(EXTRACTSDIR)/cl_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl mirror/cl.owl
 
 
 # ----------------------------------------
-# Data sources Module
+# Data Mirror Module
 # ----------------------------------------
 
-DATASOURCESDIR = data/sources
+DATAMIRRORDIR = data/mirror
 
-DATASRC = reference-spatial-entities generated-reference-spatial-entities hubmap-datasets
-DATASRC_FILES = $(patsubst %, $(DATASOURCESDIR)/%.jsonld, $(DATASRC))
+DATAMIRRORS = reference-spatial-entities generated-reference-spatial-entities hubmap-datasets
 
-DATSRC = true
+DATMIR = true
 
-$(DATASOURCESDIR)/reference-spatial-entities.jsonld:
-	if [ $(DATSRC) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/reference-spatial-entities.jsonld -O $@; fi
-.PRECIOUS: $(DATASOURCESDIR)/reference-spatial-entities.jsonld
+$(DATAMIRRORDIR)/reference-spatial-entities.jsonld:
+	if [ $(DATMIR) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/reference-spatial-entities.jsonld -O $@; fi
+.PRECIOUS: $(DATAMIRRORDIR)/reference-spatial-entities.jsonld
 
-$(DATASOURCESDIR)/generated-reference-spatial-entities.jsonld:
-	if [ $(DATSRC) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld -O $@; fi
-.PRECIOUS: $(DATASOURCESDIR)/generated-reference-spatial-entities.jsonld
+$(DATAMIRRORDIR)/generated-reference-spatial-entities.jsonld:
+	if [ $(DATMIR) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld -O $@; fi
+.PRECIOUS: $(DATAMIRRORDIR)/generated-reference-spatial-entities.jsonld
 
-$(DATASOURCESDIR)/hubmap-datasets.jsonld:
-	if [ $(DATSRC) = true ]; then wget -nc https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld -O $@; fi
-.PRECIOUS: $(DATASOURCESDIR)/hubmap-datasets.jsonld
+$(DATAMIRRORDIR)/hubmap-datasets.jsonld:
+	if [ $(DATMIR) = true ]; then wget -nc https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld -O $@; fi
+.PRECIOUS: $(DATAMIRRORDIR)/hubmap-datasets.jsonld
 
 
 # ----------------------------------------
@@ -270,22 +269,22 @@ check_spatial2ccf:
 check_specimen2ccf:
 	@type specimen2ccf > /dev/null 2>&1 || (echo "ERROR: specimen2ccf is required, please visit https://github.com/hubmapconsortium/specimen2ccf to install"; exit 1)
 
-$(DATADIR)/reference_spatial_entities.owl: check_spatial2ccf $(DATASOURCESDIR)/reference-spatial-entities.jsonld $(DATASOURCESDIR)/generated-reference-spatial-entities.jsonld
+$(DATADIR)/reference_spatial_entities.owl: check_spatial2ccf $(DATAMIRRORDIR)/reference-spatial-entities.jsonld $(DATAMIRRORDIR)/generated-reference-spatial-entities.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then spatial2ccf $(DATASOURCESDIR)/reference-spatial-entities.jsonld \
-        $(DATASOURCESDIR)/generated-reference-spatial-entities.jsonld \
+	if [ $(DAT) = true ]; then spatial2ccf $(DATAMIRRORDIR)/reference-spatial-entities.jsonld \
+        $(DATAMIRRORDIR)/generated-reference-spatial-entities.jsonld \
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATADIR)/reference_spatial_entities.owl
 
-$(DATADIR)/specimen_spatial_entities.owl: check_spatial2ccf $(DATASOURCESDIR)/hubmap-datasets.jsonld
+$(DATADIR)/specimen_spatial_entities.owl: check_spatial2ccf $(DATAMIRRORDIR)/hubmap-datasets.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then spatial2ccf $(DATASOURCESDIR)/hubmap-datasets.jsonld \
+	if [ $(DAT) = true ]; then spatial2ccf $(DATAMIRRORDIR)/hubmap-datasets.jsonld \
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATADIR)/specimen_spatial_entities.owl
 
-$(DATADIR)/specimen_dataset.owl: check_specimen2ccf $(DATASOURCESDIR)/hubmap-datasets.jsonld
+$(DATADIR)/specimen_dataset.owl: check_specimen2ccf $(DATAMIRRORDIR)/hubmap-datasets.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	if [ $(DAT) = true ]; then specimen2ccf data/sources/hubmap-datasets.jsonld \
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \

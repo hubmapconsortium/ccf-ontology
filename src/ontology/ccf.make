@@ -31,7 +31,7 @@ all_components: $(ASCTB_FILES)
 	$(foreach n, $(ASCTB_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 
 define make_asctb_component
-	if [ $(COMP) = true ]; then $(ROBOT) annotate -i $(1) --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv -f $@.tmp.owl $@; fi
+	if [ $(COMP) = true ]; then $(ROBOT) annotate -i $(COMPONENTSDIR)/$(1) --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv -f $@.tmp.owl $@; fi
 endef
 
 $(COMPONENTSDIR)/asctb_kidney.owl: $(COMPONENTSDIR)/ccf_partonomy_kidney.owl $(COMPONENTSDIR)/ccf_cell_biomarkers_kidney.owl

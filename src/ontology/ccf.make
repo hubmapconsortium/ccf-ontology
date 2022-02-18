@@ -17,11 +17,11 @@ CCF_SRC = $(CCF)-edit.owl
 # Component modules
 # ----------------------------------------
 
-COMPONENTSDIR = components
+COMPONENTS_DIR = components
 
 ASCTB_ORGANS = kidney heart brain
 
-ASCTB_FILES = $(patsubst %, $(COMPONENTSDIR)/asctb_%.owl, $(ASCTB_ORGANS))
+ASCTB_FILES = $(patsubst %, $(COMPONENTS_DIR)/asctb_%.owl, $(ASCTB_ORGANS))
 
 COMP = true
 
@@ -31,27 +31,27 @@ all_components: $(ASCTB_FILES)
 	$(foreach n, $(ASCTB_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 
 define make_asctb_component
-	if [ $(COMP) = true ]; then $(ROBOT) annotate -i $(COMPONENTSDIR)/$(1) --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv -f $@.tmp.owl $@; fi
+	if [ $(COMP) = true ]; then $(ROBOT) annotate -i $(COMPONENTS_DIR)/$(1) --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv -f $@.tmp.owl $@; fi
 endef
 
-$(COMPONENTSDIR)/asctb_kidney.owl: $(COMPONENTSDIR)/ccf_partonomy_kidney.owl $(COMPONENTSDIR)/ccf_cell_biomarkers_kidney.owl
+$(COMPONENTS_DIR)/asctb_kidney.owl: $(COMPONENTS_DIR)/ccf_partonomy_kidney.owl $(COMPONENTS_DIR)/ccf_cell_biomarkers_kidney.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
 	$(call make_asctb_component,asctb_kidney-edit.owl)
-.PRECIOUS: $(COMPONENTSDIR)/asctb_kidney.owl
+.PRECIOUS: $(COMPONENTS_DIR)/asctb_kidney.owl
 
-$(COMPONENTSDIR)/asctb_heart.owl: $(COMPONENTSDIR)/ccf_partonomy_heart.owl $(COMPONENTSDIR)/ccf_cell_biomarkers_heart.owl
+$(COMPONENTS_DIR)/asctb_heart.owl: $(COMPONENTS_DIR)/ccf_partonomy_heart.owl $(COMPONENTS_DIR)/ccf_cell_biomarkers_heart.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
 	$(call make_asctb_component,asctb_heart-edit.owl)
-.PRECIOUS: $(COMPONENTSDIR)/asctb_heart.owl
+.PRECIOUS: $(COMPONENTS_DIR)/asctb_heart.owl
 
-$(COMPONENTSDIR)/asctb_brain.owl: $(COMPONENTSDIR)/ccf_partonomy_brain.owl $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl
+$(COMPONENTS_DIR)/asctb_brain.owl: $(COMPONENTS_DIR)/ccf_partonomy_brain.owl $(COMPONENTS_DIR)/ccf_cell_biomarkers_brain.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
 	$(call make_asctb_component,asctb_brain-edit.owl )
-.PRECIOUS: $(COMPONENTSDIR)/asctb_brain.owl
+.PRECIOUS: $(COMPONENTS_DIR)/asctb_brain.owl
 
 # ----
 
-PARTONOMY_FILES = $(patsubst %, $(COMPONENTSDIR)/ccf_partonomy_%.owl, $(ASCTB_ORGANS))
+PARTONOMY_FILES = $(patsubst %, $(COMPONENTS_DIR)/ccf_partonomy_%.owl, $(ASCTB_ORGANS))
 
 define download_ccf_partonomy_component
 	if [ $(COMP) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/ccf_${1}_classes.owl -O $@.tmp.owl && \
@@ -59,33 +59,33 @@ define download_ccf_partonomy_component
 endef
 
 ## DOWNLOAD-COMPONENT: CCF_AS_CT
-# $(COMPONENTSDIR)/ccf_as_ct.owl:
+# $(COMPONENTS_DIR)/ccf_as_ct.owl:
 # 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
 # 	wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/CCF_AS_CT.owl -O $@.tmp.owl && \
 # 	$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@;
-# .PRECIOUS: $(COMPONENTSDIR)/ccf_as_ct.owl
+# .PRECIOUS: $(COMPONENTS_DIR)/ccf_as_ct.owl
 
 ## DOWNLOAD-FILE: ccf_partonomy_kidney
-$(COMPONENTSDIR)/ccf_partonomy_kidney.owl:
+$(COMPONENTS_DIR)/ccf_partonomy_kidney.owl:
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
 	$(call download_ccf_partonomy_component,Kidney)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_partonomy_kidney.owl
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_partonomy_kidney.owl
 
 ## DOWNLOAD-FILE: ccf_partonomy_heart
-$(COMPONENTSDIR)/ccf_partonomy_heart.owl:
+$(COMPONENTS_DIR)/ccf_partonomy_heart.owl:
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
 	$(call download_ccf_partonomy_component,Heart)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_partonomy_heart.owl
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_partonomy_heart.owl
 
 ## DOWNLOAD-FILE: ccf_partonomy_brain
-$(COMPONENTSDIR)/ccf_partonomy_brain.owl:
+$(COMPONENTS_DIR)/ccf_partonomy_brain.owl:
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
 	$(call download_ccf_partonomy_component,Brain)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_partonomy_brain.owl
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_partonomy_brain.owl
 
 # ----------
 
-CELL_BIOMARKERS_FILES = $(patsubst %, $(COMPONENTSDIR)/ccf_cell_biomarkers_%.owl, $(ASCTB_ORGANS))
+CELL_BIOMARKERS_FILES = $(patsubst %, $(COMPONENTS_DIR)/ccf_cell_biomarkers_%.owl, $(ASCTB_ORGANS))
 
 .PHONY: check_asctb2ccf
 check_asctb2ccf:
@@ -97,22 +97,22 @@ define generate_ccf_cell_biomarkers_component
 endef
 
 ## GENERATE-DATA: ccf_cell_biomarkers_kidney
-$(COMPONENTSDIR)/ccf_cell_biomarkers_kidney.owl: check_asctb2ccf
+$(COMPONENTS_DIR)/ccf_cell_biomarkers_kidney.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call generate_ccf_cell_biomarkers_component,Kidney)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_cell_biomarkers_kidney.owl
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_cell_biomarkers_kidney.owl
 
 ## GENERATE-DATA: ccf_cell_biomarkers_heart
-$(COMPONENTSDIR)/ccf_cell_biomarkers_heart.owl: check_asctb2ccf
+$(COMPONENTS_DIR)/ccf_cell_biomarkers_heart.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call generate_ccf_cell_biomarkers_component,Heart)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_cell_biomarkers_heart.owl
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_cell_biomarkers_heart.owl
 
 ## GENERATE-DATA: ccf_cell_biomarkers_brain
-$(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf
+$(COMPONENTS_DIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call generate_ccf_cell_biomarkers_component,Brain)
-.PRECIOUS: $(COMPONENTSDIR)/ccf_cell_biomarkers_brain.owl
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_cell_biomarkers_brain.owl
 
 
 COMPONENT_FILES =\
@@ -124,16 +124,16 @@ COMPONENT_FILES =\
 # Extract modules
 # ----------------------------------------
 
-EXTRACTSDIR = extracts
+EXTRACTS_DIR = extracts
 
 UBERON_EXTRACTS = uberon_kidney uberon_heart uberon_brain
-UBERON_EXTRACT_FILES = $(patsubst %, $(EXTRACTSDIR)/%.owl, $(UBERON_EXTRACTS))
+UBERON_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/%.owl, $(UBERON_EXTRACTS))
 
 FMA_EXTRACTS = fma_heart
-FMA_EXTRACT_FILES = $(patsubst %, $(EXTRACTSDIR)/%.owl, $(FMA_EXTRACTS))
+FMA_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/%.owl, $(FMA_EXTRACTS))
 
 CL_EXTRACTS = cl_kidney cl_heart
-CL_EXTRACT_FILES = $(patsubst %, $(EXTRACTSDIR)/%.owl, $(CL_EXTRACTS))
+CL_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/%.owl, $(CL_EXTRACTS))
 
 EXTRACT_FILES = \
 	$(UBERON_EXTRACT_FILES) \
@@ -179,77 +179,77 @@ define extract_cl_terms
 endef
 
 ## GENERATE-DATA: uberon_kidney
-$(EXTRACTSDIR)/uberon_kidney.owl: $(COMPONENTSDIR)/asctb_kidney.owl mirror/uberon.owl
+$(EXTRACTS_DIR)/uberon_kidney.owl: $(COMPONENTS_DIR)/asctb_kidney.owl mirror/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
-.PRECIOUS: $(EXTRACTSDIR)/uberon_kidney.owl
+.PRECIOUS: $(EXTRACTS_DIR)/uberon_kidney.owl
 
 ## GENERATE-DATA: uberon_heart
-$(EXTRACTSDIR)/uberon_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl mirror/uberon.owl
+$(EXTRACTS_DIR)/uberon_heart.owl: $(COMPONENTS_DIR)/asctb_heart.owl mirror/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
-.PRECIOUS: $(EXTRACTSDIR)/uberon_heart.owl
+.PRECIOUS: $(EXTRACTS_DIR)/uberon_heart.owl
 
 ## GENERATE-DATA: uberon_brain
-$(EXTRACTSDIR)/uberon_brain.owl: $(COMPONENTSDIR)/asctb_brain.owl mirror/uberon.owl
+$(EXTRACTS_DIR)/uberon_brain.owl: $(COMPONENTS_DIR)/asctb_brain.owl mirror/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
-.PRECIOUS: $(EXTRACTSDIR)/uberon_brain.owl
+.PRECIOUS: $(EXTRACTS_DIR)/uberon_brain.owl
 
 # ----------------------------------------
 
 ## GENERATE-DATA: fma_heart
-$(EXTRACTSDIR)/fma_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl mirror/fma.owl
+$(EXTRACTS_DIR)/fma_heart.owl: $(COMPONENTS_DIR)/asctb_heart.owl mirror/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_fma_terms, $(word 1, $^), $(word 2, $^))
-.PRECIOUS: $(EXTRACTSDIR)/fma_heart.owl
+.PRECIOUS: $(EXTRACTS_DIR)/fma_heart.owl
 
 # ----------------------------------------
 
 ## GENERATE-DATA: cl_kidney
-$(EXTRACTSDIR)/cl_kidney.owl: $(COMPONENTSDIR)/asctb_kidney.owl mirror/cl.owl
+$(EXTRACTS_DIR)/cl_kidney.owl: $(COMPONENTS_DIR)/asctb_kidney.owl mirror/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
-.PRECIOUS: $(EXTRACTSDIR)/cl_kidney.owl
+.PRECIOUS: $(EXTRACTS_DIR)/cl_kidney.owl
 
 ## GENERATE-DATA: cl_heart
-$(EXTRACTSDIR)/cl_heart.owl: $(COMPONENTSDIR)/asctb_heart.owl mirror/cl.owl
+$(EXTRACTS_DIR)/cl_heart.owl: $(COMPONENTS_DIR)/asctb_heart.owl mirror/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
-.PRECIOUS: $(EXTRACTSDIR)/cl_heart.owl
+.PRECIOUS: $(EXTRACTS_DIR)/cl_heart.owl
 
 
 # ----------------------------------------
 # Data Mirror Module
 # ----------------------------------------
 
-DATAMIRRORDIR = data/mirror
+DATA_MIRROR_DIR = data/mirror
 
 DATAMIRRORS = reference-spatial-entities generated-reference-spatial-entities hubmap-datasets
 
 DATMIR = true
 
-$(DATAMIRRORDIR)/reference-spatial-entities.jsonld:
+$(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld:
 	if [ $(DATMIR) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/reference-spatial-entities.jsonld -O $@; fi
-.PRECIOUS: $(DATAMIRRORDIR)/reference-spatial-entities.jsonld
+.PRECIOUS: $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld
 
-$(DATAMIRRORDIR)/generated-reference-spatial-entities.jsonld:
+$(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld:
 	if [ $(DATMIR) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld -O $@; fi
-.PRECIOUS: $(DATAMIRRORDIR)/generated-reference-spatial-entities.jsonld
+.PRECIOUS: $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld
 
-$(DATAMIRRORDIR)/hubmap-datasets.jsonld:
+$(DATA_MIRROR_DIR)/hubmap-datasets.jsonld:
 	if [ $(DATMIR) = true ]; then wget -nc https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld -O $@; fi
-.PRECIOUS: $(DATAMIRRORDIR)/hubmap-datasets.jsonld
+.PRECIOUS: $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld
 
 
 # ----------------------------------------
 # Data modules
 # ----------------------------------------
 
-DATADIR = data
+DATA_DIR = data
 
 DATA = reference_spatial_entities specimen_spatial_entities specimen_dataset
-DATA_FILES = $(patsubst %, $(DATADIR)/%.owl, $(DATA))
+DATA_FILES = $(patsubst %, $(DATA_DIR)/%.owl, $(DATA))
 
 DAT = true
 
@@ -269,27 +269,27 @@ check_spatial2ccf:
 check_specimen2ccf:
 	@type specimen2ccf > /dev/null 2>&1 || (echo "ERROR: specimen2ccf is required, please visit https://github.com/hubmapconsortium/specimen2ccf to install"; exit 1)
 
-$(DATADIR)/reference_spatial_entities.owl: check_spatial2ccf $(DATAMIRRORDIR)/reference-spatial-entities.jsonld $(DATAMIRRORDIR)/generated-reference-spatial-entities.jsonld
+$(DATA_DIR)/reference_spatial_entities.owl: check_spatial2ccf $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then spatial2ccf $(DATAMIRRORDIR)/reference-spatial-entities.jsonld \
-        $(DATAMIRRORDIR)/generated-reference-spatial-entities.jsonld \
+	if [ $(DAT) = true ]; then spatial2ccf $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld \
+        $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld \
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: $(DATADIR)/reference_spatial_entities.owl
+.PRECIOUS: $(DATA_DIR)/reference_spatial_entities.owl
 
-$(DATADIR)/specimen_spatial_entities.owl: check_spatial2ccf $(DATAMIRRORDIR)/hubmap-datasets.jsonld
+$(DATA_DIR)/specimen_spatial_entities.owl: check_spatial2ccf $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then spatial2ccf $(DATAMIRRORDIR)/hubmap-datasets.jsonld \
+	if [ $(DAT) = true ]; then spatial2ccf $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld \
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: $(DATADIR)/specimen_spatial_entities.owl
+.PRECIOUS: $(DATA_DIR)/specimen_spatial_entities.owl
 
-$(DATADIR)/specimen_dataset.owl: check_specimen2ccf $(DATAMIRRORDIR)/hubmap-datasets.jsonld
+$(DATA_DIR)/specimen_dataset.owl: check_specimen2ccf $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	if [ $(DAT) = true ]; then specimen2ccf data/sources/hubmap-datasets.jsonld \
         --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: $(DATADIR)/specimen_dataset.owl
+.PRECIOUS: $(DATA_DIR)/specimen_dataset.owl
 
 
 # ----------------------------------------
@@ -300,10 +300,10 @@ $(DATADIR)/specimen_dataset.owl: check_specimen2ccf $(DATAMIRRORDIR)/hubmap-data
 prepare_ccf_bso: $(ASCTB_FILES) $(EXTRACT_FILES)
 
 .PHONY: prepare_ccf_sco
-prepare_ccf_sco: $(DATADIR)/specimen_dataset.owl
+prepare_ccf_sco: $(DATA_DIR)/specimen_dataset.owl
 
 .PHONY: prepare_ccf_spo
-prepare_ccf_spo: $(DATADIR)/reference_spatial_entities.owl $(DATADIR)/specimen_spatial_entities.owl
+prepare_ccf_spo: $(DATA_DIR)/reference_spatial_entities.owl $(DATA_DIR)/specimen_spatial_entities.owl
 
 .PHONY: prepare_ccf
 prepare_ccf: $(ASCTB_FILES) $(EXTRACT_FILES) $(DATA_FILES)

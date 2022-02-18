@@ -3,11 +3,15 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-CCF_SRC = $(SRC)
+CCF_BSO = $(ONT)-bso
+CCF_SCO = $(ONT)-sco
+CCF_SPO = $(ONT)-spo
+CCF = $(ONT)
 
-CCF_BSO_SRC = $(ONT)-bso-edit.owl
-CCF_SCO_SRC = $(ONT)-sco-edit.owl
-CCF_SPO_SRC = $(ONT)-spo-edit.owl
+CCF_BSO_SRC = $(CCF_BSO)-edit.owl
+CCF_SCO_SRC = $(CCF_SCO)-edit.owl
+CCF_SPO_SRC = $(CCF_SPO)-edit.owl
+CCF_SRC = $(CCF)-edit.owl
 
 # ----------------------------------------
 # Import modules
@@ -408,7 +412,7 @@ prepare_ccf: $(ALL_COMPONENT_FILES)
 # Create the releases
 # ----------------------------------------
 
-CCF_RELEASE_ARTEFACTS = $(ONT)-bso $(ONT)-sco $(ONT)-spo $(ONT) 
+CCF_RELEASE_ARTEFACTS = $(CCF_BSO) $(CCF_SCO) $(CCF_SPO) $(CCF)
 CCF_RELEASE_FILES = $(patsubst %, %.owl, $(CCF_RELEASE_ARTEFACTS))
 
 .PHONY: release_all_ccf
@@ -417,22 +421,22 @@ release_all_ccf: $(CCF_RELEASE_FILES)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_bso
-release_ccf_bso: $(ONT)-bso.owl
+release_ccf_bso: $(CCF-BSO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Biological Structure (CCF-BSO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_sco
-release_ccf_sco: $(ONT)-sco.owl
+release_ccf_sco: $(CCF-SCO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Specimen (CCF-SCO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_spo
-release_ccf_spo: $(ONT)-spo.owl
+release_ccf_spo: $(CCF-SPO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF Spatial (CCF-SPO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf
-release_ccf: $(ONT).owl
+release_ccf: $(CCF).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for CCF ontology)
 	mv $^ $(RELEASEDIR)
 

@@ -35,12 +35,12 @@ Use the commands below to build the CCF ontology from scratch.
 ```
 $ git clone https://github.com/hubmapconsortium/ccf-ontology.git
 $ cd ccf-ontology/src/ontology
-$ make prepare_ccf
-$ make ccf
+$ make -s prepare_ccf
+$ make -s ccf
 $ open ccf.owl
 ```
 
-Use the command below to avoid re-downloading the some big files (bypassing the data mirror generation).
+The command below is to avoid re-downloading the some big files (bypassing the data mirror generation).
 ```
 $ make MIR=false DATMIR=false prepare_ccf -B
 ```
@@ -52,6 +52,11 @@ DATMIR=false - bypass download source files
 IMP=false - bypass import ontology generation
 IMP_LARGE=false - bypass large import ontology generation
 DAT=false - bypass ontology generation from external data
+```
+
+The command below is to create a release of CCF ontology, including all the three modules.
+```
+$ make -s release_ccf
 ```
 
 ## Contact

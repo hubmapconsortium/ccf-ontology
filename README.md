@@ -2,48 +2,55 @@
 
 More information can be found at https://bioportal.bioontology.org/ontologies/CCF
 
-## Versions
+## Ontology releases
 
-### Stable release versions
+Please check the Releases panel on the side bar to get the latest version.
 
-~~The latest version of the ontology can always be found at https://bioportal.bioontology.org/ontologies/CCF~~
+## Editing the ontologies
 
-### Editors' version
+Editors of the CCF ontology should use the edit version that can be found at [src/ontology/ccf-edit.owl](src/ontology/ccf-edit.owl) for the global CCF ontology.
 
-Editors of this ontology should use the edit version that can be found at [src/ontology/ccf-edit.owl](src/ontology/ccf-edit.owl)
+The other three ontology modules are located in the same folder:
+* CCF Biological Structure Ontology ([src/ontology/ccf-bso-edit.owl](src/ontology/ccf-bso-edit.owl))
+* CCF Specimen Ontology ([src/ontology/ccf-sco-edit.owl](src/ontology/ccf-sco-edit.owl))
+* CCF Spatial Ontology ([src/ontology/ccf-spo-edit.owl](src/ontology/ccf-spo-edit.owl))
 
 ## Build
 
 ### Prerequisites
 
-Users are required to install two programs to generate module ontologies from external data.
+Users are required to have all these programs installed in their local computer:
 
-- [cedar2ccf](https://github.com/hubmapconsortium/cedar2ccf)
-- [rui2ccf](https://github.com/hubmapconsortium/rui2ccf)
+- Java 8
+- [asctb2ccf](https://github.com/hubmapconsortium/asctb2ccf)
+- [specimen2ccf](https://github.com/hubmapconsortium/specimen2ccf)
+- [spatial2ccf](https://github.com/hubmapconsortium/spatial2ccf)
 
-Please consult with each GitHub site for the installation and configuration manual.
+Please look at each GitHub repository for the installation and configuration instructions.
 
 ### Commands
 
-Users who wish to build the CCF ontology by themselves can clone this repository and execute the `make` commands.
+Use the commands below to build the CCF ontology from scratch.
 
 ```
 $ git clone https://github.com/hubmapconsortium/ccf-ontology.git
 $ cd ccf-ontology/src/ontology
-$ make all_things
+$ make prepare_ccf
+$ make ccf
 $ open ccf.owl
 ```
 
-To skip re-downloading the required ontologies (bypassing mirror generation):
+Use the command below to avoid re-downloading the some big files (bypassing the data mirror generation).
 ```
-$ make MIR=false all_things -B
+$ make MIR=false DATMIR=false prepare_ccf -B
 ```
 
 Some other useful flags to skip some steps in the `make` command:
 ```
+MIR=false - bypass dowload source ontologies
+DATMIR=false - bypass download source files
 IMP=false - bypass import ontology generation
 IMP_LARGE=false - bypass large import ontology generation
-TMP=false - bypass ontology generation from templates
 DAT=false - bypass ontology generation from external data
 ```
 

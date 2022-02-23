@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.org/ccf/asctb_kidney-edit.owl#>)
+Prefix(:=<http://purl.org/ccf/asctb_heart-edit.owl#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(ccf:=<http://purl.org/ccf/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)

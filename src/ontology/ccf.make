@@ -19,7 +19,7 @@ CCF_SRC = $(CCF)-edit.owl
 
 COMPONENTS_DIR = components
 
-ASCTB_ORGANS = kidney heart brain
+ASCTB_ORGANS = kidney heart brain lung spleen thymus
 
 ASCTB_FILES = $(patsubst %, $(COMPONENTS_DIR)/asctb_%.owl, $(ASCTB_ORGANS))
 PARTONOMY_FILES = $(patsubst %, $(COMPONENTS_DIR)/ccf_partonomy_%.owl, $(ASCTB_ORGANS))
@@ -64,6 +64,21 @@ $(COMPONENTS_DIR)/asctb_brain.owl: $(COMPONENTS_DIR)/ccf_partonomy_brain.owl $(C
 	$(call make_asctb_component,asctb_brain-edit.owl )
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_brain.owl
 
+$(COMPONENTS_DIR)/asctb_lung.owl: $(COMPONENTS_DIR)/ccf_partonomy_lung.owl $(COMPONENTS_DIR)/ccf_cell_biomarkers_lung.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
+	$(call make_asctb_component,asctb_lung-edit.owl )
+.PRECIOUS: $(COMPONENTS_DIR)/asctb_lung.owl
+
+$(COMPONENTS_DIR)/asctb_spleen.owl: $(COMPONENTS_DIR)/ccf_partonomy_spleen.owl $(COMPONENTS_DIR)/ccf_cell_biomarkers_spleen.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
+	$(call make_asctb_component,asctb_spleen-edit.owl )
+.PRECIOUS: $(COMPONENTS_DIR)/asctb_spleen.owl
+
+$(COMPONENTS_DIR)/asctb_thymus.owl: $(COMPONENTS_DIR)/ccf_partonomy_thymus.owl $(COMPONENTS_DIR)/ccf_cell_biomarkers_thymus.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
+	$(call make_asctb_component,asctb_thymus-edit.owl )
+.PRECIOUS: $(COMPONENTS_DIR)/asctb_thymus.owl
+
 # ----------------------------------------
 
 define download_ccf_partonomy_component
@@ -96,6 +111,24 @@ $(COMPONENTS_DIR)/ccf_partonomy_brain.owl:
 	$(call download_ccf_partonomy_component,Brain)
 .PRECIOUS: $(COMPONENTS_DIR)/ccf_partonomy_brain.owl
 
+## DOWNLOAD-FILE: ccf_partonomy_lung
+$(COMPONENTS_DIR)/ccf_partonomy_lung.owl:
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
+	$(call download_ccf_partonomy_component,Lung)
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_partonomy_lung.owl
+
+## DOWNLOAD-FILE: ccf_partonomy_spleen
+$(COMPONENTS_DIR)/ccf_partonomy_spleen.owl:
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
+	$(call download_ccf_partonomy_component,Spleen)
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_partonomy_spleen.owl
+
+## DOWNLOAD-FILE: ccf_partonomy_thymus
+$(COMPONENTS_DIR)/ccf_partonomy_thymus.owl:
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading $@)
+	$(call download_ccf_partonomy_component,Thymus)
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_partonomy_thymus.owl
+
 # ----------------------------------------
 
 .PHONY: check_asctb2ccf
@@ -125,6 +158,23 @@ $(COMPONENTS_DIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf
 	$(call generate_ccf_cell_biomarkers_component,Brain)
 .PRECIOUS: $(COMPONENTS_DIR)/ccf_cell_biomarkers_brain.owl
 
+## GENERATE-DATA: ccf_cell_biomarkers_lung
+$(COMPONENTS_DIR)/ccf_cell_biomarkers_lung.owl: check_asctb2ccf
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call generate_ccf_cell_biomarkers_component,Lung)
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_cell_biomarkers_lung.owl
+
+## GENERATE-DATA: ccf_cell_biomarkers_spleen
+$(COMPONENTS_DIR)/ccf_cell_biomarkers_spleen.owl: check_asctb2ccf
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call generate_ccf_cell_biomarkers_component,Spleen)
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_cell_biomarkers_spleen.owl
+
+## GENERATE-DATA: ccf_cell_biomarkers_thymus
+$(COMPONENTS_DIR)/ccf_cell_biomarkers_thymus.owl: check_asctb2ccf
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call generate_ccf_cell_biomarkers_component,Thymus)
+.PRECIOUS: $(COMPONENTS_DIR)/ccf_cell_biomarkers_thymus.owl
 
 COMPONENT_FILES =\
 	$(ASCTB_FILES) \
@@ -137,19 +187,23 @@ COMPONENT_FILES =\
 
 EXTRACTS_DIR = extracts
 
-UBERON_EXTRACTS = uberon_kidney uberon_heart uberon_brain
-UBERON_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/%.owl, $(UBERON_EXTRACTS))
+UBERON_EXTRACTS = $(ASCTB_ORGANS)
+UBERON_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/uberon_%.owl, $(UBERON_EXTRACTS))
 
-FMA_EXTRACTS = fma_heart
-FMA_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/%.owl, $(FMA_EXTRACTS))
+FMA_EXTRACTS = heart lung
+FMA_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/fma_%.owl, $(FMA_EXTRACTS))
 
-CL_EXTRACTS = cl_kidney cl_heart
-CL_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/%.owl, $(CL_EXTRACTS))
+CL_EXTRACTS = kidney heart lung spleen thymus
+CL_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/cl_%.owl, $(CL_EXTRACTS))
+
+LMHA_EXTRACTS = lung
+LMHA_EXTRACT_FILES = $(patsubst %, $(EXTRACTS_DIR)/lmha_%.owl, $(LMHA_EXTRACTS))
 
 EXTRACT_FILES = \
 	$(UBERON_EXTRACT_FILES) \
 	$(FMA_EXTRACT_FILES) \
-	$(CL_EXTRACT_FILES)
+	$(CL_EXTRACT_FILES) \
+	$(LMHA_EXTRACT_FILES)
 
 EXT = true
 
@@ -159,6 +213,7 @@ all_extracts: $(EXTRACT_FILES)
 	$(foreach n, $(UBERON_EXTRACT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 	$(foreach n, $(FMA_EXTRACT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 	$(foreach n, $(CL_EXTRACT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
+	$(foreach n, $(LMHA_EXTRACT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 
 INTERMEDIATES_OPT = none
 
@@ -189,6 +244,15 @@ define extract_cl_terms
 		rm /tmp/entities.csv; fi
 endef
 
+define extract_lmha_terms
+	if [ $(EXT) = true ]; then $(ROBOT) merge --input $(1) \
+	    	query --query queries/get_lmha_entities.sparql /tmp/entities.csv && \
+		sed -i '' 1d /tmp/entities.csv && \
+		$(ROBOT) extract --method MIREOT --input $(2) --upper-term "obo:LMHA_00135" --lower-terms /tmp/entities.csv --intermediates $(INTERMEDIATES_OPT) \
+		  		 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@ && \
+		rm /tmp/entities.csv; fi
+endef
+
 ## GENERATE-DATA: uberon_kidney
 $(EXTRACTS_DIR)/uberon_kidney.owl: $(COMPONENTS_DIR)/asctb_kidney.owl mirror/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
@@ -207,6 +271,24 @@ $(EXTRACTS_DIR)/uberon_brain.owl: $(COMPONENTS_DIR)/asctb_brain.owl mirror/ubero
 	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTS_DIR)/uberon_brain.owl
 
+## GENERATE-DATA: uberon_lung
+$(EXTRACTS_DIR)/uberon_lung.owl: $(COMPONENTS_DIR)/asctb_lung.owl mirror/uberon.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
+.PRECIOUS: $(EXTRACTS_DIR)/uberon_lung.owl
+
+## GENERATE-DATA: uberon_spleen
+$(EXTRACTS_DIR)/uberon_spleen.owl: $(COMPONENTS_DIR)/asctb_spleen.owl mirror/uberon.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
+.PRECIOUS: $(EXTRACTS_DIR)/uberon_spleen.owl
+
+## GENERATE-DATA: uberon_thymus
+$(EXTRACTS_DIR)/uberon_thymus.owl: $(COMPONENTS_DIR)/asctb_thymus.owl mirror/uberon.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_uberon_terms, $(word 1, $^), $(word 2, $^))
+.PRECIOUS: $(EXTRACTS_DIR)/uberon_thymus.owl
+
 # ----------------------------------------
 
 ## GENERATE-DATA: fma_heart
@@ -214,6 +296,12 @@ $(EXTRACTS_DIR)/fma_heart.owl: $(COMPONENTS_DIR)/asctb_heart.owl mirror/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_fma_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTS_DIR)/fma_heart.owl
+
+## GENERATE-DATA: fma_lung
+$(EXTRACTS_DIR)/fma_lung.owl: $(COMPONENTS_DIR)/asctb_lung.owl mirror/fma.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_fma_terms, $(word 1, $^), $(word 2, $^))
+.PRECIOUS: $(EXTRACTS_DIR)/fma_lung.owl
 
 # ----------------------------------------
 
@@ -228,6 +316,32 @@ $(EXTRACTS_DIR)/cl_heart.owl: $(COMPONENTS_DIR)/asctb_heart.owl mirror/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
 .PRECIOUS: $(EXTRACTS_DIR)/cl_heart.owl
+
+## GENERATE-DATA: cl_lung
+$(EXTRACTS_DIR)/cl_lung.owl: $(COMPONENTS_DIR)/asctb_lung.owl mirror/cl.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
+.PRECIOUS: $(EXTRACTS_DIR)/cl_lung.owl
+
+## GENERATE-DATA: cl_spleen
+$(EXTRACTS_DIR)/cl_spleen.owl: $(COMPONENTS_DIR)/asctb_spleen.owl mirror/cl.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
+.PRECIOUS: $(EXTRACTS_DIR)/cl_spleen.owl
+
+## GENERATE-DATA: cl_thymus
+$(EXTRACTS_DIR)/cl_thymus.owl: $(COMPONENTS_DIR)/asctb_thymus.owl mirror/cl.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_cl_terms, $(word 1, $^), $(word 2, $^))
+.PRECIOUS: $(EXTRACTS_DIR)/cl_thymus.owl
+
+# ----------------------------------------
+
+## GENERATE-DATA: lmha_lung
+$(EXTRACTS_DIR)/lmha_lung.owl: $(COMPONENTS_DIR)/asctb_lung.owl mirror/lmha.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_lmha_terms, $(word 1, $^), $(word 2, $^))
+.PRECIOUS: $(EXTRACTS_DIR)/lmha_lung.owl
 
 
 # ----------------------------------------

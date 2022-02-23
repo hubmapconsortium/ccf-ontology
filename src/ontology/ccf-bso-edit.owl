@@ -10,19 +10,33 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.org/ccf/ccf-bso-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-bso-edit.owl>
+Import(<http://purl.org/ccf/components/asctb_brain.owl>)
 Import(<http://purl.org/ccf/components/asctb_heart.owl>)
 Import(<http://purl.org/ccf/components/asctb_kidney.owl>)
+Import(<http://purl.org/ccf/components/asctb_lung.owl>)
+Import(<http://purl.org/ccf/components/asctb_spleen.owl>)
+Import(<http://purl.org/ccf/components/asctb_thymus.owl>)
 Import(<http://purl.org/ccf/extracts/cl_heart.owl>)
 Import(<http://purl.org/ccf/extracts/cl_kidney.owl>)
+Import(<http://purl.org/ccf/extracts/cl_lung.owl>)
+Import(<http://purl.org/ccf/extracts/cl_spleen.owl>)
+Import(<http://purl.org/ccf/extracts/cl_thymus.owl>)
 Import(<http://purl.org/ccf/extracts/fma_heart.owl>)
+Import(<http://purl.org/ccf/extracts/fma_lung.owl>)
+Import(<http://purl.org/ccf/extracts/lmha_lung.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_brain.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_heart.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_kidney.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_lung.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_spleen.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_thymus.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/LMHA_00135>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(Class(ccf:anatomical_entity))
 Declaration(Class(ccf:biomarker))
+Declaration(Class(ccf:cell_type))
 Declaration(Class(ccf:characterizing_biomarker_set))
 Declaration(Class(<http://purl.org/sig/ont/fma/fma62955>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))
@@ -86,10 +100,16 @@ AnnotationAssertion(rdfs:label ccf:is_protein_marker_of "is protein marker of")
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/CL_0000000> (cell)
+# Class: <http://purl.obolibrary.org/obo/CL_0000000> (cell type (from CL))
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000000> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell type (from CL)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> ccf:cell_type)
+
+# Class: <http://purl.obolibrary.org/obo/LMHA_00135> (cell type (from LMHA))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/LMHA_00135> "cell type (from LMHA)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/LMHA_00135> ccf:cell_type)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity (from UBERON))
 
@@ -106,6 +126,11 @@ AnnotationAssertion(rdfs:label ccf:anatomical_entity "anatomical entity"@en)
 
 AnnotationAssertion(rdfs:comment ccf:biomarker "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:biomarker "biomarker"@en)
+
+# Class: ccf:cell_type (cell type)
+
+AnnotationAssertion(rdfs:comment ccf:cell_type "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:cell_type "cell type"@en)
 
 # Class: ccf:characterizing_biomarker_set (characterizing biomarker set)
 

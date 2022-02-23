@@ -9,18 +9,34 @@
     <uri name="http://purl.org/ccf/extracts/uberon_kidney.owl" uri="extracts/uberon_kidney.owl"/>
     <uri name="http://purl.org/ccf/extracts/uberon_heart.owl" uri="extracts/uberon_heart.owl"/>
     <uri name="http://purl.org/ccf/extracts/uberon_brain.owl" uri="extracts/uberon_brain.owl"/>
+    <uri name="http://purl.org/ccf/extracts/uberon_lung.owl" uri="extracts/uberon_lung.owl"/>
+    <uri name="http://purl.org/ccf/extracts/uberon_spleen.owl" uri="extracts/uberon_spleen.owl"/>
+    <uri name="http://purl.org/ccf/extracts/uberon_thymus.owl" uri="extracts/uberon_thymus.owl"/>
     <uri name="http://purl.org/ccf/extracts/fma_heart.owl" uri="extracts/fma_heart.owl"/>
+    <uri name="http://purl.org/ccf/extracts/fma_lung.owl" uri="extracts/fma_lung.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_kidney.owl" uri="extracts/cl_kidney.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_heart.owl" uri="extracts/cl_heart.owl"/>
+    <uri name="http://purl.org/ccf/extracts/cl_lung.owl" uri="extracts/cl_lung.owl"/>
+    <uri name="http://purl.org/ccf/extracts/cl_spleen.owl" uri="extracts/cl_spleen.owl"/>
+    <uri name="http://purl.org/ccf/extracts/cl_thymus.owl" uri="extracts/cl_thymus.owl"/>
+    <uri name="http://purl.org/ccf/extracts/lmha_lung.owl" uri="extracts/lmha_lung.owl"/>
     <uri name="http://purl.org/ccf/components/ccf_partonomy_kidney.owl" uri="components/ccf_partonomy_kidney.owl"/>
     <uri name="http://purl.org/ccf/components/ccf_partonomy_heart.owl" uri="components/ccf_partonomy_heart.owl"/>
     <uri name="http://purl.org/ccf/components/ccf_partonomy_brain.owl" uri="components/ccf_partonomy_brain.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_partonomy_lung.owl" uri="components/ccf_partonomy_lung.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_partonomy_spleen.owl" uri="components/ccf_partonomy_spleen.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_partonomy_thymus.owl" uri="components/ccf_partonomy_thymus.owl"/>
     <uri name="http://purl.org/ccf/components/ccf_cell_biomarkers_kidney.owl" uri="components/ccf_cell_biomarkers_kidney.owl"/>
     <uri name="http://purl.org/ccf/components/ccf_cell_biomarkers_heart.owl" uri="components/ccf_cell_biomarkers_heart.owl"/>
     <uri name="http://purl.org/ccf/components/ccf_cell_biomarkers_brain.owl" uri="components/ccf_cell_biomarkers_brain.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_cell_biomarkers_lung.owl" uri="components/ccf_cell_biomarkers_lung.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_cell_biomarkers_spleen.owl" uri="components/ccf_cell_biomarkers_spleen.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_cell_biomarkers_thymus.owl" uri="components/ccf_cell_biomarkers_thymus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_kidney.owl" uri="components/asctb_kidney.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_heart.owl" uri="components/asctb_heart.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_brain.owl" uri="components/asctb_brain.owl"/>
-
+    <uri name="http://purl.org/ccf/components/asctb_lung.owl" uri="components/asctb_lung.owl"/>
+    <uri name="http://purl.org/ccf/components/asctb_spleen.owl" uri="components/asctb_spleen.owl"/>
+    <uri name="http://purl.org/ccf/components/asctb_thymus.owl" uri="components/asctb_thymus.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>

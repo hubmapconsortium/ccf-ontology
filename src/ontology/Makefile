@@ -331,6 +331,18 @@ mirror/loinc.owl: mirror/loinc.trigger
 .PRECIOUS: mirror/loinc.owl
 
 
+## ONTOLOGY: lmha
+## Copy of lmha is re-downloaded whenever source changes
+mirror/lmha.trigger: $(SRC)
+mirror/lmha.owl: mirror/lmha.trigger
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading lmha.owl)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://www.lungmap.net/assets/Uploads/ontology/558488ae7f/LMHA_20190512_Cell.zip && \
+			unzip LMHA_20190512_Cell.zip && rm LMHA_20190512_Cell.zip && \
+		  mv LMHA_20190512_Cell.owl $@.tmp.owl && \
+			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://www.ebi.ac.uk/efo.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+.PRECIOUS: mirror/lmha.owl
+
+
 # ----------------------------------------
 # Subsets
 # ----------------------------------------

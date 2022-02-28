@@ -1,0 +1,132 @@
+Prefix(:=<http://purl.org/ccf/asctb_urinary_bladder-edit.owl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(ccf:=<http://purl.org/ccf/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+
+
+Ontology(<http://purl.org/ccf/asctb_urinary_bladder-edit.owl>
+<http://purl.org/ccf/releases/latest/asctb_urinary_bladder-edit.owl>
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_urinary_bladder.owl>)
+Import(<http://purl.org/ccf/components/ccf_partonomy_urinary_bladder.owl>)
+
+
+Declaration(AnnotationProperty(obo:BFO_0000179))
+Declaration(AnnotationProperty(obo:BFO_0000180))
+Declaration(AnnotationProperty(obo:IAO_0000111))
+Declaration(AnnotationProperty(obo:IAO_0000112))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000116))
+Declaration(AnnotationProperty(obo:IAO_0000117))
+Declaration(AnnotationProperty(obo:IAO_0000118))
+Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(obo:IAO_0000232))
+Declaration(AnnotationProperty(obo:IAO_0000412))
+Declaration(AnnotationProperty(obo:IAO_0000600))
+Declaration(AnnotationProperty(obo:IAO_0000601))
+Declaration(AnnotationProperty(obo:IAO_0000602))
+Declaration(AnnotationProperty(obo:IAO_0010000))
+Declaration(AnnotationProperty(dc:contributor))
+Declaration(AnnotationProperty(dc:member))
+Declaration(AnnotationProperty(rdfs:isDefinedBy))
+Declaration(AnnotationProperty(rdfs:seeAlso))
+Declaration(AnnotationProperty(foaf:homepage))
+Declaration(Datatype(xsd:date))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: obo:BFO_0000179 (BFO OWL specification label)
+
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000179 "Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification."@en)
+AnnotationAssertion(obo:IAO_0000232 obo:BFO_0000179 "Really of interest to developers only"@en)
+AnnotationAssertion(rdfs:label obo:BFO_0000179 "BFO OWL specification label"@en)
+SubAnnotationPropertyOf(obo:BFO_0000179 rdfs:label)
+
+# Annotation Property: obo:BFO_0000180 (BFO CLIF specification label)
+
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000180 "Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:BFO_0000180 "Person:Alan Ruttenberg")
+AnnotationAssertion(obo:IAO_0000232 obo:BFO_0000180 "Really of interest to developers only"@en)
+AnnotationAssertion(rdfs:label obo:BFO_0000180 "BFO CLIF specification label"@en)
+SubAnnotationPropertyOf(obo:BFO_0000180 rdfs:label)
+
+# Annotation Property: obo:IAO_0000111 (editor preferred term)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000111 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term"@en)
+
+# Annotation Property: obo:IAO_0000112 (example of usage)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000112 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage"@en)
+
+# Annotation Property: obo:IAO_0000115 (definition)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000115 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
+
+# Annotation Property: obo:IAO_0000116 (editor note)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000116 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000116 "editor note"@en)
+
+# Annotation Property: obo:IAO_0000117 (term editor)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000117 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor"@en)
+
+# Annotation Property: obo:IAO_0000118 (alternative term)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000118 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative term"@en)
+
+# Annotation Property: obo:IAO_0000119 (definition source)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000119 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
+
+# Annotation Property: obo:IAO_0000232 (curator note)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000232 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000232 "curator note"@en)
+
+# Annotation Property: obo:IAO_0000412 (imported from)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000412 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
+
+# Annotation Property: obo:IAO_0000600 (elucidation)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000600 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000600 "elucidation"@en)
+
+# Annotation Property: obo:IAO_0000601 (has associated axiom(nl))
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000601 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000601 "has associated axiom(nl)"@en)
+
+# Annotation Property: obo:IAO_0000602 (has associated axiom(fol))
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0000602 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000602 "has associated axiom(fol)"@en)
+
+# Annotation Property: obo:IAO_0010000 (has axiom label)
+
+AnnotationAssertion(rdfs:isDefinedBy obo:IAO_0010000 obo:iao.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0010000 "has axiom label"@en)
+
+
+
+AnnotationAssertion(obo:IAO_0000119 <http://example.com/bfo-spec-label> "Person:Alan Ruttenberg")
+AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/080-003>) obo:IAO_0000600 obo:BFO_0000134 "To say that each spatiotemporal region s temporally_projects_onto some temporal region t is to say that t is the temporal extension of s. (axiom label in BFO2 Reference: [080-003])"@en)
+AnnotationAssertion(Annotation(obo:IAO_0010000 <http://purl.obolibrary.org/obo/bfo/axiom/081-003>) obo:IAO_0000600 obo:BFO_0000134 "To say that spatiotemporal region s spatially_projects_onto spatial region r at t is to say that r is the spatial extent of s at t. (axiom label in BFO2 Reference: [081-003])"@en)
+)

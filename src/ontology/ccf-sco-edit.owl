@@ -46,7 +46,7 @@ Declaration(ObjectProperty(ccf:has_biological_sex))
 Declaration(ObjectProperty(ccf:has_dataset_item))
 Declaration(ObjectProperty(ccf:has_ethnicity))
 Declaration(ObjectProperty(ccf:has_race))
-Declaration(ObjectProperty(ccf:has_rui_location))
+Declaration(ObjectProperty(ccf:has_registration_location))
 Declaration(ObjectProperty(ccf:part_of_tissue_block))
 Declaration(ObjectProperty(ccf:provided_by))
 Declaration(ObjectProperty(ccf:subdivided_into_sections))
@@ -241,10 +241,10 @@ AnnotationAssertion(rdfs:label ccf:has_ethnicity "has ethnicity")
 AnnotationAssertion(rdfs:comment ccf:has_race "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:has_race "has race")
 
-# Object Property: ccf:has_rui_location (has rui location)
+# Object Property: ccf:has_registration_location (has registration location)
 
-AnnotationAssertion(rdfs:comment ccf:has_rui_location "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:has_rui_location "has rui location")
+AnnotationAssertion(rdfs:comment ccf:has_registration_location "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_registration_location "has registration location")
 
 # Object Property: ccf:part_of_tissue_block (part of tissue block)
 

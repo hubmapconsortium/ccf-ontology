@@ -38,8 +38,8 @@ Declaration(Class(ccf:tissue_block))
 Declaration(Class(ccf:tissue_mapping_center))
 Declaration(Class(ccf:tissue_section))
 Declaration(ObjectProperty(ccf:created_by))
-Declaration(ObjectProperty(ccf:donated_by))
-Declaration(ObjectProperty(ccf:donates))
+Declaration(ObjectProperty(ccf:comes_from))
+Declaration(ObjectProperty(ccf:provides))
 Declaration(ObjectProperty(ccf:extracted_by))
 Declaration(ObjectProperty(ccf:generates_dataset))
 Declaration(ObjectProperty(ccf:has_biological_sex))
@@ -201,15 +201,15 @@ AnnotationAssertion(rdfs:label ccf:weight_unit "weight unit")
 AnnotationAssertion(rdfs:comment ccf:created_by "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:created_by "created by")
 
-# Object Property: ccf:donated_by (donated by)
+# Object Property: ccf:comes_from (comes from)
 
-AnnotationAssertion(rdfs:comment ccf:donated_by "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:donated_by "donated by")
+AnnotationAssertion(rdfs:comment ccf:comes_from "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:comes_from "comes from")
 
-# Object Property: ccf:donates (donates)
+# Object Property: ccf:provides (provides)
 
-AnnotationAssertion(rdfs:comment ccf:donates "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:donates "donates")
+AnnotationAssertion(rdfs:comment ccf:provides "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:provides "provides")
 
 # Object Property: ccf:extracted_by (extracted by)
 
@@ -344,7 +344,7 @@ SubClassOf(ccf:dataset ObjectSomeValuesFrom(ccf:provided_by ccf:tissue_mapping_c
 AnnotationAssertion(rdfs:comment ccf:donor "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:donor "donor")
 SubClassOf(ccf:donor ccf:person)
-SubClassOf(ccf:donor ObjectSomeValuesFrom(ccf:donates ccf:sample))
+SubClassOf(ccf:donor ObjectSomeValuesFrom(ccf:provides ccf:sample))
 
 # Class: ccf:ethnicity (ethnicity)
 
@@ -390,7 +390,7 @@ AnnotationAssertion(rdfs:label ccf:race "race")
 
 AnnotationAssertion(rdfs:comment ccf:sample "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:sample "sample")
-SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:donated_by ccf:donor))
+SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:comes_from ccf:donor))
 SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:extracted_by ccf:operator))
 SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:generates_dataset ccf:dataset))
 SubClassOf(ccf:sample ObjectSomeValuesFrom(ccf:provided_by ccf:tissue_mapping_center))

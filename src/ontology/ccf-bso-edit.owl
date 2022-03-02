@@ -35,6 +35,34 @@ Import(<http://purl.org/ccf/components/asctb_thymus.owl>)
 Import(<http://purl.org/ccf/components/asctb_ureter.owl>)
 Import(<http://purl.org/ccf/components/asctb_urinary_bladder.owl>)
 Import(<http://purl.org/ccf/components/asctb_uterus.owl>)
+Import(<http://purl.org/ccf/extracts/cl_blood.owl>)
+Import(<http://purl.org/ccf/extracts/cl_blood_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/cl_bone_marrow.owl>)
+Import(<http://purl.org/ccf/extracts/cl_eye.owl>)
+Import(<http://purl.org/ccf/extracts/cl_heart.owl>)
+Import(<http://purl.org/ccf/extracts/cl_kidney.owl>)
+Import(<http://purl.org/ccf/extracts/cl_large_intestine.owl>)
+Import(<http://purl.org/ccf/extracts/cl_liver.owl>)
+Import(<http://purl.org/ccf/extracts/cl_lung.owl>)
+Import(<http://purl.org/ccf/extracts/cl_lymph_node.owl>)
+Import(<http://purl.org/ccf/extracts/cl_lymph_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/cl_ovary.owl>)
+Import(<http://purl.org/ccf/extracts/cl_pancreas.owl>)
+Import(<http://purl.org/ccf/extracts/cl_peripheral_nervous_system.owl>)
+Import(<http://purl.org/ccf/extracts/cl_prostate.owl>)
+Import(<http://purl.org/ccf/extracts/cl_skin.owl>)
+Import(<http://purl.org/ccf/extracts/cl_small_intestine.owl>)
+Import(<http://purl.org/ccf/extracts/cl_spleen.owl>)
+Import(<http://purl.org/ccf/extracts/cl_thymus.owl>)
+Import(<http://purl.org/ccf/extracts/cl_urinary_bladder.owl>)
+Import(<http://purl.org/ccf/extracts/cl_uterus.owl>)
+Import(<http://purl.org/ccf/extracts/fma_blood_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/fma_heart.owl>)
+Import(<http://purl.org/ccf/extracts/fma_lung.owl>)
+Import(<http://purl.org/ccf/extracts/fma_lymph_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/fma_ovary.owl>)
+Import(<http://purl.org/ccf/extracts/fma_peripheral_nervous_system.owl>)
+Import(<http://purl.org/ccf/extracts/lmha_lung.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_blood.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_blood_vasculature.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_bone_marrow.owl>)
@@ -60,59 +88,45 @@ Import(<http://purl.org/ccf/extracts/uberon_thymus.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_ureter.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_urinary_bladder.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_uterus.owl>)
-Import(<http://purl.org/ccf/extracts/fma_heart.owl>)
-Import(<http://purl.org/ccf/extracts/fma_lung.owl>)
-Import(<http://purl.org/ccf/extracts/fma_blood_vasculature.owl>)
-Import(<http://purl.org/ccf/extracts/fma_lymph_vasculature.owl>)
-Import(<http://purl.org/ccf/extracts/fma_ovary.owl>)
-#Import(<http://purl.org/ccf/extracts/fma_pancreas.owl>)
-Import(<http://purl.org/ccf/extracts/fma_peripheral_nervous_system.owl>)
-#Import(<http://purl.org/ccf/extracts/fma_small_intestine.owl>)
-#Import(<http://purl.org/ccf/extracts/fma_uterus.owl>)
-Import(<http://purl.org/ccf/extracts/cl_blood.owl>)
-Import(<http://purl.org/ccf/extracts/cl_blood_vasculature.owl>)
-Import(<http://purl.org/ccf/extracts/cl_bone_marrow.owl>)
-#Import(<http://purl.org/ccf/extracts/cl_brain.owl>)
-Import(<http://purl.org/ccf/extracts/cl_eye.owl>)
-#Import(<http://purl.org/ccf/extracts/cl_fallopian_tube.owl>)
-Import(<http://purl.org/ccf/extracts/cl_heart.owl>)
-Import(<http://purl.org/ccf/extracts/cl_kidney.owl>)
-#Import(<http://purl.org/ccf/extracts/cl_knee.owl>)
-Import(<http://purl.org/ccf/extracts/cl_large_intestine.owl>)
-Import(<http://purl.org/ccf/extracts/cl_liver.owl>)
-Import(<http://purl.org/ccf/extracts/cl_lung.owl>)
-Import(<http://purl.org/ccf/extracts/cl_lymph_node.owl>)
-Import(<http://purl.org/ccf/extracts/cl_lymph_vasculature.owl>)
-Import(<http://purl.org/ccf/extracts/cl_ovary.owl>)
-Import(<http://purl.org/ccf/extracts/cl_pancreas.owl>)
-Import(<http://purl.org/ccf/extracts/cl_peripheral_nervous_system.owl>)
-Import(<http://purl.org/ccf/extracts/cl_prostate.owl>)
-Import(<http://purl.org/ccf/extracts/cl_skin.owl>)
-Import(<http://purl.org/ccf/extracts/cl_small_intestine.owl>)
-Import(<http://purl.org/ccf/extracts/cl_spleen.owl>)
-Import(<http://purl.org/ccf/extracts/cl_thymus.owl>)
-#Import(<http://purl.org/ccf/extracts/cl_ureter.owl>)
-Import(<http://purl.org/ccf/extracts/cl_urinary_bladder.owl>)
-Import(<http://purl.org/ccf/extracts/cl_uterus.owl>)
-Import(<http://purl.org/ccf/extracts/lmha_lung.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/LMHA_00135>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
-Declaration(Class(ccf:anatomical_entity))
+Declaration(Class(ccf:anatomical_structure))
 Declaration(Class(ccf:biomarker))
 Declaration(Class(ccf:cell_type))
 Declaration(Class(ccf:characterizing_biomarker_set))
 Declaration(Class(<http://purl.org/sig/ont/fma/fma62955>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))
-Declaration(ObjectProperty(ccf:has_characterizing_biomarker_set))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015004>))
 Declaration(ObjectProperty(ccf:has_gene_marker))
 Declaration(ObjectProperty(ccf:has_member))
 Declaration(ObjectProperty(ccf:has_protein_marker))
-Declaration(ObjectProperty(ccf:is_characterizing_biomarker_set_of))
-Declaration(ObjectProperty(ccf:is_gene_marker_of))
-Declaration(ObjectProperty(ccf:is_protein_marker_of))
+Declaration(AnnotationProperty(ccf:ccf_asctb_type))
+Declaration(AnnotationProperty(ccf:ccf_characterizes))
+Declaration(AnnotationProperty(ccf:ccf_located_in))
+Declaration(AnnotationProperty(ccf:ccf_part_of))
 Declaration(AnnotationProperty(dcterms:source))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: ccf:ccf_asctb_type (ccf:ccf_asctb_type)
+
+AnnotationAssertion(rdfs:comment ccf:ccf_asctb_type "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+
+# Annotation Property: ccf:ccf_characterizes (ccf:ccf_characterizes)
+
+AnnotationAssertion(rdfs:comment ccf:ccf_characterizes "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+
+# Annotation Property: ccf:ccf_located_in (ccf:ccf_located_in)
+
+AnnotationAssertion(rdfs:comment ccf:ccf_located_in "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+
+# Annotation Property: ccf:ccf_part_of (ccf:ccf_part_of)
+
+AnnotationAssertion(rdfs:comment ccf:ccf_part_of "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+
 
 ############################
 #   Object Properties
@@ -123,10 +137,10 @@ Declaration(AnnotationProperty(dcterms:source))
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0001025> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001025> "located in")
 
-# Object Property: ccf:has_characterizing_biomarker_set (has characterizing biomarker set)
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015004> (has characterizing marker set)
 
-AnnotationAssertion(rdfs:comment ccf:has_characterizing_biomarker_set "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:has_characterizing_biomarker_set "has characterizing biomarker set")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0015004> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015004> "has characterizing marker set")
 
 # Object Property: ccf:has_gene_marker (has gene marker)
 
@@ -143,21 +157,6 @@ AnnotationAssertion(rdfs:label ccf:has_member "has member")
 
 AnnotationAssertion(rdfs:comment ccf:has_protein_marker "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:has_protein_marker "has protein marker")
-
-# Object Property: ccf:is_characterizing_biomarker_set_of (is characterizing biomarker set of)
-
-AnnotationAssertion(rdfs:comment ccf:is_characterizing_biomarker_set_of "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:is_characterizing_biomarker_set_of "is characterizing biomarker set of")
-
-# Object Property: ccf:is_gene_marker_of (is gene marker of)
-
-AnnotationAssertion(rdfs:comment ccf:is_gene_marker_of "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:is_gene_marker_of "is gene marker of")
-
-# Object Property: ccf:is_protein_marker_of (is protein marker of)
-
-AnnotationAssertion(rdfs:comment ccf:is_protein_marker_of "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:is_protein_marker_of "is protein marker of")
 
 
 
@@ -180,12 +179,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/LMHA_00135> ccf:cell_type)
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UBERON_0001062> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity (from UBERON)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> ccf:anatomical_entity)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> ccf:anatomical_structure)
 
-# Class: ccf:anatomical_entity (anatomical entity)
+# Class: ccf:anatomical_structure (anatomical structure)
 
-AnnotationAssertion(rdfs:comment ccf:anatomical_entity "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:anatomical_entity "anatomical entity"@en)
+AnnotationAssertion(rdfs:comment ccf:anatomical_structure "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:anatomical_structure "anatomical structure"@en)
 
 # Class: ccf:biomarker (biomarker)
 
@@ -206,7 +205,7 @@ AnnotationAssertion(rdfs:label ccf:characterizing_biomarker_set "characterizing 
 
 AnnotationAssertion(rdfs:comment <http://purl.org/sig/ont/fma/fma62955> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.org/sig/ont/fma/fma62955> "anatomical entity (from FMA)"@en)
-SubClassOf(<http://purl.org/sig/ont/fma/fma62955> ccf:anatomical_entity)
+SubClassOf(<http://purl.org/sig/ont/fma/fma62955> ccf:anatomical_structure)
 
 
 )

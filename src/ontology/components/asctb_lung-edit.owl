@@ -15,8 +15,13 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_lung-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_lung-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_lung.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_lung.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_lung.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_lung.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_lung.owl>)
+Import(<http://purl.org/ccf/extracts/cl_lung.owl>)
+Import(<http://purl.org/ccf/extracts/fma_lung.owl>)
+Import(<http://purl.org/ccf/extracts/lmha_lung.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

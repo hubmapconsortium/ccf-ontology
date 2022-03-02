@@ -15,8 +15,12 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_small_intestine-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_small_intestine-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_small_intestine.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_small_intestine.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_small_intestine.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_small_intestine.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_small_intestine.owl>)
+Import(<http://purl.org/ccf/extracts/cl_small_intestine.owl>)
+Import(<http://purl.org/ccf/extracts/fma_small_intestine.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

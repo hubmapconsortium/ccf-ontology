@@ -15,8 +15,12 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_uterus-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_uterus-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_uterus.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_uterus.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_uterus.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_uterus.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_uterus.owl>)
+Import(<http://purl.org/ccf/extracts/cl_uterus.owl>)
+Import(<http://purl.org/ccf/extracts/fma_uterus.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

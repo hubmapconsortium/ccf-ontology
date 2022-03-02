@@ -15,8 +15,11 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_eye-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_eye-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_eye.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_eye.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_eye.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_eye.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_eye.owl>)
+Import(<http://purl.org/ccf/extracts/cl_eye.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

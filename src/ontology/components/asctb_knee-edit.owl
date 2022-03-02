@@ -15,8 +15,11 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_knee-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_knee-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_knee.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_knee.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_knee.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_knee.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_knee.owl>)
+Import(<http://purl.org/ccf/extracts/cl_knee.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

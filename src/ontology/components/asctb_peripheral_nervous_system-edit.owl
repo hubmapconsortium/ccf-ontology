@@ -15,8 +15,12 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_peripheral_nervous_system-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_peripheral_nervous_system-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_peripheral_nervous_system.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_peripheral_nervous_system.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_peripheral_nervous_system.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_peripheral_nervous_system.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_peripheral_nervous_system.owl>)
+Import(<http://purl.org/ccf/extracts/cl_peripheral_nervous_system.owl>)
+Import(<http://purl.org/ccf/extracts/fma_peripheral_nervous_system.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

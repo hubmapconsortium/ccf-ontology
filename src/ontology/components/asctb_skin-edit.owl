@@ -15,8 +15,11 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_skin-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_skin-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_skin.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_skin.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_skin.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_skin.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_skin.owl>)
+Import(<http://purl.org/ccf/extracts/cl_skin.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

@@ -14,8 +14,11 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_spleen-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_spleen-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_spleen.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_spleen.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_spleen.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_spleen.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_spleen.owl>)
+Import(<http://purl.org/ccf/extracts/cl_spleen.owl>)
 
 Declaration(AnnotationProperty(obo:BFO_0000179))
 Declaration(AnnotationProperty(obo:BFO_0000180))

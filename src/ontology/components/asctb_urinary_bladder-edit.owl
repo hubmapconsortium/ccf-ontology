@@ -15,8 +15,11 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_urinary_bladder-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_urinary_bladder-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_urinary_bladder.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_urinary_bladder.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_urinary_bladder.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_urinary_bladder.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_urinary_bladder.owl>)
+Import(<http://purl.org/ccf/extracts/cl_urinary_bladder.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

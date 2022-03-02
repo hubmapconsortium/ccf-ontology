@@ -15,8 +15,12 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_pancreas-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_pancreas-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_pancreas.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_pancreas.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_pancreas.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_pancreas.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_pancreas.owl>)
+Import(<http://purl.org/ccf/extracts/cl_pancreas.owl>)
+Import(<http://purl.org/ccf/extracts/fma_pancreas.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

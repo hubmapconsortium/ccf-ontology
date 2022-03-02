@@ -15,8 +15,12 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_lymph_vasculature-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_lymph_vasculature-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_lymph_vasculature.owl>)
 Import(<http://purl.org/ccf/components/ccf_partonomy_lymph_vasculature.owl>)
+Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_lymph_vasculature.owl>)
+Import(<http://purl.org/ccf/components/ccf_asctb_annotations_lymph_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/uberon_lymph_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/cl_lymph_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/fma_lymph_vasculature.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

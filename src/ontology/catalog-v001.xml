@@ -43,21 +43,21 @@
     <uri name="http://purl.org/ccf/extracts/fma_blood_vasculature.owl" uri="extracts/fma_blood_vasculature.owl"/>
     <uri name="http://purl.org/ccf/extracts/fma_lymph_vasculature.owl" uri="extracts/fma_lymph_vasculature.owl"/>
     <uri name="http://purl.org/ccf/extracts/fma_ovary.owl" uri="extracts/fma_ovary.owl"/>
-    <!-- <uri name="http://purl.org/ccf/extracts/fma_pancreas.owl" uri="extracts/fma_pancreas.owl"/> -->
+    <uri name="http://purl.org/ccf/extracts/fma_pancreas.owl" uri="extracts/fma_pancreas.owl"/>
     <uri name="http://purl.org/ccf/extracts/fma_peripheral_nervous_system.owl" uri="extracts/fma_peripheral_nervous_system.owl"/>
-    <!-- <uri name="http://purl.org/ccf/extracts/fma_small_intestine.owl" uri="extracts/fma_small_intestine.owl"/> -->
-    <!-- <uri name="http://purl.org/ccf/extracts/fma_uterus.owl" uri="extracts/fma_uterus.owl"/> -->
+    <uri name="http://purl.org/ccf/extracts/fma_small_intestine.owl" uri="extracts/fma_small_intestine.owl"/>
+    <uri name="http://purl.org/ccf/extracts/fma_uterus.owl" uri="extracts/fma_uterus.owl"/>
 
     <!-- CL Extract -->
     <uri name="http://purl.org/ccf/extracts/cl_blood.owl" uri="extracts/cl_blood.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_blood_vasculature.owl" uri="extracts/cl_blood_vasculature.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_bone_marrow.owl" uri="extracts/cl_bone_marrow.owl"/>
-    <!-- <uri name="http://purl.org/ccf/extracts/cl_brain.owl" uri="extracts/cl_brain.owl"/> -->
+    <uri name="http://purl.org/ccf/extracts/cl_brain.owl" uri="extracts/cl_brain.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_eye.owl" uri="extracts/cl_eye.owl"/>
-    <!-- <uri name="http://purl.org/ccf/extracts/cl_fallopian_tube.owl" uri="extracts/cl_fallopian_tube.owl"/> -->
+    <uri name="http://purl.org/ccf/extracts/cl_fallopian_tube.owl" uri="extracts/cl_fallopian_tube.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_heart.owl" uri="extracts/cl_heart.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_kidney.owl" uri="extracts/cl_kidney.owl"/>
-    <!-- <uri name="http://purl.org/ccf/extracts/cl_knee.owl" uri="extracts/cl_knee.owl"/> -->
+    <uri name="http://purl.org/ccf/extracts/cl_knee.owl" uri="extracts/cl_knee.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_large_intestine.owl" uri="extracts/cl_large_intestine.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_liver.owl" uri="extracts/cl_liver.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_lung.owl" uri="extracts/cl_lung.owl"/>
@@ -71,7 +71,7 @@
     <uri name="http://purl.org/ccf/extracts/cl_small_intestine.owl" uri="extracts/cl_small_intestine.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_spleen.owl" uri="extracts/cl_spleen.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_thymus.owl" uri="extracts/cl_thymus.owl"/>
-    <!-- <uri name="http://purl.org/ccf/extracts/cl_ureter.owl" uri="extracts/cl_ureter.owl"/> -->
+    <uri name="http://purl.org/ccf/extracts/cl_ureter.owl" uri="extracts/cl_ureter.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_urinary_bladder.owl" uri="extracts/cl_urinary_bladder.owl"/>
     <uri name="http://purl.org/ccf/extracts/cl_uterus.owl" uri="extracts/cl_uterus.owl"/>
 

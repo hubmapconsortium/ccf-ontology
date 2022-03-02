@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_bone_marrow-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_bone_marrow-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_bone_marrow.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_bone_marrow.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_bone_marrow.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_bone_marrow.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_bone_marrow.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_bone_marrow.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_bone_marrow.owl>)
 Import(<http://purl.org/ccf/extracts/cl_bone_marrow.owl>)
 

@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_large_intestine-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_large_intestine-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_large_intestine.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_large_intestine.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_large_intestine.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_large_intestine.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_large_intestine.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_large_intestine.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_large_intestine.owl>)
 Import(<http://purl.org/ccf/extracts/cl_large_intestine.owl>)
 

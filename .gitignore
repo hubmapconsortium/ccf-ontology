@@ -43,10 +43,8 @@ src/ontology/tmp/*
 src/ontology/imports/*_terms_combined.txt
 src/ontology/imports/*_import.owl
 
-src/ontology/components/asctb_*.owl
-src/ontology/components/ccf_partonomy_*.owl
-src/ontology/components/ccf_cell_biomarkers_*.owl
-src/ontology/components/ccf_asctb_annotations_*.owl
+src/ontology/components/*.owl
+src/ontology/components/generated/*.owl
 !src/ontology/components/*-edit.owl
 src/ontology/data/*.owl
 src/ontology/extracts/*.owl

@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_lymph_node-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_lymph_node-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_lymph_node.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_lymph_node.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_lymph_node.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_lymph_node.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_lymph_node.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_lymph_node.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_lymph_node.owl>)
 Import(<http://purl.org/ccf/extracts/cl_lymph_node.owl>)
 

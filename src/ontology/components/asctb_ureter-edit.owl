@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_ureter-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_ureter-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_ureter.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_ureter.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_ureter.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_ureter.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_ureter.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_ureter.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_ureter.owl>)
 Import(<http://purl.org/ccf/extracts/cl_ureter.owl>)
 

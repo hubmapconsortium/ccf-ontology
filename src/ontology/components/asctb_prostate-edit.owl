@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_prostate-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_prostate-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_prostate.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_prostate.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_prostate.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_prostate.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_prostate.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_prostate.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_prostate.owl>)
 Import(<http://purl.org/ccf/extracts/cl_prostate.owl>)
 

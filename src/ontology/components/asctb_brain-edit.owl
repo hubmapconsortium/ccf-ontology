@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_brain-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_brain-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_brain.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_brain.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_brain.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_brain.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_brain.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_brain.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_brain.owl>)
 #Import(<http://purl.org/ccf/extracts/cl_brain.owl>)
 

@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_ovary-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_ovary-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_ovary.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_ovary.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_ovary.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_ovary.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_ovary.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_ovary.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_ovary.owl>)
 Import(<http://purl.org/ccf/extracts/cl_ovary.owl>)
 Import(<http://purl.org/ccf/extracts/fma_ovary.owl>)

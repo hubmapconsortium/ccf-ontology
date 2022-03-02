@@ -15,9 +15,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_heart-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_heart-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_heart.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_heart.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_heart.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_heart.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_heart.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_heart.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_heart.owl>)
 Import(<http://purl.org/ccf/extracts/cl_heart.owl>)
 Import(<http://purl.org/ccf/extracts/fma_heart.owl>)

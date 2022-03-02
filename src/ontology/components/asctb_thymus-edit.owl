@@ -14,9 +14,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.org/ccf/asctb_thymus-edit.owl>
 <http://purl.org/ccf/releases/latest/asctb_thymus-edit.owl>
-Import(<http://purl.org/ccf/components/ccf_partonomy_thymus.owl>)
-Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_thymus.owl>)
-Import(<http://purl.org/ccf/components/ccf_asctb_annotations_thymus.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_partonomy_thymus.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_thymus.owl>)
+Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_thymus.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_thymus.owl>)
 Import(<http://purl.org/ccf/extracts/cl_thymus.owl>)
 

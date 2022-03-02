@@ -132,6 +132,33 @@
     <uri name="http://purl.org/ccf/components/ccf_cell_biomarkers_urinary_bladder.owl" uri="components/ccf_cell_biomarkers_urinary_bladder.owl"/>
     <uri name="http://purl.org/ccf/components/ccf_cell_biomarkers_uterus.owl" uri="components/ccf_cell_biomarkers_uterus.owl"/>
 
+    <!-- ASCT+B Annotations -->
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_blood.owl" uri="components/ccf_asctb_annotations_blood.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_blood_vasculature.owl" uri="components/ccf_asctb_annotations_blood_vasculature.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_bone_marrow.owl" uri="components/ccf_asctb_annotations_bone_marrow.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_brain.owl" uri="components/ccf_asctb_annotations_brain.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_eye.owl" uri="components/ccf_asctb_annotations_eye.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_fallopian_tube.owl" uri="components/ccf_asctb_annotations_fallopian_tube.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_heart.owl" uri="components/ccf_asctb_annotations_heart.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_kidney.owl" uri="components/ccf_asctb_annotations_kidney.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_knee.owl" uri="components/ccf_asctb_annotations_knee.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_large_intestine.owl" uri="components/ccf_asctb_annotations_large_intestine.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_liver.owl" uri="components/ccf_asctb_annotations_liver.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_lung.owl" uri="components/ccf_asctb_annotations_lung.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_lymph_node.owl" uri="components/ccf_asctb_annotations_lymph_node.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_lymph_vasculature.owl" uri="components/ccf_asctb_annotations_lymph_vasculature.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_ovary.owl" uri="components/ccf_asctb_annotations_ovary.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_pancreas.owl" uri="components/ccf_asctb_annotations_pancreas.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_peripheral_nervous_system.owl" uri="components/ccf_asctb_annotations_peripheral_nervous_system.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_prostate.owl" uri="components/ccf_asctb_annotations_prostate.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_skin.owl" uri="components/ccf_asctb_annotations_skin.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_small_intestine.owl" uri="components/ccf_asctb_annotations_small_intestine.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_spleen.owl" uri="components/ccf_asctb_annotations_spleen.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_thymus.owl" uri="components/ccf_asctb_annotations_thymus.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_ureter.owl" uri="components/ccf_asctb_annotations_ureter.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_urinary_bladder.owl" uri="components/ccf_asctb_annotations_urinary_bladder.owl"/>
+    <uri name="http://purl.org/ccf/components/ccf_asctb_annotations_uterus.owl" uri="components/ccf_asctb_annotations_uterus.owl"/>
+
     <!-- ASCT+B -->
     <uri name="http://purl.org/ccf/components/asctb_blood.owl" uri="components/asctb_blood.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_blood_vasculature.owl" uri="components/asctb_blood_vasculature.owl"/>

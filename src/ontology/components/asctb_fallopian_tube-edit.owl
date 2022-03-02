@@ -19,7 +19,7 @@ Import(<http://purl.org/ccf/components/ccf_partonomy_fallopian_tube.owl>)
 Import(<http://purl.org/ccf/components/ccf_cell_biomarkers_fallopian_tube.owl>)
 Import(<http://purl.org/ccf/components/ccf_asctb_annotations_fallopian_tube.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_fallopian_tube.owl>)
-Import(<http://purl.org/ccf/extracts/cl_fallopian_tube.owl>)
+#Import(<http://purl.org/ccf/extracts/cl_fallopian_tube.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

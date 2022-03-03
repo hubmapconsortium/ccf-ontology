@@ -14,7 +14,6 @@ Ontology(<http://purl.org/ccf/ccf-spo-edit.owl>
 Import(<http://purl.org/ccf/data/reference_spatial_entities.owl>)
 Import(<http://purl.org/ccf/data/specimen_spatial_entities.owl>)
 
-
 Declaration(Class(ccf:extraction_set))
 Declaration(Class(ccf:spatial_entity))
 Declaration(Class(ccf:spatial_object_reference))
@@ -26,6 +25,7 @@ Declaration(ObjectProperty(ccf:has_placement))
 Declaration(ObjectProperty(ccf:has_reference_organ))
 Declaration(ObjectProperty(ccf:placement_for))
 Declaration(ObjectProperty(ccf:represents_bbox_of))
+Declaration(AnnotationProperty(ccf:collides_with))
 Declaration(AnnotationProperty(ccf:creator_first_name))
 Declaration(AnnotationProperty(ccf:creator_last_name))
 Declaration(AnnotationProperty(ccf:creator_orcid))
@@ -34,7 +34,6 @@ Declaration(AnnotationProperty(ccf:file_format))
 Declaration(AnnotationProperty(ccf:file_name))
 Declaration(AnnotationProperty(ccf:file_subpath))
 Declaration(AnnotationProperty(ccf:file_url))
-Declaration(AnnotationProperty(ccf:in_proximity_with))
 Declaration(AnnotationProperty(ccf:organ_owner_sex))
 Declaration(AnnotationProperty(ccf:organ_side))
 Declaration(AnnotationProperty(ccf:representation_of))
@@ -60,6 +59,11 @@ Declaration(Datatype(xsd:date))
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: ccf:collides_with (collides with)
+
+AnnotationAssertion(rdfs:comment ccf:collides_with "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:collides_with "collides with")
 
 # Annotation Property: ccf:creator_first_name (creator first name)
 
@@ -99,11 +103,6 @@ AnnotationAssertion(rdfs:label ccf:file_subpath "file subpath")
 
 AnnotationAssertion(rdfs:comment ccf:file_url "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:file_url "file url")
-
-# Annotation Property: ccf:in_proximity_with (in proximity with)
-
-AnnotationAssertion(rdfs:comment ccf:in_proximity_with "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:in_proximity_with "in proximity with")
 
 # Annotation Property: ccf:organ_owner_sex (organ owner sex)
 

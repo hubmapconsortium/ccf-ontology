@@ -851,9 +851,9 @@ $(EXTRACTS_DIR)/cl_uterus.owl: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_uteru
 # ----------------------------------------
 
 $(EXTRACTS_DIR)/lmha_lung.owl: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_lung.owl mirror/lmha.owl
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Skipping $@)
-# 	$(call extract_lmha_terms,$(word 1,$^),$(word 2,$^))
-# .PRECIOUS: $(EXTRACTS_DIR)/lmha_lung.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call extract_lmha_terms,$(word 1,$^),$(word 2,$^))
+.PRECIOUS: $(EXTRACTS_DIR)/lmha_lung.owl
 
 
 # ----------------------------------------

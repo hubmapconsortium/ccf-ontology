@@ -20,6 +20,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_blood.owl>)
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_blood.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_blood.owl>)
 Import(<http://purl.org/ccf/extracts/cl_blood.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_blood.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

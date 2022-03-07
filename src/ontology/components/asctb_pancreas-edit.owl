@@ -21,6 +21,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_pancreas.
 Import(<http://purl.org/ccf/extracts/uberon_pancreas.owl>)
 Import(<http://purl.org/ccf/extracts/cl_pancreas.owl>)
 Import(<http://purl.org/ccf/extracts/fma_pancreas.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_pancreas.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

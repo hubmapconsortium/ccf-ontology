@@ -19,6 +19,8 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_spleen.owl>
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_spleen.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_spleen.owl>)
 Import(<http://purl.org/ccf/extracts/cl_spleen.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_spleen.owl>)
+
 
 Declaration(AnnotationProperty(obo:BFO_0000179))
 Declaration(AnnotationProperty(obo:BFO_0000180))
@@ -41,6 +43,8 @@ Declaration(AnnotationProperty(rdfs:isDefinedBy))
 Declaration(AnnotationProperty(rdfs:seeAlso))
 Declaration(AnnotationProperty(foaf:homepage))
 Declaration(Datatype(xsd:date))
+
+
 ############################
 #   Annotation Properties
 ############################

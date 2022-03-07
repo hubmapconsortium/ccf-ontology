@@ -19,6 +19,8 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_kidney.owl>
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_kidney.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_kidney.owl>)
 Import(<http://purl.org/ccf/extracts/cl_kidney.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_kidney.owl>)
+
 
 Declaration(AnnotationProperty(obo:BFO_0000179))
 Declaration(AnnotationProperty(obo:BFO_0000180))

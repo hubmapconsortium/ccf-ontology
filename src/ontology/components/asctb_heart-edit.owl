@@ -21,6 +21,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_heart.owl
 Import(<http://purl.org/ccf/extracts/uberon_heart.owl>)
 Import(<http://purl.org/ccf/extracts/cl_heart.owl>)
 Import(<http://purl.org/ccf/extracts/fma_heart.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_heart.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

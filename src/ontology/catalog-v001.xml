@@ -78,6 +78,33 @@
     <!-- LMHA Extract  -->
     <uri name="http://purl.org/ccf/extracts/lmha_lung.owl" uri="extracts/lmha_lung.owl"/>
 
+    <!-- HGNC Extract -->
+    <uri name="http://purl.org/ccf/extracts/hgnc_blood.owl" uri="extracts/hgnc_blood.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_blood_vasculature.owl" uri="extracts/hgnc_blood_vasculature.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_bone_marrow.owl" uri="extracts/hgnc_bone_marrow.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_brain.owl" uri="extracts/hgnc_brain.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_eye.owl" uri="extracts/hgnc_eye.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_fallopian_tube.owl" uri="extracts/hgnc_fallopian_tube.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_heart.owl" uri="extracts/hgnc_heart.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_kidney.owl" uri="extracts/hgnc_kidney.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_knee.owl" uri="extracts/hgnc_knee.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_large_intestine.owl" uri="extracts/hgnc_large_intestine.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_liver.owl" uri="extracts/hgnc_liver.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_lung.owl" uri="extracts/hgnc_lung.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_lymph_node.owl" uri="extracts/hgnc_lymph_node.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_lymph_vasculature.owl" uri="extracts/hgnc_lymph_vasculature.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_ovary.owl" uri="extracts/hgnc_ovary.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_pancreas.owl" uri="extracts/hgnc_pancreas.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_peripheral_nervous_system.owl" uri="extracts/hgnc_peripheral_nervous_system.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_prostate.owl" uri="extracts/hgnc_prostate.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_skin.owl" uri="extracts/hgnc_skin.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_small_intestine.owl" uri="extracts/hgnc_small_intestine.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_spleen.owl" uri="extracts/hgnc_spleen.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_thymus.owl" uri="extracts/hgnc_thymus.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_ureter.owl" uri="extracts/hgnc_ureter.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_urinary_bladder.owl" uri="extracts/hgnc_urinary_bladder.owl"/>
+    <uri name="http://purl.org/ccf/extracts/hgnc_uterus.owl" uri="extracts/hgnc_uterus.owl"/>
+
     <!-- CCF Partonomy -->
     <uri name="http://purl.org/ccf/components/generated/ccf_partonomy_blood.owl" uri="components/generated/ccf_partonomy_blood.owl"/>
     <uri name="http://purl.org/ccf/components/generated/ccf_partonomy_blood_vasculature.owl" uri="components/generated/ccf_partonomy_blood_vasculature.owl"/>

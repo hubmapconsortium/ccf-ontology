@@ -306,8 +306,8 @@ mirror/fma.owl: mirror/fma.trigger
 mirror/hgnc.trigger: $(SRC)
 mirror/hgnc.owl: mirror/hgnc.trigger
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Downloading hgnc.owl)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://data.bioontology.org/ontologies/HGNC/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf -O $@.tmp.owl && \
-			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://ncicb.nci.nih.gov/xml/owl/EVS/Hugo.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then wget -nc https://github.com/musen-lab/hgnc2owl/raw/main/hgnc.owl -O $@.tmp.owl && \
+			$(ROBOT) annotate -i $@.tmp.owl --ontology-iri http://purl.bioontology.org/ontology/HGNC/hgnc.owl --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/hgnc.owl
 
 

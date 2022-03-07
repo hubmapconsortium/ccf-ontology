@@ -19,6 +19,8 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_thymus.owl>
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_thymus.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_thymus.owl>)
 Import(<http://purl.org/ccf/extracts/cl_thymus.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_thymus.owl>)
+
 
 Declaration(AnnotationProperty(obo:BFO_0000179))
 Declaration(AnnotationProperty(obo:BFO_0000180))

@@ -20,6 +20,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_prostate.ow
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_prostate.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_prostate.owl>)
 Import(<http://purl.org/ccf/extracts/cl_prostate.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_prostate.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

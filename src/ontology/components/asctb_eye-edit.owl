@@ -20,6 +20,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_eye.owl>)
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_eye.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_eye.owl>)
 Import(<http://purl.org/ccf/extracts/cl_eye.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_eye.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

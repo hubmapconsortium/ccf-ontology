@@ -21,6 +21,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_blood_vas
 Import(<http://purl.org/ccf/extracts/uberon_blood_vasculature.owl>)
 Import(<http://purl.org/ccf/extracts/cl_blood_vasculature.owl>)
 Import(<http://purl.org/ccf/extracts/fma_blood_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_blood_vasculature.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

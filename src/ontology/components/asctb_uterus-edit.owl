@@ -21,6 +21,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_uterus.ow
 Import(<http://purl.org/ccf/extracts/uberon_uterus.owl>)
 Import(<http://purl.org/ccf/extracts/cl_uterus.owl>)
 Import(<http://purl.org/ccf/extracts/fma_uterus.owl>)
+#Import(<http://purl.org/ccf/extracts/hgnc_uterus.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

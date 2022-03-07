@@ -20,6 +20,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_knee.owl>)
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_knee.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_knee.owl>)
 Import(<http://purl.org/ccf/extracts/cl_knee.owl>)
+#Import(<http://purl.org/ccf/extracts/hgnc_knee.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

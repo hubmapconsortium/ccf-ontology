@@ -20,6 +20,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_lymph_node.
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_lymph_node.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_lymph_node.owl>)
 Import(<http://purl.org/ccf/extracts/cl_lymph_node.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_lymph_node.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

@@ -20,6 +20,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_cell_biomarkers_ureter.owl>
 Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_ureter.owl>)
 Import(<http://purl.org/ccf/extracts/uberon_ureter.owl>)
 Import(<http://purl.org/ccf/extracts/cl_ureter.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_ureter.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

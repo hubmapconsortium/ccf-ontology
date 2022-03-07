@@ -21,6 +21,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_small_int
 Import(<http://purl.org/ccf/extracts/uberon_small_intestine.owl>)
 Import(<http://purl.org/ccf/extracts/cl_small_intestine.owl>)
 Import(<http://purl.org/ccf/extracts/fma_small_intestine.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_small_intestine.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))
@@ -44,6 +45,8 @@ Declaration(AnnotationProperty(rdfs:isDefinedBy))
 Declaration(AnnotationProperty(rdfs:seeAlso))
 Declaration(AnnotationProperty(foaf:homepage))
 Declaration(Datatype(xsd:date))
+
+
 ############################
 #   Annotation Properties
 ############################

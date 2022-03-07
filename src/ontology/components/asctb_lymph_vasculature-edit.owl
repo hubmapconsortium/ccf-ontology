@@ -21,6 +21,7 @@ Import(<http://purl.org/ccf/components/generated/ccf_asctb_annotations_lymph_vas
 Import(<http://purl.org/ccf/extracts/uberon_lymph_vasculature.owl>)
 Import(<http://purl.org/ccf/extracts/cl_lymph_vasculature.owl>)
 Import(<http://purl.org/ccf/extracts/fma_lymph_vasculature.owl>)
+Import(<http://purl.org/ccf/extracts/hgnc_lymph_vasculature.owl>)
 
 
 Declaration(AnnotationProperty(obo:BFO_0000179))

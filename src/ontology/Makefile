@@ -39,7 +39,7 @@ ODK_VERSION_MAKEFILE =      v1.2.29
 
 TODAY ?=                    $(shell date +%Y-%m-%d)
 OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
-VERSION=                    2.0.0-alpha.4
+VERSION=                    2.0.0-alpha.5
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 OTHER_SRC =                 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt

@@ -38,24 +38,22 @@ Import(<http://purl.org/ccf/components/asctb_uterus.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/LMHA_00135>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(Class(ccf:anatomical_structure))
 Declaration(Class(ccf:biomarker))
 Declaration(Class(ccf:cell_type))
-Declaration(Class(ccf:characterizing_biomarker_set))
 Declaration(Class(<http://purl.org/sig/ont/fma/fma62955>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015004>))
 Declaration(ObjectProperty(ccf:has_gene_marker))
-Declaration(ObjectProperty(ccf:has_member))
+Declaration(ObjectProperty(ccf:has_marker_component))
 Declaration(ObjectProperty(ccf:has_protein_marker))
 Declaration(AnnotationProperty(ccf:ccf_asctb_type))
 Declaration(AnnotationProperty(ccf:ccf_characterizes))
 Declaration(AnnotationProperty(ccf:ccf_located_in))
 Declaration(AnnotationProperty(ccf:ccf_part_of))
 Declaration(AnnotationProperty(dcterms:source))
-
-
 ############################
 #   Annotation Properties
 ############################
@@ -97,10 +95,10 @@ AnnotationAssertion(rdfs:comment ccf:has_gene_marker "Originated from the CCF Bi
 AnnotationAssertion(rdfs:label ccf:has_gene_marker "has gene marker")
 SubObjectPropertyOf(ccf:has_gene_marker owl:topObjectProperty)
 
-# Object Property: ccf:has_member (has member)
+# Object Property: ccf:has_marker_component (has member)
 
-AnnotationAssertion(rdfs:comment ccf:has_member "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:has_member "has member")
+AnnotationAssertion(rdfs:comment ccf:has_marker_component "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_marker_component "has marker component")
 
 # Object Property: ccf:has_protein_marker (has protein marker)
 
@@ -124,6 +122,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> ccf:cell_type)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/LMHA_00135> "cell type (from LMHA)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/LMHA_00135> ccf:cell_type)
 
+# Class: <http://purl.obolibrary.org/obo/SO_0001260> (sequence collection)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/SO_0001260> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/SO_0001260> "sequence collection")
+
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity (from UBERON))
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UBERON_0001062> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
@@ -144,11 +147,6 @@ AnnotationAssertion(rdfs:label ccf:biomarker "biomarker"@en)
 
 AnnotationAssertion(rdfs:comment ccf:cell_type "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:cell_type "cell type"@en)
-
-# Class: ccf:characterizing_biomarker_set (characterizing biomarker set)
-
-AnnotationAssertion(rdfs:comment ccf:characterizing_biomarker_set "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:characterizing_biomarker_set "characterizing biomarker set"@en)
 
 # Class: <http://purl.org/sig/ont/fma/fma62955> (anatomical entity (from FMA))
 

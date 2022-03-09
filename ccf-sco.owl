@@ -9,8 +9,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.org/ccf/ccf-sco.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.5/ccf-sco.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.5</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.6/ccf-sco.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.6</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5903,8 +5903,8 @@
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.bioontology.org/ontology/LNC/LA4457-3">
-        <rdfs:label>white</rdfs:label>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>white</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.bioontology.org/ontology/LNC/LA6156-9">
         <rdfs:label>asian</rdfs:label>

@@ -35,8 +35,8 @@ Use the commands below to build the CCF ontology from scratch.
 ```
 $ git clone https://github.com/hubmapconsortium/ccf-ontology.git
 $ cd ccf-ontology/src/ontology
-$ make -s prepare_ccf
-$ make -s ccf
+$ make -s prepare_all
+$ make -s build_all
 $ open ccf.owl
 ```
 
@@ -56,7 +56,7 @@ DAT=false - bypass ontology generation from external data
 
 The command below is to create a release of CCF ontology, including all the three modules.
 ```
-$ make -s release_ccf
+$ make -s release_all
 ```
 
 ## Contact

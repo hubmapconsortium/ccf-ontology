@@ -13,6 +13,47 @@ CCF_SCO_SRC = $(CCF_SCO)-edit.owl
 CCF_SPO_SRC = $(CCF_SPO)-edit.owl
 CCF_SRC = $(CCF)-edit.owl
 
+
+# ----------------------------------------
+# Importing Non-OBO ontologies
+# ----------------------------------------
+
+## ONTOLOGY: fma
+.PHONY: mirror-fma
+.PRECIOUS: $(MIRRORDIR)/fma.owl
+mirror-fma:
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://data.bioontology.org/ontologies/FMA/download\?apikey\=$(BIOPORTAL_API_KEY)\&download_format\=rdf --create-dirs -o $(MIRRORDIR)/fma.owl --retry 4 --max-time 200 && \
+		$(ROBOT) convert -i $(MIRRORDIR)/fma.owl -o $@.tmp.owl && \
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+$(MIRRORDIR)/fma.owl: mirror-fma | $(MIRRORDIR)
+	if [ $(IMP) = true ] && [ $(MIR) = true ]; then if cmp -s $(TMPDIR)/mirror-fma.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." && cp $(TMPDIR)/mirror-fma.owl $@; fi; fi
+
+## ONTOLOGY: hgnc
+.PHONY: mirror-hgnc
+.PRECIOUS: $(MIRRORDIR)/hgnc.owl
+mirror-hgnc:
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://github.com/musen-lab/hgnc2owl/raw/main/hgnc.owl --create-dirs -o $(MIRRORDIR)/hgnc.owl --retry 4 --max-time 200 && \
+		$(ROBOT) convert -i $(MIRRORDIR)/hgnc.owl -o $@.tmp.owl && \
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+$(MIRRORDIR)/hgnc.owl: mirror-hgnc | $(MIRRORDIR)
+	if [ $(IMP) = true ] && [ $(MIR) = true ]; then if cmp -s $(TMPDIR)/mirror-hgnc.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." && cp $(TMPDIR)/mirror-hgnc.owl $@; fi; fi
+
+## ONTOLOGY: lmha
+.PHONY: mirror-lmha
+.PRECIOUS: $(MIRRORDIR)/lmha.owl
+mirror-lmha:
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://www.lungmap.net/assets/Uploads/ontology/558488ae7f/LMHA_20190512_Cell.zip --create-dirs -o $(TMPDIR)/lmha.zip --retry 4 --max-time 200 && \
+		unzip $(TMPDIR)/lmha.zip -d $(TMPDIR) && \
+		mv $(TMPDIR)/LMHA_20190512_Cell.owl $(MIRRORDIR)/lmha.owl && \
+		$(ROBOT) convert -i $(MIRRORDIR)/lmha.owl -o $@.tmp.owl && \
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+$(MIRRORDIR)/lmha.owl: mirror-lmha | $(MIRRORDIR)
+	if [ $(IMP) = true ] && [ $(MIR) = true ]; then if cmp -s $(TMPDIR)/mirror-lmha.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." && cp $(TMPDIR)/mirror-lmha.owl $@; fi; fi
+
+
 # ----------------------------------------
 # Component modules
 # ----------------------------------------
@@ -1385,8 +1426,8 @@ prepare_ccf_sco: $(DATA_DIR)/specimen_dataset.owl
 .PHONY: prepare_ccf_spo
 prepare_ccf_spo: $(DATA_DIR)/reference_spatial_entities.owl $(DATA_DIR)/specimen_spatial_entities.owl
 
-.PHONY: prepare_ccf
-prepare_ccf: $(ASCTB_FILES) $(DATA_FILES)
+.PHONY: prepare_all
+prepare_all: $(ASCTB_FILES) $(DATA_FILES)
 
 # ----------------------------------------
 # Create the releases
@@ -1415,18 +1456,18 @@ release_only_ccf: $(CCF).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF ontology only)
 	mv $^ $(RELEASEDIR)
 
-.PHONY: release_ccf
-release_ccf: $(PRE_RELEASED_FILES)
+.PHONY: release_all
+release_all: $(PRE_RELEASED_FILES)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF ontology, including all its modules)
 	mv $^ $(RELEASEDIR)
 
 
 # ----------------------------------------
-# Create the ontology
+# Build the ontology
 # ----------------------------------------
 
-.PHONY: ccf_bso
-ccf_bso: $(ONT)-bso.owl
+.PHONY: build_ccf_bso
+build_ccf_bso: $(ONT)-bso.owl
 
 $(ONT)-bso.owl: $(CCF_BSO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Biological Structure (CCF-BSO) ontology)
@@ -1437,8 +1478,8 @@ $(ONT)-bso.owl: $(CCF_BSO_SRC)
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(ONT)-bso.owl
 
-.PHONY: ccf_sco
-ccf_sco: $(ONT)-sco.owl
+.PHONY: build_ccf_sco
+build_ccf_sco: $(ONT)-sco.owl
 
 $(ONT)-sco.owl: $(CCF_SCO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Specimen (CCF-SCO) ontology)
@@ -1449,8 +1490,8 @@ $(ONT)-sco.owl: $(CCF_SCO_SRC)
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(ONT)-sco.owl
 
-.PHONY: ccf_spo
-ccf_spo: $(ONT)-spo.owl
+.PHONY: build_ccf_spo
+build_ccf_spo: $(ONT)-spo.owl
 
 $(ONT)-spo.owl: $(CCF_SPO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Spatial (CCF-SPO) ontology)
@@ -1461,10 +1502,11 @@ $(ONT)-spo.owl: $(CCF_SPO_SRC)
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(ONT)-spo.owl
 
-.PHONY: ccf
-ccf: $(ONT)-bso.owl $(ONT)-sco.owl $(ONT)-spo.owl $(ONT).owl 
+.PHONY: build_all
+build_all: $(ONT)-bso.owl $(ONT)-sco.owl $(ONT)-spo.owl $(ONT).owl 
 
 $(ONT).owl: $(CCF_SRC)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: overriding default ODK $(ONT).owl command)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology)
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
@@ -1486,4 +1528,5 @@ GENERATED_FILES = \
 
 .PHONY: clean_all
 clean_all:
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: cleaning up files)
 	rm -f $(GENERATED_FILES)

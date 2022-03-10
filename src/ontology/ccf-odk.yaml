@@ -5,14 +5,15 @@ repo: ccf-ontology
 use_dosdps: FALSE
 export_formats:
   - owl
-  - json
 namespaces: 
   - http://purl.org/ccf/
 edit_format: owl
 import_group:
   products:
     - id: uberon
+      use_base: TRUE
     - id: cl
+      use_base: TRUE
     - id: obi
     - id: uo
 robot_java_args: '-Xmx16G'

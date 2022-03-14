@@ -1505,10 +1505,10 @@ $(ONT)-spo.owl: $(CCF_SPO_SRC)
 .PHONY: build_all
 build_all: $(ONT)-bso.owl $(ONT)-sco.owl $(ONT)-spo.owl $(ONT).owl 
 
-$(ONT).owl: $(CCF_SRC)
+$(ONT).owl: $(ONT)-bso.owl $(ONT)-spo.owl $(ONT)-sco.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: overriding default ODK $(ONT).owl command)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology)
-	$(ROBOT) merge --input $< \
+	$(ROBOT) merge --input $(word 1,$^) --input $(word 2,$^) --input $(word 3,$^) \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \

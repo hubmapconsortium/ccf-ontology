@@ -7,6 +7,7 @@ CCF_BSO = $(ONT)-bso
 CCF_SCO = $(ONT)-sco
 CCF_SPO = $(ONT)-spo
 CCF = $(ONT)
+CCF_SLIM = $(ONT)-slim
 
 CCF_BSO_SRC = $(CCF_BSO)-edit.owl
 CCF_SCO_SRC = $(CCF_SCO)-edit.owl
@@ -561,7 +562,7 @@ all_extracts: $(EXTRACT_FILES)
 	$(foreach n, $(LMHA_EXTRACT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 	$(foreach n, $(HGNC_EXTRACT_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 
-INTERMEDIATES_OPT = none
+INTERMEDIATES_OPT = minimal
 
 define extract_uberon_terms
 	if [ $(EXT) = true ]; then $(ROBOT) query --input $(1) --query queries/get_uberon_entities.sparql /tmp/entities.csv && \
@@ -1398,9 +1399,9 @@ $(DATA_DIR)/reference_spatial_entities.owl: check_spatial2ccf $(DATA_MIRROR_DIR)
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATA_DIR)/reference_spatial_entities.owl
 
-$(DATA_DIR)/specimen_spatial_entities.owl: check_spatial2ccf $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld
+$(DATA_DIR)/specimen_spatial_entities.owl: check_spatial2ccf $(DATA_MIRROR_DIR)/rui-locations.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then spatial2ccf $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld \
+	if [ $(DAT) = true ]; then spatial2ccf $(DATA_MIRROR_DIR)/rui-locations.jsonld \
 		--ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATA_DIR)/specimen_spatial_entities.owl
@@ -1433,7 +1434,7 @@ prepare_all: $(ASCTB_FILES) $(DATA_FILES)
 # Create the releases
 # ----------------------------------------
 
-CCF_ARTEFACTS = $(CCF_BSO) $(CCF_SCO) $(CCF_SPO) $(CCF)
+CCF_ARTEFACTS = $(CCF_BSO) $(CCF_SCO) $(CCF_SPO) $(CCF) $(CCF_SLIM)
 PRE_RELEASED_FILES = $(patsubst %, %.owl, $(CCF_ARTEFACTS))
 
 .PHONY: release_ccf_bso
@@ -1454,6 +1455,11 @@ release_ccf_spo: $(CCF-SPO).owl
 .PHONY: release_only_ccf
 release_only_ccf: $(CCF).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF ontology only)
+	mv $^ $(RELEASEDIR)
+
+.PHONY: release_ccf_slim
+release_ccf_slim: $(CCF_SLIM).owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF ontology (slim version)))
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_all
@@ -1503,8 +1509,10 @@ $(ONT)-spo.owl: $(CCF_SPO_SRC)
 .PRECIOUS: $(ONT)-spo.owl
 
 .PHONY: build_all
-build_all: $(ONT)-bso.owl $(ONT)-sco.owl $(ONT)-spo.owl $(ONT).owl 
+build_all: $(ONT)-bso.owl $(ONT)-sco.owl $(ONT)-spo.owl $(ONT).owl $(CCF_SLIM).owl
 
+.PHONY: build_only_ccf
+build_only_ccf: $(CCF).owl
 $(ONT).owl: $(ONT)-bso.owl $(ONT)-spo.owl $(ONT)-sco.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: overriding default ODK $(ONT).owl command)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology)
@@ -1515,6 +1523,17 @@ $(ONT).owl: $(ONT)-bso.owl $(ONT)-spo.owl $(ONT)-sco.owl
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(ONT).owl
 
+.PHONY: build_ccf_slim
+build_ccf_slim: $(CCF_SLIM).owl
+$(CCF_SLIM).owl: $(CCF_BSO).owl $(CCF_SPO).owl 
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology (slim version))
+	$(ROBOT) merge --input $(word 1,$^) --input $(word 2,$^) \
+		remove --prefix "ccf: http://purl.org/ccf/" --term-file ccf-terms.txt --select complement --select annotation-properties \
+		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+		relax \
+		reduce -r ELK \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: $(CCF_SLIM).owl
 
 # ----------------------------------------
 # Clean up

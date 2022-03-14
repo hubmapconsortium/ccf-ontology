@@ -1358,9 +1358,9 @@ $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld:
 	if [ $(DATMIR) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld -O $@; fi
 .PRECIOUS: $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld
 
-$(DATA_MIRROR_DIR)/hubmap-datasets.jsonld:
-	if [ $(DATMIR) = true ]; then wget -nc https://hubmap-link-api.herokuapp.com/hubmap-datasets?format=jsonld -O $@; fi
-.PRECIOUS: $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld
+$(DATA_MIRROR_DIR)/rui-locations.jsonld:
+	if [ $(DATMIR) = true ]; then wget -nc https://ccf-api.hubmapconsortium.org/v1/hubmap/rui_locations.jsonld -O $@; fi
+.PRECIOUS: $(DATA_MIRROR_DIR)/rui-locations.jsonld
 
 
 # ----------------------------------------
@@ -1405,9 +1405,9 @@ $(DATA_DIR)/specimen_spatial_entities.owl: check_spatial2ccf $(DATA_MIRROR_DIR)/
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATA_DIR)/specimen_spatial_entities.owl
 
-$(DATA_DIR)/specimen_dataset.owl: check_specimen2ccf $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld
+$(DATA_DIR)/specimen_dataset.owl: check_specimen2ccf $(DATA_MIRROR_DIR)/rui-locations.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then specimen2ccf $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld \
+	if [ $(DAT) = true ]; then specimen2ccf $(DATA_MIRROR_DIR)/rui-locations.jsonld \
 		--ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATA_DIR)/specimen_dataset.owl

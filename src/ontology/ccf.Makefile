@@ -12,7 +12,6 @@ CCF_SLIM = $(ONT)-slim
 CCF_BSO_SRC = $(CCF_BSO)-edit.owl
 CCF_SCO_SRC = $(CCF_SCO)-edit.owl
 CCF_SPO_SRC = $(CCF_SPO)-edit.owl
-CCF_SRC = $(CCF)-edit.owl
 
 
 # ----------------------------------------
@@ -1435,20 +1434,20 @@ prepare_all: $(ASCTB_FILES) $(DATA_FILES)
 # ----------------------------------------
 
 CCF_ARTEFACTS = $(CCF_BSO) $(CCF_SCO) $(CCF_SPO) $(CCF) $(CCF_SLIM)
-PRE_RELEASED_FILES = $(patsubst %, %.owl, $(CCF_ARTEFACTS))
+RELEASED_FILES = $(patsubst %, %.owl, $(CCF_ARTEFACTS))
 
 .PHONY: release_ccf_bso
-release_ccf_bso: $(CCF-BSO).owl
+release_ccf_bso: $(CCF_BSO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF Biological Structure (CCF-BSO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_sco
-release_ccf_sco: $(CCF-SCO).owl
+release_ccf_sco: $(CCF_SCO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF Specimen (CCF-SCO) ontology)
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_ccf_spo
-release_ccf_spo: $(CCF-SPO).owl
+release_ccf_spo: $(CCF_SPO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF Spatial (CCF-SPO) ontology)
 	mv $^ $(RELEASEDIR)
 
@@ -1463,7 +1462,7 @@ release_ccf_slim: $(CCF_SLIM).owl
 	mv $^ $(RELEASEDIR)
 
 .PHONY: release_all
-release_all: $(PRE_RELEASED_FILES)
+release_all: $(RELEASED_FILES)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating a release for the CCF ontology, including all its modules)
 	mv $^ $(RELEASEDIR)
 
@@ -1473,47 +1472,48 @@ release_all: $(PRE_RELEASED_FILES)
 # ----------------------------------------
 
 .PHONY: build_ccf_bso
-build_ccf_bso: $(ONT)-bso.owl
+build_ccf_bso: $(CCF_BSO).owl
 
-$(ONT)-bso.owl: $(CCF_BSO_SRC)
+$(CCF_BSO).owl: $(CCF_BSO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Biological Structure (CCF-BSO) ontology)
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: $(ONT)-bso.owl
+.PRECIOUS: $(CCF_BSO).owl
 
 .PHONY: build_ccf_sco
-build_ccf_sco: $(ONT)-sco.owl
+build_ccf_sco: $(CCF_SCO).owl
 
-$(ONT)-sco.owl: $(CCF_SCO_SRC)
+$(CCF_SCO).owl: $(CCF_SCO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Specimen (CCF-SCO) ontology)
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: $(ONT)-sco.owl
+.PRECIOUS: $(CCF_SCO).owl
 
 .PHONY: build_ccf_spo
-build_ccf_spo: $(ONT)-spo.owl
+build_ccf_spo: $(CCF_SPO).owl
 
-$(ONT)-spo.owl: $(CCF_SPO_SRC)
+$(CCF_SPO).owl: $(CCF_SPO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Spatial (CCF-SPO) ontology)
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: $(ONT)-spo.owl
+.PRECIOUS: $(CCF_SPO).owl
 
 .PHONY: build_all
-build_all: $(ONT)-bso.owl $(ONT)-sco.owl $(ONT)-spo.owl $(ONT).owl $(CCF_SLIM).owl
+build_all: $(CCF_BSO).owl $(CCF_SCO).owl $(CCF_SPO).owl $(CCF).owl $(CCF_SLIM).owl
 
 .PHONY: build_only_ccf
 build_only_ccf: $(CCF).owl
-$(ONT).owl: $(ONT)-bso.owl $(ONT)-spo.owl $(ONT)-sco.owl
+
+$(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: overriding default ODK $(ONT).owl command)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology)
 	$(ROBOT) merge --input $(word 1,$^) --input $(word 2,$^) --input $(word 3,$^) \
@@ -1521,10 +1521,11 @@ $(ONT).owl: $(ONT)-bso.owl $(ONT)-spo.owl $(ONT)-sco.owl
 		relax \
 		reduce -r ELK \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
-.PRECIOUS: $(ONT).owl
+.PRECIOUS: $(CCF).owl
 
 .PHONY: build_ccf_slim
 build_ccf_slim: $(CCF_SLIM).owl
+
 $(CCF_SLIM).owl: $(CCF_BSO).owl $(CCF_SPO).owl 
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology (slim version))
 	$(ROBOT) merge --input $(word 1,$^) --input $(word 2,$^) \
@@ -1543,7 +1544,7 @@ GENERATED_FILES = \
 	$(COMPONENT_FILES) \
 	$(EXTRACT_FILES) \
 	$(DATA_FILES) \
-	$(PRE_RELEASED_FILES) 
+	$(RELEASED_FILES) 
 
 .PHONY: clean_all
 clean_all:

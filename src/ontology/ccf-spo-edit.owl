@@ -24,6 +24,7 @@ Declaration(ObjectProperty(ccf:has_object_reference))
 Declaration(ObjectProperty(ccf:has_placement))
 Declaration(ObjectProperty(ccf:has_reference_organ))
 Declaration(ObjectProperty(ccf:placement_for))
+Declaration(ObjectProperty(ccf:placement_relative_to))
 Declaration(ObjectProperty(ccf:represents_bbox_of))
 Declaration(AnnotationProperty(ccf:collides_with))
 Declaration(AnnotationProperty(ccf:creator_first_name))
@@ -220,6 +221,11 @@ AnnotationAssertion(rdfs:label ccf:has_reference_organ "has reference organ")
 
 AnnotationAssertion(rdfs:comment ccf:placement_for "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:placement_for "placement for")
+
+# Object Property: ccf:placement_relative_to (placement relative to)
+
+AnnotationAssertion(rdfs:comment ccf:placement_relative_to "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:placement_relative_to "placement relative to")
 
 # Object Property: ccf:represents_bbox_of (represents bounding box of)
 

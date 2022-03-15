@@ -1329,21 +1329,33 @@ DATA_MIRROR_DIR = data/mirror
 DATAMIRRORS = \
 	reference-spatial-entities \
 	generated-reference-spatial-entities \
-	hubmap-datasets
+	hubmap-datasets \
 
 DATMIR = true
 
 $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld:
-	if [ $(DATMIR) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/reference-spatial-entities.jsonld -O $@; fi
+	if [ $(DATMIR) = true ]; then curl -L https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/reference-spatial-entities.jsonld --create-dirs -o $@; fi
 .PRECIOUS: $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld
 
 $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld:
-	if [ $(DATMIR) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld -O $@; fi
+	if [ $(DATMIR) = true ]; then curl -L https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld --create-dirs -o $@; fi
 .PRECIOUS: $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld
 
-$(DATA_MIRROR_DIR)/rui-locations.jsonld:
-	if [ $(DATMIR) = true ]; then wget -nc https://ccf-api.hubmapconsortium.org/v1/hubmap/rui_locations.jsonld -O $@; fi
-.PRECIOUS: $(DATA_MIRROR_DIR)/rui-locations.jsonld
+$(DATA_MIRROR_DIR)/hubmap-datasets.jsonld:
+	if [ $(DATMIR) = true ]; then curl -L https://ccf-api.hubmapconsortium.org/v1/hubmap/rui_locations.jsonld --create-dirs -o $@; fi
+.PRECIOUS: $(DATA_MIRROR_DIR)/hubmap-datasets.jsonld
+
+$(DATA_MIRROR_DIR)/kpmp-datasets.jsonld:
+	if [ $(DATMIR) = true ]; then curl -L https://raw.githubusercontent.com/hubmapconsortium/ccf-ui/main/projects/ccf-eui/src/assets/kpmp/data/rui_locations.jsonld --create-dirs -o $@; fi
+.PRECIOUS: $(DATA_MIRROR_DIR)/kpmp-datasets.jsonld
+
+$(DATA_MIRROR_DIR)/sparc-datasets.jsonld:
+	if [ $(DATMIR) = true ]; then curl -L https://raw.githubusercontent.com/hubmapconsortium/ccf-ui/main/projects/ccf-eui/src/assets/sparc/data/rui_locations.jsonld --create-dirs -o $@; fi
+.PRECIOUS: $(DATA_MIRROR_DIR)/sparc-datasets.jsonld
+
+$(DATA_MIRROR_DIR)/gtex-datasets.jsonld:
+	if [ $(DATMIR) = true ]; then curl -L https://raw.githubusercontent.com/hubmapconsortium/ccf-ui/main/projects/ccf-eui/src/assets/gtex/data/rui_locations.jsonld --create-dirs -o $@; fi
+.PRECIOUS: $(DATA_MIRROR_DIR)/gtex-datasets.jsonld
 
 
 # ----------------------------------------
@@ -1373,24 +1385,35 @@ check_spatial2ccf:
 check_specimen2ccf:
 	@type specimen2ccf > /dev/null 2>&1 || (echo "ERROR: specimen2ccf is required, please visit https://github.com/hubmapconsortium/specimen2ccf to install"; exit 1)
 
-$(DATA_DIR)/reference_spatial_entities.owl: check_spatial2ccf $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld
+$(DATA_DIR)/reference_spatial_entities.owl: check_spatial2ccf \
+											$(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld \
+											$(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then spatial2ccf $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld \
-		$(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld \
+	if [ $(DAT) = true ]; then spatial2ccf $(word 2,$^) $(word 3,$^) \
 		--ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
-		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+		mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATA_DIR)/reference_spatial_entities.owl
 
-$(DATA_DIR)/specimen_spatial_entities.owl: check_spatial2ccf $(DATA_MIRROR_DIR)/rui-locations.jsonld
+$(DATA_DIR)/specimen_spatial_entities.owl: check_spatial2ccf \
+											$(DATA_MIRROR_DIR)/hubmap-datasets.jsonld \
+										   	$(DATA_MIRROR_DIR)/kpmp-datasets.jsonld \
+										   	$(DATA_MIRROR_DIR)/sparc-datasets.jsonld \
+										   	$(DATA_MIRROR_DIR)/gtex-datasets.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then spatial2ccf $(DATA_MIRROR_DIR)/rui-locations.jsonld \
+	if [ $(DAT) = true ]; then spatial2ccf $(word 2,$^) $(word 3,$^) $(word 4,$^) $(word 5,$^) \
 		--ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
-		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv \
+		$@.tmp.owl $@; fi
 .PRECIOUS: $(DATA_DIR)/specimen_spatial_entities.owl
 
-$(DATA_DIR)/specimen_dataset.owl: check_specimen2ccf $(DATA_MIRROR_DIR)/rui-locations.jsonld
+$(DATA_DIR)/specimen_dataset.owl: check_specimen2ccf \
+									$(DATA_MIRROR_DIR)/hubmap-datasets.jsonld \
+								   	$(DATA_MIRROR_DIR)/kpmp-datasets.jsonld \
+								   	$(DATA_MIRROR_DIR)/sparc-datasets.jsonld \
+								   	$(DATA_MIRROR_DIR)/gtex-datasets.jsonld
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	if [ $(DAT) = true ]; then specimen2ccf $(DATA_MIRROR_DIR)/rui-locations.jsonld \
+	if [ $(DAT) = true ]; then specimen2ccf $(word 2,$^) $(word 3,$^) $(word 4,$^) $(word 5,$^) \
 		--ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && mv $@.tmp.owl $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: $(DATA_DIR)/specimen_dataset.owl
@@ -1509,7 +1532,7 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 .PHONY: build_ccf_slim
 build_ccf_slim: $(CCF_SLIM).owl
 
-$(CCF_SLIM).owl: $(CCF_BSO).owl $(CCF_SPO).owl 
+$(CCF_SLIM).owl: $(CCF_BSO).owl $(DATA_DIR)/reference_spatial_entities.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology (slim version))
 	$(ROBOT) merge --input $(word 1,$^) --input $(word 2,$^) \
 		remove --prefix "ccf: http://purl.org/ccf/" --term-file ccf-terms.txt --select complement --select annotation-properties \

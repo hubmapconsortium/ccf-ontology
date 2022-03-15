@@ -5,7 +5,7 @@ dcterms:created
 oboInOwl:id
 ccf:ccf_part_of
 ccf:ccf_located_in
-ccf:pref_label
+ccf:ccf_pref_label
 ccf:characterizes
 ccf:asctb_type
 ccf:title

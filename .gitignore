@@ -17,6 +17,7 @@ src/ontology/reports/*
 src/ontology/ccf-bso.owl
 src/ontology/ccf-sco.owl
 src/ontology/ccf-spo.owl
+src/ontology/ccf-slim.owl
 src/ontology/ccf.owl
 src/ontology/ccf.obo
 src/ontology/ccf.json

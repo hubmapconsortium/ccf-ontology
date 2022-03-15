@@ -12,7 +12,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Ontology(<http://purl.org/ccf/ccf-spo-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-spo-edit.owl>
 Import(<http://purl.org/ccf/data/reference_spatial_entities.owl>)
-#Import(<http://purl.org/ccf/data/specimen_spatial_entities.owl>)
+Import(<http://purl.org/ccf/data/specimen_spatial_entities.owl>)
 
 Declaration(Class(ccf:extraction_set))
 Declaration(Class(ccf:spatial_entity))

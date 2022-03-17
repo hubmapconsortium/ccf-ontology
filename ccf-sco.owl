@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/ccf/ccf-sco.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.8/ccf-sco.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.8</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.9/ccf-sco.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.9</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1209,6 +1209,12 @@
     
 
 
+    <!-- http://purl.org/ccf/1.5/b077aef9-808e-48b1-8d2d-15aab54d0a86 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/b077aef9-808e-48b1-8d2d-15aab54d0a86"/>
+    
+
+
     <!-- http://purl.org/ccf/1.5/b09f5826-e6fa-4bec-8054-2fb6e6f202ae -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/b09f5826-e6fa-4bec-8054-2fb6e6f202ae"/>
@@ -1701,12 +1707,6 @@
     
 
 
-    <!-- http://purl.org/ccf/1.5/fc556dba-cfb0-490d-913b-d76717762142 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/fc556dba-cfb0-490d-913b-d76717762142"/>
-    
-
-
     <!-- http://purl.org/ccf/1.5/fd380a0c-2915-4d73-b3f4-d161badbaccb -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/fd380a0c-2915-4d73-b3f4-d161badbaccb"/>
@@ -1842,12 +1842,6 @@
     <!-- http://purl.org/ccf/1.5/1f53fe4d-d77b-4508-ba36-22b6b3ac0e53 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/1f53fe4d-d77b-4508-ba36-22b6b3ac0e53"/>
-    
-
-
-    <!-- http://purl.org/ccf/1.5/1f959974-4f3c-4023-a1af-6e5172d89f2c -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/1f959974-4f3c-4023-a1af-6e5172d89f2c"/>
     
 
 
@@ -4976,20 +4970,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/a9fcc0db07e305327483471a7f219599 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/a9fcc0db07e305327483471a7f219599">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: image_pyramid, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/a9fcc0db07e305327483471a7f219599</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/18/2022, HuBMAP Process, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/aa097a9f148c3a82ad23addb3ebb19f7 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/aa097a9f148c3a82ad23addb3ebb19f7">
@@ -7863,20 +7843,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/c384f98d970bf191927a37d0b46ca3db -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c384f98d970bf191927a37d0b46ca3db">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: image_pyramid, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/c384f98d970bf191927a37d0b46ca3db</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 5/20/2021, HuBMAP Process, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/c391f9351952a3eb3ce4b68b39f12970 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c391f9351952a3eb3ce4b68b39f12970">
@@ -9661,20 +9627,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/d63f77a8a5b4c23a328f526517a52ff9 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d63f77a8a5b4c23a328f526517a52ff9">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: PAS, </ccf:description>
-        <ccf:technology>PAS</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d63f77a8a5b4c23a328f526517a52ff9</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 3/1/2022, Nathan Patterson, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/d66100e0c60a2006149a7ae25ceb9976 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d66100e0c60a2006149a7ae25ceb9976">
@@ -10404,12 +10356,9 @@
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/d1451775c63a3abdc3327a5ea28fe30b"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/d7a8869e1687993cfc115fc2326e7b93"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/dd224173f491932735bcfea6a9ffca98"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/e895e4ab99e921bf8ad8e9c78e3b027b"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/11ee922a974eb5fed7167e3c6da9b219"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/24b13fd3342a93b5c85bd2318434b2a4"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/34322d81cafea4eb92f316719f21e8a5"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/4131fa230cd783005c1a9d264ebe1c85"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/5f8bd79354b14fc35466221b875bb030"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/81e13b6ca7bae3a426668c7f0bf6ac7a"/>
         <ccf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</ccf:age>
         <ccf:bmi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.0</ccf:bmi>
@@ -11535,29 +11484,33 @@
     <!-- https://entity.api.hubmapconsortium.org/entities/e80cd8fab25ec8e9cb41e3872e2129c7 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/e80cd8fab25ec8e9cb41e3872e2129c7">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/1628b6f7eb615862322d6274a6bc9fa0"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/ac1a2b21f3b25950bf340280a59b6ad4"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/b449bd94ba1498ba8501d419eb985f51"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d7fa7f03af4d8ee669d57c57209393bb"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d859a8c563558b7db0b73c6170ad84fd"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/e7f28c44029ada6b1431354afeac61ff"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/2c2179ea741d3bbb47772172a316a2bf"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/2d2660adca127897f22b7decf5730d75"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/2882f80c0984a4cfccd2334e3af6086f"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/5b6a0834ae89df3ddc5a09d28dcd2226"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/5ce0c7057fc4368eb4e702533ca12d22"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/7f9f50e179d33f10461676e957b32d4f"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/74a2deca3ac29b45392d7e2e39c2024e"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/9bb461ae58cc16d292c637805633d1f8"/>
+        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/b077aef9-808e-48b1-8d2d-15aab54d0a86"/>
         <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/750691876232b043dd3b6e2b0098bdbf"/>
+        <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, flash_frozen_liquid_nitrogen, 0 Sections</ccf:description>
         <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, organ_piece</ccf:description>
+        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
         <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
+        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ccf:section_size>
+        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/e80cd8fab25ec8e9cb41e3872e2129c7</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/16/2022, daniel Cotter, TMC-Stanford</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/e895e4ab99e921bf8ad8e9c78e3b027b -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/e895e4ab99e921bf8ad8e9c78e3b027b">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/dd258063b8389612a9596af734143906"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/5f8bd79354b14fc35466221b875bb030"/>
-        <ccf:description>18 x 10 x 1 millimeter, 1 millimeter, fresh_frozen_tissue</ccf:description>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/e895e4ab99e921bf8ad8e9c78e3b027b</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 11/10/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -14689,16 +14642,12 @@
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/05eae5d5018cf4b09434aaadf5f8a387">
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/909b44eb01033314b357a3692b583387"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/e98c4c802f823ffa1b49b6f8698320ef"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/71a7553b868d956063065b8c3ce139cd"/>
         <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/6bbdd96b-5fae-406c-a0a5-8e20e1bd0d8e"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/5590f1212159e1a53b045e7bedafc562"/>
-        <ccf:description>20 x 50 x 1 millimeter, 1 millimeter, organ_piece</ccf:description>
         <ccf:description>20 x 50 x 5 millimeter, 1 millimeter, flash_frozen_liquid_nitrogen, 1 Sections</ccf:description>
         <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_count>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
         <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_size>
         <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/05eae5d5018cf4b09434aaadf5f8a387</ccf:url>
@@ -15110,20 +15059,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/073cad035ce246a0134e2214569adde9</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 7/2/2021, Hunter Hakimian, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/07317dfade92994d6fbbe9faef1236f7 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/07317dfade92994d6fbbe9faef1236f7">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: PAS, </ccf:description>
-        <ccf:technology>PAS</ccf:technology>
-        <ccf:thumbnail>https://assets.hubmapconsortium.org/a18336f62663dd35f9f884a2bcbcd5bf/thumbnail.jpg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/07317dfade92994d6fbbe9faef1236f7</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 3/1/2022, Joel Welling, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -18666,20 +18601,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/3a8c40929d74f97c4c8d53ffc2dccaef -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/3a8c40929d74f97c4c8d53ffc2dccaef">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: image_pyramid, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/3a8c40929d74f97c4c8d53ffc2dccaef</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/17/2022, HuBMAP Process, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/3aa2cc682518460d6b279a084d94cfc8 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/3aa2cc682518460d6b279a084d94cfc8">
@@ -20913,21 +20834,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/4131fa230cd783005c1a9d264ebe1c85 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/4131fa230cd783005c1a9d264ebe1c85">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/dd258063b8389612a9596af734143906"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/5f8bd79354b14fc35466221b875bb030"/>
-        <ccf:description>18 x 10 x 1 millimeter, 1 millimeter, fresh_frozen_tissue</ccf:description>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/4131fa230cd783005c1a9d264ebe1c85</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 11/10/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/41380e3213645883329e70c863983d5a -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/41380e3213645883329e70c863983d5a">
@@ -22235,31 +22141,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/5f8bd79354b14fc35466221b875bb030 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/5f8bd79354b14fc35466221b875bb030">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/dd258063b8389612a9596af734143906"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/a9fcc0db07e305327483471a7f219599"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/c384f98d970bf191927a37d0b46ca3db"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d63f77a8a5b4c23a328f526517a52ff9"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/07317dfade92994d6fbbe9faef1236f7"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/3a8c40929d74f97c4c8d53ffc2dccaef"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/7ede2efa49ae0dc50c9cb8afb276ebe4"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/0.5/a92ad611-c3c6-43d9-bfd6-00ff906fa541"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/e895e4ab99e921bf8ad8e9c78e3b027b"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/4131fa230cd783005c1a9d264ebe1c85"/>
-        <ccf:description>18 x 10 x 2 millimeter, 1 millimeter, fresh_frozen_tissue, 2 Sections</ccf:description>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/5f8bd79354b14fc35466221b875bb030</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 6/10/2020, Elizabeth Neumann, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/5fba3cd9628ce41299533961b00763a4 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/5fba3cd9628ce41299533961b00763a4">
@@ -22826,26 +22707,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/557b1690e60fab7ae503bdedec423a8e</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 10/29/2019, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/5590f1212159e1a53b045e7bedafc562 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/5590f1212159e1a53b045e7bedafc562">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/909b44eb01033314b357a3692b583387"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/e98c4c802f823ffa1b49b6f8698320ef"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/71a7553b868d956063065b8c3ce139cd"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/1f959974-4f3c-4023-a1af-6e5172d89f2c"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/05eae5d5018cf4b09434aaadf5f8a387"/>
-        <ccf:description>20 x 50 x 5 millimeter, 1 millimeter, organ_piece, 1 Sections</ccf:description>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/5590f1212159e1a53b045e7bedafc562</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 10/19/2021, daniel cotter, TMC-Stanford</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -24709,16 +24570,12 @@
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/69b7f03c30bc3489a0b827864f7933c9">
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/909b44eb01033314b357a3692b583387"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/c3fa09a6a84e40730bb3948ea733b3e9"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/25f6ffb3af74781c6285537cb032044b"/>
         <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/dfb35d10-65a1-48f9-94a0-baf36ce8a78b"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/8d2acd5b31c953a5507da41df918ec2e"/>
-        <ccf:description>20 x 50 x 1 millimeter, 1 millimeter, organ_piece</ccf:description>
         <ccf:description>20 x 50 x 5 millimeter, 5 millimeter, flash_frozen_liquid_nitrogen, 0 Sections</ccf:description>
         <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
         <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ccf:section_size>
         <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/69b7f03c30bc3489a0b827864f7933c9</ccf:url>
@@ -25066,20 +24923,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/7eb535fdb3711a8138dfd9d88ab5d882</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 9/10/2021, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/7ede2efa49ae0dc50c9cb8afb276ebe4 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/7ede2efa49ae0dc50c9cb8afb276ebe4">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: AF, </ccf:description>
-        <ccf:technology>AF</ccf:technology>
-        <ccf:thumbnail>https://assets.hubmapconsortium.org/55d06ef1447f1780f058e111ace833cb/thumbnail.jpg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/7ede2efa49ae0dc50c9cb8afb276ebe4</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 3/1/2022, Joel Welling, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -26402,26 +26245,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/8d1bd4f20f274559113a68786e9e0889</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/8d2acd5b31c953a5507da41df918ec2e -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/8d2acd5b31c953a5507da41df918ec2e">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/909b44eb01033314b357a3692b583387"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/c3fa09a6a84e40730bb3948ea733b3e9"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/25f6ffb3af74781c6285537cb032044b"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/fc556dba-cfb0-490d-913b-d76717762142"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/69b7f03c30bc3489a0b827864f7933c9"/>
-        <ccf:description>20 x 50 x 5 millimeter, 1 millimeter, organ_piece, 1 Sections</ccf:description>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/8d2acd5b31c953a5507da41df918ec2e</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 10/19/2021, daniel cotter, TMC-Stanford</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -28488,10 +28311,8 @@
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/37646b6f78075c99f09af04142ac39f4"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/4cdc311cdb07ab1a49cc4ad1e4e8d4da"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/497f8aa9cb247e825e8227d6fa70f7a1"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/5590f1212159e1a53b045e7bedafc562"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/69b7f03c30bc3489a0b827864f7933c9"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/8bb8b9e940660828875d59aa02223eb6"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/8d2acd5b31c953a5507da41df918ec2e"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/8113a08108f2d3174b7baf988aa18c95"/>
         <ccf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</ccf:age>
         <ccf:bmi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.0</ccf:bmi>

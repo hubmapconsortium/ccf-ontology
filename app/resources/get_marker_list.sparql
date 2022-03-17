@@ -1,0 +1,10 @@
+PREFIX ccf: <http://purl.org/ccf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+SELECT DISTINCT ?label ?entity
+WHERE {
+   ?entity rdfs:label ?label ;
+           oboInOwl:id ?entity_id .
+   FILTER contains(?entity_id, "HGNC:") 
+}

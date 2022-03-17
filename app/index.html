@@ -78,8 +78,8 @@
       <select type="text" id="examples-dropdown" name="examples">
         <option value="">--- Please select an example ---</option>
         <option value="DCN,GSN,PDGFRA">DCN, GSN, PDGFRA</option>
-        <option value="VSX2,FOXD1">VSX2, FOXD1</option>
-        <option value="PECAM1">PECAM1</option>
+        <option value="IL7R,CD163,CD14">IL7R, CD163, CD14</option>
+        <option value="TP53,DDB2,KRT10,MKI67">TP53, DDB2, KRT10, MKI67</option>
         <option value="SATB2,CRYAB,SPP1,VCAM1">SATB2, CRYAB, SPP1, VCAM1</option>
       </select><br/>
       <button type="button" id="find">Find</button>&nbsp;&nbsp;
@@ -126,7 +126,8 @@
             $('#message').text("")
             $('#result-container').show();
             $.each(response, function (index, object) {
-              var cell_type = object['cell_type'];
+              console.log(object);
+              var cell_type = object['cell_type_label'];
               if (!$('#cell-type-dropdown option[value="' + cell_type + '"]').length) {
                 $('#cell-type-dropdown').append($('<option></option>')
                   .attr('value', cell_type)
@@ -174,8 +175,8 @@
       function updateAnatomicalStructureModelsDropDown(value, response) {
         $('#anatomical-structure-dropdown').empty();
         $.each(response, function (index, object) {
-          if (object['cell_type'] == value) {
-            var anatomical_structure = object['anatomical_structure'];
+          if (object['cell_type_label'] == value) {
+            var anatomical_structure = object['anatomical_structure_label'];
             if (!$('#anatomical-structure-dropdown option[value="' + anatomical_structure + '"]').length) {
               // var glb_file = getFirstGlbFile(object['glb_files']);
               glb_files = [];

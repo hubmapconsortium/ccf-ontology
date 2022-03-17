@@ -4,39 +4,34 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?cell_type ?anatomical_structure
-#   (GROUP_CONCAT(DISTINCT ?anatomical_structure; SEPARATOR=", ") AS ?anatomical_structures)
+SELECT DISTINCT ?cell_type_label ?anatomical_structure_label
    (GROUP_CONCAT(DISTINCT ?glb_file; SEPARATOR=", ") AS ?glb_files)
    (GROUP_CONCAT(DISTINCT ?subpath; SEPARATOR=", ") AS ?subpaths)
    (GROUP_CONCAT(DISTINCT ?reference_organ; SEPARATOR=", ") AS ?reference_organs) 
 WHERE {
    ?ct rdfs:subClassOf [
-      owl:onProperty ccf:cell_type_has_characterizing_biomarker_set ;
+      owl:onProperty obo:RO_0015004 ;  # has_characterizing_marker_set
       owl:someValuesFrom ?characterizing_biomarker_set ] .
-   ?characterizing_biomarker_set owl:equivalentClass/owl:intersectionOf ?list .
+   ?characterizing_biomarker_set owl:intersectionOf ?list .
    ?list rdf:rest*/rdf:first/owl:someValuesFrom ?x .
    FILTER NOT EXISTS {
       ?list rdf:rest*/rdf:first/owl:someValuesFrom ?element .
       FILTER ( !(?element IN ({{biomarkers}}) ))
    } .
 
-   ?ct rdfs:label ?cell_type ;
+   ?ct rdfs:label ?cell_type_label ;
        rdfs:subClassOf [
-            owl:onProperty obo:RO_0001025 ;  # located_in
+            owl:onProperty obo:BFO_0000050 ;  # part_of
             owl:someValuesFrom ?as ] .
-   ?as rdfs:label ?anatomical_structure .
+   ?as rdfs:label ?anatomical_structure_label .
 
-   OPTIONAL {
-      ?spatial_entity rdfs:subClassOf [
-            owl:onProperty ccf:representation_of ;
-            owl:someValuesFrom ?as ] .
-      
-      ?instance rdf:type ?spatial_entity ;
+   OPTIONAL {   
+      ?instance ccf:representation_of ?as ;
                 ccf:has_object_reference ?obj_ref ;
                 ccf:has_reference_organ ?reference_organ .
 
-      ?obj_ref ccf:file_name ?glb_file ;
+      ?obj_ref ccf:file_url ?glb_file ;
                ccf:file_subpath ?subpath .
    }
 }
-GROUP BY ?cell_type ?anatomical_structure
+GROUP BY ?cell_type_label ?anatomical_structure_label

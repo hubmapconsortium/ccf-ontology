@@ -11,6 +11,8 @@ package-lock.json
 *.tmp.owl
 *.tmp.json
 
+app/lookup.js
+
 src/ontology/mirror
 src/ontology/mirror/*
 src/ontology/reports/*

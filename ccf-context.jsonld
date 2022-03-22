@@ -5,7 +5,7 @@
     "ccf": "http://purl.org/ccf/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dcterms": "http://purl.org/dc/terms/",
-    
+
     "label": "rdfs:label",
     "description": "rdfs:comment",
     "link": "ccf:url",
@@ -75,8 +75,7 @@
     "creator_first_name": "ccf:creator_first_name",
     "creator_last_name": "ccf:creator_last_name",
     "placement": {
-      "@id": "ccf:has_placement",
-      "@type": "@id"
+      "@reverse": "ccf:placement_for"
     },
     "placement_date": "dcterms:created",
     "rotation_order": "ccf:rotation_order",
@@ -85,11 +84,11 @@
     "scaling_units": "ccf:scaling_unit",
     "translation_units": "ccf:translation_unit",
     "source": {
-      "@id": "ccf:placement_relative_to",
+      "@id": "ccf:placement_for",
       "@type": "@id"
     },
     "target": {
-      "@id": "ccf:placement_for",
+      "@id": "ccf:placement_relative_to",
       "@type": "@id"
     },
     "x_rotation": "ccf:x_rotation",

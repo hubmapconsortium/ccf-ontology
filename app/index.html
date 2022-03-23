@@ -26,117 +26,84 @@
         height: 420px;
         display: none;
       }
+      .column {
+        float: left;
+        width: 50%;
+      }
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #result-text {
+        padding: 20px 0px 20px 0px;
+        text-size: 14px;
+      }
+      #description {
+        margin-bottom: 30px;
+      }
       #biomarkers {
         font-size: 18pt;
-      }
-      #cell-type-dropdown {
-        font-size: 12pt;
-        width: 360px;
-        margin-bottom: 10px;
-      }
-      #anatomical-structure-dropdown {
-        font-size: 12pt;
-        width: 360px;
-      }
-      #glb-model-dropdown {
-        font-size: 12pt;
-        width: 420px;
-        padding-bottom: 3px;
-      }
-      /* Tooltip container */
-      .tooltip {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-      }
-      /* Tooltip text */
-      .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 500px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        padding: 5px 0;
-        border-radius: 6px;
-        position: absolute;
-        z-index: 1;
-      }
-      .tooltip:hover .tooltiptext {
-        visibility: visible;
       }
     </style>
     <title>Cell Type Finder</title>
   </head>
   <body>
     <h2>Cell Type Finder</h2>
-    <span style="font-size:11pt;padding-bottom:30px;"><i>A proof-of-concept application that finds the connections between anatomical structures, cell types and biomarkers based on the CCF ontology</i></span>
-    <form>
-      <label for="biomarkers">Enter a set of biomarkers that characterizes a cell type (separated by commas):</label><br/>
-      <textarea id="biomarkers" name="biomarkers" rows="3" cols="50"></textarea><br/>
-      <label for="examples-dropdown">Use example: </label>
-      <select type="text" id="examples-dropdown" name="examples">
-        <option value="">--- Please select an example ---</option>
-        <option value="DCN,GSN,PDGFRA">DCN, GSN, PDGFRA</option>
-        <option value="IL7R,CD163,CD14">IL7R, CD163, CD14</option>
-        <option value="TP53,DDB2,KRT10,MKI67">TP53, DDB2, KRT10, MKI67</option>
-        <option value="SATB2,CRYAB,SPP1,VCAM1">SATB2, CRYAB, SPP1, VCAM1</option>
-      </select><br/>
-      <button type="button" id="find">Find</button>&nbsp;&nbsp;
-      <label id="message" style="color:red;"></label>
-    </form>
-    <br/>
-    <div id="result-container" class="result-container" style="display:none;">
-      <h3>Query result</h3>
-      <div>
-        <div class="cell-type-name">
-          <label for="cell-type">Cell types that are characterized by the biomarkers:</label><br/>
-          <select type="text" id="cell-type-dropdown" name="cell-type" size="22"></select><br/>
+    <div id="description"><i>A proof-of-concept application that finds the connections between anatomical structures, cell types and biomarkers based on the CCF ontology</i></div>
+    <div style="width:1270px;padding-bottom:10px;">
+      <label for="biomarkers">Enter a set of biomarkers that characterizes a cell type (separated by commas):</label>
+      <div class="row">
+        <div class="column">
+          <form>
+            <textarea id="biomarkers" name="biomarkers" rows="3" cols="42"></textarea><br/>
+            <label for="examples-dropdown">Use example: </label>
+            <select type="text" id="examples-dropdown" name="examples">
+              <option value="">--- Please select an example ---</option>
+              <option value="DCN,GSN,PDGFRA">DCN, GSN, PDGFRA</option>
+              <option value="IL7R,CD163,CD14">IL7R, CD163, CD14</option>
+              <option value="TP53,DDB2,KRT10,MKI67">TP53, DDB2, KRT10, MKI67</option>
+              <option value="SATB2,CRYAB,SPP1,VCAM1">SATB2, CRYAB, SPP1, VCAM1</option>
+            </select>
+            &nbsp;&nbsp;<label id="message" style="color:red;"></label>
+          </form>
         </div>
-        <div class="organ-name">
-          <label for="anatomical-structures">The location of the selected cell type:</label><br/>
-          <select type="text" id="anatomical-structure-dropdown" name="anatomical-structure" size="22"></select><br/>
-        </div>
-        <div id="model-container" class="organ-visual">
-          <label for="as-model"></label>Organ visualization:<br/>
-          <select type="text" id="glb-model-dropdown" name="glb-model"></select><br/>
-          <div class="tooltip">
-            <babylon id="as-model"></babylon>
-            <span id="tooltiptext" class="tooltiptext">Tooltip text</span>
-          </div>
+        <div class="column">
+          <button type="button" id="search" style="height:90px;width:90px;">Search</button>
         </div>
       </div>
     </div>
+    <hr/>
+    <div id="result-container" class="result-container">
+      <div id="result-text"></div>
+      <div id="result-list"></div>
+    </div>
 
     <script>
-      $('#find').click(function() {
-        $('#cell-type-dropdown').empty();
-        $('#anatomical-structure-dropdown').empty();
-        $('#result-container').hide();
-        $('#model-container').hide();
+      $('#search').click(function() {
+        $('#result-text span').remove();
+        $('#result-list div').remove();
         $('#message').text("Processing, please wait...")
 
         $.getJSON('http://localhost:3000/getCellType', { symbols : $('#biomarkers').val() },
           function(response) {
             if (response.length == 0) {
               $('#message').text("No result");
-              $('#result-container').hide();
-              return;
+            } else {
+              $('#message').text("")
+              $('<div>').append(
+                $('<span>').text("Found " + response.length + " cell type(s)")
+              ).appendTo('#result-text');
+              $.each(response, function (index, object) {
+                console.log(object);
+                $('<div>').attr('id', 'result-' + index).css({'padding-bottom':'10px'}).append(
+                  $('<span>').text(object.cell_type_label).css({'font-size':'15pt','font-weight':'bold'}),
+                  $('<br>'),
+                  $('<span>').text("located in: " + object.anatomical_structure_label).css({'font-size':'12pt','font-style':'italic'})
+                ).appendTo('#result-list');
+              });
             }
-            $('#message').text("")
-            $('#result-container').show();
-            $.each(response, function (index, object) {
-              console.log(object);
-              var cell_type = object['cell_type_label'];
-              if (!$('#cell-type-dropdown option[value="' + cell_type + '"]').length) {
-                $('#cell-type-dropdown').append($('<option></option>')
-                  .attr('value', cell_type)
-                  .text(cell_type));
-              }
-            });
-            $('#cell-type-dropdown').change(function(e) {
-              updateAnatomicalStructureModelsDropDown(e.target.value, response);
-            });
           });
       });
 
@@ -148,85 +115,8 @@
         updateBiomarkersTextArea(e.target.value);
       });
 
-      $('#anatomical-structure-dropdown').change(function(e) {
-        $('#glb-model-dropdown').empty();
-        var glb_data = JSON.parse(e.target.value);
-        if (glb_data.length > 0) {
-          $('#model-container').show();
-          $.each(glb_data, function (index, arr) {
-            $('#glb-model-dropdown').append($('<option></option>')
-                .attr('value', arr[0])
-                .text(arr[1]));
-          });
-          loadModel(glb_data[0][0]);
-        } else {
-          $('#model-container').hide();
-        }
-      });
-
-      $('#glb-model-dropdown').change(function(e) {
-        updateOrganVisualViewer(e.target.value);
-      });
-
       function updateBiomarkersTextArea(value) {
         $('#biomarkers').val(value);
-      }
-
-      function updateAnatomicalStructureModelsDropDown(value, response) {
-        $('#anatomical-structure-dropdown').empty();
-        $.each(response, function (index, object) {
-          if (object['cell_type_label'] == value) {
-            var anatomical_structure = object['anatomical_structure_label'];
-            if (!$('#anatomical-structure-dropdown option[value="' + anatomical_structure + '"]').length) {
-              // var glb_file = getFirstGlbFile(object['glb_files']);
-              glb_files = [];
-              if (object['glb_files'] != null) {
-                glb_files = object['glb_files'].split(", ");
-              }
-              subpaths = [];
-              if (object['subpaths'] != null) {
-                subpaths = object['subpaths'].split(", ");
-              }
-              glb_data = alternateMerging(glb_files, subpaths);
-              $('#anatomical-structure-dropdown').append($('<option></option>')
-                  .attr('value', JSON.stringify(glb_data))
-                  .text(anatomical_structure));
-            }
-          }
-        });
-      }
-
-      function updateOrganVisualViewer(value) {
-        if (value != "") {
-          loadModel(value);
-        }
-      }
-
-      function loadModel(glb_file) {
-        BabylonViewer.viewerManager
-          .getViewerPromiseById("as-model")
-          .then(function (viewer) {
-            viewer.loadModel({
-             url: glb_file
-            });
-          });
-        $('#tooltiptext').text("Source file: " + glb_file);
-      }
-
-      function getFirstGlbFile(glb_files) {
-        var first_glb_file = "";
-        if (glb_files != null) {
-          first_glb_file = glb_files.split(", ")[0];
-        }
-        return first_glb_file;
-      }
-
-      function alternateMerging(arr1, arr2) {
-        arr3 = [];
-        for (var i = 0; i < arr1.length; i++) {
-          arr3.push([arr1[i], arr2[i]]);
-        }
-        return arr3;
       }
     </script>
   </body>

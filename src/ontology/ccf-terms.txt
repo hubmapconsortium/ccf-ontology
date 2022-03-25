@@ -6,8 +6,8 @@ oboInOwl:id
 ccf:ccf_part_of
 ccf:ccf_located_in
 ccf:ccf_pref_label
-ccf:characterizes
-ccf:asctb_type
+ccf:ccf_characterizes
+ccf:ccf_asctb_type
 ccf:title
 ccf:url
 ccf:sex

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TDB_DIR=.tdb
-CCF_SOURCE=ccf-slim.owl
+CCF_SOURCE=ccf.owl
 
 if [ -d "$TDB_DIR" ]; then rm -Rf $TDB_DIR; fi
 

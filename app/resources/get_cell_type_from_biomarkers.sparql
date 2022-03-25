@@ -4,10 +4,9 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?cell_type_label ?anatomical_structure_label
-   (GROUP_CONCAT(DISTINCT ?glb_file; SEPARATOR=", ") AS ?glb_files)
-   (GROUP_CONCAT(DISTINCT ?subpath; SEPARATOR=", ") AS ?subpaths)
-   (GROUP_CONCAT(DISTINCT ?reference_organ; SEPARATOR=", ") AS ?reference_organs) 
+SELECT DISTINCT ?ct ?ct_label ?as ?as_label
+   (GROUP_CONCAT(DISTINCT ?sample_comment; SEPARATOR=", ") AS ?sample_comments)
+   (GROUP_CONCAT(DISTINCT ?sample_url; SEPARATOR=", ") AS ?sample_urls)
 WHERE {
    ?ct rdfs:subClassOf [
       owl:onProperty obo:RO_0015004 ;  # has_characterizing_marker_set
@@ -19,19 +18,15 @@ WHERE {
       FILTER ( !(?element IN ({{biomarkers}}) ))
    } .
 
-   ?ct rdfs:label ?cell_type_label ;
-       rdfs:subClassOf [
-            owl:onProperty obo:BFO_0000050 ;  # part_of
-            owl:someValuesFrom ?as ] .
-   ?as rdfs:label ?anatomical_structure_label .
+   ?ct rdfs:label ?ct_label ;
+       ccf:ccf_located_in ?as.
+   ?as rdfs:label ?as_label .
 
-   OPTIONAL {   
-      ?instance ccf:representation_of ?as ;
-                ccf:has_object_reference ?obj_ref ;
-                ccf:has_reference_organ ?reference_organ .
-
-      ?obj_ref ccf:file_url ?glb_file ;
-               ccf:file_subpath ?subpath .
+   OPTIONAL {
+      ?spatial_entity ccf:collides_with ?as ;
+                      ccf:represents_bbox_of ?sample .
+      ?sample rdfs:comment ?sample_comment ;
+              ccf:url ?sample_url .
    }
 }
-GROUP BY ?cell_type_label ?anatomical_structure_label
+group by ?ct ?ct_label ?as ?as_label

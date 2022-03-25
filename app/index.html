@@ -97,11 +97,28 @@
               ).appendTo('#result-text');
               $.each(response, function (index, object) {
                 console.log(object);
-                $('<div>').attr('id', 'result-' + index).css({'padding-bottom':'10px'}).append(
-                  $('<span>').text(object.cell_type_label).css({'font-size':'15pt','font-weight':'bold'}),
+                $('<div>').attr('id', 'result_' + index).css({'padding-bottom':'10px'}).append(
+                  $('<span>').text(object.ct_label).css({'font-size':'15pt','font-weight':'bold'}),
                   $('<br>'),
-                  $('<span>').text("located in: " + object.anatomical_structure_label).css({'font-size':'12pt','font-style':'italic'})
+                  $('<span>').text("located in: " + object.as_label).css({'font-size':'12pt','font-style':'italic'})
                 ).appendTo('#result-list');
+
+                if (object.sample_urls != null) {
+                  let sample_urls = object.sample_urls.split(", ");
+                  $('<div>').text("Found in sample:").append(
+                    $('<ul>').attr('class', 'samples_' + index)
+                  ).appendTo('#result-list');
+                  let sampleList = $('ul.samples_' + index)
+                  $.each(sample_urls, function(index, url) {
+                      var li = $('<li/>')
+                          .appendTo(sampleList);
+                      var aaa = $('<a/>')
+                          .attr('href', url)
+                          .attr('target', '_blank')
+                          .text("sample-" + index)
+                          .appendTo(li);
+                  });
+                }
               });
             }
           });

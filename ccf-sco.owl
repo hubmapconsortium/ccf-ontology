@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/ccf/ccf-sco.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.10/ccf-sco.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.10</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.11/ccf-sco.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -966,6 +966,12 @@
     
 
 
+    <!-- http://purl.org/ccf/0.5/d49fc7d2-4dfa-4a4c-9d91-737cdaf2c4d7 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ccf/0.5/d49fc7d2-4dfa-4a4c-9d91-737cdaf2c4d7"/>
+    
+
+
     <!-- http://purl.org/ccf/0.5/ddbe72b3-09e3-48dc-9a75-e5ed70e12a01 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/0.5/ddbe72b3-09e3-48dc-9a75-e5ed70e12a01"/>
@@ -1662,12 +1668,6 @@
     
 
 
-    <!-- http://purl.org/ccf/1.5/f2a0eb6b-7729-40ac-baad-a9f3f0b64e91 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/f2a0eb6b-7729-40ac-baad-a9f3f0b64e91"/>
-    
-
-
     <!-- http://purl.org/ccf/1.5/f31c1726-c693-4734-8c1c-4f1d64bbe034 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/f31c1726-c693-4734-8c1c-4f1d64bbe034"/>
@@ -1755,12 +1755,6 @@
     <!-- http://purl.org/ccf/1.5/fcfcc65b-f91f-4447-a29b-c9836104570c -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/fcfcc65b-f91f-4447-a29b-c9836104570c"/>
-    
-
-
-    <!-- http://purl.org/ccf/1.5/fd380a0c-2915-4d73-b3f4-d161badbaccb -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/fd380a0c-2915-4d73-b3f4-d161badbaccb"/>
     
 
 
@@ -4610,6 +4604,32 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8">
+        <rdf:type rdf:resource="http://purl.org/ccf/donor"/>
+        <ccf:has_biological_sex rdf:resource="http://purl.bioontology.org/ontology/LNC/LA2-8"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/ab9201c18d9833f3f14d153c35403ea7"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/0255a722245dd5f2344c573553484094"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/22aec2b779292335fcc0d16d4023dbed"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/26b3cccde241314ecc737da6cc1f01cf"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/3f887f69ca93159c4f73df84c256b5fd"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/4799f11562a05cda8c0cd6eddb0e9666"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/771c50c1c33792901cecebc9e4abc0f5"/>
+        <ccf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</ccf:age>
+        <ccf:bmi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32.6</ccf:bmi>
+        <ccf:consortium_name>HuBMAP</ccf:consortium_name>
+        <ccf:description>Male, Age 31, BMI 32.6</ccf:description>
+        <ccf:tissue_provider_name>TMC-Vanderbilt</ccf:tissue_provider_name>
+        <ccf:tissue_provider_uuid>73bb26e4-ed43-11e8-8f19-0a7c1eab007a</ccf:tissue_provider_uuid>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/donor/a4989d3a5aceca977e232224143cb0f8</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Entered 12/26/2019, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/a4a1d2174524d9e670e2d91218d9b0d4 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/a4a1d2174524d9e670e2d91218d9b0d4">
@@ -5362,20 +5382,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/aa93e53df10842c13348a334c8fe423f -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/aa93e53df10842c13348a334c8fe423f">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: salmon_rnaseq_snareseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/aa93e53df10842c13348a334c8fe423f</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, HuBMAP Process, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/aa97d20b4a8f3c1198826091bc5455d9 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/aa97d20b4a8f3c1198826091bc5455d9">
@@ -5577,6 +5583,22 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/ab9201c18d9833f3f14d153c35403ea7 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ab9201c18d9833f3f14d153c35403ea7">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d"/>
+        <ccf:description>25 x 15 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/ab9201c18d9833f3f14d153c35403ea7</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/ab957eb5a977b2eeb8817bc180bde4df -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ab957eb5a977b2eeb8817bc180bde4df">
@@ -5659,20 +5681,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/ac1a2b21f3b25950bf340280a59b6ad4</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/11/2022, daniel Cotter, TMC-Stanford</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/ac1d4544ab4886b851f74b2c21952378 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ac1d4544ab4886b851f74b2c21952378">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: salmon_rnaseq_snareseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/ac1d4544ab4886b851f74b2c21952378</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, HuBMAP Process, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -5845,20 +5853,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/ade674f0277942c9a1297494fcf3511d -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ade674f0277942c9a1297494fcf3511d">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/ade674f0277942c9a1297494fcf3511d</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/ae1cf3212a4e98bfa807db7c9e4c20de -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ae1cf3212a4e98bfa807db7c9e4c20de">
@@ -5900,6 +5894,22 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/ae5e2335c953b9d853a5f6945a2d6e47 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ae5e2335c953b9d853a5f6945a2d6e47">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/c16891deebece9ef23d7f7c13c81b671"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/6890cd54f99e6396694e64ee2bb53b3c"/>
+        <ccf:description>16 x 12 x 1 millimeter, 1 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/ae5e2335c953b9d853a5f6945a2d6e47</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/ae680d03c584e1c33fa14ca19a8a7909 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ae680d03c584e1c33fa14ca19a8a7909">
@@ -5910,6 +5920,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/ae680d03c584e1c33fa14ca19a8a7909</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/13/2022, HuBMAP Process, TMC-Florida</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/ae7723aee8bc809afe0a05756bdf91de -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ae7723aee8bc809afe0a05756bdf91de">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: PAS, </ccf:description>
+        <ccf:technology>PAS</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/ae7723aee8bc809afe0a05756bdf91de</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 2/12/2022, Jeff Spraggins, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -6958,6 +6982,42 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/ae7723aee8bc809afe0a05756bdf91de"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/b699132d500b27addfe1349729129121"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6bbc59cb234d6b15deda7356567c3fb"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/b86ca8d3370798d10e203ac7f8090e3e"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d3f2eaa0d0d56e143d6700fde6ca71f3"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/e7d853c6c10c063c02bbd50de9b73f9a"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/02e13b9b3cdc939cca397c42c2981dd1"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/1c2b5297ef5c87e0b46cada2c9af62ae"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/109162ed40ede274202eab96bf640fa4"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/5409cced402ef1eec2d5eca8912bfbee"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/56b00177fa2bbd091a10dae8d57c9539"/>
+        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/0.5/d49fc7d2-4dfa-4a4c-9d91-737cdaf2c4d7"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/ab9201c18d9833f3f14d153c35403ea7"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/0255a722245dd5f2344c573553484094"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/22aec2b779292335fcc0d16d4023dbed"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/26b3cccde241314ecc737da6cc1f01cf"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/3f887f69ca93159c4f73df84c256b5fd"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/4799f11562a05cda8c0cd6eddb0e9666"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/771c50c1c33792901cecebc9e4abc0f5"/>
+        <ccf:description>25 x 15 x 4 millimeter, 0.6 millimeter, fresh_frozen_tissue, 7 Sections</ccf:description>
+        <ccf:sample_type>Tissue Block</ccf:sample_type>
+        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ccf:section_count>
+        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.6</ccf:section_size>
+        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/b6283c0391ae1f184e1b818af81ea52d</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/b6293bba61e3956b6546f4e6f47c8c3c -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b6293bba61e3956b6546f4e6f47c8c3c">
@@ -7023,6 +7083,20 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/b699132d500b27addfe1349729129121 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b699132d500b27addfe1349729129121">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: LC-MS-untargeted, </ccf:description>
+        <ccf:technology>LC</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-bulk-lc.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/b699132d500b27addfe1349729129121</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 2/12/2022, Jeff Spraggins, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/b69d1e2ad1bf1455eee991fce301b191 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b69d1e2ad1bf1455eee991fce301b191">
@@ -7047,6 +7121,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/b6adb50fe8ab0d3d596a04b233d5c702</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/27/2022, HuBMAP Process, TMC-UCSD</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/b6bbc59cb234d6b15deda7356567c3fb -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b6bbc59cb234d6b15deda7356567c3fb">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: MALDI-IMS-pos, </ccf:description>
+        <ccf:technology>MALDI</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/b6bbc59cb234d6b15deda7356567c3fb</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 2/12/2022, Jeff Spraggins, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -7305,28 +7393,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/b8304e1f4c94f2f8659a6f46719ac792 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b8304e1f4c94f2f8659a6f46719ac792">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/e0176e0fc05285de9c79eafed45dad7f"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/1842191a27efa24fdbb6ef67acb7a2e7"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/4cd38dc4158d728979dcf4b9932b02c5"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/4514230f7473a496201a4e45c4ff9568"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/f2a0eb6b-7729-40ac-baad-a9f3f0b64e91"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/13900f28089c3f38cafdbd89272f5db1"/>
-        <ccf:description>10 x 10 x 10 millimeter, 10 millimeter, ffpe_block, 1 Sections</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/b8304e1f4c94f2f8659a6f46719ac792</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 10/2/2021, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/b83598ee3965e92397b8890dc3c0e667 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b83598ee3965e92397b8890dc3c0e667">
@@ -7355,6 +7421,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/b869a5c0f1b1733d9dc5e9f01f6d34b1</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/12/2021, Liz McDonough, undefined</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/b86ca8d3370798d10e203ac7f8090e3e -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b86ca8d3370798d10e203ac7f8090e3e">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: image_pyramid, AF, </ccf:description>
+        <ccf:technology>AF</ccf:technology>
+        <ccf:thumbnail>https://assets.hubmapconsortium.org/165f42432f19910b4fe070a158534acd/thumbnail.jpg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/b86ca8d3370798d10e203ac7f8090e3e</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -7719,20 +7799,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/ba76a0aee94e03e866287d77866ead58</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/12/2022, Blue Lake, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/baa0353f17bd98dc714761613af90b88 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/baa0353f17bd98dc714761613af90b88">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/baa0353f17bd98dc714761613af90b88</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -8575,12 +8641,18 @@
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c16891deebece9ef23d7f7c13c81b671">
         <rdf:type rdf:resource="http://purl.org/ccf/donor"/>
         <ccf:has_biological_sex rdf:resource="http://purl.bioontology.org/ontology/LNC/LA3-6"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/ae5e2335c953b9d853a5f6945a2d6e47"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/b5ba2d71b88561c85ff96a3d9542f935"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/ce31fcf1eaf6a26824db7f22b15c4efb"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/e6fbb252124fac9987c8d0bd845894e4"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/f7843e1f34ac19d00b6271d636e7a5ec"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/fa820a141aace7e8c2740b9f122955c7"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/07c561fcaa3dddb745d503320f8d136c"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/3622b5c2175f28d7f6323208b7b1d93c"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/5d37aee99f1d65229f1ad2995f8c479f"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/66169c32a460d5ad1de008fdadc54a18"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/6890cd54f99e6396694e64ee2bb53b3c"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/7a0715916cc5f9be96fd5cdaa2f4152f"/>
         <ccf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</ccf:age>
         <ccf:bmi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.3</ccf:bmi>
         <ccf:consortium_name>HuBMAP</ccf:consortium_name>
@@ -9083,22 +9155,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/c5a5c627e19e33a809a32de4159dfb26 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c5a5c627e19e33a809a32de4159dfb26">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/0739c6eb8d0d51bfd244e3d5afb00aab"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/2256c64aacd92af7028ffb33e478cf46"/>
-        <ccf:description>3 x 12 x 0.7 millimeter, 0.7 millimeter, fresh_frozen_oct_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/c5a5c627e19e33a809a32de4159dfb26</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/6/2020, Diane Salamon, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/c5b156bda4b396bfe8a06d981e155149 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c5b156bda4b396bfe8a06d981e155149">
@@ -9161,20 +9217,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/c5d41ef8e0233c3eef02296cff84d6de</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/13/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/c5e4adcf2ef956864a087d1691e8e8cd -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c5e4adcf2ef956864a087d1691e8e8cd">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/c5e4adcf2ef956864a087d1691e8e8cd</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -10707,20 +10749,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/d34706323794467348995af37072b5ee -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d34706323794467348995af37072b5ee">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d34706323794467348995af37072b5ee</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/d34eb3a317ac17d6f01b958cb2276793 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d34eb3a317ac17d6f01b958cb2276793">
@@ -10879,6 +10907,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d3c675e9f3507412928d3bb725c2c8d2</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/27/2022, Joel Welling, TMC-UCSD</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/d3f2eaa0d0d56e143d6700fde6ca71f3 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d3f2eaa0d0d56e143d6700fde6ca71f3">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: image_pyramid, AF, </ccf:description>
+        <ccf:technology>AF</ccf:technology>
+        <ccf:thumbnail>https://assets.hubmapconsortium.org/478fd3b7bf5b9e33bec0043d123dd1f3/thumbnail.jpg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d3f2eaa0d0d56e143d6700fde6ca71f3</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -11353,20 +11395,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/d7a8869e1687993cfc115fc2326e7b93</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/d7bd2925c466eedc009c1cd272011529 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d7bd2925c466eedc009c1cd272011529">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d7bd2925c466eedc009c1cd272011529</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -12086,20 +12114,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/de80a443ed15e1f783c68d5e0b2d7216 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/de80a443ed15e1f783c68d5e0b2d7216">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/de80a443ed15e1f783c68d5e0b2d7216</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/dec30248dca3262a3e59460c882f7091 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/dec30248dca3262a3e59460c882f7091">
@@ -12132,20 +12146,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/df4571465db80f45c10bc29cf5342cde</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/11/2022, Nico Pierson, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/df71091620312eacc28a6accccfb2aa4 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/df71091620312eacc28a6accccfb2aa4">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/df71091620312eacc28a6accccfb2aa4</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -12254,7 +12254,6 @@
         <rdf:type rdf:resource="http://purl.org/ccf/donor"/>
         <ccf:has_biological_sex rdf:resource="http://purl.bioontology.org/ontology/LNC/LA3-6"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/b73c3e4e34b41af7d20694f05ece6a71"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/b8304e1f4c94f2f8659a6f46719ac792"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/c0555e61bbd0e308d4231406accb4ec6"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/dec30248dca3262a3e59460c882f7091"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/fe80275c62a586010d5093d980f80c34"/>
@@ -13319,6 +13318,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/e7b583c23e85d886903e6d7dd6eaf06a</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 6/3/2021, HuBMAP Process, TMC-Stanford</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/e7d853c6c10c063c02bbd50de9b73f9a -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/e7d853c6c10c063c02bbd50de9b73f9a">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: image_pyramid, MALDI-IMS-neg, </ccf:description>
+        <ccf:technology>MALDI</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/e7d853c6c10c063c02bbd50de9b73f9a</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -14635,20 +14648,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/f3e8db3b31a3b32bd4b1688f74ee2939 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f3e8db3b31a3b32bd4b1688f74ee2939">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f3e8db3b31a3b32bd4b1688f74ee2939</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/f412e76986c1012ea9589d545ed8f043 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f412e76986c1012ea9589d545ed8f043">
@@ -15153,6 +15152,22 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/f7843e1f34ac19d00b6271d636e7a5ec -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f7843e1f34ac19d00b6271d636e7a5ec">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/c16891deebece9ef23d7f7c13c81b671"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/6890cd54f99e6396694e64ee2bb53b3c"/>
+        <ccf:description>16 x 12 x 1 millimeter, 1 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/f7843e1f34ac19d00b6271d636e7a5ec</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/f7a24d395fa4c384c5234c7437782ea5 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f7a24d395fa4c384c5234c7437782ea5">
@@ -15312,20 +15327,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/f873b94dc8554ce2d013ecd570f1d8b9 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f873b94dc8554ce2d013ecd570f1d8b9">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f873b94dc8554ce2d013ecd570f1d8b9</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/f8be0ea75c56936ca8b8e500fab956f8 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f8be0ea75c56936ca8b8e500fab956f8">
@@ -15390,20 +15391,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f91b925ab975d7f5997c51a72d9b1329</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 8/22/2020, Nico Pierson, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/f925e640576b80238a816ec7ab747e11 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f925e640576b80238a816ec7ab747e11">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: sc_atac_seq_snare, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f925e640576b80238a816ec7ab747e11</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, HuBMAP Process, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -15560,6 +15547,22 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/fa6d9c732c7f239422ec6b357136fcd4</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 6/29/2021, Blue Lake, TMC-UCSD</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/fa820a141aace7e8c2740b9f122955c7 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/fa820a141aace7e8c2740b9f122955c7">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/c16891deebece9ef23d7f7c13c81b671"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/6890cd54f99e6396694e64ee2bb53b3c"/>
+        <ccf:description>16 x 12 x 1 millimeter, 1 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/fa820a141aace7e8c2740b9f122955c7</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -15978,20 +15981,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/ffc79ba8af543395bfbcd753f86f4379</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/16/2022, daniel cotter, TMC-Stanford</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/ffe88de77cfb92e1912aaaadefb43516 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ffe88de77cfb92e1912aaaadefb43516">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/ffe88de77cfb92e1912aaaadefb43516</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -16670,20 +16659,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/00ca76f45eb3e75156f62e1546f979bc -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/00ca76f45eb3e75156f62e1546f979bc">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/00ca76f45eb3e75156f62e1546f979bc</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/00d1a3623dac388773bc7780fcb42797 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/00d1a3623dac388773bc7780fcb42797">
@@ -17010,20 +16985,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/02ce2a860dcced0ccc13dd39cd8406c2 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/02ce2a860dcced0ccc13dd39cd8406c2">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: sc_atac_seq_snare, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/02ce2a860dcced0ccc13dd39cd8406c2</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, HuBMAP Process, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/02dcd834808bd241a4251c730b043194 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/02dcd834808bd241a4251c730b043194">
@@ -17034,6 +16995,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/02dcd834808bd241a4251c730b043194</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/13/2022, Dana L Jackson, TMC-CalTech</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/02e13b9b3cdc939cca397c42c2981dd1 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/02e13b9b3cdc939cca397c42c2981dd1">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: AF, </ccf:description>
+        <ccf:technology>AF</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-spatial-af.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/02e13b9b3cdc939cca397c42c2981dd1</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 2/12/2022, Jeff Spraggins, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -17116,6 +17091,22 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/02461c3d773ff45698da2e7a96035e48</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/12/2021, Liz McDonough, undefined</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/0255a722245dd5f2344c573553484094 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/0255a722245dd5f2344c573553484094">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d"/>
+        <ccf:description>25 x 15 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/0255a722245dd5f2344c573553484094</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -17711,20 +17702,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/060ab67b1b2465f4416f843c29a68a06 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/060ab67b1b2465f4416f843c29a68a06">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/060ab67b1b2465f4416f843c29a68a06</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/060dfa0fdf2b840864f62d2cd1a7a456 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/060dfa0fdf2b840864f62d2cd1a7a456">
@@ -17883,6 +17860,22 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/07c561fcaa3dddb745d503320f8d136c -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/07c561fcaa3dddb745d503320f8d136c">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/c16891deebece9ef23d7f7c13c81b671"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/6890cd54f99e6396694e64ee2bb53b3c"/>
+        <ccf:description>16 x 12 x 1 millimeter, 1 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/07c561fcaa3dddb745d503320f8d136c</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/07c995983aac113b442c0dc0c0b42ae5 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/07c995983aac113b442c0dc0c0b42ae5">
@@ -17990,25 +17983,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/0736735768692d6ca0cd96149b743be1</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 6/29/2021, Blue Lake, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/0739c6eb8d0d51bfd244e3d5afb00aab -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/0739c6eb8d0d51bfd244e3d5afb00aab">
-        <rdf:type rdf:resource="http://purl.org/ccf/donor"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/c5a5c627e19e33a809a32de4159dfb26"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/2256c64aacd92af7028ffb33e478cf46"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/292763e46cc5b2773f5813ec0799baa5"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/9952c7284ac5b7fd14f4ceaf6bb1f990"/>
-        <ccf:consortium_name>HuBMAP</ccf:consortium_name>
-        <ccf:description></ccf:description>
-        <ccf:tissue_provider_name>TMC-UCSD</ccf:tissue_provider_name>
-        <ccf:tissue_provider_uuid>03b3d854-ed44-11e8-8bce-0e368f3075e8</ccf:tissue_provider_uuid>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/donor/0739c6eb8d0d51bfd244e3d5afb00aab</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Entered 1/8/2020, Diane Salamon, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -18284,20 +18258,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/1b358830d3d9a1c99131de862b35b153 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/1b358830d3d9a1c99131de862b35b153">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/1b358830d3d9a1c99131de862b35b153</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/1b39b63d4a867b02306204412ec9bf5b -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/1b39b63d4a867b02306204412ec9bf5b">
@@ -18431,6 +18391,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/1c19eeb60e35a2c6e745e52898009d41</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/12/2021, Liz McDonough, undefined</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/1c2b5297ef5c87e0b46cada2c9af62ae -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/1c2b5297ef5c87e0b46cada2c9af62ae">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: image_pyramid, MALDI-IMS-pos, </ccf:description>
+        <ccf:technology>MALDI</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/1c2b5297ef5c87e0b46cada2c9af62ae</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 9/8/2020, HuBMAP Process, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -18850,6 +18824,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/1000eb86d522a8e5505b8e07e2dc16a3</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/16/2022, Dana L Jackson, TMC-CalTech</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/109162ed40ede274202eab96bf640fa4 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/109162ed40ede274202eab96bf640fa4">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: AF, </ccf:description>
+        <ccf:technology>AF</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-spatial-af.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/109162ed40ede274202eab96bf640fa4</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 2/12/2022, Jeff Spraggins, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -19318,19 +19306,14 @@
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/13900f28089c3f38cafdbd89272f5db1">
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/e0176e0fc05285de9c79eafed45dad7f"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/1842191a27efa24fdbb6ef67acb7a2e7"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/4cd38dc4158d728979dcf4b9932b02c5"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/4514230f7473a496201a4e45c4ff9568"/>
         <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/61a65c4b-60b9-4024-8525-ea879d8ca19a"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/b8304e1f4c94f2f8659a6f46719ac792"/>
-        <ccf:description>10 x 10 x 10 millimeter, 10 millimeter, ffpe_block</ccf:description>
         <ccf:description>10 x 10 x 10 millimeter, 10 millimeter, ffpe_slide, 0 Sections</ccf:description>
         <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
         <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
         <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ccf:section_size>
         <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/13900f28089c3f38cafdbd89272f5db1</ccf:url>
@@ -20018,20 +20001,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/18935c7f93f1b0a031c1f193276715fe</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/12/2021, Liz McDonough, undefined</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/19be408fb97c09f603c906921d7b0945 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/19be408fb97c09f603c906921d7b0945">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/19be408fb97c09f603c906921d7b0945</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -21233,6 +21202,22 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/22aec2b779292335fcc0d16d4023dbed -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/22aec2b779292335fcc0d16d4023dbed">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d"/>
+        <ccf:description>25 x 15 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/22aec2b779292335fcc0d16d4023dbed</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 5/13/2020, Elizabeth Neumann, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/22e83cfdaa13787d4d5796a927ce44d1 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/22e83cfdaa13787d4d5796a927ce44d1">
@@ -21299,59 +21284,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/225280788b0c66d095d05c4e36a89b81</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/12/2022, Blue Lake, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/2256c64aacd92af7028ffb33e478cf46 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/2256c64aacd92af7028ffb33e478cf46">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/0739c6eb8d0d51bfd244e3d5afb00aab"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/aa93e53df10842c13348a334c8fe423f"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/ac1d4544ab4886b851f74b2c21952378"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/ade674f0277942c9a1297494fcf3511d"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/baa0353f17bd98dc714761613af90b88"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/c5e4adcf2ef956864a087d1691e8e8cd"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d34706323794467348995af37072b5ee"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d7bd2925c466eedc009c1cd272011529"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/de80a443ed15e1f783c68d5e0b2d7216"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/df71091620312eacc28a6accccfb2aa4"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/f3e8db3b31a3b32bd4b1688f74ee2939"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/f873b94dc8554ce2d013ecd570f1d8b9"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/f925e640576b80238a816ec7ab747e11"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/ffe88de77cfb92e1912aaaadefb43516"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/00ca76f45eb3e75156f62e1546f979bc"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/02ce2a860dcced0ccc13dd39cd8406c2"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/060ab67b1b2465f4416f843c29a68a06"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/1b358830d3d9a1c99131de862b35b153"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/19be408fb97c09f603c906921d7b0945"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/233734120eed95231140c5dfd22622d7"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/27dd55b5e1721c64dc359e704de8f852"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/2746ce8d450265ace2c6aee762c8dfda"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/4dccc53d79f9516f7067b2fcd09b37fa"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/4ea7a4cf1a6ff0df0cc33c1236633112"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/434fbc55d458dc4e06da9ba4961f3840"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/469e619ef4dd5fd8d6857029acd45a5d"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/545f3d609c49c4b4ebe884bc16cca9e5"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/57cdbde608f49f28799accb37a4bec6f"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/6f87add44880de684e6a9a5625344bbb"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/614073f249f8881b2fe4a29db6bea266"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/670135e38ac4107e0d07dae1bdcf4936"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/869ff5b556a0e0f24a48aa673d0bc343"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/9b64312cac3c359e0fef53555057c996"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/fd380a0c-2915-4d73-b3f4-d161badbaccb"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/c5a5c627e19e33a809a32de4159dfb26"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/292763e46cc5b2773f5813ec0799baa5"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/9952c7284ac5b7fd14f4ceaf6bb1f990"/>
-        <ccf:description>3 x 12 x 2 millimeter, 0.7 millimeter, fresh_frozen_oct_block, 3 Sections</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/2256c64aacd92af7028ffb33e478cf46</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 10/3/2021, Diane Salamon, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -21449,20 +21381,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/232aac63e35e0fd4a856bb2ebf7f8d50</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 3/1/2022, Joel Welling, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/233734120eed95231140c5dfd22622d7 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/233734120eed95231140c5dfd22622d7">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/233734120eed95231140c5dfd22622d7</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -21773,6 +21691,22 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/25927b21d70ba35dd11e09ca5dd2b6c1</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/26b3cccde241314ecc737da6cc1f01cf -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/26b3cccde241314ecc737da6cc1f01cf">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d"/>
+        <ccf:description>25 x 15 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/26b3cccde241314ecc737da6cc1f01cf</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -22153,20 +22087,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/27dd55b5e1721c64dc359e704de8f852 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/27dd55b5e1721c64dc359e704de8f852">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/27dd55b5e1721c64dc359e704de8f852</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/27fd8c958f4478ab60df2555174c6e92 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/27fd8c958f4478ab60df2555174c6e92">
@@ -22193,20 +22113,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/272dc3fcd07c7c54c2ec517595264b12</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/12/2021, Liz McDonough, undefined</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/2746ce8d450265ace2c6aee762c8dfda -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/2746ce8d450265ace2c6aee762c8dfda">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/2746ce8d450265ace2c6aee762c8dfda</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -22403,22 +22309,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/2919211030df5bb30ea3ed543044584c</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/13/2022, Joel Welling, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/292763e46cc5b2773f5813ec0799baa5 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/292763e46cc5b2773f5813ec0799baa5">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/0739c6eb8d0d51bfd244e3d5afb00aab"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/2256c64aacd92af7028ffb33e478cf46"/>
-        <ccf:description>3 x 12 x 0.7 millimeter, 0.7 millimeter, fresh_frozen_oct_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/292763e46cc5b2773f5813ec0799baa5</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 7/13/2020, Diane Salamon, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -23224,6 +23114,22 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/3f678ab5cd7ed086ec0d2d4468fc5094</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 8/22/2020, HuBMAP Process, TMC-Florida</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/3f887f69ca93159c4f73df84c256b5fd -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/3f887f69ca93159c4f73df84c256b5fd">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d"/>
+        <ccf:description>25 x 15 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/3f887f69ca93159c4f73df84c256b5fd</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -24831,20 +24737,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/4dccc53d79f9516f7067b2fcd09b37fa -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/4dccc53d79f9516f7067b2fcd09b37fa">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/4dccc53d79f9516f7067b2fcd09b37fa</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/4dd3bf97557acb0afee48d1a51677d03 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/4dd3bf97557acb0afee48d1a51677d03">
@@ -24979,20 +24871,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/4ea28b66fb08185a484df0fa0b9543dc</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/13/2022, Joel Welling, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/4ea7a4cf1a6ff0df0cc33c1236633112 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/4ea7a4cf1a6ff0df0cc33c1236633112">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: snRNAseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/4ea7a4cf1a6ff0df0cc33c1236633112</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 6/29/2021, Blue Lake, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -25608,20 +25486,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/434fbc55d458dc4e06da9ba4961f3840 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/434fbc55d458dc4e06da9ba4961f3840">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: salmon_sn_rnaseq_10x, </ccf:description>
-        <ccf:technology>10x</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/434fbc55d458dc4e06da9ba4961f3840</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 6/29/2021, HuBMAP Process, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/438f7ba3b54f4020e8cbd852594aaca3 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/438f7ba3b54f4020e8cbd852594aaca3">
@@ -25968,20 +25832,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/469e619ef4dd5fd8d6857029acd45a5d -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/469e619ef4dd5fd8d6857029acd45a5d">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/469e619ef4dd5fd8d6857029acd45a5d</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/47a8780388d54eaf05e40697377ef6de -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/47a8780388d54eaf05e40697377ef6de">
@@ -26081,6 +25931,22 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/4799f11562a05cda8c0cd6eddb0e9666 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/4799f11562a05cda8c0cd6eddb0e9666">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d"/>
+        <ccf:description>25 x 15 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/4799f11562a05cda8c0cd6eddb0e9666</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/48b15ba8abfaef4e70edfdf173649b6c -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/48b15ba8abfaef4e70edfdf173649b6c">
@@ -26099,6 +25965,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/donor/48b15ba8abfaef4e70edfdf173649b6c</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Entered 3/27/2020, Diane Salamon, TMC-UCSD</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/48ca66f487e345342eda4972e0d639c6 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/48ca66f487e345342eda4972e0d639c6">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: LC-MS-untargeted, </ccf:description>
+        <ccf:technology>LC</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-bulk-lc.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/48ca66f487e345342eda4972e0d639c6</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 2/12/2022, Jeff Spraggins, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -27526,16 +27406,16 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/545f3d609c49c4b4ebe884bc16cca9e5 -->
+    <!-- https://entity.api.hubmapconsortium.org/entities/5409cced402ef1eec2d5eca8912bfbee -->
 
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/545f3d609c49c4b4ebe884bc16cca9e5">
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/5409cced402ef1eec2d5eca8912bfbee">
         <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/545f3d609c49c4b4ebe884bc16cca9e5</ccf:url>
+        <ccf:description>Data/Assay Types: image_pyramid, PAS, </ccf:description>
+        <ccf:technology>PAS</ccf:technology>
+        <ccf:thumbnail>https://assets.hubmapconsortium.org/8f40f8ff9da60e03cd3cfb242ae0e2d6/thumbnail.jpg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/5409cced402ef1eec2d5eca8912bfbee</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
+        <rdfs:comment>Registered 8/3/2021, HuBMAP Process, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -27643,6 +27523,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/5590f1212159e1a53b045e7bedafc562</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 10/19/2021, daniel cotter, TMC-Stanford</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/56b00177fa2bbd091a10dae8d57c9539 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/56b00177fa2bbd091a10dae8d57c9539">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: MALDI-IMS-neg, </ccf:description>
+        <ccf:technology>MALDI</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/56b00177fa2bbd091a10dae8d57c9539</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 2/12/2022, Jeff Spraggins, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -27785,20 +27679,6 @@
         <ccf:technology>OTHER</ccf:technology>
         <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/567c871e361b9bde3f744a211ee5aed5</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/57cdbde608f49f28799accb37a4bec6f -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/57cdbde608f49f28799accb37a4bec6f">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNAREseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/57cdbde608f49f28799accb37a4bec6f</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
@@ -28840,20 +28720,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/6f87add44880de684e6a9a5625344bbb -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/6f87add44880de684e6a9a5625344bbb">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/6f87add44880de684e6a9a5625344bbb</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/6f8b8f7671c0dca3062caca5ad70dca6 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/6f8b8f7671c0dca3062caca5ad70dca6">
@@ -28989,20 +28855,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/donor/613776ac210f65a63462ce6f926f4557</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Entered 10/16/2020, Diane Salamon, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/614073f249f8881b2fe4a29db6bea266 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/614073f249f8881b2fe4a29db6bea266">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/614073f249f8881b2fe4a29db6bea266</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -29781,20 +29633,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/670135e38ac4107e0d07dae1bdcf4936 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/670135e38ac4107e0d07dae1bdcf4936">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/670135e38ac4107e0d07dae1bdcf4936</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/672428d7ce855ace561c4bd089cdb6d2 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/672428d7ce855ace561c4bd089cdb6d2">
@@ -29989,6 +29827,30 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/6890cd54f99e6396694e64ee2bb53b3c -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/6890cd54f99e6396694e64ee2bb53b3c">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/c16891deebece9ef23d7f7c13c81b671"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/48ca66f487e345342eda4972e0d639c6"/>
+        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/0.5/3022bdb2-5548-4d64-8c20-139999148d67"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/ae5e2335c953b9d853a5f6945a2d6e47"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/f7843e1f34ac19d00b6271d636e7a5ec"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/fa820a141aace7e8c2740b9f122955c7"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/07c561fcaa3dddb745d503320f8d136c"/>
+        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/7a0715916cc5f9be96fd5cdaa2f4152f"/>
+        <ccf:description>16 x 12 x 5 millimeter, 1 millimeter, fresh_frozen_tissue, 5 Sections</ccf:description>
+        <ccf:sample_type>Tissue Block</ccf:sample_type>
+        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ccf:section_count>
+        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_size>
+        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/6890cd54f99e6396694e64ee2bb53b3c</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 6/10/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/69a0ada10f4f119f99ce5f66cf3b1a94 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/69a0ada10f4f119f99ce5f66cf3b1a94">
@@ -30066,6 +29928,22 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/6985cb05e2c8f9fa34afa7625333d865</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 9/8/2021, HuBMAP Process, TMC-Florida</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/7a0715916cc5f9be96fd5cdaa2f4152f -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/7a0715916cc5f9be96fd5cdaa2f4152f">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/c16891deebece9ef23d7f7c13c81b671"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/6890cd54f99e6396694e64ee2bb53b3c"/>
+        <ccf:description>16 x 12 x 1 millimeter, 1 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/7a0715916cc5f9be96fd5cdaa2f4152f</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 12/27/2019, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -31644,6 +31522,22 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/77f80b6c8ed9f05884edcd55e6885246</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 3/8/2022, Joel Welling, TMC-Stanford</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/771c50c1c33792901cecebc9e4abc0f5 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/771c50c1c33792901cecebc9e4abc0f5">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4989d3a5aceca977e232224143cb0f8"/>
+        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/b6283c0391ae1f184e1b818af81ea52d"/>
+        <ccf:description>25 x 15 x 0.6 millimeter, 0.6 millimeter, fresh_frozen_tissue</ccf:description>
+        <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ccf:section_number>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/771c50c1c33792901cecebc9e4abc0f5</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 1/29/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -33713,20 +33607,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/869ff5b556a0e0f24a48aa673d0bc343 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/869ff5b556a0e0f24a48aa673d0bc343">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/869ff5b556a0e0f24a48aa673d0bc343</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/87d07e2b92db82a57064eebf12590efa -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/87d07e2b92db82a57064eebf12590efa">
@@ -34122,20 +34002,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/9b0f3151cf989d11800680eab120541a</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/11/2022, daniel Cotter, TMC-Stanford</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/9b64312cac3c359e0fef53555057c996 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/9b64312cac3c359e0fef53555057c996">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: SNARE-RNAseq2, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/9b64312cac3c359e0fef53555057c996</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/27/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -35583,22 +35449,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/9915d10daae7d758947900a0fbe4e929</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 11/10/2020, Jamie Allen, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/9952c7284ac5b7fd14f4ceaf6bb1f990 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/9952c7284ac5b7fd14f4ceaf6bb1f990">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/0739c6eb8d0d51bfd244e3d5afb00aab"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/2256c64aacd92af7028ffb33e478cf46"/>
-        <ccf:description>3 x 12 x 0.7 millimeter, 0.7 millimeter, fresh_frozen_oct_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/9952c7284ac5b7fd14f4ceaf6bb1f990</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 7/14/2020, Diane Salamon, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 

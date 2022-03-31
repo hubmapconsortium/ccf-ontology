@@ -1,6 +1,6 @@
 # Common Coordinate Framework Atlas ontology
 
-More information can be found at https://bioportal.bioontology.org/ontologies/CCF
+![Progress Report Q3 HuBMAP](https://user-images.githubusercontent.com/5062950/161101298-2a6ad6b7-91b5-4f26-a5c4-c871f1d42f99.png)
 
 ## Ontology releases
 

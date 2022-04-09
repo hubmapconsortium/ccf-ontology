@@ -1,0 +1,15 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ccfc: <http://purl.org/ccf/components/> .
+
+ccfc:asctb_organ.owl
+  rdf:type owl:Ontology ;
+  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Prostate v1.0" ;
+  dcterms:description "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) tables aim to capture the nested part_of structure of anatomical human body parts, the typology of cells, and biomarkers used to identify cell types. The tables are authored and reviewed by an international team of experts." ;
+  dcterms:creator "Douglas Strand (0000-0002-0746-927X)" ;
+  dcterms:creator "Chad  Vezina (0000-0001-7058-5399)" ;
+  dcterms:contributor "Katy Börner (0000-0002-3321-6137)" ;
+  dcterms:contributor "Ellen M. Quardokus (0000-0001-7655-4833)" ;
+  dcterms:license "https://creativecommons.org/licenses/by/4.0/" .

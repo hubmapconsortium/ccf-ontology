@@ -33,7 +33,8 @@ $(MIRRORDIR)/fma.owl: mirror-fma | $(MIRRORDIR)
 .PHONY: mirror-hgnc
 .PRECIOUS: $(MIRRORDIR)/hgnc.owl
 mirror-hgnc:
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://github.com/musen-lab/hgnc2owl/raw/main/hgnc.owl --create-dirs -o $(MIRRORDIR)/hgnc.owl --retry 4 --max-time 200 && \
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://github.com/musen-lab/hgnc2owl/raw/main/hgnc.owl.gz --create-dirs -o $(MIRRORDIR)/hgnc.owl.gz --retry 4 --max-time 200 && \
+		gunzip $(MIRRORDIR)/hgnc.owl.gz && \
 		$(ROBOT) convert -i $(MIRRORDIR)/hgnc.owl -o $@.tmp.owl && \
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
@@ -1041,6 +1042,8 @@ $(EXTRACTS_DIR)/hgnc_uterus.owl: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_ute
 # ASCT+B Components
 # ----------------------------------------
 
+ANNOTATIONS_DIR = $(COMPONENTS_DIR)/annotations
+
 .PHONY: all_asctb
 all_asctb: $(ASCTB_FILES)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Finish generating ASCT+B files:)
@@ -1048,8 +1051,6 @@ all_asctb: $(ASCTB_FILES)
 
 define make_asctb_component
 	if [ $(COMP) = true ]; then $(ROBOT) merge --input $(1) --input $(2) --input $(3) \
-			--output $@.tmp.owl; fi
-	if [ $(COMP) = true ] && [ $(4) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(4) \
 			--output $@.tmp.owl; fi
 	if [ $(COMP) = true ] && [ $(5) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(5) \
 			--output $@.tmp.owl; fi
@@ -1059,264 +1060,291 @@ define make_asctb_component
 			--output $@.tmp.owl; fi
 	if [ $(COMP) = true ] && [ $(8) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(8) \
 			--output $@.tmp.owl; fi
+	if [ $(COMP) = true ] && [ $(9) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(9) \
+			--output $@.tmp.owl; fi
 	if [ $(COMP) = true ]; then $(ROBOT) annotate --input $@.tmp.owl \
-			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && \
+			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --annotation-file $(4) --output $@.tmp.owl && \
 			mv -f $@.tmp.owl $@; fi
 endef
 
 $(COMPONENTS_DIR)/asctb_blood.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_blood.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_blood.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_blood.owl \
+									$(ANNOTATIONS_DIR)/asctb_blood.ttl \
 									$(EXTRACTS_DIR)/uberon_blood.owl \
 									$(EXTRACTS_DIR)/cl_blood.owl \
 									$(EXTRACTS_DIR)/hgnc_blood.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_blood.owl
 
 $(COMPONENTS_DIR)/asctb_blood_vasculature.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_blood_vasculature.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_blood_vasculature.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_blood_vasculature.owl \
+									$(ANNOTATIONS_DIR)/asctb_blood_vasculature.ttl \
 									$(EXTRACTS_DIR)/uberon_blood_vasculature.owl \
 									$(EXTRACTS_DIR)/cl_blood_vasculature.owl \
 									$(EXTRACTS_DIR)/fma_blood_vasculature.owl \
 									$(EXTRACTS_DIR)/hgnc_blood_vasculature.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_blood_vasculature.owl
 
 $(COMPONENTS_DIR)/asctb_bone_marrow.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_bone_marrow.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_bone_marrow.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_bone_marrow.owl \
+									$(ANNOTATIONS_DIR)/asctb_bone_marrow.ttl \
 									$(EXTRACTS_DIR)/uberon_bone_marrow.owl \
 									$(EXTRACTS_DIR)/cl_bone_marrow.owl \
 									$(EXTRACTS_DIR)/hgnc_bone_marrow.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_bone_marrow.owl
 
 $(COMPONENTS_DIR)/asctb_brain.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_brain.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_brain.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_brain.owl \
+									$(ANNOTATIONS_DIR)/asctb_brain.ttl \
 									$(EXTRACTS_DIR)/uberon_brain.owl \
 									$(EXTRACTS_DIR)/hgnc_brain.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_brain.owl
 
 $(COMPONENTS_DIR)/asctb_eye.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_eye.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_eye.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_eye.owl \
+									$(ANNOTATIONS_DIR)/asctb_eye.ttl \
 									$(EXTRACTS_DIR)/uberon_eye.owl \
 									$(EXTRACTS_DIR)/cl_eye.owl \
 									$(EXTRACTS_DIR)/hgnc_eye.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_eye.owl
 
 $(COMPONENTS_DIR)/asctb_fallopian_tube.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_fallopian_tube.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_fallopian_tube.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_fallopian_tube.owl \
+									$(ANNOTATIONS_DIR)/asctb_fallopian_tube.ttl \
 									$(EXTRACTS_DIR)/uberon_fallopian_tube.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_fallopian_tube.owl
 
 $(COMPONENTS_DIR)/asctb_heart.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_heart.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_heart.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_heart.owl \
+									$(ANNOTATIONS_DIR)/asctb_heart.ttl \
 									$(EXTRACTS_DIR)/uberon_heart.owl \
 									$(EXTRACTS_DIR)/cl_heart.owl \
 									$(EXTRACTS_DIR)/fma_heart.owl \
 									$(EXTRACTS_DIR)/hgnc_heart.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_heart.owl
 
 $(COMPONENTS_DIR)/asctb_kidney.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_kidney.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_kidney.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_kidney.owl \
+									$(ANNOTATIONS_DIR)/asctb_kidney.ttl \
 									$(EXTRACTS_DIR)/uberon_kidney.owl \
 									$(EXTRACTS_DIR)/cl_kidney.owl \
 									$(EXTRACTS_DIR)/hgnc_kidney.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_kidney.owl
 
 $(COMPONENTS_DIR)/asctb_knee.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_knee.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_knee.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_knee.owl \
+									$(ANNOTATIONS_DIR)/asctb_knee.ttl \
 									$(EXTRACTS_DIR)/uberon_knee.owl \
 									$(EXTRACTS_DIR)/cl_knee.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_knee.owl
 
 $(COMPONENTS_DIR)/asctb_large_intestine.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_large_intestine.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_large_intestine.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_large_intestine.owl \
+									$(ANNOTATIONS_DIR)/asctb_large_intestine.ttl \
 									$(EXTRACTS_DIR)/uberon_large_intestine.owl \
 									$(EXTRACTS_DIR)/cl_large_intestine.owl \
 									$(EXTRACTS_DIR)/hgnc_large_intestine.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_large_intestine.owl
 
 $(COMPONENTS_DIR)/asctb_liver.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_liver.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_liver.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_liver.owl \
+									$(ANNOTATIONS_DIR)/asctb_liver.ttl \
 									$(EXTRACTS_DIR)/uberon_liver.owl \
 									$(EXTRACTS_DIR)/cl_liver.owl \
 									$(EXTRACTS_DIR)/hgnc_liver.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_liver.owl
 
 $(COMPONENTS_DIR)/asctb_lung.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_lung.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lung.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_lung.owl \
+									$(ANNOTATIONS_DIR)/asctb_lung.ttl \
 									$(EXTRACTS_DIR)/uberon_lung.owl \
 									$(EXTRACTS_DIR)/cl_lung.owl \
 									$(EXTRACTS_DIR)/fma_lung.owl \
 									$(EXTRACTS_DIR)/lmha_lung.owl \
 									$(EXTRACTS_DIR)/hgnc_lung.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_lung.owl
 
 $(COMPONENTS_DIR)/asctb_lymph_node.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_lymph_node.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lymph_node.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_lymph_node.owl \
+									$(ANNOTATIONS_DIR)/asctb_lymph_node.ttl \
 									$(EXTRACTS_DIR)/uberon_lymph_node.owl \
 									$(EXTRACTS_DIR)/cl_lymph_node.owl \
 									$(EXTRACTS_DIR)/hgnc_lymph_node.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_lymph_node.owl
 
 $(COMPONENTS_DIR)/asctb_lymph_vasculature.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_lymph_vasculature.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lymph_vasculature.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_lymph_vasculature.owl \
+									$(ANNOTATIONS_DIR)/asctb_lymph_vasculature.ttl \
 									$(EXTRACTS_DIR)/uberon_lymph_vasculature.owl \
 									$(EXTRACTS_DIR)/cl_lymph_vasculature.owl \
 									$(EXTRACTS_DIR)/fma_lymph_vasculature.owl \
 									$(EXTRACTS_DIR)/hgnc_lymph_vasculature.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_lymph_vasculature.owl
 
 $(COMPONENTS_DIR)/asctb_ovary.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_ovary.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_ovary.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_ovary.owl \
+									$(ANNOTATIONS_DIR)/asctb_ovary.ttl \
 									$(EXTRACTS_DIR)/uberon_ovary.owl \
 									$(EXTRACTS_DIR)/cl_ovary.owl \
 									$(EXTRACTS_DIR)/fma_ovary.owl \
 									$(EXTRACTS_DIR)/hgnc_ovary.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_ovary.owl
 
 $(COMPONENTS_DIR)/asctb_pancreas.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_pancreas.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_pancreas.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_pancreas.owl \
+									$(ANNOTATIONS_DIR)/asctb_pancreas.ttl \
 									$(EXTRACTS_DIR)/uberon_pancreas.owl \
 									$(EXTRACTS_DIR)/cl_pancreas.owl \
 									$(EXTRACTS_DIR)/fma_pancreas.owl \
 									$(EXTRACTS_DIR)/hgnc_pancreas.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_pancreas.owl
 
 $(COMPONENTS_DIR)/asctb_peripheral_nervous_system.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_peripheral_nervous_system.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_peripheral_nervous_system.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_peripheral_nervous_system.owl \
+									$(ANNOTATIONS_DIR)/asctb_peripheral_nervous_system.ttl \
 									$(EXTRACTS_DIR)/uberon_peripheral_nervous_system.owl \
 									$(EXTRACTS_DIR)/cl_peripheral_nervous_system.owl \
 									$(EXTRACTS_DIR)/fma_peripheral_nervous_system.owl \
 									$(EXTRACTS_DIR)/hgnc_peripheral_nervous_system.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_peripheral_nervous_system.owl
 
 $(COMPONENTS_DIR)/asctb_prostate.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_prostate.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_prostate.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_prostate.owl \
+									$(ANNOTATIONS_DIR)/asctb_prostate.ttl \
 									$(EXTRACTS_DIR)/uberon_prostate.owl \
 									$(EXTRACTS_DIR)/cl_prostate.owl \
 									$(EXTRACTS_DIR)/hgnc_prostate.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_prostate.owl
 
 $(COMPONENTS_DIR)/asctb_skin.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_skin.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_skin.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_skin.owl \
+									$(ANNOTATIONS_DIR)/asctb_skin.ttl \
 									$(EXTRACTS_DIR)/uberon_skin.owl \
 									$(EXTRACTS_DIR)/cl_skin.owl \
 									$(EXTRACTS_DIR)/hgnc_skin.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_skin.owl
 
 $(COMPONENTS_DIR)/asctb_small_intestine.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_small_intestine.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_small_intestine.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_small_intestine.owl \
+									$(ANNOTATIONS_DIR)/asctb_small_intestine.ttl \
 									$(EXTRACTS_DIR)/uberon_small_intestine.owl \
 									$(EXTRACTS_DIR)/cl_small_intestine.owl \
 									$(EXTRACTS_DIR)/fma_small_intestine.owl \
 									$(EXTRACTS_DIR)/hgnc_small_intestine.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_small_intestine.owl
 
 $(COMPONENTS_DIR)/asctb_spleen.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_spleen.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_spleen.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_spleen.owl \
+									$(ANNOTATIONS_DIR)/asctb_spleen.ttl \
 									$(EXTRACTS_DIR)/uberon_spleen.owl \
 									$(EXTRACTS_DIR)/cl_spleen.owl \
 									$(EXTRACTS_DIR)/hgnc_spleen.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_spleen.owl
 
 $(COMPONENTS_DIR)/asctb_thymus.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_thymus.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_thymus.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_thymus.owl \
+									$(ANNOTATIONS_DIR)/asctb_thymus.ttl \
 									$(EXTRACTS_DIR)/uberon_thymus.owl \
 									$(EXTRACTS_DIR)/cl_thymus.owl \
 									$(EXTRACTS_DIR)/hgnc_thymus.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_thymus.owl
 
 $(COMPONENTS_DIR)/asctb_ureter.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_ureter.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_ureter.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_ureter.owl \
+									$(ANNOTATIONS_DIR)/asctb_ureter.ttl \
 									$(EXTRACTS_DIR)/uberon_ureter.owl \
 									$(EXTRACTS_DIR)/cl_ureter.owl \
 									$(EXTRACTS_DIR)/hgnc_ureter.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_ureter.owl
 
 $(COMPONENTS_DIR)/asctb_urinary_bladder.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_urinary_bladder.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_urinary_bladder.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_urinary_bladder.owl \
+									$(ANNOTATIONS_DIR)/asctb_urinary_bladder.ttl \
 									$(EXTRACTS_DIR)/uberon_urinary_bladder.owl \
 									$(EXTRACTS_DIR)/cl_urinary_bladder.owl \
 									$(EXTRACTS_DIR)/hgnc_urinary_bladder.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_urinary_bladder.owl
 
 $(COMPONENTS_DIR)/asctb_uterus.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_uterus.owl \
 									$(GENERATED_COMP_DIR)/ccf_cell_biomarkers_uterus.owl \
 									$(GENERATED_COMP_DIR)/ccf_asctb_annotations_uterus.owl \
+									$(ANNOTATIONS_DIR)/asctb_uterus.ttl \
 									$(EXTRACTS_DIR)/uberon_uterus.owl \
 									$(EXTRACTS_DIR)/cl_uterus.owl \
 									$(EXTRACTS_DIR)/fma_uterus.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call make_asctb_component,$(word 1,$^),$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^))
 .PRECIOUS: $(COMPONENTS_DIR)/asctb_uterus.owl
 
 
@@ -1526,7 +1554,12 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+		annotate --remove-annotations \
+			--prefix "dcterms: http://purl.org/dc/terms/" \
+			--annotation dcterms:title "Common Coordinate Framework (CCF) Ontology" \
+			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
+			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+			--output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(CCF).owl
 
 .PHONY: build_ccf_slim
@@ -1539,7 +1572,12 @@ $(CCF_SLIM).owl: $(CCF_BSO).owl $(DATA_DIR)/reference_spatial_entities.owl
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+		annotate --remove-annotations \
+			--prefix "dcterms: http://purl.org/dc/terms/" \
+			--annotation dcterms:title "Common Coordinate Framework (CCF) Ontology (slim version)" \
+			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
+			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+			--output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(CCF_SLIM).owl
 
 # ----------------------------------------

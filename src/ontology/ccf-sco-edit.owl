@@ -11,6 +11,10 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.org/ccf/ccf-sco-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-sco-edit.owl>
+Annotation(dcterms:title "CCF Specimen Ontology (CCF-SCO)")
+Annotation(dcterms:description "This ontology mainly consists of metadata fields used to describe the specimen and donor person de-identifiable data, such as age, sex, weight, height, BMI, ethnicity, and blood type.")
+Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
+
 Import(<http://purl.org/ccf/data/specimen_dataset.owl>)
 
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10608-0>))

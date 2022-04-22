@@ -13,6 +13,7 @@ CCF_BSO_SRC = $(CCF_BSO)-edit.owl
 CCF_SCO_SRC = $(CCF_SCO)-edit.owl
 CCF_SPO_SRC = $(CCF_SPO)-edit.owl
 
+VERSION_TAG = stable
 
 # ----------------------------------------
 # Importing Non-OBO ontologies
@@ -111,8 +112,14 @@ all_components: $(COMPONENT_FILES)
 	$(foreach n, $(ASCTB_FILES), $(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: - $(n)))
 
 define download_ccf_partonomy_component
-	if [ $(COMP) = true ]; then wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/ccf_${1}_classes.owl -O $@.tmp.owl && \
-		$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+	if [ $(COMP) = true ]; then \
+		if [ $(VERSION_TAG) = stable ]; then \
+			wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/master/owl/ccf_${1}_classes.owl -O $@.tmp.owl; \
+		else \
+			wget -nc https://raw.githubusercontent.com/hubmapconsortium/ccf-validation-tools/update-tables/owl/last_official_ASCTB_release/ccf_${1}_classes.owl -O $@.tmp.owl; \
+		fi && \
+		$(ROBOT) annotate -i $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; \
+	fi
 endef
 
 ## DOWNLOAD-COMPONENT: CCF_AS_CT
@@ -248,8 +255,6 @@ $(GENERATED_COMP_DIR)/ccf_partonomy_uterus.owl:
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_partonomy_uterus.owl
 
 # ----------------------------------------
-
-VERSION_TAG = stable
 
 .PHONY: check_asctb2ccf
 check_asctb2ccf:

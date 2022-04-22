@@ -249,268 +249,270 @@ $(GENERATED_COMP_DIR)/ccf_partonomy_uterus.owl:
 
 # ----------------------------------------
 
+VERSION_TAG = stable
+
 .PHONY: check_asctb2ccf
 check_asctb2ccf:
 	@type asctb2ccf > /dev/null 2>&1 || (echo "ERROR: asctb2ccf is required, please visit https://github.com/hubmapconsortium/asctb2ccf to install"; exit 1)
 
 define generate_ccf_asctb_annotations_component
-	if [ $(COMP) = true ]; then asctb2ccf --organ-name $(1) --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
+	if [ $(COMP) = true ]; then asctb2ccf --organ-name $(1) --version-tag $(2) --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 endef
 
 define generate_ccf_cell_biomarkers_component
-	if [ $(COMP) = true ]; then asctb2ccf --organ-name $(1) --cell-biomarkers-only --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
+	if [ $(COMP) = true ]; then asctb2ccf --organ-name $(1) --version-tag $(2) --cell-biomarkers-only --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 endef
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_blood.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Blood)
+	$(call generate_ccf_cell_biomarkers_component,Blood,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_blood.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_blood.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Blood)
+	$(call generate_ccf_asctb_annotations_component,Blood,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_blood.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_blood_vasculature.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,BloodVasculature)
+	$(call generate_ccf_cell_biomarkers_component,BloodVasculature,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_blood_vasculature.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_blood_vasculature.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,BloodVasculature)
+	$(call generate_ccf_asctb_annotations_component,BloodVasculature,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_blood_vasculature.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_bone_marrow.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,BoneMarrow)
+	$(call generate_ccf_cell_biomarkers_component,BoneMarrow,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_bone_marrow.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_bone_marrow.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,BoneMarrow)
+	$(call generate_ccf_asctb_annotations_component,BoneMarrow,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_bone_marrow.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Brain)
+	$(call generate_ccf_cell_biomarkers_component,Brain,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_brain.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_brain.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Brain)
+	$(call generate_ccf_asctb_annotations_component,Brain,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_brain.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_eye.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Eye)
+	$(call generate_ccf_cell_biomarkers_component,Eye,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_eye.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_eye.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Eye)
+	$(call generate_ccf_asctb_annotations_component,Eye,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_eye.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_fallopian_tube.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,FallopianTube)
+	$(call generate_ccf_cell_biomarkers_component,FallopianTube,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_fallopian_tube.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_fallopian_tube.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,FallopianTube)
+	$(call generate_ccf_asctb_annotations_component,FallopianTube,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_fallopian_tube.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_heart.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Heart)
+	$(call generate_ccf_cell_biomarkers_component,Heart,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_heart.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_heart.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Heart)
+	$(call generate_ccf_asctb_annotations_component,Heart,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_heart.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_kidney.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Kidney)
+	$(call generate_ccf_cell_biomarkers_component,Kidney,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_kidney.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_kidney.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Kidney)
+	$(call generate_ccf_asctb_annotations_component,Kidney,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_kidney.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_knee.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Knee)
+	$(call generate_ccf_cell_biomarkers_component,Knee,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_knee.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_knee.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Knee)
+	$(call generate_ccf_asctb_annotations_component,Knee,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_knee.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_large_intestine.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,LargeIntestine)
+	$(call generate_ccf_cell_biomarkers_component,LargeIntestine,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_large_intestine.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_large_intestine.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,LargeIntestine)
+	$(call generate_ccf_asctb_annotations_component,LargeIntestine,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_large_intestine.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_liver.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Liver)
+	$(call generate_ccf_cell_biomarkers_component,Liver,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_liver.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_liver.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Liver)
+	$(call generate_ccf_asctb_annotations_component,Liver,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_liver.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lung.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Lung)
+	$(call generate_ccf_cell_biomarkers_component,Lung,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lung.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_lung.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Lung)
+	$(call generate_ccf_asctb_annotations_component,Lung,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_lung.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lymph_node.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,LymphNode)
+	$(call generate_ccf_cell_biomarkers_component,LymphNode,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lymph_node.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_lymph_node.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,LymphNode)
+	$(call generate_ccf_asctb_annotations_component,LymphNode,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_lymph_node.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lymph_vasculature.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,LymphVasculature)
+	$(call generate_ccf_cell_biomarkers_component,LymphVasculature,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_lymph_vasculature.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_lymph_vasculature.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,LymphVasculature)
+	$(call generate_ccf_asctb_annotations_component,LymphVasculature,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_lymph_vasculature.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_ovary.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Ovary)
+	$(call generate_ccf_cell_biomarkers_component,Ovary,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_ovary.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_ovary.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Ovary)
+	$(call generate_ccf_asctb_annotations_component,Ovary,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_ovary.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_pancreas.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Pancreas)
+	$(call generate_ccf_cell_biomarkers_component,Pancreas,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_pancreas.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_pancreas.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Pancreas)
+	$(call generate_ccf_asctb_annotations_component,Pancreas,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_pancreas.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_peripheral_nervous_system.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,PeripheralNervousSystem)
+	$(call generate_ccf_cell_biomarkers_component,PeripheralNervousSystem,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_peripheral_nervous_system.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_peripheral_nervous_system.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,PeripheralNervousSystem)
+	$(call generate_ccf_asctb_annotations_component,PeripheralNervousSystem,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_peripheral_nervous_system.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_prostate.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Prostate)
+	$(call generate_ccf_cell_biomarkers_component,Prostate,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_prostate.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_prostate.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Prostate)
+	$(call generate_ccf_asctb_annotations_component,Prostate,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_prostate.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_skin.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Skin)
+	$(call generate_ccf_cell_biomarkers_component,Skin,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_skin.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_skin.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Skin)
+	$(call generate_ccf_asctb_annotations_component,Skin,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_skin.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_small_intestine.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,SmallIntestine)
+	$(call generate_ccf_cell_biomarkers_component,SmallIntestine,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_small_intestine.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_small_intestine.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,SmallIntestine)
+	$(call generate_ccf_asctb_annotations_component,SmallIntestine,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_small_intestine.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_spleen.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Spleen)
+	$(call generate_ccf_cell_biomarkers_component,Spleen,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_spleen.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_spleen.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Spleen)
+	$(call generate_ccf_asctb_annotations_component,Spleen,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_spleen.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_thymus.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Thymus)
+	$(call generate_ccf_cell_biomarkers_component,Thymus,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_thymus.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_thymus.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Thymus)
+	$(call generate_ccf_asctb_annotations_component,Thymus,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_thymus.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_ureter.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Ureter)
+	$(call generate_ccf_cell_biomarkers_component,Ureter,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_ureter.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_ureter.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Ureter)
+	$(call generate_ccf_asctb_annotations_component,Ureter,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_ureter.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_urinary_bladder.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,UrinaryBladder)
+	$(call generate_ccf_cell_biomarkers_component,UrinaryBladder,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_urinary_bladder.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_urinary_bladder.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,UrinaryBladder)
+	$(call generate_ccf_asctb_annotations_component,UrinaryBladder,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_urinary_bladder.owl
 
 $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_uterus.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Uterus)
+	$(call generate_ccf_cell_biomarkers_component,Uterus,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_cell_biomarkers_uterus.owl
 
 $(GENERATED_COMP_DIR)/ccf_asctb_annotations_uterus.owl: check_asctb2ccf
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Uterus)
+	$(call generate_ccf_asctb_annotations_component,Uterus,$(VERSION_TAG))
 .PRECIOUS: $(GENERATED_COMP_DIR)/ccf_asctb_annotations_uterus.owl
 
 

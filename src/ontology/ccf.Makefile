@@ -1354,12 +1354,17 @@ $(COMPONENTS_DIR)/asctb_uterus.owl: $(GENERATED_COMP_DIR)/ccf_partonomy_uterus.o
 # Data Mirror Module
 # ----------------------------------------
 
-DATA_MIRROR_DIR = data/mirror
+DATA_DIR = data
+DATA_MIRROR_DIR = $(DATA_DIR)/mirror
 
 DATAMIRRORS = \
 	reference-spatial-entities \
 	generated-reference-spatial-entities \
 	hubmap-datasets \
+	kpmp-datasets \
+	sparc-datasets \
+	gtex-datasets
+DATAMIRROR_FILES = $(patsubst %, $(DATA_MIRROR_DIR)/%.jsonld, $(DATAMIRRORS))
 
 DATMIR = true
 
@@ -1391,8 +1396,6 @@ $(DATA_MIRROR_DIR)/gtex-datasets.jsonld:
 # ----------------------------------------
 # Data modules
 # ----------------------------------------
-
-DATA_DIR = data
 
 DATA = reference_spatial_entities specimen_spatial_entities specimen_dataset
 DATA_FILES = $(patsubst %, $(DATA_DIR)/%.owl, $(DATA))

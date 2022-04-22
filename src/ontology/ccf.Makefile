@@ -34,7 +34,7 @@ $(MIRRORDIR)/fma.owl: mirror-fma | $(MIRRORDIR)
 .PRECIOUS: $(MIRRORDIR)/hgnc.owl
 mirror-hgnc:
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://github.com/musen-lab/hgnc2owl/raw/main/hgnc.owl.gz --create-dirs -o $(MIRRORDIR)/hgnc.owl.gz --retry 4 --max-time 200 && \
-		gunzip $(MIRRORDIR)/hgnc.owl.gz && \
+		gunzip -f $(MIRRORDIR)/hgnc.owl.gz && \
 		$(ROBOT) convert -i $(MIRRORDIR)/hgnc.owl -o $@.tmp.owl && \
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
@@ -46,7 +46,7 @@ $(MIRRORDIR)/hgnc.owl: mirror-hgnc | $(MIRRORDIR)
 .PRECIOUS: $(MIRRORDIR)/lmha.owl
 mirror-lmha:
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://www.lungmap.net/assets/Uploads/ontology/558488ae7f/LMHA_20190512_Cell.zip --create-dirs -o $(TMPDIR)/lmha.zip --retry 4 --max-time 200 && \
-		unzip $(TMPDIR)/lmha.zip -d $(TMPDIR) && \
+		unzip -o $(TMPDIR)/lmha.zip -d $(TMPDIR) && \
 		mv $(TMPDIR)/LMHA_20190512_Cell.owl $(MIRRORDIR)/lmha.owl && \
 		$(ROBOT) convert -i $(MIRRORDIR)/lmha.owl -o $@.tmp.owl && \
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi

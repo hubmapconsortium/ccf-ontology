@@ -36939,8 +36939,8 @@
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.bioontology.org/ontology/LNC/LA4457-3">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label>white</rdfs:label>
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.bioontology.org/ontology/LNC/LA6156-9">
         <rdfs:label>asian</rdfs:label>

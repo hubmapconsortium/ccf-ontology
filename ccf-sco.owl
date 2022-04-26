@@ -10,11 +10,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/ccf/ccf-sco.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.14/ccf-sco.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.15/ccf-sco.owl"/>
         <terms:description>This ontology mainly consists of metadata fields used to describe the specimen and donor person de-identifiable data, such as age, sex, weight, height, BMI, ethnicity, and blood type.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title>CCF Specimen Ontology (CCF-SCO)</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.14</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -36939,8 +36939,8 @@
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.bioontology.org/ontology/LNC/LA4457-3">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label>white</rdfs:label>
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.bioontology.org/ontology/LNC/LA6156-9">
         <rdfs:label>asian</rdfs:label>

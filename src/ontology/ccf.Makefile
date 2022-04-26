@@ -1565,8 +1565,10 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 		relax \
 		reduce -r ELK \
 		annotate --remove-annotations \
+			--prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--prefix "dcterms: http://purl.org/dc/terms/" \
-			--annotation dcterms:title "Common Coordinate Framework (CCF) Ontology" \
+			--annotation dc:title "Common Coordinate Framework (CCF) Ontology" \
+			--annotation dc:description "This ontology models the common coordinate framework used in the human reference atlas" \
 			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && mv $@.tmp.owl $@
@@ -1583,8 +1585,9 @@ $(CCF_SLIM).owl: $(CCF_BSO).owl $(DATA_DIR)/reference_spatial_entities.owl
 		relax \
 		reduce -r ELK \
 		annotate --remove-annotations \
+			--prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--prefix "dcterms: http://purl.org/dc/terms/" \
-			--annotation dcterms:title "Common Coordinate Framework (CCF) Ontology (slim version)" \
+			--annotation dc:title "Common Coordinate Framework (CCF) Ontology (slim version)" \
 			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && mv $@.tmp.owl $@

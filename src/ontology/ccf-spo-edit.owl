@@ -11,8 +11,8 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.org/ccf/ccf-spo-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-spo-edit.owl>
-Annotation(dcterms:title "CCF Spatial Ontology (CCF-SPO)")
-Annotation(dcterms:description "This ontology models the relationships between a spatial entity (an abstraction of things that occupy space) and its coordinate placement and dimension, a spatial entity and its 3-dimensional object model, and a 3-dimensional object model and its coordinate placement and dimension.")
+Annotation(dc:title "CCF Spatial Ontology (CCF-SPO)")
+Annotation(dc:description "This ontology models the relationships between a spatial entity (an abstraction of things that occupy space) and its coordinate placement and dimension, a spatial entity and its 3-dimensional object model, and a 3-dimensional object model and its coordinate placement and dimension.")
 Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
 
 Import(<http://purl.org/ccf/data/reference_spatial_entities.owl>)

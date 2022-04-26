@@ -1,4 +1,5 @@
 Prefix(:=<http://purl.org/ccf/ccf-bso.owl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(ccf:=<http://purl.org/ccf/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -10,8 +11,8 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.org/ccf/ccf-bso-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-bso-edit.owl>
-Annotation(dcterms:title "CCF Biological Structure Ontology (CCF-BSO)")
-Annotation(dcterms:description "This ontology models the relationships that present between anatomical structures and anatomical structures, anatomical structures and cell types, and cell types and biomarkers. References to major publications are included to show the evidence in biomolecular discoveries.")
+Annotation(dc:title "CCF Biological Structure Ontology (CCF-BSO)")
+Annotation(dc:description "This ontology models the relationships that present between anatomical structures and anatomical structures, anatomical structures and cell types, and cell types and biomarkers. References to major publications are included to show the evidence in biomolecular discoveries.")
 Annotation(dcterms:contributor "Aaron Horning (0000-0003-3247-0798)")
 Annotation(dcterms:contributor "Adel Eskaros (0000-0001-9028-338X)")
 Annotation(dcterms:contributor "Al Powers (0000-0003-1941-5786)")

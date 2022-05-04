@@ -10,11 +10,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/ccf/ccf-sco.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.17/ccf-sco.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-alpha.18/ccf-sco.owl"/>
         <dc:description>This ontology mainly consists of metadata fields used to describe the specimen and donor person de-identifiable data, such as age, sex, weight, height, BMI, ethnicity, and blood type.</dc:description>
         <dc:title>CCF Specimen Ontology (CCF-SCO)</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.17</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-alpha.18</owl:versionInfo>
     </owl:Ontology>
     
 

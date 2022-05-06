@@ -1,8 +1,16 @@
-PREFIX ccf: <http://purl.org/ccf/>
-PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
-
 SELECT DISTINCT ?entity
 WHERE {
-   ?entity oboInOwl:id ?entity_id .
-   FILTER contains(?entity_id, "LMHA:") 
+   {
+      SELECT (?s AS ?entity) WHERE { 
+         ?s ?p ?o .
+         FILTER(STRSTARTS(STR(?s),"http://purl.obolibrary.org/obo/LMHA_"))
+      }
+   }
+   UNION
+   {
+      SELECT (?o AS ?entity) WHERE {
+         ?s ?p ?o .
+         FILTER(STRSTARTS(STR(?o),"http://purl.obolibrary.org/obo/LMHA_"))
+      }
+   }
 }

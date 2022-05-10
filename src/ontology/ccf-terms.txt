@@ -2,13 +2,16 @@ rdfs:label
 rdfs:comment
 dcterms:creator
 dcterms:created
+obo:IAO_0000115
 oboInOwl:id
 ccf:ccf_part_of
 ccf:ccf_located_in
 ccf:ccf_pref_label
+ccf:ccf_as_isa
 ccf:ccf_ct_isa
 ccf:ccf_characterizes
 ccf:ccf_asctb_type
+ccf:ccf_is_provisional
 ccf:title
 ccf:url
 ccf:sex

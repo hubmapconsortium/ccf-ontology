@@ -1791,7 +1791,7 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 			--prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--prefix "dcterms: http://purl.org/dc/terms/" \
 			--annotation dc:title "Common Coordinate Framework (CCF) Ontology" \
-			--annotation dc:description "This ontology models the common coordinate framework used in the human reference atlas" \
+			--annotation dc:description "This ontology provides a view of the Uberon anatomy ontology and the Cell Ontology based on expert reviewed content provided by the HuBMaP project. Cell Ontology terms are linked to sets of expert-specified cell type markers, recorded using HGNC identifiers and metadata." \
 			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && mv $@.tmp.owl $@

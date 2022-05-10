@@ -1741,7 +1741,7 @@ release_all: $(RELEASED_FILES)
 .PHONY: build_ccf_bso
 build_ccf_bso: $(CCF_BSO).owl
 
-$(CCF_BSO).owl: $(CCF_BSO_SRC) $(UBERON_SPATIAL)
+$(CCF_BSO).owl: $(CCF_BSO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Biological Structure (CCF-BSO) ontology)
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \

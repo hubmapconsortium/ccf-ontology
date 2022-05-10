@@ -1747,6 +1747,7 @@ $(CCF_BSO).owl: $(CCF_BSO_SRC)
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
+		filter --exclude-terms excluded-terms.txt \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(CCF_BSO).owl
 

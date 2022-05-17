@@ -1785,7 +1785,9 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: overriding default ODK $(ONT).owl command)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology)
 	$(ROBOT) merge --input $(word 1,$^) --input $(word 2,$^) --input $(word 3,$^) \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+		reason --reasoner ELK \
+			--equivalent-classes-allowed asserted-only \
+			--exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		annotate --remove-annotations \
@@ -1804,11 +1806,19 @@ build_ccf_slim: $(CCF_SLIM).owl
 $(CCF_SLIM).owl: $(CCF_BSO).owl $(DATA_DIR)/reference_spatial_entities.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology (slim version))
 	$(ROBOT) merge --input $(word 1,$^) --input $(word 2,$^) \
-		remove --prefix "ccf: http://purl.org/ccf/" --term-file ccf-terms.txt --select complement --select annotation-properties \
-		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
+		remove --prefix "ccf: http://purl.org/ccf/" \
+			--prefix "dc: http://purl.org/dc/elements/1.1/" \
+			--prefix "dcterms: http://purl.org/dc/terms/" \
+			--term-file ccf-terms.txt \
+			--select complement \
+			--select annotation-properties \
+		reason --reasoner ELK \
+			--equivalent-classes-allowed asserted-only \
+			--exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
 		annotate --remove-annotations \
+			--prefix "ccf: http://purl.org/ccf/" \
 			--prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--prefix "dcterms: http://purl.org/dc/terms/" \
 			--annotation dc:title "Common Coordinate Framework (CCF) Ontology (slim version)" \

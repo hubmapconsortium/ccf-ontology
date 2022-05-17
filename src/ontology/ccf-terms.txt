@@ -1,5 +1,6 @@
 rdfs:label
 rdfs:comment
+dcterms:title
 dcterms:creator
 dcterms:created
 obo:IAO_0000115
@@ -41,7 +42,6 @@ ccf:rui_rank
 ccf:slice_thickness
 ccf:slice_count
 ccf:has_object_reference
-dcterms:created
 ccf:updated_date
 ccf:creator_first_name
 ccf:creator_last_name

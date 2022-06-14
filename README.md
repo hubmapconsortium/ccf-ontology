@@ -1,63 +1,27 @@
 # Common Coordinate Framework Atlas ontology
 
+## The pipeline workflow
+
 ![Progress Report Q3 HuBMAP](https://user-images.githubusercontent.com/5062950/161101298-2a6ad6b7-91b5-4f26-a5c4-c871f1d42f99.png)
 
-## Ontology releases
+## For Ontology Users
 
-Please check the Releases panel on the side bar to get the latest version.
+### Browsing the ontology
 
-## Editing the ontologies
+The CCF ontology is accessible through:
 
-Editors of the CCF ontology should use the edit version that can be found at [src/ontology/ccf-edit.owl](src/ontology/ccf-edit.owl) for the global CCF ontology.
+* NCBI BioPortal Ontology Browser (https://bioportal.bioontology.org/ontologies/CCF)
+* EBI OLS Ontology Browser (https://www.ebi.ac.uk/ols/ontologies/ccf)
 
-The other three ontology modules are located in the same folder:
-* CCF Biological Structure Ontology ([src/ontology/ccf-bso-edit.owl](src/ontology/ccf-bso-edit.owl))
-* CCF Specimen Ontology ([src/ontology/ccf-sco-edit.owl](src/ontology/ccf-sco-edit.owl))
-* CCF Spatial Ontology ([src/ontology/ccf-spo-edit.owl](src/ontology/ccf-spo-edit.owl))
+### Finding the ontology
 
-## Build
+The CCF ontology is findable through the URL: https://purl.org/ccf/ccf.owl
 
-### Prerequisites
+## For Ontology Editors
 
-Users are required to have all these programs installed in their local computer:
+### Editing the ontologies
 
-- Java 8
-- [asctb2ccf](https://github.com/hubmapconsortium/asctb2ccf)
-- [specimen2ccf](https://github.com/hubmapconsortium/specimen2ccf)
-- [spatial2ccf](https://github.com/hubmapconsortium/spatial2ccf)
-
-Please look at each GitHub repository for the installation and configuration instructions.
-
-### Commands
-
-Use the commands below to build the CCF ontology from scratch.
-
-```
-$ git clone https://github.com/hubmapconsortium/ccf-ontology.git
-$ cd ccf-ontology/src/ontology
-$ make -s prepare_all
-$ make -s build_all
-$ open ccf.owl
-```
-
-The command below is to avoid re-downloading the some big files (bypassing the data mirror generation).
-```
-$ make MIR=false DATMIR=false prepare_ccf -B
-```
-
-Some other useful flags to skip some steps in the `make` command:
-```
-MIR=false - bypass dowload source ontologies
-DATMIR=false - bypass download source files
-IMP=false - bypass import ontology generation
-IMP_LARGE=false - bypass large import ontology generation
-DAT=false - bypass ontology generation from external data
-```
-
-The command below is to create a release of CCF ontology, including all the three modules.
-```
-$ make -s release_all
-```
+Please visit [the SOP page](https://github.com/hubmapconsortium/ccf-ontology/blob/main/src/ontology/README-editors.md) to read the rules and guidelines on editing the ontology.
 
 ## Contact
 

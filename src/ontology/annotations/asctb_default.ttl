@@ -1,0 +1,11 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ccfc: <http://purl.org/ccf/components/> .
+
+ccfc:asctb_organ.owl
+  rdf:type owl:Ontology ;
+  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table" ;
+  dcterms:description "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) tables aim to capture the nested part_of structure of anatomical human body parts, the typology of cells, and biomarkers used to identify cell types. The tables are authored and reviewed by an international team of experts." ;
+  dcterms:license "https://creativecommons.org/licenses/by/4.0/" .

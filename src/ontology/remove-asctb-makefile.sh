@@ -30,10 +30,10 @@ then
 	mv ccf.Asctb.tmp.Makefile ccf.Asctb.Makefile
 fi
 
-if grep -Fq "\$(COMPONENTS_DIR)/asctb_$ORGAN_NAME.owl \\" ccf.AsctbList.Makefile;
+if grep -Fq "\$(COMPONENTSDIR)/asctb_$ORGAN_NAME.owl \\" ccf.AsctbList.Makefile;
 then
 	echo "Removing '$ORGAN_LABEL' from ccf.AsctbList.Makefile"
-	sed -n "/\$(COMPONENTS_DIR)\/asctb_$ORGAN_NAME.owl/!p" ccf.AsctbList.Makefile > ccf.AsctbList.tmp.Makefile
+	sed -n "/\$(COMPONENTSDIR)\/asctb_$ORGAN_NAME.owl/!p" ccf.AsctbList.Makefile > ccf.AsctbList.tmp.Makefile
 	mv ccf.AsctbList.tmp.Makefile ccf.AsctbList.Makefile
 fi
 

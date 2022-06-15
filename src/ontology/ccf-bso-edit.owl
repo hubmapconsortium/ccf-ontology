@@ -99,6 +99,7 @@ Annotation(dcterms:contributor "Yongqun He (0000-0001-9189-9661)")
 Annotation(dcterms:contributor "Z. Gordon Jiang (0000-0003-0495-9940)")
 Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
 
+# ASCT+B Ontology Components
 Import(<http://purl.org/ccf/components/asctb_blood.owl>)
 Import(<http://purl.org/ccf/components/asctb_blood_vasculature.owl>)
 Import(<http://purl.org/ccf/components/asctb_bone_marrow.owl>)

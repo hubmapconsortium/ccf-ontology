@@ -36,3 +36,17 @@ then
 	sed -n "/\$(COMPONENTS_DIR)\/asctb_$ORGAN_NAME.owl/!p" ccf.AsctbList.Makefile > ccf.AsctbList.tmp.Makefile
 	mv ccf.AsctbList.tmp.Makefile ccf.AsctbList.Makefile
 fi
+
+if grep -Fq "<uri name=\"http://purl.org/ccf/components/asctb_$ORGAN_NAME.owl\" uri=\"components/asctb_$ORGAN_NAME.owl\"/>" catalog-v001.xml
+then
+	echo "Removing '$ORGAN_LABEL' in catalog-v001.xml"
+	sed -n "/<uri name=\"http:\/\/purl.org\/ccf\/components\/asctb_$ORGAN_NAME.owl\" uri=\"components\/asctb_$ORGAN_NAME.owl\"\/>/!p" catalog-v001.xml > catalog-v001.tmp.xml
+	mv catalog-v001.tmp.xml catalog-v001.xml
+fi
+
+if grep -Fq "Import(<http://purl.org/ccf/components/asctb_$ORGAN_NAME.owl>)" ccf-bso-edit.owl
+then
+	echo "Removing '$ORGAN_LABEL' in ccf-bso-edit.owl"
+	sed -n "/Import(<http:\/\/purl.org\/ccf\/components\/asctb_$ORGAN_NAME.owl>)/!p" ccf-bso-edit.owl > ccf-bso-edit.tmp.owl
+	mv ccf-bso-edit.tmp.owl ccf-bso-edit.owl
+fi

@@ -10,7 +10,7 @@
     <uri name="http://purl.org/ccf/data/reference_spatial_entities.owl" uri="data/reference_spatial_entities.owl"/>
     <uri name="http://purl.org/ccf/data/specimen_spatial_entities.owl" uri="data/specimen_spatial_entities.owl"/>
 
-    <!-- ASCT+B -->
+    <!-- ASCT+B Ontology Components -->
     <uri name="http://purl.org/ccf/components/asctb_blood.owl" uri="components/asctb_blood.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_blood_vasculature.owl" uri="components/asctb_blood_vasculature.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_bone_marrow.owl" uri="components/asctb_bone_marrow.owl"/>

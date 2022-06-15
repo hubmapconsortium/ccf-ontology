@@ -139,3 +139,15 @@ cat >> ccf.AsctbList.Makefile << EOF
 	\$(COMPONENTSDIR)/asctb_$ORGAN_NAME.owl \\
 EOF
 fi
+
+if ! grep -Fq "<uri name=\"http://purl.org/ccf/components/asctb_$ORGAN_NAME.owl\" uri=\"components/asctb_$ORGAN_NAME.owl\"/>" catalog-v001.xml
+then
+	echo "Inserting '$ORGAN_LABEL' in catalog-v001.xml"
+	sed -i "/^    <!-- ASCT+B Ontology Components -->/a \ \ \ \ <uri name=\"http:\/\/purl.org\/ccf\/components\/asctb_$ORGAN_NAME.owl\" uri=\"components\/asctb_$ORGAN_NAME.owl\"\/>" catalog-v001.xml
+fi
+
+if ! grep -Fq "Import(<http://purl.org/ccf/components/asctb_$ORGAN_NAME.owl>)" ccf-bso-edit.owl
+then
+	echo "Inserting '$ORGAN_LABEL' in ccf-bso-edit.owl"
+	sed -i "/^# ASCT+B Ontology Components/a Import(<http:\/\/purl.org\/ccf\/components\/asctb_$ORGAN_NAME.owl>)" ccf-bso-edit.owl
+fi

@@ -6,7 +6,7 @@
 
 ccfc:asctb_organ.owl
   rdf:type owl:Ontology ;
-  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Spleen v1.1" ;
+  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Spleen" ;
   dcterms:description "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) tables aim to capture the nested part_of structure of anatomical human body parts, the typology of cells, and biomarkers used to identify cell types. The tables are authored and reviewed by an international team of experts." ;
   dcterms:creator "Marda Jorgensen (0000-0002-7250-3569)" ;
   dcterms:creator "Andrea J. Radtke (0000-0003-4379-8967)" ;

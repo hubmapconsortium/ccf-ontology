@@ -6,7 +6,7 @@
 
 ccfc:asctb_organ.owl
   rdf:type owl:Ontology ;
-  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Thymus v1.1" ;
+  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Thymus" ;
   dcterms:description "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) tables aim to capture the nested part_of structure of anatomical human body parts, the typology of cells, and biomarkers used to identify cell types. The tables are authored and reviewed by an international team of experts." ;
   dcterms:creator "Maigan Brusko (0000-0002-4331-2202)" ;
   dcterms:creator "Rebecca T. Beuschel (0000-0002-3882-457X)" ;

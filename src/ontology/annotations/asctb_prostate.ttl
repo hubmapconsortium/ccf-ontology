@@ -6,7 +6,7 @@
 
 ccfc:asctb_organ.owl
   rdf:type owl:Ontology ;
-  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Prostate v1.0" ;
+  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Prostate" ;
   dcterms:description "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) tables aim to capture the nested part_of structure of anatomical human body parts, the typology of cells, and biomarkers used to identify cell types. The tables are authored and reviewed by an international team of experts." ;
   dcterms:creator "Douglas Strand (0000-0002-0746-927X)" ;
   dcterms:creator "Chad  Vezina (0000-0001-7058-5399)" ;

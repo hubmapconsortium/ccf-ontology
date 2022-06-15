@@ -21,7 +21,7 @@ The CCF ontology is findable through the URL: https://purl.org/ccf/ccf.owl
 
 ### Editing the ontologies
 
-Please visit [the SOP page](https://github.com/hubmapconsortium/ccf-ontology/blob/main/src/ontology/README-editors.md) to read the rules and guidelines on editing the ontology.
+Please visit [the SOP page](src/ontology/README.md) to read the rules and guidelines on editing the ontology.
 
 ## Contact
 

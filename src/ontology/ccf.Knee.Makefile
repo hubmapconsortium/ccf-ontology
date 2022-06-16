@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_knee.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_knee.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1QidDho8DxBYjsxaqApiIZA__Z7aWnB61KvC422g2kx8/edit#gid=1824489301)
+	$(call generate_ccf_cell_biomarkers_component,Knee,https://docs.google.com/spreadsheets/d/1QidDho8DxBYjsxaqApiIZA__Z7aWnB61KvC422g2kx8/edit#gid=1824489301)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_knee.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_knee.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_knee.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1QidDho8DxBYjsxaqApiIZA__Z7aWnB61KvC422g2kx8/edit#gid=1824489301)
+	$(call generate_ccf_asctb_annotations_component,Knee,https://docs.google.com/spreadsheets/d/1QidDho8DxBYjsxaqApiIZA__Z7aWnB61KvC422g2kx8/edit#gid=1824489301)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_knee.owl
 
 # ------------------------------------------------------------------

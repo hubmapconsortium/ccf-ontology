@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_thymus.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_thymus.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/14KY4dp6YwVf0GSiCOcxhuy9L_aJ8FjTX_jidrIq7E_c/edit#gid=863370556)
+	$(call generate_ccf_cell_biomarkers_component,Thymus,https://docs.google.com/spreadsheets/d/14KY4dp6YwVf0GSiCOcxhuy9L_aJ8FjTX_jidrIq7E_c/edit#gid=863370556)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_thymus.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_thymus.owl: check_asctb2ccf $(GENERATED_DIR
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_thymus.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/14KY4dp6YwVf0GSiCOcxhuy9L_aJ8FjTX_jidrIq7E_c/edit#gid=863370556)
+	$(call generate_ccf_asctb_annotations_component,Thymus,https://docs.google.com/spreadsheets/d/14KY4dp6YwVf0GSiCOcxhuy9L_aJ8FjTX_jidrIq7E_c/edit#gid=863370556)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_thymus.owl
 
 # ------------------------------------------------------------------

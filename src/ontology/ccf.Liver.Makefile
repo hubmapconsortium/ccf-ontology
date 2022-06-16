@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_liver.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1F8ZXt1naE1pJFjfsAd6wK7x22D3qRW5O0E2d9gUKAik/edit#gid=1694828397)
+	$(call generate_ccf_cell_biomarkers_component,Liver,https://docs.google.com/spreadsheets/d/1F8ZXt1naE1pJFjfsAd6wK7x22D3qRW5O0E2d9gUKAik/edit#gid=1694828397)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_liver.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1F8ZXt1naE1pJFjfsAd6wK7x22D3qRW5O0E2d9gUKAik/edit#gid=1694828397)
+	$(call generate_ccf_asctb_annotations_component,Liver,https://docs.google.com/spreadsheets/d/1F8ZXt1naE1pJFjfsAd6wK7x22D3qRW5O0E2d9gUKAik/edit#gid=1694828397)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_liver.owl
 
 # ------------------------------------------------------------------

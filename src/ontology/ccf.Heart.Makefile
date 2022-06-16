@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_heart.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_heart.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1UhEZpDxQLCJLLx0gnWYDMQP8M-dwjZo_vIyPfjBCcVM/edit#gid=1759721736)
+	$(call generate_ccf_cell_biomarkers_component,Heart,https://docs.google.com/spreadsheets/d/1UhEZpDxQLCJLLx0gnWYDMQP8M-dwjZo_vIyPfjBCcVM/edit#gid=1759721736)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_heart.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_heart.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_heart.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1UhEZpDxQLCJLLx0gnWYDMQP8M-dwjZo_vIyPfjBCcVM/edit#gid=1759721736)
+	$(call generate_ccf_asctb_annotations_component,Heart,https://docs.google.com/spreadsheets/d/1UhEZpDxQLCJLLx0gnWYDMQP8M-dwjZo_vIyPfjBCcVM/edit#gid=1759721736)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_heart.owl
 
 # ------------------------------------------------------------------

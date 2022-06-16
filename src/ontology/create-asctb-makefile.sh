@@ -48,7 +48,7 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 # ------------------------------------------------------------------
 \$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl: check_asctb2ccf \$(GENERATED_DIR)
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating \$@)
-	\$(call generate_ccf_cell_biomarkers_component,$GSHEET_URL)
+	\$(call generate_ccf_cell_biomarkers_component,$ORGAN_LABEL,$GSHEET_URL)
 .PRECIOUS: \$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------
@@ -56,7 +56,7 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 # ------------------------------------------------------------------
 \$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl: check_asctb2ccf \$(GENERATED_DIR)
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating \$@)
-	\$(call generate_ccf_asctb_annotations_component,$GSHEET_URL)
+	\$(call generate_ccf_asctb_annotations_component,$ORGAN_LABEL,$GSHEET_URL)
 .PRECIOUS: \$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------

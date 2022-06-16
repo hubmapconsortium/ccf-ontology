@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_bone_marrow.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_bone_marrow.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/16MUBNsMrE1kAyoY1sjCKsGSIHCRw7TnwTys8DHM17j0/edit#gid=771476671)
+	$(call generate_ccf_cell_biomarkers_component,BoneMarrow,https://docs.google.com/spreadsheets/d/16MUBNsMrE1kAyoY1sjCKsGSIHCRw7TnwTys8DHM17j0/edit#gid=771476671)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_bone_marrow.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_bone_marrow.owl: check_asctb2ccf $(GENERATE
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_bone_marrow.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/16MUBNsMrE1kAyoY1sjCKsGSIHCRw7TnwTys8DHM17j0/edit#gid=771476671)
+	$(call generate_ccf_asctb_annotations_component,BoneMarrow,https://docs.google.com/spreadsheets/d/16MUBNsMrE1kAyoY1sjCKsGSIHCRw7TnwTys8DHM17j0/edit#gid=771476671)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_bone_marrow.owl
 
 # ------------------------------------------------------------------

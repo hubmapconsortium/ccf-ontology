@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_skin.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_skin.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687)
+	$(call generate_ccf_cell_biomarkers_component,Skin,https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_skin.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_skin.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_skin.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687)
+	$(call generate_ccf_asctb_annotations_component,Skin,https://docs.google.com/spreadsheets/d/16E07Ia3opnjBzBVswS7iQccd2Y_fw7m8-mNUNjwv80E/edit#gid=269383687)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_skin.owl
 
 # ------------------------------------------------------------------

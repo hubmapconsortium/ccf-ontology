@@ -6,7 +6,7 @@
 
 ccfc:asctb_organ.owl
   rdf:type owl:Ontology ;
-  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Small Intestine v1.0" ;
+  dcterms:title "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Small Intestine" ;
   dcterms:description "Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) tables aim to capture the nested part_of structure of anatomical human body parts, the typology of cells, and biomarkers used to identify cell types. The tables are authored and reviewed by an international team of experts." ;
   dcterms:creator "Teri A. Longacre (0000-0002-0935-7300)" ;
   dcterms:contributor "Katy Börner (0000-0002-3321-6137)" ;

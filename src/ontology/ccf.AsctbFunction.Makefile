@@ -15,12 +15,12 @@ check_asctb2ccf:
 	@type asctb2ccf > /dev/null 2>&1 || (echo "ERROR: asctb2ccf is required, please visit https://github.com/hubmapconsortium/asctb2ccf to install"; exit 1)
 
 define generate_ccf_asctb_annotations_component
-	if [ $(COMP) = true ]; then asctb2ccf --gsheet-url $(1) --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
+	if [ $(COMP) = true ]; then asctb2ccf --organ-name $(1) --gsheet-url $(2) --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 endef
 
 define generate_ccf_cell_biomarkers_component
-	if [ $(COMP) = true ]; then asctb2ccf --gsheet-url $(1) --cell-biomarkers-only --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
+	if [ $(COMP) = true ]; then asctb2ccf --organ-name $(1) --gsheet-url $(2) --cell-biomarkers-only --ontology-iri $(ONTBASE)/$@ -o $@.tmp.owl && \
 		$(ROBOT) annotate --input $@.tmp.owl --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 endef
 

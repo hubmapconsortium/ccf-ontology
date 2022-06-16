@@ -37,3 +37,4 @@ include ccf.Thymus.Makefile
 include ccf.Ureter.Makefile
 include ccf.UrinaryBladder.Makefile
 include ccf.Uterus.Makefile
+include ccf.Placenta.Makefile

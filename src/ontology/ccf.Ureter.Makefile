@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_ureter.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_ureter.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1ivVU53FPInUwK4ZIha8YUvJM_8keizoJGaM3rT-TZRY/edit#gid=676299490)
+	$(call generate_ccf_cell_biomarkers_component,Ureter,https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_ureter.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_ureter.owl: check_asctb2ccf $(GENERATED_DIR
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_ureter.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1ivVU53FPInUwK4ZIha8YUvJM_8keizoJGaM3rT-TZRY/edit#gid=676299490)
+	$(call generate_ccf_asctb_annotations_component,Ureter,https://docs.google.com/spreadsheets/d/1tK916JyG5ZSXW_cXfsyZnzXfjyoN-8B2GXLbYD6_vF0/edit#gid=1106564583)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_ureter.owl
 
 # ------------------------------------------------------------------

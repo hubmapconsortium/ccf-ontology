@@ -31,3 +31,4 @@ ASCTB_FILES = \
 	$(COMPONENTSDIR)/asctb_ureter.owl \
 	$(COMPONENTSDIR)/asctb_urinary_bladder.owl \
 	$(COMPONENTSDIR)/asctb_uterus.owl \
+	$(COMPONENTSDIR)/asctb_placenta.owl \

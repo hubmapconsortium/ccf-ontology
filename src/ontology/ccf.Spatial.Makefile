@@ -8,7 +8,7 @@ $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld: | $(DATA_MIRROR_DIR)
 .PRECIOUS: $(DATA_MIRROR_DIR)/reference-spatial-entities.jsonld
 
 $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld: | $(DATA_MIRROR_DIR)
-	if [ $(DATMIR) = true ]; then curl -L https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/master/source_data/generated-reference-spatial-entities.jsonld --create-dirs -o $@; fi
+	if [ $(DATMIR) = true ]; then curl -L https://raw.githubusercontent.com/hubmapconsortium/hubmap-ontology/pbi-ccf-v1.9/source_data/generated-reference-spatial-entities.jsonld --create-dirs -o $@; fi
 .PRECIOUS: $(DATA_MIRROR_DIR)/generated-reference-spatial-entities.jsonld
 
 

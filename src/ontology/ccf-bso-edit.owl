@@ -132,7 +132,6 @@ Import(<http://purl.org/ccf/components/asctb_blood_vasculature.owl>)
 Import(<http://purl.org/ccf/components/asctb_blood.owl>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
-Declaration(Class(<http://purl.obolibrary.org/obo/LMHA_00135>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(Class(ccf:anatomical_structure))
@@ -214,11 +213,6 @@ AnnotationAssertion(rdfs:label ccf:has_protein_marker "has protein marker")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000000> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell type (from CL)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> ccf:cell_type)
-
-# Class: <http://purl.obolibrary.org/obo/LMHA_00135> (cell type (from LMHA))
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/LMHA_00135> "cell type (from LMHA)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/LMHA_00135> ccf:cell_type)
 
 # Class: <http://purl.obolibrary.org/obo/SO_0001260> (sequence collection)
 

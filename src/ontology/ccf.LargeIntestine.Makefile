@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_large_intestine.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_large_intestine.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1vU6mQmnzAAxctbNYPoFxJ8NvbUql8pbipsGdt7YCOQQ/edit#gid=2043181688)
+	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1d_KWKnQq3HT5nzDmfhlvFG4P_qdviu0vyhGZ6QHgNIk/edit#gid=2043181688)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_large_intestine.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_large_intestine.owl: check_asctb2ccf $(GENE
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_large_intestine.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1vU6mQmnzAAxctbNYPoFxJ8NvbUql8pbipsGdt7YCOQQ/edit#gid=2043181688)
+	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1d_KWKnQq3HT5nzDmfhlvFG4P_qdviu0vyhGZ6QHgNIk/edit#gid=2043181688)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_large_intestine.owl
 
 # ------------------------------------------------------------------

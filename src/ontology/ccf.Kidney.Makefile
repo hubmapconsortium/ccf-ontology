@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_kidney.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_kidney.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1PgjYp4MEWANfbxGIxFsJ9vkfEU90MP-v3p5oVlH8U-E/edit#gid=949267305)
+	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1NMfu1bEGNFcTYTFT-jCao_lSbFD8n0ti630iIpRj-hw/edit#gid=949267305)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_kidney.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_kidney.owl: check_asctb2ccf $(GENERATED_DIR
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_kidney.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1PgjYp4MEWANfbxGIxFsJ9vkfEU90MP-v3p5oVlH8U-E/edit#gid=949267305)
+	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1NMfu1bEGNFcTYTFT-jCao_lSbFD8n0ti630iIpRj-hw/edit#gid=949267305)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_kidney.owl
 
 # ------------------------------------------------------------------

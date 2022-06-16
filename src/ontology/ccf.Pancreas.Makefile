@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_pancreas.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1CIWqIygz2OzxMECIvhudFN14Kt7-JFUBLpzn5uuH5Xs/edit#gid=801179416)
+	$(call generate_ccf_cell_biomarkers_component,https://docs.google.com/spreadsheets/d/1_cmA0CWUzVz1lNMpNOXqzrnmWgXv3GANqN7W18N4crA/edit#gid=439021026)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl: check_asctb2ccf $(GENERATED_D
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1CIWqIygz2OzxMECIvhudFN14Kt7-JFUBLpzn5uuH5Xs/edit#gid=801179416)
+	$(call generate_ccf_asctb_annotations_component,https://docs.google.com/spreadsheets/d/1_cmA0CWUzVz1lNMpNOXqzrnmWgXv3GANqN7W18N4crA/edit#gid=439021026)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl
 
 # ------------------------------------------------------------------

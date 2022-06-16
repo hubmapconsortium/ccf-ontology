@@ -13,6 +13,7 @@
     <uri name="http://purl.org/ccf/data/specimen_spatial_entities.owl" uri="data/specimen_spatial_entities.owl"/>
 
     <!-- ASCT+B Ontology Components -->
+    <uri name="http://purl.org/ccf/components/asctb_placenta.owl" uri="components/asctb_placenta.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_uterus.owl" uri="components/asctb_uterus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_urinary_bladder.owl" uri="components/asctb_urinary_bladder.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_ureter.owl" uri="components/asctb_ureter.owl"/>

@@ -155,7 +155,15 @@ $(CCF_BSO).owl: $(CCF_BSO_SRC)
 		relax \
 		reduce -r ELK \
 		filter --exclude-terms excluded-terms.txt \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+		annotate --remove-annotations \
+			--prefix "dc: http://purl.org/dc/elements/1.1/" \
+			--prefix "dcterms: http://purl.org/dc/terms/" \
+			--annotation dc:title "Common Coordinate Framework for Biological Structure (CCF-BSO) Ontology" \
+			--annotation dc:description "This ontology models the gross anatomyand histology, and the biomarkers that identify cell types." \
+			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
+			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+			--output $@.tmp.owl && mv $@.tmp.owl $@ \
+			
 .PRECIOUS: $(CCF_BSO).owl
 
 .PHONY: build_ccf_sco
@@ -167,7 +175,14 @@ $(CCF_SCO).owl: $(CCF_SCO_SRC)
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+		annotate --remove-annotations \
+			--prefix "dc: http://purl.org/dc/elements/1.1/" \
+			--prefix "dcterms: http://purl.org/dc/terms/" \
+			--annotation dc:title "Common Coordinate Framework for Specimen Data (CCF-SCO) Ontology" \
+			--annotation dc:description "This ontology models the concepts that are related to donated tissue samples." \
+			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
+			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+			--output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(CCF_SCO).owl
 
 .PHONY: build_ccf_spo
@@ -179,7 +194,14 @@ $(CCF_SPO).owl: $(CCF_SPO_SRC)
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+		annotate --remove-annotations \
+			--prefix "dc: http://purl.org/dc/elements/1.1/" \
+			--prefix "dcterms: http://purl.org/dc/terms/" \
+			--annotation dc:title "Common Coordinate Framework for Spatial Data (CCF-SPO) Ontology" \
+			--annotation dc:description "This ontology models the concepts that are needed to construct an anatomical framework for placing specimens in 3-space." \
+			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
+			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+			--output $@.tmp.owl && mv $@.tmp.owl $@
 .PRECIOUS: $(CCF_SPO).owl
 
 .PHONY: build_all

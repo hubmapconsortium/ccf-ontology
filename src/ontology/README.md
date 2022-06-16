@@ -182,10 +182,10 @@ Before running the commands to release the CCF ontology, it is important to foll
 
 Follow the steps below to make a new release of the CCF ontology:
 
-Run the command to release the ontologies. The `-s` argument is to supress the release messages.
+Run the command to release the ontologies.  Enter the `[version number]` argument accordingly. The `-s` argument is to supress the release messages.
 
 ```
-$ make -s release_all
+$ make -s release_all VERSION=[version number]
 ```
 
 The `release_all` command will move all the output ontology files from the `build_all` command to the `ccf-ontology` root directory.
@@ -198,13 +198,13 @@ Once you are ready to release the ontologies, run these following Git commands t
    $ git commit . -m "Releasing [version number]."
    ```
 
-2. Run the Git command to switch to the `master` environment
+2. Run the Git command to switch to the `main` environment
    
    ```
-   $ git checkout master
+   $ git checkout main
    ```
 
-3. Bring all the release changes to the `master` environment.
+3. Bring all the release changes from the `develop` to the `main` environment.
    
    ```
    $ git merge develop
@@ -216,7 +216,12 @@ Once you are ready to release the ontologies, run these following Git commands t
    $ git tag "[version number]"
    ```
 
-5. Switch back to the `develop` environment.
+5. Push the changes to the GitHub repository.
+   ```
+   $ git push
+   ```
+
+6. Switch back to the `develop` environment.
    
    ```
    $ git checkout develop

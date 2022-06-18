@@ -55,6 +55,19 @@ mirror-hgnc: | $(TMPDIR)
 $(MIRRORDIR)/hgnc.owl: mirror-hgnc | $(MIRRORDIR)
 	if [ $(IMP) = true ] && [ $(MIR) = true ]; then if cmp -s $(TMPDIR)/mirror-hgnc.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." && cp $(TMPDIR)/mirror-hgnc.owl $@; fi; fi
 
+## ONTOLOGY: lmha
+.PHONY: mirror-lmha
+.PRECIOUS: $(MIRRORDIR)/lmha.owl
+mirror-lmha:
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L https://www.lungmap.net/assets/Uploads/ontology/558488ae7f/LMHA_20190512_Cell.zip --create-dirs -o $(TMPDIR)/lmha.zip --retry 4 --max-time 200 && \
+		unzip -o $(TMPDIR)/lmha.zip -d $(TMPDIR) && \
+		mv $(TMPDIR)/LMHA_20190512_Cell.owl $(MIRRORDIR)/lmha.owl && \
+		$(ROBOT) convert -i $(MIRRORDIR)/lmha.owl -o $@.tmp.owl && \
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+$(MIRRORDIR)/lmha.owl: mirror-lmha | $(MIRRORDIR)
+	if [ $(IMP) = true ] && [ $(MIR) = true ]; then if cmp -s $(TMPDIR)/mirror-lmha.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." && cp $(TMPDIR)/mirror-lmha.owl $@; fi; fi
+		
 # ----------------------------------------
 # ASCT+B Module
 # ---------------------------------------- 

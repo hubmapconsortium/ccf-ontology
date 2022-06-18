@@ -96,6 +96,18 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 .PRECIOUS: \$(EXTRACTS_DIR)/cl_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------
+# Get as needed CT terms from LMHA Ontology
+# ------------------------------------------------------------------
+\$(EXTRACTS_DIR)/lmha_$ORGAN_NAME.owl: \$(EXTRACTS_DIR) \\
+		\$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl \\
+		\$(MIRRORDIR)/lmha.owl
+	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting \$@)
+	\$(call extract_lmha_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^))
+.PRECIOUS: \$(EXTRACTS_DIR)/lmha_$ORGAN_NAME.owl
+
+# ------------------------------------------------------------------
 # Get as needed B terms from HGNC
 # ------------------------------------------------------------------
 \$(EXTRACTS_DIR)/hgnc_$ORGAN_NAME.owl: \$(EXTRACTS_DIR) \\
@@ -118,9 +130,10 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 		\$(EXTRACTS_DIR)/uberon_$ORGAN_NAME.owl \\
 		\$(EXTRACTS_DIR)/fma_$ORGAN_NAME.owl \\
 		\$(EXTRACTS_DIR)/cl_$ORGAN_NAME.owl \\
+		\$(EXTRACTS_DIR)/lmha_$ORGAN_NAME.owl \\
 		\$(EXTRACTS_DIR)/hgnc_$ORGAN_NAME.owl
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making \$@)
-	\$(call make_asctb_component,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^),\$(word 7,\$^),\$(word 8,\$^),\$(word 9,\$^))
+	\$(call make_asctb_component,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^),\$(word 7,\$^),\$(word 8,\$^),\$(word 9,\$^),\$(word 10,\$^))
 .PRECIOUS: \$(COMPONENTSDIR)/asctb_$ORGAN_NAME.owl
 EOF
 

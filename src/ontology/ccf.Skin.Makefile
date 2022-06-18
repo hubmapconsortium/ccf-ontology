@@ -59,6 +59,18 @@ $(EXTRACTS_DIR)/cl_skin.owl: $(EXTRACTS_DIR) \
 .PRECIOUS: $(EXTRACTS_DIR)/cl_skin.owl
 
 # ------------------------------------------------------------------
+# Get as needed CT terms from LMHA Ontology
+# ------------------------------------------------------------------
+$(EXTRACTS_DIR)/lmha_skin.owl: $(EXTRACTS_DIR) \
+		$(GENERATED_DIR)/ccf_asctb_annotations_skin.owl \
+		$(GENERATED_DIR)/ccf_cell_biomarkers_skin.owl \
+		$(GENERATED_DIR)/ccf_partonomy_skin.owl \
+		$(MIRRORDIR)/lmha.owl
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
+	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
+.PRECIOUS: $(EXTRACTS_DIR)/lmha_skin.owl
+
+# ------------------------------------------------------------------
 # Get as needed B terms from HGNC
 # ------------------------------------------------------------------
 $(EXTRACTS_DIR)/hgnc_skin.owl: $(EXTRACTS_DIR) \
@@ -81,7 +93,8 @@ $(COMPONENTSDIR)/asctb_skin.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/uberon_skin.owl \
 		$(EXTRACTS_DIR)/fma_skin.owl \
 		$(EXTRACTS_DIR)/cl_skin.owl \
+		$(EXTRACTS_DIR)/lmha_skin.owl \
 		$(EXTRACTS_DIR)/hgnc_skin.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_skin.owl

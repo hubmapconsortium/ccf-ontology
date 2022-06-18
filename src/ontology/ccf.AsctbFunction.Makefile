@@ -95,6 +95,29 @@ define extract_cl_terms
 		rm /tmp/entity_set_*.csv; fi
 endef
 
+define extract_lmha_terms
+	if [ $(EXT) = true ]; then $(ROBOT) query --input $(1) \
+				--query queries/get_lmha_entities.sparql /tmp/entity_set_1.csv && \
+		sed -i '1d' /tmp/entity_set_1.csv && \
+		$(ROBOT) query --input $(2) \
+				--query queries/get_lmha_entities.sparql /tmp/entity_set_2.csv && \
+		sed -i '1d' /tmp/entity_set_2.csv && \
+		$(ROBOT) query --input $(3) \
+				--query queries/get_lmha_entities.sparql /tmp/entity_set_3.csv && \
+		sed -i '1d' /tmp/entity_set_3.csv && \
+		$(ROBOT) extract --method MIREOT \
+				--input $(4) \
+				--upper-term "http://purl.obolibrary.org/obo/LMHA_00135" \
+				--lower-terms /tmp/entity_set_1.csv \
+				--lower-terms /tmp/entity_set_2.csv \
+				--lower-terms /tmp/entity_set_3.csv \
+				--intermediates $(INTERMEDIATES_OPT) \
+			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+				--output $@.tmp.owl && \
+		mv $@.tmp.owl $@ && \
+		rm /tmp/entity_set_*.csv; fi
+endef
+
 define extract_hgnc_terms
 	if [ $(EXT) = true ]; then $(ROBOT) query --input $(1) \
 				--query queries/get_hgnc_entities.sparql /tmp/entity_set_1.csv && \
@@ -119,19 +142,16 @@ define extract_hgnc_terms
 endef
 
 define make_asctb_component
-	if [ $(COMP) = true ]; then $(ROBOT) merge --input $(1) --input $(2) --input $(3) \
-			--output $@.tmp.owl; fi
-	if [ $(COMP) = true ] && [ $(5) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(5) \
-			--output $@.tmp.owl; fi
-	if [ $(COMP) = true ] && [ $(6) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(6) \
-			--output $@.tmp.owl; fi
-	if [ $(COMP) = true ] && [ $(7) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(7) \
-			--output $@.tmp.owl; fi
-	if [ $(COMP) = true ] && [ $(8) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(8) \
-			--output $@.tmp.owl; fi
-	if [ $(COMP) = true ] && [ $(9) ]; then $(ROBOT) merge --input $@.tmp.owl --input $(9) \
-			--output $@.tmp.owl; fi
-	if [ $(COMP) = true ]; then $(ROBOT) annotate --input $@.tmp.owl \
-			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --annotation-file $(4) --output $@.tmp.owl && \
-			mv -f $@.tmp.owl $@; fi
+	if [ $(COMP) = true ]; then $(ROBOT) merge --input $(1) \
+			--input $(2) \
+			--input $(3) \
+			--input $(5) \
+			--input $(6) \
+			--input $(7) \
+			--input $(8) \
+			--input $(9) \
+		annotate --annotation-file $(4) \
+			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+			--output $@.tmp.owl && \
+		mv -f $@.tmp.owl $@; fi
 endef

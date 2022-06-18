@@ -10,11 +10,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/ccf/ccf-sco.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0-beta.1/ccf-sco.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.0.0/ccf-sco.owl"/>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology models the concepts that are related to donated tissue samples.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Common Coordinate Framework for Specimen Data (CCF-SCO) Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0-beta.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1149,6 +1149,12 @@
     
 
 
+    <!-- http://purl.org/ccf/1.5/a07c1de5-7229-4161-9c49-defd3ab029f7 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/a07c1de5-7229-4161-9c49-defd3ab029f7"/>
+    
+
+
     <!-- http://purl.org/ccf/1.5/a1fc9d45-5af9-4fc4-b2be-340ef0716e09 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/a1fc9d45-5af9-4fc4-b2be-340ef0716e09"/>
@@ -1299,12 +1305,6 @@
     
 
 
-    <!-- http://purl.org/ccf/1.5/bc7cbfcd-cc52-4e82-a079-e353feb729a1 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/bc7cbfcd-cc52-4e82-a079-e353feb729a1"/>
-    
-
-
     <!-- http://purl.org/ccf/1.5/bceacee1-bc17-49ba-ab6f-833a9ccde436 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/bceacee1-bc17-49ba-ab6f-833a9ccde436"/>
@@ -1416,12 +1416,6 @@
     <!-- http://purl.org/ccf/1.5/ced621c0-d58c-47e2-9179-6bc89d94964e -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/ced621c0-d58c-47e2-9179-6bc89d94964e"/>
-    
-
-
-    <!-- http://purl.org/ccf/1.5/cf4ba102-edf7-4fe4-bb1d-860cdf57609d -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/cf4ba102-edf7-4fe4-bb1d-860cdf57609d"/>
     
 
 
@@ -1554,6 +1548,12 @@
     <!-- http://purl.org/ccf/1.5/e1a870bc-d965-4324-b691-55ebac9f2f89 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/e1a870bc-d965-4324-b691-55ebac9f2f89"/>
+    
+
+
+    <!-- http://purl.org/ccf/1.5/e21afc3c-3a7c-4717-90d5-e5739fd8432c -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/e21afc3c-3a7c-4717-90d5-e5739fd8432c"/>
     
 
 
@@ -1746,12 +1746,6 @@
     <!-- http://purl.org/ccf/1.5/f9e28182-3ed3-4a3f-bd45-66ebce1efafb -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/f9e28182-3ed3-4a3f-bd45-66ebce1efafb"/>
-    
-
-
-    <!-- http://purl.org/ccf/1.5/fa9ecb7f-16d5-4733-bc89-46496a9e886e -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/fa9ecb7f-16d5-4733-bc89-46496a9e886e"/>
     
 
 
@@ -2271,12 +2265,6 @@
     
 
 
-    <!-- http://purl.org/ccf/1.5/40b85d35-1dc1-4e79-bd68-dc532c939a81 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/40b85d35-1dc1-4e79-bd68-dc532c939a81"/>
-    
-
-
     <!-- http://purl.org/ccf/1.5/401a320b-358c-4091-acac-ef7afb2d8603 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/401a320b-358c-4091-acac-ef7afb2d8603"/>
@@ -2337,12 +2325,6 @@
     
 
 
-    <!-- http://purl.org/ccf/1.5/5eff99f7-705e-4dee-aed7-e478b8dbf64a -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/5eff99f7-705e-4dee-aed7-e478b8dbf64a"/>
-    
-
-
     <!-- http://purl.org/ccf/1.5/5f2d29d1-9989-435c-9311-59799db1e8d7 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/5f2d29d1-9989-435c-9311-59799db1e8d7"/>
@@ -2358,12 +2340,6 @@
     <!-- http://purl.org/ccf/1.5/50ee1b49-9d08-46f3-87cb-a3faafb1f555 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/50ee1b49-9d08-46f3-87cb-a3faafb1f555"/>
-    
-
-
-    <!-- http://purl.org/ccf/1.5/502f175c-9d55-4341-b6ff-0f04d76522d5 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/502f175c-9d55-4341-b6ff-0f04d76522d5"/>
     
 
 
@@ -2514,6 +2490,12 @@
     <!-- http://purl.org/ccf/1.5/6f74a57b-41ce-4581-a206-2e84b58c1c98 -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/6f74a57b-41ce-4581-a206-2e84b58c1c98"/>
+    
+
+
+    <!-- http://purl.org/ccf/1.5/6f89860a-30df-4b79-8e6d-dd209c959374 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/6f89860a-30df-4b79-8e6d-dd209c959374"/>
     
 
 
@@ -2838,12 +2820,6 @@
     <!-- http://purl.org/ccf/1.5/87771757-8769-4914-a57f-31add666a3ee -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/87771757-8769-4914-a57f-31add666a3ee"/>
-    
-
-
-    <!-- http://purl.org/ccf/1.5/886e391d-0151-46d3-8a51-084bf6a06910 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ccf/1.5/886e391d-0151-46d3-8a51-084bf6a06910"/>
     
 
 
@@ -4557,22 +4533,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/a3a54516ee59f7cc2ec52e098021bf4d -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/a3a54516ee59f7cc2ec52e098021bf4d">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/a3a54516ee59f7cc2ec52e098021bf4d</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/a3ab4491d04dff03fdd2cee5a2df70b3 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/a3ab4491d04dff03fdd2cee5a2df70b3">
@@ -4637,22 +4597,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/a44a78bfbe0e702cdc172707b6061a16</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 5/11/2022, Joel Welling, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/a4797fa8c1f3b737c70169a4d91ee9c1 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/a4797fa8c1f3b737c70169a4d91ee9c1">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/a4797fa8c1f3b737c70169a4d91ee9c1</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -5653,9 +5597,7 @@
         <rdf:type rdf:resource="http://purl.org/ccf/donor"/>
         <ccf:has_biological_sex rdf:resource="http://purl.bioontology.org/ontology/LNC/LA2-8"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/cc5da33c5239011f75c06918dad38914"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/f44c3b95dd43a62f943f42442480f2b0"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/458801d5d1417b5db4893464a7215e71"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/539d08c341db65d371ae0687bb314bb3"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/681f7f1d0a87427cf182f231a01ca6f0"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/793395e392ff0cdbe74ab82f4155b62b"/>
         <ccf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</ccf:age>
@@ -6338,22 +6280,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/b086daf9da374bb5422e64326c26012e</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/16/2022, daniel cotter, TMC-Stanford</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/b08c812ca58e764d513d40064c0cf220 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b08c812ca58e764d513d40064c0cf220">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/b08c812ca58e764d513d40064c0cf220</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -7511,22 +7437,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/b76d5f85c0f3699c45775733e79d8950 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b76d5f85c0f3699c45775733e79d8950">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/b76d5f85c0f3699c45775733e79d8950</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/b794195257261502a3db4e4ca0b22cab -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b794195257261502a3db4e4ca0b22cab">
@@ -7621,22 +7531,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/b8304e1f4c94f2f8659a6f46719ac792</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 10/2/2021, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/b83598ee3965e92397b8890dc3c0e667 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/b83598ee3965e92397b8890dc3c0e667">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/b83598ee3965e92397b8890dc3c0e667</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -8852,20 +8746,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/bf88e07da70ee088e31c7f568e41b196 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/bf88e07da70ee088e31c7f568e41b196">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: sciATACseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/bf88e07da70ee088e31c7f568e41b196</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 5/11/2022, Dana L Jackson, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/bf8faee3a82026ccf2a65965fd158a1f -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/bf8faee3a82026ccf2a65965fd158a1f">
@@ -9703,20 +9583,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/c66552ff89678bf21e32e78d3f012a5c -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c66552ff89678bf21e32e78d3f012a5c">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: cell-dive, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/c66552ff89678bf21e32e78d3f012a5c</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 3/18/2022, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/c686b93a809ec1f54a0d96bc25d3d207 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c686b93a809ec1f54a0d96bc25d3d207">
@@ -9741,20 +9607,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/c6a254b2dc2ed46b002500ade163a7cc</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/11/2022, Nico Pierson, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/c6bb00096b0cf40751f9d6003fb730c7 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/c6bb00096b0cf40751f9d6003fb730c7">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: salmon_rnaseq_sciseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/c6bb00096b0cf40751f9d6003fb730c7</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 3/1/2022, HuBMAP Process, TMC-CalTech</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -10271,22 +10123,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/cc095f067c3995877707f8f8d215fb68 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/cc095f067c3995877707f8f8d215fb68">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/cc095f067c3995877707f8f8d215fb68</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/cc28d4b6954608bd6d045f98728ffb6b -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/cc28d4b6954608bd6d045f98728ffb6b">
@@ -10465,20 +10301,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/cd880c54e0095bad5200397588eccf81</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 5/11/2022, Hunter Hakimian, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/cd887a6beabc794992876ad7ee591f69 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/cd887a6beabc794992876ad7ee591f69">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: snRNAseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/cd887a6beabc794992876ad7ee591f69</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 6/29/2021, Blue Lake, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -10949,22 +10771,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/d187cf4c912678fcc74b26774e10e3ea -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d187cf4c912678fcc74b26774e10e3ea">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/d187cf4c912678fcc74b26774e10e3ea</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/d1a6c08673e5d707d2f06ef75b8e6594 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d1a6c08673e5d707d2f06ef75b8e6594">
@@ -11204,6 +11010,28 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/d3525d35f6d5ee3dc3186613b0ab1762 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d3525d35f6d5ee3dc3186613b0ab1762">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
+        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/4b257b9c1758a98af262c57bc0caa726"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d48b7990d638dbede870ae9c1976e475"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/f412e76986c1012ea9589d545ed8f043"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/f4cd67b641b87d97b5b2749382cfc921"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/76627e9a5a369c5230b9da216fe20eb3"/>
+        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/e21afc3c-3a7c-4717-90d5-e5739fd8432c"/>
+        <ccf:description>10 x 10 x 12 millimeter, 12 millimeter, single_cell_cryopreserved, 0 Sections</ccf:description>
+        <ccf:sample_type>Tissue Block</ccf:sample_type>
+        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
+        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</ccf:section_size>
+        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/d3525d35f6d5ee3dc3186613b0ab1762</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 10/2/2021, Marda Jorgensen, TMC-Florida</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/d355f964f474f0965d716bc69e2d06af -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d355f964f474f0965d716bc69e2d06af">
@@ -11261,7 +11089,6 @@
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/017eccf19e93969ce5cd8f30f78bab67"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/2283c507fdbb47ae8981f9e5d3fc7364"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/23f012ad7b5fe0e3f3c19186de7c4ea4"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/3d2bc79885fc7720f77fddd2c23f02e5"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/46a4eaa8de7078fa4037c08cbc83ec95"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/5f043da4d6347e2b6f93509c000804d1"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/6c0cb3dc099f53027dc4590439c97dff"/>
@@ -11310,7 +11137,6 @@
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/efbf777d8d36f03cebe957e02eb9f8fe"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/ffc79ba8af543395bfbcd753f86f4379"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/0aae451b843a6ac8de1794b2b093ecc5"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/062bd84696d51e02f670f064879b562d"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/1de4ad9bd516660043b8e190e8978045"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/2c4ed25579a369af5ae8f7523038235f"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/513ceb231c3406e87abddcf7bae9b5aa"/>
@@ -11373,22 +11199,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/d414d1ee62c3877f41e405e3dbe1b7b7 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d414d1ee62c3877f41e405e3dbe1b7b7">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/d414d1ee62c3877f41e405e3dbe1b7b7</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/d447d474be1ad37fae4ac475c3b10ec7 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d447d474be1ad37fae4ac475c3b10ec7">
@@ -11415,6 +11225,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d4493657cde29702c5ed73932da5317c</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 8/22/2020, HuBMAP Process, TMC-CalTech</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/d48b7990d638dbede870ae9c1976e475 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d48b7990d638dbede870ae9c1976e475">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: salmon_rnaseq_10x, </ccf:description>
+        <ccf:technology>10x</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d48b7990d638dbede870ae9c1976e475</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 6/28/2021, HuBMAP Process, TMC-Florida</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -11863,22 +11687,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/d7bf1af129141be3d6ddccda1e9a3bcf -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d7bf1af129141be3d6ddccda1e9a3bcf">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/d7bf1af129141be3d6ddccda1e9a3bcf</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/d7fa7f03af4d8ee669d57c57209393bb -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d7fa7f03af4d8ee669d57c57209393bb">
@@ -12061,20 +11869,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d973a70493040d827b48c0507e8583d9</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/11/2022, daniel Cotter, TMC-Stanford</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/d9780d3f4eb9edfe275abaa32ff8633b -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/d9780d3f4eb9edfe275abaa32ff8633b">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: salmon_rnaseq_10x, </ccf:description>
-        <ccf:technology>10x</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/d9780d3f4eb9edfe275abaa32ff8633b</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 6/28/2021, HuBMAP Process, TMC-Florida</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -12413,22 +12207,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/dcdc8c99f1fb16e0429d6d197ee1adef -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/dcdc8c99f1fb16e0429d6d197ee1adef">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/dcdc8c99f1fb16e0429d6d197ee1adef</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/dd224173f491932735bcfea6a9ffca98 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/dd224173f491932735bcfea6a9ffca98">
@@ -12540,22 +12318,6 @@
         <ccf:sample_type>Tissue Section</ccf:sample_type>
         <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</ccf:section_number>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/dd7ca41308416be4e0f4902179099ec7</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/dda091f7210dc8f1b000fe895dc94d9c -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/dda091f7210dc8f1b000fe895dc94d9c">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/dda091f7210dc8f1b000fe895dc94d9c</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
@@ -13089,22 +12851,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/e258d717ddad14bfe1794690ae96d52e</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 9/10/2021, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/e262e7687219a0d1ec75758fc9ed8271 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/e262e7687219a0d1ec75758fc9ed8271">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/e262e7687219a0d1ec75758fc9ed8271</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -13734,20 +13480,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/e75d8b31cfdc5f412d3cdbc2441dc352 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/e75d8b31cfdc5f412d3cdbc2441dc352">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: sciRNAseq, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/e75d8b31cfdc5f412d3cdbc2441dc352</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 5/11/2022, Joel Welling, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/e76e073b21e99c230e0ee376722c041d -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/e76e073b21e99c230e0ee376722c041d">
@@ -13798,22 +13530,12 @@
     <!-- https://entity.api.hubmapconsortium.org/entities/e78d2ae31c19988a948ccda59e7f4b06 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/e78d2ae31c19988a948ccda59e7f4b06">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a9175b3b41ef3cb88afa0cb1fff0f4e7"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/149eea2020a082ea9dd5683bdaca67c9"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/7f0e5c10babfa368c9fbaff2e52f79f4"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/7fa46d1b74c3f146f0cb7138b8ac690d"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/5eff99f7-705e-4dee-aed7-e478b8dbf64a"/>
         <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/cc2fae3cc7d376805a2854a442d1320a"/>
-        <ccf:description>10 x 25 x 10 millimeter, 10 millimeter, pfa_fixed_frozen_oct_block, 0 Sections</ccf:description>
         <ccf:description>10 x 25 x 5 millimeter, 5 millimeter, organ_piece</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
         <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
         <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/e78d2ae31c19988a948ccda59e7f4b06</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/16/2022, Yiing Lin, TMC-CalTech</rdfs:comment>
@@ -14795,21 +14517,12 @@
     <!-- https://entity.api.hubmapconsortium.org/entities/f0e6590d29514aa3edde3223aeb512d5 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f0e6590d29514aa3edde3223aeb512d5">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/909b44eb01033314b357a3692b583387"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/5c9b7babf1f5e461efa9499115c310a9"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/51c8c96154b5a5eaab69d6e7b565a853"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/40b85d35-1dc1-4e79-bd68-dc532c939a81"/>
         <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/1c1745a49b81662ab955765cb1159bab"/>
-        <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, flash_frozen_liquid_nitrogen, 0 Sections</ccf:description>
         <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, organ_piece</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
         <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
         <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/f0e6590d29514aa3edde3223aeb512d5</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/18/2022, daniel Cotter, TMC-Stanford</rdfs:comment>
@@ -15248,6 +14961,20 @@
     
 
 
+    <!-- https://entity.api.hubmapconsortium.org/entities/f412e76986c1012ea9589d545ed8f043 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f412e76986c1012ea9589d545ed8f043">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: salmon_rnaseq_10x, </ccf:description>
+        <ccf:technology>10x</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f412e76986c1012ea9589d545ed8f043</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 6/28/2021, HuBMAP Process, TMC-Florida</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://entity.api.hubmapconsortium.org/entities/f4188a148e4c759092d19369d310883b -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f4188a148e4c759092d19369d310883b">
@@ -15286,22 +15013,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f4333f83c8aadb7ea132844e7d0097fb</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 5/11/2022, Joel Welling, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/f44c3b95dd43a62f943f42442480f2b0 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f44c3b95dd43a62f943f42442480f2b0">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/ab8258a97e0820c294d1f0ba2d261f61"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/539d08c341db65d371ae0687bb314bb3"/>
-        <ccf:description>5 x 10 x 2 millimeter, 2 millimeter, fresh_frozen_oct_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/f44c3b95dd43a62f943f42442480f2b0</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 12/15/2021, Diane Salamon, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -15351,6 +15062,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f4b3c0e24e09e1e8c16f2e4e190a8cbb</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/14/2022, HuBMAP Process, undefined</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/f4cd67b641b87d97b5b2749382cfc921 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f4cd67b641b87d97b5b2749382cfc921">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: scRNA-Seq-10x, </ccf:description>
+        <ccf:technology>10x</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f4cd67b641b87d97b5b2749382cfc921</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 5/11/2022, Jason Brant, TMC-Florida</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -15481,22 +15206,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f54b458ca42f7112d0e0751c9ba41492</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 3/1/2022, Joel Welling, TMC-Vanderbilt</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/f54b91055a19b6275d3f064b50a135b8 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f54b91055a19b6275d3f064b50a135b8">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/f54b91055a19b6275d3f064b50a135b8</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -15717,20 +15426,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/f71249f6e349fb9a99a3d4f08541cab4 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f71249f6e349fb9a99a3d4f08541cab4">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: salmon_rnaseq_10x, </ccf:description>
-        <ccf:technology>10x</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f71249f6e349fb9a99a3d4f08541cab4</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 6/28/2021, HuBMAP Process, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/f716e995918d7780d46ad4df44d41678 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f716e995918d7780d46ad4df44d41678">
@@ -15741,20 +15436,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f716e995918d7780d46ad4df44d41678</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 5/11/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/f73a65dad610b5d8fc3056a35e6c46ad -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/f73a65dad610b5d8fc3056a35e6c46ad">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: scRNA-Seq-10x, </ccf:description>
-        <ccf:technology>10x</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/f73a65dad610b5d8fc3056a35e6c46ad</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 5/11/2022, Jason Brant, TMC-Florida</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -16632,18 +16313,13 @@
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/ffc79ba8af543395bfbcd753f86f4379">
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/d3ad6409d2ad37ef7dbcc90ccc199f68"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/73923ed32b8bbbe6c2b665da5cd704fb"/>
         <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/8ea3066683025198c4bdeed332ab526b"/>
         <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/1c157889-cdec-4830-91b9-d52e209a845b"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/062bd84696d51e02f670f064879b562d"/>
         <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, flash_frozen_liquid_nitrogen, 0 Sections</ccf:description>
-        <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, organ_piece</ccf:description>
         <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
         <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
         <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ccf:section_size>
         <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/ffc79ba8af543395bfbcd753f86f4379</ccf:url>
@@ -17101,22 +16777,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/0c6d45345a1c5ed85278c75a23179cb9</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 10/30/2020, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/0c6e93c3df83b0ee6c3e64ef2853b5b1 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/0c6e93c3df83b0ee6c3e64ef2853b5b1">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/0c6e93c3df83b0ee6c3e64ef2853b5b1</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -17753,20 +17413,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/017eccf19e93969ce5cd8f30f78bab67</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 10/1/2021, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/01844e5a048e03aa434ee0afb71c813d -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/01844e5a048e03aa434ee0afb71c813d">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: scRNA-Seq-10x, </ccf:description>
-        <ccf:technology>10x</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/01844e5a048e03aa434ee0afb71c813d</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 5/11/2022, Jason Brant, TMC-Florida</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -18660,27 +18306,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/062bd84696d51e02f670f064879b562d -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/062bd84696d51e02f670f064879b562d">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/d3ad6409d2ad37ef7dbcc90ccc199f68"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/73923ed32b8bbbe6c2b665da5cd704fb"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/8ea3066683025198c4bdeed332ab526b"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/502f175c-9d55-4341-b6ff-0f04d76522d5"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/ffc79ba8af543395bfbcd753f86f4379"/>
-        <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, organ_piece, 1 Sections</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/062bd84696d51e02f670f064879b562d</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 2/17/2022, Yiing Lin, TMC-Stanford</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/064e93d3bfcaa165e383fa6509d45aa9 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/064e93d3bfcaa165e383fa6509d45aa9">
@@ -18859,7 +18484,6 @@
         <ccf:has_biological_sex rdf:resource="http://purl.bioontology.org/ontology/LNC/LA2-8"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/3b4fda75a1185356b6c85965a4b61530"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/46168dd8aab589ce7edfa4beeaed773e"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/8b0a4cc904cadaccddd37633411fdbdd"/>
         <ccf:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">51</ccf:age>
         <ccf:bmi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.1</ccf:bmi>
         <ccf:consortium_name>HuBMAP</ccf:consortium_name>
@@ -20893,22 +20517,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/172421fc0d57a7caf0fd49de4e7b1a0c -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/172421fc0d57a7caf0fd49de4e7b1a0c">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/172421fc0d57a7caf0fd49de4e7b1a0c</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/173fbebb10c3af766e26b1d6c9c8d563 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/173fbebb10c3af766e26b1d6c9c8d563">
@@ -21193,22 +20801,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/19f9f72eb5dcb7128712db154cf0c4ba</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 8/22/2020, HuBMAP Process, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/190a5d5edf933d8034c9b36bd57bd39c -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/190a5d5edf933d8034c9b36bd57bd39c">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/190a5d5edf933d8034c9b36bd57bd39c</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -22048,22 +21640,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/2f16a2ecfc674907e169657dfb277b4d</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 8/22/2020, HuBMAP Process, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/2f690d30a52d311bfb46d92c257ada0a -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/2f690d30a52d311bfb46d92c257ada0a">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/2f690d30a52d311bfb46d92c257ada0a</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -23135,12 +22711,21 @@
     <!-- https://entity.api.hubmapconsortium.org/entities/26d28342879bc2b31983c4083a46bc1f -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/26d28342879bc2b31983c4083a46bc1f">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/909b44eb01033314b357a3692b583387"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d6a5239b41706a869f07d9e9cdd6ffa4"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/7416fb51082a52f8a44f0a2c1a26a760"/>
+        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/6f89860a-30df-4b79-8e6d-dd209c959374"/>
         <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/37646b6f78075c99f09af04142ac39f4"/>
+        <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, flash_frozen_liquid_nitrogen, 0 Sections</ccf:description>
         <ccf:description>3 x 30 x 15 millimeter, 15 millimeter, organ_piece</ccf:description>
+        <ccf:sample_type>Tissue Block</ccf:sample_type>
         <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
         <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
+        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</ccf:section_size>
+        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/26d28342879bc2b31983c4083a46bc1f</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/16/2022, daniel Cotter, TMC-Stanford</rdfs:comment>
@@ -24200,28 +23785,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/3d2bc79885fc7720f77fddd2c23f02e5 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/3d2bc79885fc7720f77fddd2c23f02e5">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/d386672d8d067ee117a086710cfbde5a"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/d9780d3f4eb9edfe275abaa32ff8633b"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/f71249f6e349fb9a99a3d4f08541cab4"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/f73a65dad610b5d8fc3056a35e6c46ad"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/01844e5a048e03aa434ee0afb71c813d"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/fa9ecb7f-16d5-4733-bc89-46496a9e886e"/>
-        <ccf:description>10 x 10 x 12 millimeter, 12 millimeter, single_cell_cryopreserved, 0 Sections</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/3d2bc79885fc7720f77fddd2c23f02e5</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 10/2/2021, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/3d2d23e79d05583bd3b1a7f009b203ef -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/3d2d23e79d05583bd3b1a7f009b203ef">
@@ -24859,49 +24422,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4">
-        <rdf:type rdf:resource="http://purl.org/ccf/donor"/>
-        <ccf:has_biological_sex rdf:resource="http://purl.bioontology.org/ontology/LNC/LA3-6"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/a3a54516ee59f7cc2ec52e098021bf4d"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4797fa8c1f3b737c70169a4d91ee9c1"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/b08c812ca58e764d513d40064c0cf220"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/b76d5f85c0f3699c45775733e79d8950"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/b83598ee3965e92397b8890dc3c0e667"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/cc095f067c3995877707f8f8d215fb68"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/d187cf4c912678fcc74b26774e10e3ea"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/d414d1ee62c3877f41e405e3dbe1b7b7"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/d7bf1af129141be3d6ddccda1e9a3bcf"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/dcdc8c99f1fb16e0429d6d197ee1adef"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/dda091f7210dc8f1b000fe895dc94d9c"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/e262e7687219a0d1ec75758fc9ed8271"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/f54b91055a19b6275d3f064b50a135b8"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/0c6e93c3df83b0ee6c3e64ef2853b5b1"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/172421fc0d57a7caf0fd49de4e7b1a0c"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/190a5d5edf933d8034c9b36bd57bd39c"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/2f690d30a52d311bfb46d92c257ada0a"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/3456e58b0c994d39fae72996cab9fb98"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/4c4026f1ea0e16dc3923295782ba2387"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/4d6e95767c3c6978e5bc1272feb98d48"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/5467abdbeb0a8137566f81d5864e6761"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/6ae828ecbbffc6bed7c5d1b68f794e02"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/7e91385241f50a7cae3938c4c5a40bfa"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/7622dc179a2f2a6fda9467dbf7e4ebdb"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/90b3b6e02104a5f416d907f856d8a49f"/>
-        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/98c8e45a86780bcba47d6a47dc724ccf"/>
-        <ccf:consortium_name>HuBMAP</ccf:consortium_name>
-        <ccf:description></ccf:description>
-        <ccf:tissue_provider_name>RTI-General Electric</ccf:tissue_provider_name>
-        <ccf:tissue_provider_uuid>5c106f29-ea2d-11e9-85e8-0efb3ba9a670</ccf:tissue_provider_uuid>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/donor/332a4331efa6b01784d6044f62bbc1a4</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Entered 3/17/2022, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/3333fdaa86c242b2d6fb33f6b66befb3 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/3333fdaa86c242b2d6fb33f6b66befb3">
@@ -25047,22 +24567,6 @@
         <ccf:sample_type>Tissue Section</ccf:sample_type>
         <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</ccf:section_number>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/3445bc2dd2d5b8b73bce04d952f297ea</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/3456e58b0c994d39fae72996cab9fb98 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/3456e58b0c994d39fae72996cab9fb98">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/3456e58b0c994d39fae72996cab9fb98</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
@@ -25947,6 +25451,7 @@
         <rdf:type rdf:resource="http://purl.org/ccf/donor"/>
         <ccf:has_biological_sex rdf:resource="http://purl.bioontology.org/ontology/LNC/LA2-8"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/a84172ea4c97423bb0189af20507cc24"/>
+        <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/d3525d35f6d5ee3dc3186613b0ab1762"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/d5ed99bb117cc5926f6c75c2dda38713"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/e06ead205555141de119caa8f5c990d4"/>
         <ccf:provides rdf:resource="https://entity.api.hubmapconsortium.org/entities/f61c2bb9fdb631b4e110e8aa214dc774"/>
@@ -26112,22 +25617,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/4c4026f1ea0e16dc3923295782ba2387 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/4c4026f1ea0e16dc3923295782ba2387">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/4c4026f1ea0e16dc3923295782ba2387</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/4c810d998f5c336f0a848170ea58cbd9 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/4c810d998f5c336f0a848170ea58cbd9">
@@ -26268,22 +25757,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/4d6b5a1183de1429b1dddfe1c8fd9564</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 7/10/2020, Diane Salamon, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/4d6e95767c3c6978e5bc1272feb98d48 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/4d6e95767c3c6978e5bc1272feb98d48">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/4d6e95767c3c6978e5bc1272feb98d48</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -29163,20 +28636,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/53cc1f9c21907d8f7880eed6828ba8a1 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/53cc1f9c21907d8f7880eed6828ba8a1">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: sc_atac_seq_sci, </ccf:description>
-        <ccf:technology>OTHER</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-unknown.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/53cc1f9c21907d8f7880eed6828ba8a1</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 6/30/2021, HuBMAP Process, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/53dc270e357bdee13c453fba428a882c -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/53dc270e357bdee13c453fba428a882c">
@@ -29243,27 +28702,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/538172bb19d6bd4fe79d50a49cb3a609</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 5/11/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/539d08c341db65d371ae0687bb314bb3 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/539d08c341db65d371ae0687bb314bb3">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/ab8258a97e0820c294d1f0ba2d261f61"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/cd887a6beabc794992876ad7ee591f69"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/9fe24e50c8b8b77d86900ee4beecef69"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/cf4ba102-edf7-4fe4-bb1d-860cdf57609d"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/f44c3b95dd43a62f943f42442480f2b0"/>
-        <ccf:description>5 x 10 x 2 millimeter, 2 millimeter, fresh_frozen_oct_block, 1 Sections</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/539d08c341db65d371ae0687bb314bb3</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 10/3/2021, Diane Salamon, TMC-UCSD</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -29358,22 +28796,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/545f3d609c49c4b4ebe884bc16cca9e5</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 5/11/2022, Juan Puerto, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/5467abdbeb0a8137566f81d5864e6761 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/5467abdbeb0a8137566f81d5864e6761">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/5467abdbeb0a8137566f81d5864e6761</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -30102,22 +29524,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/6acf389e79b08bdd4c7f94019348868e</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 5/11/2022, Joel Welling, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/6ae828ecbbffc6bed7c5d1b68f794e02 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/6ae828ecbbffc6bed7c5d1b68f794e02">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/6ae828ecbbffc6bed7c5d1b68f794e02</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -32175,51 +31581,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/c66552ff89678bf21e32e78d3f012a5c"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/bc7cbfcd-cc52-4e82-a079-e353feb729a1"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/a3a54516ee59f7cc2ec52e098021bf4d"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/a4797fa8c1f3b737c70169a4d91ee9c1"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/b08c812ca58e764d513d40064c0cf220"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/b76d5f85c0f3699c45775733e79d8950"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/b83598ee3965e92397b8890dc3c0e667"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/cc095f067c3995877707f8f8d215fb68"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/d187cf4c912678fcc74b26774e10e3ea"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/d414d1ee62c3877f41e405e3dbe1b7b7"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/d7bf1af129141be3d6ddccda1e9a3bcf"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/dcdc8c99f1fb16e0429d6d197ee1adef"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/dda091f7210dc8f1b000fe895dc94d9c"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/e262e7687219a0d1ec75758fc9ed8271"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/f54b91055a19b6275d3f064b50a135b8"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/0c6e93c3df83b0ee6c3e64ef2853b5b1"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/172421fc0d57a7caf0fd49de4e7b1a0c"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/190a5d5edf933d8034c9b36bd57bd39c"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/2f690d30a52d311bfb46d92c257ada0a"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/3456e58b0c994d39fae72996cab9fb98"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/4c4026f1ea0e16dc3923295782ba2387"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/4d6e95767c3c6978e5bc1272feb98d48"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/5467abdbeb0a8137566f81d5864e6761"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/6ae828ecbbffc6bed7c5d1b68f794e02"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/7e91385241f50a7cae3938c4c5a40bfa"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/7622dc179a2f2a6fda9467dbf7e4ebdb"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/90b3b6e02104a5f416d907f856d8a49f"/>
-        <ccf:subdivided_into_sections rdf:resource="https://entity.api.hubmapconsortium.org/entities/98c8e45a86780bcba47d6a47dc724ccf"/>
-        <ccf:description>42 x 15 x 8 millimeter, 0.3 millimeter, ffpe_block, 26 Sections</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/7b7f0c98e666fbbcbc25391bbe12edea</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 9/10/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/7b85597b6a56b4119792423b23f2a40d -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/7b85597b6a56b4119792423b23f2a40d">
@@ -32497,22 +31858,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/7e6657cc565a7d89a9041dece3816ffa</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 6/30/2021, HuBMAP Process, TMC-CalTech</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/7e91385241f50a7cae3938c4c5a40bfa -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/7e91385241f50a7cae3938c4c5a40bfa">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/7e91385241f50a7cae3938c4c5a40bfa</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -33541,22 +32886,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/7622dc179a2f2a6fda9467dbf7e4ebdb -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/7622dc179a2f2a6fda9467dbf7e4ebdb">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/7622dc179a2f2a6fda9467dbf7e4ebdb</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/7641fd0f23bd7da9b3e47a84f8661e4c -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/7641fd0f23bd7da9b3e47a84f8661e4c">
@@ -33611,6 +32940,20 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/76584f2fe8e8ec215d78b83296461bbf</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 5/11/2022, Joel Welling, TMC-UCSD</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://entity.api.hubmapconsortium.org/entities/76627e9a5a369c5230b9da216fe20eb3 -->
+
+    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/76627e9a5a369c5230b9da216fe20eb3">
+        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
+        <ccf:description>Data/Assay Types: scRNA-Seq-10x, </ccf:description>
+        <ccf:technology>10x</ccf:technology>
+        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
+        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/76627e9a5a369c5230b9da216fe20eb3</ccf:url>
+        <terms:publisher>HuBMAP</terms:publisher>
+        <rdfs:comment>Registered 5/11/2022, Jason Brant, TMC-Florida</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -33764,12 +33107,22 @@
     <!-- https://entity.api.hubmapconsortium.org/entities/78181ed33a22ce843cada4581c78ef63 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/78181ed33a22ce843cada4581c78ef63">
+        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
         <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
         <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/a3ab4491d04dff03fdd2cee5a2df70b3"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/b5707bbde0050121ca7291e30054d548"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/ceab8754162592b4014093f09881a47c"/>
+        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/eaad5ed4b3aa2186bd87e05ff28b593e"/>
+        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/a07c1de5-7229-4161-9c49-defd3ab029f7"/>
         <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/c1f0cc0152231ce6276475b3ea800aab"/>
         <ccf:description>10 x 16 x 10 millimeter, 10 millimeter, organ_piece</ccf:description>
+        <ccf:description>10 x 16 x 10 millimeter, 10 millimeter, pfa_fixed_frozen_oct_block, 0 Sections</ccf:description>
+        <ccf:sample_type>Tissue Block</ccf:sample_type>
         <ccf:sample_type>Tissue Section</ccf:sample_type>
+        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
         <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ccf:section_number>
+        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ccf:section_size>
+        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/78181ed33a22ce843cada4581c78ef63</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 2/16/2022, Yiing Lin, TMC-CalTech</rdfs:comment>
@@ -34107,28 +33460,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/8b09621e0749c27758b3a4e208488181</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 10/2/2021, Marda Jorgensen, TMC-Florida</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/8b0a4cc904cadaccddd37633411fdbdd -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/8b0a4cc904cadaccddd37633411fdbdd">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_block"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/0721f575bacb2afae07935f07b456c58"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/bf88e07da70ee088e31c7f568e41b196"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/c6bb00096b0cf40751f9d6003fb730c7"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/e75d8b31cfdc5f412d3cdbc2441dc352"/>
-        <ccf:generates_dataset rdf:resource="https://entity.api.hubmapconsortium.org/entities/53cc1f9c21907d8f7880eed6828ba8a1"/>
-        <ccf:has_registration_location rdf:resource="http://purl.org/ccf/1.5/886e391d-0151-46d3-8a51-084bf6a06910"/>
-        <ccf:description>10 x 16 x 10 millimeter, 10 millimeter, flash_frozen_liquid_nitrogen, 0 Sections</ccf:description>
-        <ccf:sample_type>Tissue Block</ccf:sample_type>
-        <ccf:section_count rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ccf:section_count>
-        <ccf:section_size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ccf:section_size>
-        <ccf:section_size_unit>millimeter</ccf:section_size_unit>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/8b0a4cc904cadaccddd37633411fdbdd</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 10/25/2021, Dana L Jackson, TMC-CalTech</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -36910,36 +36241,6 @@
     
 
 
-    <!-- https://entity.api.hubmapconsortium.org/entities/9fe24e50c8b8b77d86900ee4beecef69 -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/9fe24e50c8b8b77d86900ee4beecef69">
-        <rdf:type rdf:resource="http://purl.org/ccf/dataset"/>
-        <ccf:description>Data/Assay Types: salmon_sn_rnaseq_10x, </ccf:description>
-        <ccf:technology>10x</ccf:technology>
-        <ccf:thumbnail>assets/icons/ico-bulk-10x.svg</ccf:thumbnail>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/dataset/9fe24e50c8b8b77d86900ee4beecef69</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 6/29/2021, HuBMAP Process, TMC-UCSD</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/90b3b6e02104a5f416d907f856d8a49f -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/90b3b6e02104a5f416d907f856d8a49f">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/90b3b6e02104a5f416d907f856d8a49f</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://entity.api.hubmapconsortium.org/entities/9046d09943f6a10b70544822de1d5752 -->
 
     <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/9046d09943f6a10b70544822de1d5752">
@@ -37651,22 +36952,6 @@
         <ccf:url>https://portal.hubmapconsortium.org/browse/sample/9778e9d083094862b2874f3007f8fe76</ccf:url>
         <terms:publisher>HuBMAP</terms:publisher>
         <rdfs:comment>Registered 9/10/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://entity.api.hubmapconsortium.org/entities/98c8e45a86780bcba47d6a47dc724ccf -->
-
-    <owl:NamedIndividual rdf:about="https://entity.api.hubmapconsortium.org/entities/98c8e45a86780bcba47d6a47dc724ccf">
-        <rdf:type rdf:resource="http://purl.org/ccf/tissue_section"/>
-        <ccf:comes_from rdf:resource="https://entity.api.hubmapconsortium.org/entities/332a4331efa6b01784d6044f62bbc1a4"/>
-        <ccf:part_of_tissue_block rdf:resource="https://entity.api.hubmapconsortium.org/entities/7b7f0c98e666fbbcbc25391bbe12edea"/>
-        <ccf:description>42 x 15 x 0.3 millimeter, 0.3 millimeter, ffpe_block</ccf:description>
-        <ccf:sample_type>Tissue Section</ccf:sample_type>
-        <ccf:section_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</ccf:section_number>
-        <ccf:url>https://portal.hubmapconsortium.org/browse/sample/98c8e45a86780bcba47d6a47dc724ccf</ccf:url>
-        <terms:publisher>HuBMAP</terms:publisher>
-        <rdfs:comment>Registered 1/12/2021, Liz McDonough, RTI-General Electric</rdfs:comment>
     </owl:NamedIndividual>
     
 

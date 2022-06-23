@@ -196,7 +196,10 @@ Once you are ready to release the ontologies, run these following Git commands t
    
    ```
    $ git commit . -m "Releasing [version number]."
+   $ git tag "[version number]"
+   $ git push
    ```
+Up to this point, the ontology is still in the development environment and is not yet officially released. To make an official release, perform these steps below:
 
 2. Run the Git command to switch to the `main` environment
    
@@ -204,24 +207,18 @@ Once you are ready to release the ontologies, run these following Git commands t
    $ git checkout main
    ```
 
-3. Bring all the release changes from the `develop` to the `main` environment.
+3. Bring all the ontology files from the development environment to the main environment by merging the changes.
    
    ```
    $ git merge develop
    ```
 
-4. Tag the new release with the versioning number.
-   
-   ```
-   $ git tag "[version number]"
-   ```
-
-5. Push the changes to the GitHub repository.
+4. Push the changes to the GitHub repository to make an official release.
    ```
    $ git push
    ```
 
-6. Switch back to the `develop` environment.
+5. Switch back to the development environment to prepare the next cycle of development.
    
    ```
    $ git checkout develop

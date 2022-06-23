@@ -11,14 +11,14 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.org/ccf/ccf-spo-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-spo-edit.owl>
-Annotation(dc:title "CCF Spatial Ontology (CCF-SPO)")
-Annotation(dc:description "This ontology models the relationships between a spatial entity (an abstraction of things that occupy space) and its coordinate placement and dimension, a spatial entity and its 3-dimensional object model, and a 3-dimensional object model and its coordinate placement and dimension.")
-Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
-
 Import(<http://purl.org/ccf/data/reference_spatial_entities.owl>)
 Import(<http://purl.org/ccf/data/specimen_spatial_entities.owl>)
+Annotation(dc:description "This ontology models the relationships between a spatial entity (an abstraction of things that occupy space) and its coordinate placement and dimension, a spatial entity and its 3-dimensional object model, and a 3-dimensional object model and its coordinate placement and dimension.")
+Annotation(dc:title "CCF Spatial Ontology (CCF-SPO)")
+Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
 
 Declaration(Class(ccf:extraction_set))
+Declaration(Class(ccf:retired_spatial_entity))
 Declaration(Class(ccf:spatial_entity))
 Declaration(Class(ccf:spatial_object_reference))
 Declaration(Class(ccf:spatial_placement))
@@ -59,7 +59,10 @@ Declaration(AnnotationProperty(ccf:z_rotation))
 Declaration(AnnotationProperty(ccf:z_scaling))
 Declaration(AnnotationProperty(ccf:z_translation))
 Declaration(AnnotationProperty(dc:creator))
+Declaration(AnnotationProperty(dc:description))
+Declaration(AnnotationProperty(dc:title))
 Declaration(AnnotationProperty(dcterms:created))
+Declaration(AnnotationProperty(dcterms:license))
 Declaration(Datatype(xsd:date))
 ############################
 #   Annotation Properties
@@ -247,6 +250,12 @@ AnnotationAssertion(rdfs:label ccf:represents_bbox_of "represents bounding box o
 AnnotationAssertion(rdfs:comment ccf:extraction_set "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:extraction_set "extraction set")
 SubClassOf(ccf:extraction_set ObjectSomeValuesFrom(ccf:extraction_set_for ccf:spatial_entity))
+
+# Class: ccf:retired_spatial_entity (retired spatial entity)
+
+AnnotationAssertion(rdfs:comment ccf:retired_spatial_entity "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:retired_spatial_entity "retired spatial entity")
+SubClassOf(ccf:retired_spatial_entity ccf:spatial_entity)
 
 # Class: ccf:spatial_entity (spatial entity)
 

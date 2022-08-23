@@ -1,8 +1,12 @@
 # Common Coordinate Framework Atlas ontology
 
-## The pipeline workflow
+## The Pipeline Workflow
 
-![Progress Report Q3 HuBMAP](https://user-images.githubusercontent.com/5062950/161101298-2a6ad6b7-91b5-4f26-a5c4-c871f1d42f99.png)
+![CCFO Generation Pipeline](https://user-images.githubusercontent.com/5062950/186229479-3963e4b6-1113-400a-b295-b975abe8715b.png)
+
+In addition to the main pipeline, there is another pipeline that produces a "slimmer" version of the ontology that focuses only on the reference data.
+
+![CCF Slim Generation Pipeline](https://user-images.githubusercontent.com/5062950/186230065-0ea55a86-9000-4dd4-b8dc-f941d3c9ba5b.png)
 
 ## For Ontology Users
 

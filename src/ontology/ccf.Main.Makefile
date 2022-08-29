@@ -236,7 +236,7 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 			--prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--prefix "dcterms: http://purl.org/dc/terms/" \
 			--annotation dc:title "Common Coordinate Framework (CCF) Ontology" \
-			--annotation dc:description "This ontology provides a view of the Uberon anatomy ontology and the Cell Ontology based on expert reviewed content provided by the HuBMaP project. Cell Ontology terms are linked to sets of expert-specified cell type markers, recorded using HGNC identifiers and metadata." \
+			--annotation dc:description "The ultimate goal of the HIVE Mapping effort is to develop a common coordinate framework (CCF) for the healthy human body. This framework will support cataloging different types of individual cells, understanding the functions of and relationships between those cell types, and modeling their individual and collective function. During the initial two years of HuBMAP, the MC-IU team has built many elements of the CCF. We have led the design of ASCT+B Tables and implemented a CCF Ontology. We have collaborated with NIAID at NIH on the design of a 3D Object Library. Lastly, we have developed two interactive user interfaces. One supports CCF data registration. The other supports exploration of semantically and spatially explicit data—from the whole body to the single cell level. For an introduction to HuBMAP goals, data, and code visit the Visible Human MOOC (VHMOOC). The CCF Ontology is CC-BY 4.0 Licensed." \
 			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && mv $@.tmp.owl $@

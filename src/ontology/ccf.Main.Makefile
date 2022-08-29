@@ -166,7 +166,7 @@ $(CCF_BSO).owl: $(CCF_BSO_SRC)
 	$(ROBOT) merge --input $< \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
-		reduce -r ELK \
+		reduce --reasoner ELK \
 		filter --exclude-terms excluded-terms.txt --trim false \
 		annotate --remove-annotations \
 			--prefix "dc: http://purl.org/dc/elements/1.1/" \

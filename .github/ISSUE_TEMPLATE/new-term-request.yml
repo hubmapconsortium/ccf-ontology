@@ -9,6 +9,16 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this new term request form!
+  - type: dropdown
+    id: term-type
+    attributes:
+      label: What is the term type?
+      multiple: false
+      options:
+        - Class
+        - Property
+    validations:
+      required: true
   - type: textarea
     id: new-terms
     attributes:
@@ -24,7 +34,7 @@ body:
     id: category
     attributes:
       label: Which category does the list of new terms are related to?
-      multiple: true
+      multiple: false
       options:
         - Specimen
         - Spatial

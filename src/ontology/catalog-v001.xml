@@ -5,12 +5,6 @@
     <uri name="http://purl.org/ccf/ccf-spo.owl" uri="ccf-spo.owl"/>
     <uri name="http://purl.org/ccf/ccf-sco.owl" uri="ccf-sco.owl"/>
     <uri name="http://purl.org/ccf/ccf.owl" uri="ccf.owl"/>
-    <uri name="http://purl.org/ccf/ccf-slim.owl" uri="ccf-slim.owl"/>
-
-    <!-- Data -->
-    <uri name="http://purl.org/ccf/data/specimen_dataset.owl" uri="data/specimen_dataset.owl"/>
-    <uri name="http://purl.org/ccf/data/reference_spatial_entities.owl" uri="data/reference_spatial_entities.owl"/>
-    <uri name="http://purl.org/ccf/data/specimen_spatial_entities.owl" uri="data/specimen_spatial_entities.owl"/>
 
     <!-- ASCT+B Ontology Components -->
     <uri name="http://purl.org/ccf/components/asctb_placenta.owl" uri="components/asctb_placenta.owl"/>

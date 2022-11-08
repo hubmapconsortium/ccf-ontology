@@ -15,8 +15,6 @@ Annotation(dc:title "CCF Specimen Ontology (CCF-SCO)")
 Annotation(dc:description "This ontology mainly consists of metadata fields used to describe the specimen and donor person de-identifiable data, such as age, sex, weight, height, BMI, ethnicity, and blood type.")
 Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
 
-Import(<http://purl.org/ccf/data/specimen_dataset.owl>)
-
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10608-0>))
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10610-6>))
 Declaration(Class(<http://purl.bioontology.org/ontology/LNC/LA10611-4>))

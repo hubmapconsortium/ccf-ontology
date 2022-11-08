@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_placenta.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_placenta.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Placenta,https://docs.google.com/spreadsheets/d/1TqatRIsZZ5QwvWdz6H4Un-sukbzSd21_x41Gqnn5UEY/edit#gid=231591207)
+	$(call generate_ccf_cell_biomarkers_component,Placenta,https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_placenta.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_placenta.owl: check_asctb2ccf $(GENERATED_D
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_placenta.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Placenta,https://docs.google.com/spreadsheets/d/1TqatRIsZZ5QwvWdz6H4Un-sukbzSd21_x41Gqnn5UEY/edit#gid=231591207)
+	$(call generate_ccf_asctb_annotations_component,Placenta,https://docs.google.com/spreadsheets/d/1JeeIxpcyD8eWAgdNuKtf1OMlTzEw_6AKrS5OVDkC7t4/edit#gid=231591207)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_placenta.owl
 
 # ------------------------------------------------------------------

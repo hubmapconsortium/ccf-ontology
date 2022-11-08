@@ -7,15 +7,16 @@
     <uri name="http://purl.org/ccf/ccf.owl" uri="ccf.owl"/>
 
     <!-- ASCT+B Ontology Components -->
-    <uri name="http://purl.org/ccf/components/asctb_placenta.owl" uri="components/asctb_placenta.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_uterus.owl" uri="components/asctb_uterus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_urinary_bladder.owl" uri="components/asctb_urinary_bladder.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_ureter.owl" uri="components/asctb_ureter.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_thymus.owl" uri="components/asctb_thymus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_spleen.owl" uri="components/asctb_spleen.owl"/>
+    <uri name="http://purl.org/ccf/components/asctb_spinal_cord.owl" uri="components/asctb_spinal_cord.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_small_intestine.owl" uri="components/asctb_small_intestine.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_skin.owl" uri="components/asctb_skin.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_prostate.owl" uri="components/asctb_prostate.owl"/>
+    <uri name="http://purl.org/ccf/components/asctb_placenta.owl" uri="components/asctb_placenta.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_peripheral_nervous_system.owl" uri="components/asctb_peripheral_nervous_system.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_pancreas.owl" uri="components/asctb_pancreas.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_ovary.owl" uri="components/asctb_ovary.owl"/>

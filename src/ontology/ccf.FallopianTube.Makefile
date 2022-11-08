@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_partonomy_fallopian_tube.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_fallopian_tube.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,FallopianTube,https://docs.google.com/spreadsheets/d/1DFGmDSU75eMF6Fgwzk7W2u20DGJRdXN00TP7sO3kTug/edit#gid=991519552)
+	$(call generate_ccf_cell_biomarkers_component,FallopianTube,https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_fallopian_tube.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_fallopian_tube.owl: check_asctb2ccf $(GENER
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_fallopian_tube.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,FallopianTube,https://docs.google.com/spreadsheets/d/1DFGmDSU75eMF6Fgwzk7W2u20DGJRdXN00TP7sO3kTug/edit#gid=991519552)
+	$(call generate_ccf_asctb_annotations_component,FallopianTube,https://docs.google.com/spreadsheets/d/16DHu7R9MC2B_fP7uRiDYcDIUvFs6SwHmZWgwpzuJwfI/edit#gid=991519552)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_fallopian_tube.owl
 
 # ------------------------------------------------------------------

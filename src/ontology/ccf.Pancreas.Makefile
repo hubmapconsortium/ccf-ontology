@@ -1,10 +1,15 @@
 # ------------------------------------------------------------------
-# Get the AS Partonomy
+# Get the CCF Validation Tool Output
 # ------------------------------------------------------------------
-$(GENERATED_DIR)/ccf_partonomy_pancreas.owl: | $(GENERATED_DIR)
+$(GENERATED_DIR)/ccf_validation_pancreas.owl: | $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call download_ccf_partonomy_component,Pancreas)
-.PRECIOUS: $(GENERATED_DIR)/ccf_partonomy_pancreas.owl
+	$(call download_ccf_validation_owl,Pancreas)
+.PRECIOUS: $(GENERATED_DIR)/ccf_validation_pancreas.owl
+
+$(GENERATED_DIR)/ccf_validation_extended_pancreas.owl: | $(GENERATED_DIR)
+	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
+	$(call download_ccf_validation_extended_owl,Pancreas)
+.PRECIOUS: $(GENERATED_DIR)/ccf_validation_extended_pancreas.owl
 
 # ------------------------------------------------------------------
 # Get the CT+B Cell-Type Markers
@@ -28,10 +33,11 @@ $(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl: check_asctb2ccf $(GENERATED
 $(EXTRACTS_DIR)/uberon_pancreas.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl \
-		$(GENERATED_DIR)/ccf_partonomy_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_pancreas.owl \
 		$(MIRRORDIR)/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
+	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/uberon_pancreas.owl
 
 # ------------------------------------------------------------------
@@ -40,10 +46,11 @@ $(EXTRACTS_DIR)/uberon_pancreas.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/fma_pancreas.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl \
-		$(GENERATED_DIR)/ccf_partonomy_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_pancreas.owl \
 		$(MIRRORDIR)/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
+	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/fma_pancreas.owl
 
 # ------------------------------------------------------------------
@@ -52,10 +59,11 @@ $(EXTRACTS_DIR)/fma_pancreas.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/cl_pancreas.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl \
-		$(GENERATED_DIR)/ccf_partonomy_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_pancreas.owl \
 		$(MIRRORDIR)/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
+	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/cl_pancreas.owl
 
 # ------------------------------------------------------------------
@@ -64,10 +72,11 @@ $(EXTRACTS_DIR)/cl_pancreas.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/lmha_pancreas.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl \
-		$(GENERATED_DIR)/ccf_partonomy_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_pancreas.owl \
 		$(MIRRORDIR)/lmha.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
+	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/lmha_pancreas.owl
 
 # ------------------------------------------------------------------
@@ -76,17 +85,18 @@ $(EXTRACTS_DIR)/lmha_pancreas.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/hgnc_pancreas.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl \
-		$(GENERATED_DIR)/ccf_partonomy_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_pancreas.owl \
 		$(MIRRORDIR)/hgnc.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
+	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/hgnc_pancreas.owl
 
 # ------------------------------------------------------------------
 # Build the ASCT+B table as an OWL ontology
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_pancreas.owl: $(COMPONENTSDIR) \
-		$(GENERATED_DIR)/ccf_partonomy_pancreas.owl \
+		$(GENERATED_DIR)/ccf_validation_pancreas.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_pancreas.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_pancreas.owl \
 		$(ANNOTATIONS_DIR)/asctb_pancreas.ttl \

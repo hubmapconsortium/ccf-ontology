@@ -36,12 +36,17 @@ fi
 echo "Creating ccf.$ORGAN_LABEL.Makefile"
 cat > ccf.$ORGAN_LABEL.Makefile << EOF
 # ------------------------------------------------------------------
-# Get the AS Partonomy
+# Get the CCF Validation Tool Output
 # ------------------------------------------------------------------
-\$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl: | \$(GENERATED_DIR)
+\$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl: | \$(GENERATED_DIR)
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating \$@)
-	\$(call download_ccf_partonomy_component,$VALIDATION_TOOL_ORGAN_NAME)
-.PRECIOUS: \$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl
+	\$(call download_ccf_validation_owl,$VALIDATION_TOOL_ORGAN_NAME)
+.PRECIOUS: \$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl
+
+\$(GENERATED_DIR)/ccf_validation_extended_$ORGAN_NAME.owl: | \$(GENERATED_DIR)
+	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating \$@)
+	\$(call download_ccf_validation_extended_owl,$VALIDATION_TOOL_ORGAN_NAME)
+.PRECIOUS: \$(GENERATED_DIR)/ccf_validation_extended_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------
 # Get the CT+B Cell-Type Markers
@@ -65,10 +70,11 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 \$(EXTRACTS_DIR)/uberon_$ORGAN_NAME.owl: \$(EXTRACTS_DIR) \\
 		\$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl \\
-		\$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_extended_$ORGAN_NAME.owl \\
 		\$(MIRRORDIR)/uberon.owl
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting \$@)
-	\$(call extract_uberon_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^))
+	\$(call extract_uberon_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^))
 .PRECIOUS: \$(EXTRACTS_DIR)/uberon_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------
@@ -77,10 +83,11 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 \$(EXTRACTS_DIR)/fma_$ORGAN_NAME.owl: \$(EXTRACTS_DIR) \\
 		\$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl \\
-		\$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_extended_$ORGAN_NAME.owl \\
 		\$(MIRRORDIR)/fma.owl
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting \$@)
-	\$(call extract_fma_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^))
+	\$(call extract_fma_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^))
 .PRECIOUS: \$(EXTRACTS_DIR)/fma_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------
@@ -89,10 +96,11 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 \$(EXTRACTS_DIR)/cl_$ORGAN_NAME.owl: \$(EXTRACTS_DIR) \\
 		\$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl \\
-		\$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_extended_$ORGAN_NAME.owl \\
 		\$(MIRRORDIR)/cl.owl
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting \$@)
-	\$(call extract_cl_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^))
+	\$(call extract_cl_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^))
 .PRECIOUS: \$(EXTRACTS_DIR)/cl_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------
@@ -101,10 +109,11 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 \$(EXTRACTS_DIR)/lmha_$ORGAN_NAME.owl: \$(EXTRACTS_DIR) \\
 		\$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl \\
-		\$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_extended_$ORGAN_NAME.owl \\
 		\$(MIRRORDIR)/lmha.owl
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting \$@)
-	\$(call extract_lmha_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^))
+	\$(call extract_lmha_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^))
 .PRECIOUS: \$(EXTRACTS_DIR)/lmha_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------
@@ -113,17 +122,18 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 \$(EXTRACTS_DIR)/hgnc_$ORGAN_NAME.owl: \$(EXTRACTS_DIR) \\
 		\$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl \\
-		\$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_extended_$ORGAN_NAME.owl \\
 		\$(MIRRORDIR)/hgnc.owl
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting \$@)
-	\$(call extract_hgnc_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^))
+	\$(call extract_hgnc_terms,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^))
 .PRECIOUS: \$(EXTRACTS_DIR)/hgnc_$ORGAN_NAME.owl
 
 # ------------------------------------------------------------------
 # Build the ASCT+B table as an OWL ontology
 # ------------------------------------------------------------------
 \$(COMPONENTSDIR)/asctb_$ORGAN_NAME.owl: \$(COMPONENTSDIR) \\
-		\$(GENERATED_DIR)/ccf_partonomy_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl \\
 		\$(ANNOTATIONS_DIR)/$ANNOTATION_FILE \\

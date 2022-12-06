@@ -16,7 +16,7 @@ $(GENERATED_DIR)/ccf_validation_extended_prostate.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Prostate,https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370)
+	$(call generate_ccf_cell_biomarkers_component,Prostate,https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +24,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl: check_asctb2ccf $(GENERATED_D
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Prostate,https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370)
+	$(call generate_ccf_asctb_annotations_component,Prostate,https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl
 
 # ------------------------------------------------------------------

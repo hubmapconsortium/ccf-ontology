@@ -16,7 +16,7 @@ $(GENERATED_DIR)/ccf_validation_extended_lung.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_lung.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Lung,https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586)
+	$(call generate_ccf_cell_biomarkers_component,Lung,https://docs.google.com/spreadsheets/d/1iF4vx9EuQ2tQMBOm6awd9sf-2e_EHsPlcgzrF_YDtis/edit#gid=1523836586)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_lung.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +24,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_lung.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_lung.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Lung,https://docs.google.com/spreadsheets/d/1oo9v-77W1wPD6uLLEF0MxBHv_BCcJziiPFEfWZCW_QY/edit#gid=1523836586)
+	$(call generate_ccf_asctb_annotations_component,Lung,https://docs.google.com/spreadsheets/d/1iF4vx9EuQ2tQMBOm6awd9sf-2e_EHsPlcgzrF_YDtis/edit#gid=1523836586)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_lung.owl
 
 # ------------------------------------------------------------------

@@ -29,7 +29,7 @@ src/ontology/ccf-full.*
 src/ontology/ccf-simple.*
 src/ontology/ccf-simple-non-classified.*
 
-src/ontology/data/mirror
+src/ontology/instances
 
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log

@@ -33,7 +33,6 @@ include ccf.Placenta.Makefile
 include ccf.Prostate.Makefile
 include ccf.Skin.Makefile
 include ccf.SmallIntestine.Makefile
-include ccf.SpinalCord.Makefile
 include ccf.Spleen.Makefile
 include ccf.Thymus.Makefile
 include ccf.Ureter.Makefile

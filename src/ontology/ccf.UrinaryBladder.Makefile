@@ -16,7 +16,7 @@ $(GENERATED_DIR)/ccf_validation_extended_urinary_bladder.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_urinary_bladder.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,UrinaryBladder,https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099)
+	$(call generate_ccf_cell_biomarkers_component,UrinaryBladder,https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_urinary_bladder.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +24,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_urinary_bladder.owl: check_asctb2ccf $(GENE
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_urinary_bladder.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,UrinaryBladder,https://docs.google.com/spreadsheets/d/1iCZpti7fYupWhQjDz_tE01ii2WH23hIno9kYggMjDZo/edit#gid=1057183099)
+	$(call generate_ccf_asctb_annotations_component,UrinaryBladder,https://docs.google.com/spreadsheets/d/1ohOG5jMf9d9eqjbVK6_u3CvgfG3wcLfs_pxB2838wOo/edit#gid=1342577957)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_urinary_bladder.owl
 
 # ------------------------------------------------------------------

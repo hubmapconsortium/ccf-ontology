@@ -16,11 +16,13 @@ GENERATED_DIR = generated
 MODULES_DIR = modules
 ANNOTATIONS_DIR = annotations
 EXTRACTS_DIR = extracts
+INSTANCES_DIR = instances
 
 COMP = true
 EXT = true
+INST = true
 
-$(GENERATED_DIR) $(MODULES_DIR) $(EXTRACTS_DIR):
+$(GENERATED_DIR) $(MODULES_DIR) $(EXTRACTS_DIR) $(INSTANCES_DIR):
 	mkdir -p $@
 
 # ----------------------------------------
@@ -62,6 +64,12 @@ mirror-lmha:
 
 $(MIRRORDIR)/lmha.owl: mirror-lmha | $(MIRRORDIR)
 	if [ $(IMP) = true ] && [ $(MIR) = true ]; then if cmp -s $(TMPDIR)/mirror-lmha.owl $@ ; then echo "Mirror identical, ignoring."; else echo "Mirrors different, updating." && cp $(TMPDIR)/mirror-lmha.owl $@; fi; fi
+
+# ----------------------------------------
+# Spatial Module
+# ----------------------------------------
+
+include ccf.Spatial.Makefile
 		
 # ----------------------------------------
 # ASCT+B Module
@@ -78,7 +86,7 @@ include ccf.Asctb.Makefile
 # ----------------------------------------
 
 .PHONY: prepare_all
-prepare_all: $(ASCTB_FILES)
+prepare_all: $(ASCTB_FILES) $(SPATIAL_FILES)
 
 # ----------------------------------------
 # Create the releases
@@ -208,4 +216,4 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 .PHONY: clean_all
 clean_all:
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: cleaning up files)
-	rm -rf components/* generated/* modules/* extracts/* ccf.owl ccf-bso.owl ccf-sco.owl ccf-spo.owl
+	rm -rf components/* generated/* modules/* extracts/* instances/* ccf.owl ccf-bso.owl ccf-sco.owl ccf-spo.owl

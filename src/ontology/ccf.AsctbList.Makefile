@@ -27,7 +27,6 @@ ASCTB_FILES = \
 	$(COMPONENTSDIR)/asctb_prostate.owl \
 	$(COMPONENTSDIR)/asctb_skin.owl \
 	$(COMPONENTSDIR)/asctb_small_intestine.owl \
-	$(COMPONENTSDIR)/asctb_spinal_cord.owl \
 	$(COMPONENTSDIR)/asctb_spleen.owl \
 	$(COMPONENTSDIR)/asctb_thymus.owl \
 	$(COMPONENTSDIR)/asctb_ureter.owl \

@@ -6,13 +6,15 @@
     <uri name="http://purl.org/ccf/ccf-sco.owl" uri="ccf-sco.owl"/>
     <uri name="http://purl.org/ccf/ccf.owl" uri="ccf.owl"/>
 
+    <!-- Data -->
+    <uri name="http://purl.org/ccf/instances/reference_3d_organs.owl" uri="instances/reference_3d_organs.owl"/>
+
     <!-- ASCT+B Ontology Components -->
     <uri name="http://purl.org/ccf/components/asctb_uterus.owl" uri="components/asctb_uterus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_urinary_bladder.owl" uri="components/asctb_urinary_bladder.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_ureter.owl" uri="components/asctb_ureter.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_thymus.owl" uri="components/asctb_thymus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_spleen.owl" uri="components/asctb_spleen.owl"/>
-    <uri name="http://purl.org/ccf/components/asctb_spinal_cord.owl" uri="components/asctb_spinal_cord.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_small_intestine.owl" uri="components/asctb_small_intestine.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_skin.owl" uri="components/asctb_skin.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_prostate.owl" uri="components/asctb_prostate.owl"/>

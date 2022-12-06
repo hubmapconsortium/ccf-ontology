@@ -16,7 +16,7 @@ $(GENERATED_DIR)/ccf_validation_extended_peripheral_nervous_system.owl: | $(GENE
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_peripheral_nervous_system.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,PeripheralNervousSystem,https://docs.google.com/spreadsheets/d/1TQsd657v-Jfcme4ftmpq7Zaegu0HxHOmGJKUPL8QqyU/edit#gid=917578386)
+	$(call generate_ccf_cell_biomarkers_component,PeripheralNervousSystem,https://docs.google.com/spreadsheets/d/1KifiEDn3PpJ8pjz9_ka4TWkT085wLIzIQP5NKSvb2Ac/edit#gid=714133140)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_peripheral_nervous_system.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +24,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_peripheral_nervous_system.owl: check_asctb2
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_peripheral_nervous_system.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,PeripheralNervousSystem,https://docs.google.com/spreadsheets/d/1TQsd657v-Jfcme4ftmpq7Zaegu0HxHOmGJKUPL8QqyU/edit#gid=917578386)
+	$(call generate_ccf_asctb_annotations_component,PeripheralNervousSystem,https://docs.google.com/spreadsheets/d/1KifiEDn3PpJ8pjz9_ka4TWkT085wLIzIQP5NKSvb2Ac/edit#gid=714133140)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_peripheral_nervous_system.owl
 
 # ------------------------------------------------------------------

@@ -23,6 +23,7 @@ ASCTB_FILES = \
 	$(COMPONENTSDIR)/asctb_ovary.owl \
 	$(COMPONENTSDIR)/asctb_pancreas.owl \
 	$(COMPONENTSDIR)/asctb_peripheral_nervous_system.owl \
+	$(COMPONENTSDIR)/asctb_placenta.owl \
 	$(COMPONENTSDIR)/asctb_prostate.owl \
 	$(COMPONENTSDIR)/asctb_skin.owl \
 	$(COMPONENTSDIR)/asctb_small_intestine.owl \
@@ -31,4 +32,3 @@ ASCTB_FILES = \
 	$(COMPONENTSDIR)/asctb_ureter.owl \
 	$(COMPONENTSDIR)/asctb_urinary_bladder.owl \
 	$(COMPONENTSDIR)/asctb_uterus.owl \
-	$(COMPONENTSDIR)/asctb_placenta.owl \

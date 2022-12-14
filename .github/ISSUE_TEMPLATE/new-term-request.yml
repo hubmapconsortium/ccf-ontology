@@ -1,0 +1,51 @@
+name: New Term Request
+description: A new term request form that should be reviewed by the ontology maintainer.
+title: "[TERM REQUEST]: "
+labels: ["enhancement", "triage"]
+assignees:
+  - johardi
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this new term request form!
+  - type: dropdown
+    id: term-type
+    attributes:
+      label: What is the term type?
+      multiple: false
+      options:
+        - Class
+        - Property
+    validations:
+      required: true
+  - type: textarea
+    id: new-terms
+    attributes:
+      label: Describe the new terms
+      placeholder: List each new term as a label-and-description pair.
+      value: |
+        1. <label>: <description>
+        2. <label>: <description>
+        3. <label>: <description>
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Which category does the list of new terms are related to?
+      multiple: false
+      options:
+        - Specimen
+        - Spatial
+        - Biological Structure
+    validations:
+      required: true
+  - type: input
+    id: requester
+    attributes:
+      label: Who request these new terms?
+      description: Please mention your full name and ORCID.
+      placeholder: John Doe (0000-0000-0000-0000)
+    validations:
+      required: true

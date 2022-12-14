@@ -29,6 +29,7 @@ include ccf.LymphVasculature.Makefile
 include ccf.Ovary.Makefile
 include ccf.Pancreas.Makefile
 include ccf.PeripheralNervousSystem.Makefile
+include ccf.Placenta.Makefile
 include ccf.Prostate.Makefile
 include ccf.Skin.Makefile
 include ccf.SmallIntestine.Makefile
@@ -37,4 +38,3 @@ include ccf.Thymus.Makefile
 include ccf.Ureter.Makefile
 include ccf.UrinaryBladder.Makefile
 include ccf.Uterus.Makefile
-include ccf.Placenta.Makefile

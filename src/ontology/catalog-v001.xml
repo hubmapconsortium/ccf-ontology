@@ -5,15 +5,11 @@
     <uri name="http://purl.org/ccf/ccf-spo.owl" uri="ccf-spo.owl"/>
     <uri name="http://purl.org/ccf/ccf-sco.owl" uri="ccf-sco.owl"/>
     <uri name="http://purl.org/ccf/ccf.owl" uri="ccf.owl"/>
-    <uri name="http://purl.org/ccf/ccf-slim.owl" uri="ccf-slim.owl"/>
 
     <!-- Data -->
-    <uri name="http://purl.org/ccf/data/specimen_dataset.owl" uri="data/specimen_dataset.owl"/>
-    <uri name="http://purl.org/ccf/data/reference_spatial_entities.owl" uri="data/reference_spatial_entities.owl"/>
-    <uri name="http://purl.org/ccf/data/specimen_spatial_entities.owl" uri="data/specimen_spatial_entities.owl"/>
+    <uri name="http://purl.org/ccf/instances/reference_3d_organs.owl" uri="instances/reference_3d_organs.owl"/>
 
     <!-- ASCT+B Ontology Components -->
-    <uri name="http://purl.org/ccf/components/asctb_placenta.owl" uri="components/asctb_placenta.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_uterus.owl" uri="components/asctb_uterus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_urinary_bladder.owl" uri="components/asctb_urinary_bladder.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_ureter.owl" uri="components/asctb_ureter.owl"/>
@@ -22,6 +18,7 @@
     <uri name="http://purl.org/ccf/components/asctb_small_intestine.owl" uri="components/asctb_small_intestine.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_skin.owl" uri="components/asctb_skin.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_prostate.owl" uri="components/asctb_prostate.owl"/>
+    <uri name="http://purl.org/ccf/components/asctb_placenta.owl" uri="components/asctb_placenta.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_peripheral_nervous_system.owl" uri="components/asctb_peripheral_nervous_system.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_pancreas.owl" uri="components/asctb_pancreas.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_ovary.owl" uri="components/asctb_ovary.owl"/>

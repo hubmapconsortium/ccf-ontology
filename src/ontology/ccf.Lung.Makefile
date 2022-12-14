@@ -97,6 +97,7 @@ $(EXTRACTS_DIR)/hgnc_lung.owl: $(EXTRACTS_DIR) \
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_lung.owl: $(COMPONENTSDIR) \
 		$(GENERATED_DIR)/ccf_validation_lung.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_lung.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_lung.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_lung.owl \
 		$(ANNOTATIONS_DIR)/asctb_lung.ttl \
@@ -106,5 +107,5 @@ $(COMPONENTSDIR)/asctb_lung.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_lung.owl \
 		$(EXTRACTS_DIR)/hgnc_lung.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_lung.owl

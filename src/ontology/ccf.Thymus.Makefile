@@ -97,6 +97,7 @@ $(EXTRACTS_DIR)/hgnc_thymus.owl: $(EXTRACTS_DIR) \
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_thymus.owl: $(COMPONENTSDIR) \
 		$(GENERATED_DIR)/ccf_validation_thymus.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_thymus.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_thymus.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_thymus.owl \
 		$(ANNOTATIONS_DIR)/asctb_thymus.ttl \
@@ -106,5 +107,5 @@ $(COMPONENTSDIR)/asctb_thymus.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_thymus.owl \
 		$(EXTRACTS_DIR)/hgnc_thymus.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_thymus.owl

@@ -97,6 +97,7 @@ $(EXTRACTS_DIR)/hgnc_urinary_bladder.owl: $(EXTRACTS_DIR) \
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_urinary_bladder.owl: $(COMPONENTSDIR) \
 		$(GENERATED_DIR)/ccf_validation_urinary_bladder.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_urinary_bladder.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_urinary_bladder.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_urinary_bladder.owl \
 		$(ANNOTATIONS_DIR)/asctb_urinary_bladder.ttl \
@@ -106,5 +107,5 @@ $(COMPONENTSDIR)/asctb_urinary_bladder.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_urinary_bladder.owl \
 		$(EXTRACTS_DIR)/hgnc_urinary_bladder.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_urinary_bladder.owl

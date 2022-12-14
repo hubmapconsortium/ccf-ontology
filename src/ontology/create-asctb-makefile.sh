@@ -134,6 +134,7 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 # ------------------------------------------------------------------
 \$(COMPONENTSDIR)/asctb_$ORGAN_NAME.owl: \$(COMPONENTSDIR) \\
 		\$(GENERATED_DIR)/ccf_validation_$ORGAN_NAME.owl \\
+		\$(GENERATED_DIR)/ccf_validation_extended_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_cell_biomarkers_$ORGAN_NAME.owl \\
 		\$(GENERATED_DIR)/ccf_asctb_annotations_$ORGAN_NAME.owl \\
 		\$(ANNOTATIONS_DIR)/$ANNOTATION_FILE \\
@@ -143,7 +144,7 @@ cat > ccf.$ORGAN_LABEL.Makefile << EOF
 		\$(EXTRACTS_DIR)/lmha_$ORGAN_NAME.owl \\
 		\$(EXTRACTS_DIR)/hgnc_$ORGAN_NAME.owl
 	\$(info [\$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making \$@)
-	\$(call make_asctb_component,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^),\$(word 7,\$^),\$(word 8,\$^),\$(word 9,\$^),\$(word 10,\$^))
+	\$(call make_asctb_component,\$(word 2,\$^),\$(word 3,\$^),\$(word 4,\$^),\$(word 5,\$^),\$(word 6,\$^),\$(word 7,\$^),\$(word 8,\$^),\$(word 9,\$^),\$(word 10,\$^),\$(word 11,\$^))
 .PRECIOUS: \$(COMPONENTSDIR)/asctb_$ORGAN_NAME.owl
 EOF
 

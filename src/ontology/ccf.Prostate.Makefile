@@ -97,6 +97,7 @@ $(EXTRACTS_DIR)/hgnc_prostate.owl: $(EXTRACTS_DIR) \
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_prostate.owl: $(COMPONENTSDIR) \
 		$(GENERATED_DIR)/ccf_validation_prostate.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_prostate.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl \
 		$(ANNOTATIONS_DIR)/asctb_prostate.ttl \
@@ -106,5 +107,5 @@ $(COMPONENTSDIR)/asctb_prostate.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_prostate.owl \
 		$(EXTRACTS_DIR)/hgnc_prostate.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_prostate.owl

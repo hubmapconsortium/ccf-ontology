@@ -97,6 +97,7 @@ $(EXTRACTS_DIR)/hgnc_lymph_node.owl: $(EXTRACTS_DIR) \
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_lymph_node.owl: $(COMPONENTSDIR) \
 		$(GENERATED_DIR)/ccf_validation_lymph_node.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_lymph_node.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_lymph_node.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_lymph_node.owl \
 		$(ANNOTATIONS_DIR)/asctb_lymph_node.ttl \
@@ -106,5 +107,5 @@ $(COMPONENTSDIR)/asctb_lymph_node.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_lymph_node.owl \
 		$(EXTRACTS_DIR)/hgnc_lymph_node.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_lymph_node.owl

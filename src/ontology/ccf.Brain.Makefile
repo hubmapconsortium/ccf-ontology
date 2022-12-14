@@ -97,6 +97,7 @@ $(EXTRACTS_DIR)/hgnc_brain.owl: $(EXTRACTS_DIR) \
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_brain.owl: $(COMPONENTSDIR) \
 		$(GENERATED_DIR)/ccf_validation_brain.owl \
+		$(GENERATED_DIR)/ccf_validation_extended_brain.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_brain.owl \
 		$(ANNOTATIONS_DIR)/asctb_brain.ttl \
@@ -106,5 +107,5 @@ $(COMPONENTSDIR)/asctb_brain.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_brain.owl \
 		$(EXTRACTS_DIR)/hgnc_brain.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_brain.owl

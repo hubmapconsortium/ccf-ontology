@@ -140,6 +140,7 @@ $(CCF_BSO).owl: $(CCF_BSO_SRC)
 			--prefix "dcterms: http://purl.org/dc/terms/" \
 			--annotation dc:title "Common Coordinate Framework for Biological Structure (CCF-BSO) Ontology" \
 			--annotation dc:description "This ontology models the gross anatomyand histology, and the biomarkers that identify cell types." \
+			--annotation dcterms:format "application/owl+xml" \
 			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && mv $@.tmp.owl $@ \
@@ -160,6 +161,7 @@ $(CCF_SCO).owl: $(CCF_SCO_SRC)
 			--prefix "dcterms: http://purl.org/dc/terms/" \
 			--annotation dc:title "Common Coordinate Framework for Specimen Data (CCF-SCO) Ontology" \
 			--annotation dc:description "This ontology models the concepts that are related to donated tissue samples." \
+			--annotation dcterms:format "application/owl+xml" \
 			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && mv $@.tmp.owl $@
@@ -179,6 +181,7 @@ $(CCF_SPO).owl: $(CCF_SPO_SRC)
 			--prefix "dcterms: http://purl.org/dc/terms/" \
 			--annotation dc:title "Common Coordinate Framework for Spatial Data (CCF-SPO) Ontology" \
 			--annotation dc:description "This ontology models the concepts that are needed to construct an anatomical framework for placing specimens in 3-space." \
+			--annotation dcterms:format "application/owl+xml" \
 			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && mv $@.tmp.owl $@
@@ -202,8 +205,15 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 		annotate --remove-annotations \
 			--prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--prefix "dcterms: http://purl.org/dc/terms/" \
-			--annotation dc:title "Common Coordinate Framework (CCF) Ontology" \
-			--annotation dc:description "The ultimate goal of the HIVE Mapping effort is to develop a common coordinate framework (CCF) for the healthy human body. This framework will support cataloging different types of individual cells, understanding the functions of and relationships between those cell types, and modeling their individual and collective function. During the initial two years of HuBMAP, the MC-IU team has built many elements of the CCF. We have led the design of ASCT+B Tables and implemented a CCF Ontology. We have collaborated with NIAID at NIH on the design of a 3D Object Library. Lastly, we have developed two interactive user interfaces. One supports CCF data registration. The other supports exploration of semantically and spatially explicit data—from the whole body to the single cell level. For an introduction to HuBMAP goals, data, and code visit the Visible Human MOOC (VHMOOC). The CCF Ontology is CC-BY 4.0 Licensed." \
+			--prefix "doap: http://usefulinc.com/ns/doap#" \
+			--prefix "rdfs: http://www.w3.org/2000/01/rdf-schema#" \
+			--annotation rdfs:label "Human Reference Atlas Common Coordinate Framework Ontology" \
+			--annotation dc:title "Human Reference Atlas Common Coordinate Framework Ontology" \
+			--annotation dc:description "The Common Coordinate Framework (CCF) Ontology is an application ontology built to support the development of the Human Reference Atlas (HRA).  It unifies vocabulary for HRA construction and usage—making it possible to ingest external data sources; supporting uniform tissue sample registration that includes the spatial positioning and semantic annotations within 3D reference organs; and supporting user-formulated cross-domain queries over tissue donor properties, anatomical structures, cell types, biomarkers, and 3D space. The CCF Ontology consists of three major ontologies. The Biological Structure Ontology records anatomical structures, cell types, and biomarkers (ASCT+B) and the relationships between them.  The ASCT+B tables are authored by human experts using templated Google Sheets. The biomarkers, cell types, and anatomical structures are mapped to existing ontologies (Uberon/FMA, CL, HGNC) whenever possible.  All relationships between anatomical structures and from cell types to anatomical structures are valid Uberon and CL relationships. The Spatial Ontology defines the shape, size, location, and rotation of experimental tissue and data major anatomical structures in the 3D Reference Object Library. The Specimen Ontology captures the sex, age, and other information on donors that provided tissue data used in the construction of the HRA." \
+			--annotation dcterms:format "application/owl+xml" \
+			--annotation doap:GitRepository "https://github.com/hubmapconsortium/ccf-ontology" \
+			--annotation rdfs:comment "Contact: Katy Börner (katy@indiana.edu), Bruce W. Herr II (bherr@indiana.edu), David Osumi-Sutherland (davidos@ebi.ac.uk), Josef Hardi (johardi@stanford.edu), Anita Caron (anitac@ebi.ac.uk)" \
+			--annotation dcterms:subject "Biomedical Resources, Cell, Human, Anatomy" \
 			--link-annotation dcterms:license "https://creativecommons.org/licenses/by/4.0/" \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && mv $@.tmp.owl $@

@@ -134,7 +134,7 @@ $(CCF_BSO).owl: $(CCF_BSO_SRC)
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce --reasoner ELK \
-		filter --exclude-terms excluded-terms.txt --trim false \
+		filter --exclude-terms invalid-terms.txt --trim false \
 		annotate --remove-annotations \
 			--prefix "dc: http://purl.org/dc/elements/1.1/" \
 			--prefix "dcterms: http://purl.org/dc/terms/" \

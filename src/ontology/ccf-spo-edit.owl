@@ -2,6 +2,7 @@ Prefix(:=<http://purl.org/ccf/ccf-spo.owl#>)
 Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(ccf:=<http://purl.org/ccf/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(pav:=<http://purl.org/pav/>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
@@ -12,7 +13,6 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Ontology(<http://purl.org/ccf/ccf-spo-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-spo-edit.owl>
 Import(<http://purl.org/ccf/instances/reference_3d_organs.owl>)
-
 Annotation(dc:description "This ontology models the relationships between a spatial entity (an abstraction of things that occupy space) and its coordinate placement and dimension, a spatial entity and its 3-dimensional object model, and a 3-dimensional object model and its coordinate placement and dimension.")
 Annotation(dc:title "CCF Spatial Ontology (CCF-SPO)")
 Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
@@ -63,6 +63,7 @@ Declaration(AnnotationProperty(dc:description))
 Declaration(AnnotationProperty(dc:title))
 Declaration(AnnotationProperty(dcterms:created))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(pav:createdBy))
 Declaration(Datatype(xsd:date))
 ############################
 #   Annotation Properties
@@ -105,6 +106,7 @@ AnnotationAssertion(rdfs:label ccf:file_name "file name")
 
 # Annotation Property: ccf:file_subpath (file subpath)
 
+AnnotationAssertion(rdfs:comment ccf:file_subpath "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:file_subpath "file subpath")
 
 # Annotation Property: ccf:file_url (file url)
@@ -134,6 +136,7 @@ AnnotationAssertion(rdfs:label ccf:rotation_unit "rotation unit")
 
 # Annotation Property: ccf:rui_rank (rui rank)
 
+AnnotationAssertion(rdfs:comment ccf:rui_rank "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:rui_rank "rui rank")
 
 # Annotation Property: ccf:scaling_unit (scaling unit)
@@ -148,50 +151,62 @@ AnnotationAssertion(rdfs:label ccf:translation_unit "translation unit")
 
 # Annotation Property: ccf:x_dimension (x dimension)
 
+AnnotationAssertion(rdfs:comment ccf:x_dimension "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:x_dimension "x dimension")
 
 # Annotation Property: ccf:x_rotation (x rotation)
 
+AnnotationAssertion(rdfs:comment ccf:x_rotation "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:x_rotation "x rotation")
 
 # Annotation Property: ccf:x_scaling (x scaling)
 
+AnnotationAssertion(rdfs:comment ccf:x_scaling "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:x_scaling "x scaling")
 
 # Annotation Property: ccf:x_translation (x translation)
 
+AnnotationAssertion(rdfs:comment ccf:x_translation "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:x_translation "x translation")
 
 # Annotation Property: ccf:y_dimension (y dimension)
 
+AnnotationAssertion(rdfs:comment ccf:y_dimension "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:y_dimension "y dimension")
 
 # Annotation Property: ccf:y_rotation (y rotation)
 
+AnnotationAssertion(rdfs:comment ccf:y_rotation "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:y_rotation "y rotation")
 
 # Annotation Property: ccf:y_scaling (y scaling)
 
+AnnotationAssertion(rdfs:comment ccf:y_scaling "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:y_scaling "y scaling")
 
 # Annotation Property: ccf:y_translation (y translation)
 
+AnnotationAssertion(rdfs:comment ccf:y_translation "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:y_translation "y translation")
 
 # Annotation Property: ccf:z_dimension (z dimension)
 
+AnnotationAssertion(rdfs:comment ccf:z_dimension "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:z_dimension "z dimension")
 
 # Annotation Property: ccf:z_rotation (z rotation)
 
+AnnotationAssertion(rdfs:comment ccf:z_rotation "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:z_rotation "z rotation")
 
 # Annotation Property: ccf:z_scaling (z scaling)
 
+AnnotationAssertion(rdfs:comment ccf:z_scaling "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:z_scaling "z scaling")
 
 # Annotation Property: ccf:z_translation (z translation)
 
+AnnotationAssertion(rdfs:comment ccf:z_translation "Originated from the CCF Spatial Data (CCF-SPO) ontology")
 AnnotationAssertion(rdfs:label ccf:z_translation "z translation")
 
 
@@ -278,4 +293,8 @@ AnnotationAssertion(rdfs:label ccf:spatial_placement "spatial placement")
 SubClassOf(ccf:spatial_placement ObjectSomeValuesFrom(ccf:placement_for ccf:spatial_entity))
 
 
+AnnotationAssertion(rdfs:comment ccf:consortium_name "Originated from the CCF Spatial Data (CCF-SPO) ontology")
+AnnotationAssertion(rdfs:label ccf:consortium_name "consortium name")
+AnnotationAssertion(rdfs:comment ccf:rotation_order "Originated from the CCF Spatial Data (CCF-SPO) ontology")
+AnnotationAssertion(rdfs:label ccf:rotation_order "rotation order")
 )

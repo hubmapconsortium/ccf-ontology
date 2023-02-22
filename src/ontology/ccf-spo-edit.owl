@@ -39,7 +39,7 @@ Declaration(AnnotationProperty(ccf:file_format))
 Declaration(AnnotationProperty(ccf:file_name))
 Declaration(AnnotationProperty(ccf:file_subpath))
 Declaration(AnnotationProperty(ccf:file_url))
-Declaration(AnnotationProperty(ccf:organ_owner_sex))
+Declaration(AnnotationProperty(ccf:organ_donor_sex))
 Declaration(AnnotationProperty(ccf:organ_side))
 Declaration(AnnotationProperty(ccf:representation_of))
 Declaration(AnnotationProperty(ccf:rotation_unit))
@@ -114,10 +114,10 @@ AnnotationAssertion(rdfs:label ccf:file_subpath "file subpath")
 AnnotationAssertion(rdfs:comment ccf:file_url "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:file_url "file url")
 
-# Annotation Property: ccf:organ_owner_sex (organ owner sex)
+# Annotation Property: ccf:organ_donor_sex (organ donor sex)
 
-AnnotationAssertion(rdfs:comment ccf:organ_owner_sex "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:organ_owner_sex "organ owner sex")
+AnnotationAssertion(rdfs:comment ccf:organ_donor_sex "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:organ_donor_sex "organ donor sex")
 
 # Annotation Property: ccf:organ_side (organ side)
 

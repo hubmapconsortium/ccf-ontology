@@ -154,6 +154,7 @@ Declaration(ObjectProperty(ccf:has_gene_marker))
 Declaration(ObjectProperty(ccf:has_marker_component))
 Declaration(ObjectProperty(ccf:has_protein_marker))
 Declaration(AnnotationProperty(ccf:ccf_asctb_type))
+Declaration(AnnotationProperty(ccf:ccf_biomarker_type))
 Declaration(AnnotationProperty(ccf:ccf_characterizes))
 Declaration(AnnotationProperty(ccf:ccf_located_in))
 Declaration(AnnotationProperty(ccf:ccf_part_of))
@@ -172,6 +173,10 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>
 # Annotation Property: ccf:ccf_asctb_type (ccf:ccf_asctb_type)
 
 AnnotationAssertion(rdfs:comment ccf:ccf_asctb_type "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+
+# Annotation Property: ccf:ccf_biomarker_type (ccf:ccf_biomarker_type)
+
+AnnotationAssertion(rdfs:comment ccf:ccf_biomarker_type "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 
 # Annotation Property: ccf:ccf_characterizes (ccf:ccf_characterizes)
 

@@ -7,7 +7,7 @@
     <uri name="http://purl.org/ccf/ccf.owl" uri="ccf.owl"/>
 
     <!-- Data -->
-    <uri name="http://purl.org/ccf/instances/reference_3d_organs.owl" uri="instances/reference_3d_organs.owl"/>
+    <uri name="http://purl.org/ccf/instances/spatial_entity_instances.owl" uri="instances/spatial_entity_instances.owl"/>
 
     <!-- ASCT+B Ontology Components -->
     <uri name="http://purl.org/ccf/components/asctb_uterus.owl" uri="components/asctb_uterus.owl"/>

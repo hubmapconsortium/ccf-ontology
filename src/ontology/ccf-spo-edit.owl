@@ -32,6 +32,7 @@ Declaration(ObjectProperty(ccf:has_reference_organ))
 Declaration(ObjectProperty(ccf:placement_for))
 Declaration(ObjectProperty(ccf:placement_relative_to))
 Declaration(ObjectProperty(ccf:represents_bbox_of))
+Declaration(AnnotationProperty(ccf:hubmap_id))
 Declaration(AnnotationProperty(ccf:collides_with))
 Declaration(AnnotationProperty(ccf:creator_first_name))
 Declaration(AnnotationProperty(ccf:creator_last_name))
@@ -67,9 +68,15 @@ Declaration(AnnotationProperty(dcterms:created))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(pav:createdBy))
 Declaration(Datatype(xsd:date))
+
 ############################
 #   Annotation Properties
 ############################
+
+# Annotation Property: ccf:hubmap_id (hubmap id)
+
+AnnotationAssertion(rdfs:comment ccf:hubmap_id "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:hubmap_id "hubmap id")
 
 # Annotation Property: ccf:collides_with (collides with)
 

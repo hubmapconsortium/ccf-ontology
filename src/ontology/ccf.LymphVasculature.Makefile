@@ -16,7 +16,7 @@ $(GENERATED_DIR)/ccf_validation_extended_lymph_vasculature.owl: | $(GENERATED_DI
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_lymph_vasculature.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,LymphVasculature,https://docs.google.com/spreadsheets/d/1x2U09QKAkxGFI4d24JN6YSzEZruYHJi96PlDIT3c1pU/edit#gid=2087685463)
+	$(call generate_ccf_cell_biomarkers_component,LymphVasculature,https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_lymph_vasculature.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +24,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_lymph_vasculature.owl: check_asctb2ccf $(GE
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_lymph_vasculature.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,LymphVasculature,https://docs.google.com/spreadsheets/d/1x2U09QKAkxGFI4d24JN6YSzEZruYHJi96PlDIT3c1pU/edit#gid=2087685463)
+	$(call generate_ccf_asctb_annotations_component,LymphVasculature,https://docs.google.com/spreadsheets/d/1oFEvWN1HdDzPPEhVBIHZrwE9CoaoA9dB7gUYbBhatHs/edit#gid=2087685463)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_lymph_vasculature.owl
 
 # ------------------------------------------------------------------

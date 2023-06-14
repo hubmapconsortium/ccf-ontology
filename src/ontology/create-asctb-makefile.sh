@@ -24,6 +24,18 @@ then
 elif [[ $ORGAN_NAME = 'spinal_cord' ]]
 then
 	VALIDATION_TOOL_ORGAN_NAME='Spinal_Cord'
+elif [[ $ORGAN_NAME = 'palatine_tonsil' ]]
+then
+	VALIDATION_TOOL_ORGAN_NAME='Palatine_Tonsil'
+elif [[ $ORGAN_NAME = 'main_bronchus' ]]
+then
+	VALIDATION_TOOL_ORGAN_NAME='Main_Bronchus'
+elif [[ $ORGAN_NAME = 'muscular_system' ]]
+then
+	VALIDATION_TOOL_ORGAN_NAME='Muscular_System'
+elif [[ $ORGAN_NAME = 'spinal_cord' ]]
+then
+	VALIDATION_TOOL_ORGAN_NAME='Spinal_Cord'
 fi
 
 ANNOTATION_FILE=asctb_$ORGAN_NAME.ttl

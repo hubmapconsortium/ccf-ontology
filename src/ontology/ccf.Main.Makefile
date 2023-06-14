@@ -88,12 +88,6 @@ include ccf.Asctb.Makefile
 .PHONY: prepare_all
 prepare_all: $(ASCTB_FILES) $(SPATIAL_FILES)
 
-.PHONY: prepare_ccf_bso
-prepare_ccf_bso: $(ASCTB_FILES)
-
-.PHONY: prepare_ccf_spo
-prepare_ccf_spo: $(SPATIAL_FILES)
-	
 # ----------------------------------------
 # Create the releases
 # ----------------------------------------

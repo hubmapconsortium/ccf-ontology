@@ -16,7 +16,7 @@ $(GENERATED_DIR)/ccf_validation_extended_brain.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Brain,https://docs.google.com/spreadsheets/d/1Hdd-llGhPZ4zFUq5nUyhTeDaPFgQYmEqk-Ch3E6xr-Q/edit#gid=2056967441)
+	$(call generate_ccf_cell_biomarkers_component,Brain,https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +24,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_brain.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Brain,https://docs.google.com/spreadsheets/d/1Hdd-llGhPZ4zFUq5nUyhTeDaPFgQYmEqk-Ch3E6xr-Q/edit#gid=2056967441)
+	$(call generate_ccf_asctb_annotations_component,Brain,https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_brain.owl
 
 # ------------------------------------------------------------------

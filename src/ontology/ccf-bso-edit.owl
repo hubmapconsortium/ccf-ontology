@@ -13,22 +13,29 @@ Ontology(<http://purl.org/ccf/ccf-bso-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-bso-edit.owl>
 
 # ASCT+B Ontology Components
+Import(<http://purl.org/ccf/components/asctb_larynx.owl>)
 Import(<http://purl.org/ccf/components/asctb_uterus.owl>)
 Import(<http://purl.org/ccf/components/asctb_urinary_bladder.owl>)
 Import(<http://purl.org/ccf/components/asctb_ureter.owl>)
+Import(<http://purl.org/ccf/components/asctb_trachea.owl>)
 Import(<http://purl.org/ccf/components/asctb_thymus.owl>)
 Import(<http://purl.org/ccf/components/asctb_spleen.owl>)
+Import(<http://purl.org/ccf/components/asctb_spinal_cord.owl>)
 Import(<http://purl.org/ccf/components/asctb_small_intestine.owl>)
 Import(<http://purl.org/ccf/components/asctb_skin.owl>)
+Import(<http://purl.org/ccf/components/asctb_skeleton.owl>)
 Import(<http://purl.org/ccf/components/asctb_prostate.owl>)
 Import(<http://purl.org/ccf/components/asctb_placenta.owl>)
 Import(<http://purl.org/ccf/components/asctb_peripheral_nervous_system.owl>)
 Import(<http://purl.org/ccf/components/asctb_pancreas.owl>)
 Import(<http://purl.org/ccf/components/asctb_ovary.owl>)
+Import(<http://purl.org/ccf/components/asctb_muscular_system.owl>)
+Import(<http://purl.org/ccf/components/asctb_main_bronchus.owl>)
 Import(<http://purl.org/ccf/components/asctb_lymph_vasculature.owl>)
 Import(<http://purl.org/ccf/components/asctb_lymph_node.owl>)
 Import(<http://purl.org/ccf/components/asctb_lung.owl>)
 Import(<http://purl.org/ccf/components/asctb_liver.owl>)
+Import(<http://purl.org/ccf/components/asctb_palatine_tonsil.owl>)
 Import(<http://purl.org/ccf/components/asctb_large_intestine.owl>)
 Import(<http://purl.org/ccf/components/asctb_knee.owl>)
 Import(<http://purl.org/ccf/components/asctb_kidney.owl>)
@@ -154,7 +161,6 @@ Declaration(ObjectProperty(ccf:has_gene_marker))
 Declaration(ObjectProperty(ccf:has_marker_component))
 Declaration(ObjectProperty(ccf:has_protein_marker))
 Declaration(AnnotationProperty(ccf:ccf_asctb_type))
-Declaration(AnnotationProperty(ccf:ccf_biomarker_type))
 Declaration(AnnotationProperty(ccf:ccf_characterizes))
 Declaration(AnnotationProperty(ccf:ccf_located_in))
 Declaration(AnnotationProperty(ccf:ccf_part_of))
@@ -173,10 +179,6 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>
 # Annotation Property: ccf:ccf_asctb_type (ccf:ccf_asctb_type)
 
 AnnotationAssertion(rdfs:comment ccf:ccf_asctb_type "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-
-# Annotation Property: ccf:ccf_biomarker_type (ccf:ccf_biomarker_type)
-
-AnnotationAssertion(rdfs:comment ccf:ccf_biomarker_type "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 
 # Annotation Property: ccf:ccf_characterizes (ccf:ccf_characterizes)
 

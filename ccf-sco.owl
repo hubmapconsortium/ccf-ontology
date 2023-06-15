@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/ccf/ccf-sco.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.2.0/ccf-sco.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.2.1/ccf-sco.owl"/>
         <dc:description>This ontology models the concepts that are related to donated tissue samples.</dc:description>
         <dc:title>Common Coordinate Framework for Specimen Data (CCF-SCO) Ontology</dc:title>
         <terms:format>application/owl+xml</terms:format>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>2.2.0</owl:versionInfo>
+        <owl:versionInfo>2.2.1</owl:versionInfo>
     </owl:Ontology>
     
 

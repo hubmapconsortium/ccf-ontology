@@ -43,16 +43,12 @@ define extract_uberon_terms
 		$(ROBOT) query --input $(3) \
 				--query queries/get_uberon_entities.sparql /tmp/entity_set_3.csv && \
 		sed -i '1d' /tmp/entity_set_3.csv && \
-		$(ROBOT) query --input $(4) \
-				--query queries/get_uberon_entities.sparql /tmp/entity_set_4.csv && \
-		sed -i '1d' /tmp/entity_set_4.csv && \
 		$(ROBOT) extract --method MIREOT \
-				--input $(5) \
+				--input $(4) \
 				--upper-term "http://purl.obolibrary.org/obo/UBERON_0001062" \
 				--lower-terms /tmp/entity_set_1.csv \
 				--lower-terms /tmp/entity_set_2.csv \
 				--lower-terms /tmp/entity_set_3.csv \
-				--lower-terms /tmp/entity_set_4.csv \
 				--intermediates $(INTERMEDIATES_OPT) \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 				--output $@.tmp.owl && \
@@ -70,16 +66,12 @@ define extract_fma_terms
 		$(ROBOT) query --input $(3) \
 				--query queries/get_fma_entities.sparql /tmp/entity_set_3.csv && \
 		sed -i '1d' /tmp/entity_set_3.csv && \
-		$(ROBOT) query --input $(4) \
-				--query queries/get_fma_entities.sparql /tmp/entity_set_4.csv && \
-		sed -i '1d' /tmp/entity_set_4.csv && \
 		$(ROBOT) extract --method MIREOT \
-				--input $(5) \
+				--input $(4) \
 				--upper-term "http://purl.org/sig/ont/fma/fma62955" \
 				--lower-terms /tmp/entity_set_1.csv \
 				--lower-terms /tmp/entity_set_2.csv \
 				--lower-terms /tmp/entity_set_3.csv \
-				--lower-terms /tmp/entity_set_4.csv \
 				--intermediates $(INTERMEDIATES_OPT) \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 				--output $@.tmp.owl && \
@@ -97,16 +89,12 @@ define extract_cl_terms
 		$(ROBOT) query --input $(3) \
 				--query queries/get_cl_entities.sparql /tmp/entity_set_3.csv && \
 		sed -i '1d' /tmp/entity_set_3.csv && \
-		$(ROBOT) query --input $(4) \
-				--query queries/get_cl_entities.sparql /tmp/entity_set_4.csv && \
-		sed -i '1d' /tmp/entity_set_4.csv && \
 		$(ROBOT) extract --method MIREOT \
-				--input $(5) \
+				--input $(4) \
 				--upper-term "http://purl.obolibrary.org/obo/CL_0000000" \
 				--lower-terms /tmp/entity_set_1.csv \
 				--lower-terms /tmp/entity_set_2.csv \
 				--lower-terms /tmp/entity_set_3.csv \
-				--lower-terms /tmp/entity_set_4.csv \
 				--intermediates $(INTERMEDIATES_OPT) \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 				--output $@.tmp.owl && \
@@ -124,16 +112,12 @@ define extract_lmha_terms
 		$(ROBOT) query --input $(3) \
 				--query queries/get_lmha_entities.sparql /tmp/entity_set_3.csv && \
 		sed -i '1d' /tmp/entity_set_3.csv && \
-		$(ROBOT) query --input $(4) \
-				--query queries/get_lmha_entities.sparql /tmp/entity_set_4.csv && \
-		sed -i '1d' /tmp/entity_set_4.csv && \
 		$(ROBOT) extract --method MIREOT \
-				--input $(5) \
+				--input $(4) \
 				--upper-term "http://purl.obolibrary.org/obo/LMHA_00135" \
 				--lower-terms /tmp/entity_set_1.csv \
 				--lower-terms /tmp/entity_set_2.csv \
 				--lower-terms /tmp/entity_set_3.csv \
-				--lower-terms /tmp/entity_set_4.csv \
 				--intermediates $(INTERMEDIATES_OPT) \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 				--output $@.tmp.owl && \
@@ -151,16 +135,12 @@ define extract_hgnc_terms
 		$(ROBOT) query --input $(3) \
 				--query queries/get_hgnc_entities.sparql /tmp/entity_set_3.csv && \
 		sed -i '1d' /tmp/entity_set_3.csv && \
-		$(ROBOT) query --input $(4) \
-				--query queries/get_hgnc_entities.sparql /tmp/entity_set_4.csv && \
-		sed -i '1d' /tmp/entity_set_4.csv && \
 		$(ROBOT) extract --method MIREOT \
-				--input $(5) \
+				--input $(4) \
 				--upper-term "http://purl.bioontology.org/ontology/HGNC/gene" \
 				--lower-terms /tmp/entity_set_1.csv \
 				--lower-terms /tmp/entity_set_2.csv \
 				--lower-terms /tmp/entity_set_3.csv \
-				--lower-terms /tmp/entity_set_4.csv \
 				--intermediates $(INTERMEDIATES_OPT) \
 			annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 				--output $@.tmp.owl && \
@@ -172,13 +152,12 @@ define make_asctb_component
 	if [ $(COMP) = true ]; then $(ROBOT) merge --input $(1) \
 			--input $(2) \
 			--input $(3) \
-			--input $(4) \
+			--input $(5) \
 			--input $(6) \
 			--input $(7) \
 			--input $(8) \
 			--input $(9) \
-			--input $(10) \
-		annotate --annotation-file $(5) \
+		annotate --annotation-file $(4) \
 			--ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 			--output $@.tmp.owl && \
 		mv -f $@.tmp.owl $@; fi

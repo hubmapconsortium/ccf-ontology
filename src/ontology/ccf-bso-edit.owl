@@ -11,43 +11,6 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.org/ccf/ccf-bso-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-bso-edit.owl>
-
-# ASCT+B Ontology Components
-Import(<http://purl.org/ccf/components/asctb_larynx.owl>)
-Import(<http://purl.org/ccf/components/asctb_uterus.owl>)
-Import(<http://purl.org/ccf/components/asctb_urinary_bladder.owl>)
-Import(<http://purl.org/ccf/components/asctb_ureter.owl>)
-Import(<http://purl.org/ccf/components/asctb_trachea.owl>)
-Import(<http://purl.org/ccf/components/asctb_thymus.owl>)
-Import(<http://purl.org/ccf/components/asctb_spleen.owl>)
-Import(<http://purl.org/ccf/components/asctb_spinal_cord.owl>)
-Import(<http://purl.org/ccf/components/asctb_small_intestine.owl>)
-Import(<http://purl.org/ccf/components/asctb_skin.owl>)
-Import(<http://purl.org/ccf/components/asctb_skeleton.owl>)
-Import(<http://purl.org/ccf/components/asctb_prostate.owl>)
-Import(<http://purl.org/ccf/components/asctb_placenta.owl>)
-Import(<http://purl.org/ccf/components/asctb_peripheral_nervous_system.owl>)
-Import(<http://purl.org/ccf/components/asctb_pancreas.owl>)
-Import(<http://purl.org/ccf/components/asctb_ovary.owl>)
-Import(<http://purl.org/ccf/components/asctb_muscular_system.owl>)
-Import(<http://purl.org/ccf/components/asctb_main_bronchus.owl>)
-Import(<http://purl.org/ccf/components/asctb_lymph_vasculature.owl>)
-Import(<http://purl.org/ccf/components/asctb_lymph_node.owl>)
-Import(<http://purl.org/ccf/components/asctb_lung.owl>)
-Import(<http://purl.org/ccf/components/asctb_liver.owl>)
-Import(<http://purl.org/ccf/components/asctb_palatine_tonsil.owl>)
-Import(<http://purl.org/ccf/components/asctb_large_intestine.owl>)
-Import(<http://purl.org/ccf/components/asctb_knee.owl>)
-Import(<http://purl.org/ccf/components/asctb_kidney.owl>)
-Import(<http://purl.org/ccf/components/asctb_heart.owl>)
-Import(<http://purl.org/ccf/components/asctb_fallopian_tube.owl>)
-Import(<http://purl.org/ccf/components/asctb_eye.owl>)
-Import(<http://purl.org/ccf/components/asctb_brain.owl>)
-Import(<http://purl.org/ccf/components/asctb_bone_marrow.owl>)
-Import(<http://purl.org/ccf/components/asctb_blood_vasculature.owl>)
-Import(<http://purl.org/ccf/components/asctb_blood.owl>)
-
-
 Annotation(dc:description "This ontology models the relationships that present between anatomical structures and anatomical structures, anatomical structures and cell types, and cell types and biomarkers. References to major publications are included to show the evidence in biomolecular discoveries.")
 Annotation(dc:title "CCF Biological Structure Ontology (CCF-BSO)")
 Annotation(dcterms:contributor "Aaron Horning (0000-0003-3247-0798)")
@@ -141,8 +104,6 @@ Annotation(dcterms:contributor "Z. Gordon Jiang (0000-0003-0495-9940)")
 Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
-Declaration(Class(<http://purl.org/sig/ont/fma/fma57987>))
-Declaration(Class(<http://purl.org/sig/ont/fma/fma57991>))
 Declaration(Class(<http://purl.obolibrary.org/obo/LMHA_00135>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000310>))
@@ -151,9 +112,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001270>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001911>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002240>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0013702>))
-Declaration(Class(ccf:anatomical_structure))
-Declaration(Class(ccf:biomarker))
-Declaration(Class(ccf:cell_type))
+Declaration(Class(ccf:AnatomicalStructure))
+Declaration(Class(ccf:Biomarker))
+Declaration(Class(ccf:CellType))
+Declaration(Class(<http://purl.org/sig/ont/fma/fma57987>))
+Declaration(Class(<http://purl.org/sig/ont/fma/fma57991>))
 Declaration(Class(<http://purl.org/sig/ont/fma/fma62955>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001025>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015004>))
@@ -171,7 +134,6 @@ Declaration(AnnotationProperty(dcterms:contributor))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:source))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
-
 ############################
 #   Annotation Properties
 ############################
@@ -237,28 +199,12 @@ AnnotationAssertion(rdfs:label ccf:has_protein_marker "has protein marker")
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/CL_0000000> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_0000000> "cell type (from CL)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> ccf:cell_type)
-
-# Class: <http://purl.org/sig/ont/fma/fma57987> (<http://purl.org/sig/ont/fma/fma57987>)
-
-AnnotationAssertion(ccf:ccf_asctb_type <http://purl.org/sig/ont/fma/fma57987> "AS")
-AnnotationAssertion(ccf:ccf_part_of <http://purl.org/sig/ont/fma/fma57987> <http://purl.obolibrary.org/obo/UBERON_0001911>)
-AnnotationAssertion(ccf:ccf_pref_label <http://purl.org/sig/ont/fma/fma57987> "right mammary gland")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.org/sig/ont/fma/fma57987> "FMA:57987")
-SubClassOf(<http://purl.org/sig/ont/fma/fma57987> <http://purl.org/sig/ont/fma/fma62955>)
-
-# Class: <http://purl.org/sig/ont/fma/fma57991> (<http://purl.org/sig/ont/fma/fma57991>)
-
-AnnotationAssertion(ccf:ccf_asctb_type <http://purl.org/sig/ont/fma/fma57991> "AS")
-AnnotationAssertion(ccf:ccf_part_of <http://purl.org/sig/ont/fma/fma57991> <http://purl.obolibrary.org/obo/UBERON_0001911>)
-AnnotationAssertion(ccf:ccf_pref_label <http://purl.org/sig/ont/fma/fma57991> "left mammary gland")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.org/sig/ont/fma/fma57991> "FMA:57991")
-SubClassOf(<http://purl.org/sig/ont/fma/fma57991> <http://purl.org/sig/ont/fma/fma62955>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_0000000> ccf:CellType)
 
 # Class: <http://purl.obolibrary.org/obo/LMHA_00135> (cell type (from LMHA))
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/LMHA_00135> "cell type (from LMHA)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/LMHA_00135> ccf:cell_type)
+SubClassOf(<http://purl.obolibrary.org/obo/LMHA_00135> ccf:CellType)
 
 # Class: <http://purl.obolibrary.org/obo/SO_0001260> (sequence collection)
 
@@ -277,7 +223,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000310> <http://purl.obolibra
 
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/UBERON_0001062> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity (from UBERON)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> ccf:anatomical_structure)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> ccf:AnatomicalStructure)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001270> (<http://purl.obolibrary.org/obo/UBERON_0001270>)
 
@@ -310,26 +256,45 @@ AnnotationAssertion(ccf:ccf_pref_label <http://purl.obolibrary.org/obo/UBERON_00
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/UBERON_0013702> "UBERON:0013702")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0013702> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 
-# Class: ccf:anatomical_structure (anatomical structure)
+# Class: ccf:AnatomicalStructure (Anatomical Structure)
 
-AnnotationAssertion(rdfs:comment ccf:anatomical_structure "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:anatomical_structure "anatomical structure"@en)
+AnnotationAssertion(dc:description ccf:AnatomicalStructure "A distinct, well-defined component or part of an organism's body. These structures can vary in size and complexity, ranging from macroscopic elements such as organs, bones, and muscles to microscopic entities like tissues. [Generated by an AI language model]"@en)
+AnnotationAssertion(rdfs:comment ccf:AnatomicalStructure "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:AnatomicalStructure "Anatomical Structure"@en)
 
-# Class: ccf:biomarker (biomarker)
+# Class: ccf:Biomarker (Biomarker)
 
-AnnotationAssertion(rdfs:comment ccf:biomarker "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:biomarker "biomarker"@en)
+AnnotationAssertion(dc:description ccf:Biomarker "A measurable and quantifiable characteristic or substance that serves as an indicator of a biological state, condition, or process within an organism. [Generated by an AI language model]"@en)
+AnnotationAssertion(rdfs:comment ccf:Biomarker "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:Biomarker "Biomarker"@en)
 
-# Class: ccf:cell_type (cell type)
+# Class: ccf:CellType (Cell Type)
 
-AnnotationAssertion(rdfs:comment ccf:cell_type "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:cell_type "cell type"@en)
+AnnotationAssertion(dc:description ccf:CellType "A category or classification of cells based on their distinct structural, functional, and genetic characteristics. [Generated by an AI language model]"@en)
+AnnotationAssertion(rdfs:comment ccf:CellType "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:CellType "Cell Type"@en)
+
+# Class: <http://purl.org/sig/ont/fma/fma57987> (<http://purl.org/sig/ont/fma/fma57987>)
+
+AnnotationAssertion(ccf:ccf_asctb_type <http://purl.org/sig/ont/fma/fma57987> "AS")
+AnnotationAssertion(ccf:ccf_part_of <http://purl.org/sig/ont/fma/fma57987> <http://purl.obolibrary.org/obo/UBERON_0001911>)
+AnnotationAssertion(ccf:ccf_pref_label <http://purl.org/sig/ont/fma/fma57987> "right mammary gland")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.org/sig/ont/fma/fma57987> "FMA:57987")
+SubClassOf(<http://purl.org/sig/ont/fma/fma57987> <http://purl.org/sig/ont/fma/fma62955>)
+
+# Class: <http://purl.org/sig/ont/fma/fma57991> (<http://purl.org/sig/ont/fma/fma57991>)
+
+AnnotationAssertion(ccf:ccf_asctb_type <http://purl.org/sig/ont/fma/fma57991> "AS")
+AnnotationAssertion(ccf:ccf_part_of <http://purl.org/sig/ont/fma/fma57991> <http://purl.obolibrary.org/obo/UBERON_0001911>)
+AnnotationAssertion(ccf:ccf_pref_label <http://purl.org/sig/ont/fma/fma57991> "left mammary gland")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.org/sig/ont/fma/fma57991> "FMA:57991")
+SubClassOf(<http://purl.org/sig/ont/fma/fma57991> <http://purl.org/sig/ont/fma/fma62955>)
 
 # Class: <http://purl.org/sig/ont/fma/fma62955> (anatomical entity (from FMA))
 
 AnnotationAssertion(rdfs:comment <http://purl.org/sig/ont/fma/fma62955> "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.org/sig/ont/fma/fma62955> "anatomical entity (from FMA)"@en)
-SubClassOf(<http://purl.org/sig/ont/fma/fma62955> ccf:anatomical_structure)
+SubClassOf(<http://purl.org/sig/ont/fma/fma62955> ccf:AnatomicalStructure)
 
 
 AnnotationAssertion(rdfs:comment ccf:ccf_ct_isa "Originated from the CCF Biological Structure (CCF-BSO) ontology"@en)

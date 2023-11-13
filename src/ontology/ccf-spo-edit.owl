@@ -17,31 +17,41 @@ Annotation(dc:description "This ontology models the relationships between a spat
 Annotation(dc:title "CCF Spatial Ontology (CCF-SPO)")
 Annotation(dcterms:license "https://creativecommons.org/licenses/by/4.0/")
 
-Declaration(Class(ccf:extraction_set))
-Declaration(Class(ccf:retired_spatial_entity))
-Declaration(Class(ccf:spatial_entity))
-Declaration(Class(ccf:spatial_object_reference))
-Declaration(Class(ccf:spatial_placement))
-Declaration(ObjectProperty(ccf:extraction_set_for))
-Declaration(ObjectProperty(ccf:has_extraction_set))
-Declaration(ObjectProperty(ccf:has_object_reference))
-Declaration(ObjectProperty(ccf:has_placement))
-Declaration(ObjectProperty(ccf:has_reference_organ))
-Declaration(ObjectProperty(ccf:placement_for))
-Declaration(ObjectProperty(ccf:placement_relative_to))
-Declaration(ObjectProperty(ccf:represents_bbox_of))
+Declaration(Class(ccf:ExtractionSet))
+Declaration(Class(ccf:FtuIllustration))
+Declaration(Class(ccf:FtuIllustrationNode))
+Declaration(Class(ccf:ImageFile))
+Declaration(Class(ccf:RetiredSpatialEntity))
+Declaration(Class(ccf:SpatialEntity))
+Declaration(Class(ccf:SpatialObjectReference))
+Declaration(Class(ccf:SpatialPlacement))
 Declaration(AnnotationProperty(ccf:collides_with))
+Declaration(AnnotationProperty(ccf:creation_date))
 Declaration(AnnotationProperty(ccf:creator_first_name))
 Declaration(AnnotationProperty(ccf:creator_last_name))
 Declaration(AnnotationProperty(ccf:creator_orcid))
 Declaration(AnnotationProperty(ccf:dimension_unit))
+Declaration(AnnotationProperty(ccf:extraction_set_for))
 Declaration(AnnotationProperty(ccf:file_format))
 Declaration(AnnotationProperty(ccf:file_name))
 Declaration(AnnotationProperty(ccf:file_subpath))
 Declaration(AnnotationProperty(ccf:file_url))
+Declaration(AnnotationProperty(ccf:has_extraction_set))
+Declaration(AnnotationProperty(ccf:has_object_reference))
+Declaration(AnnotationProperty(ccf:has_placement))
+Declaration(AnnotationProperty(ccf:has_placements))
+Declaration(AnnotationProperty(ccf:has_reference_organ))
+Declaration(AnnotationProperty(ccf:illustration_node))
+Declaration(AnnotationProperty(ccf:image_file))
+Declaration(AnnotationProperty(ccf:node_name))
 Declaration(AnnotationProperty(ccf:organ_owner_sex))
 Declaration(AnnotationProperty(ccf:organ_side))
+Declaration(AnnotationProperty(ccf:part_of_illustration))
+Declaration(AnnotationProperty(ccf:placement_date))
+Declaration(AnnotationProperty(ccf:placement_for))
+Declaration(AnnotationProperty(ccf:placement_relative_to))
 Declaration(AnnotationProperty(ccf:representation_of))
+Declaration(AnnotationProperty(ccf:represents_bbox_of))
 Declaration(AnnotationProperty(ccf:rotation_unit))
 Declaration(AnnotationProperty(ccf:rui_rank))
 Declaration(AnnotationProperty(ccf:scaling_unit))
@@ -73,6 +83,11 @@ Declaration(Datatype(xsd:date))
 AnnotationAssertion(rdfs:comment ccf:collides_with "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:collides_with "collides with")
 
+# Annotation Property: ccf:creation_date (creation date)
+
+AnnotationAssertion(rdfs:comment ccf:creation_date "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:creation_date "creation date"@en)
+
 # Annotation Property: ccf:creator_first_name (creator first name)
 
 AnnotationAssertion(rdfs:comment ccf:creator_first_name "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
@@ -93,6 +108,11 @@ AnnotationAssertion(rdfs:label ccf:creator_orcid "creator orcid")
 AnnotationAssertion(rdfs:comment ccf:dimension_unit "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:dimension_unit "dimension unit")
 
+# Annotation Property: ccf:extraction_set_for (extraction set for)
+
+AnnotationAssertion(rdfs:comment ccf:extraction_set_for "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:extraction_set_for "extraction set for"@en)
+
 # Annotation Property: ccf:file_format (file format)
 
 AnnotationAssertion(rdfs:comment ccf:file_format "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
@@ -112,6 +132,46 @@ AnnotationAssertion(rdfs:label ccf:file_subpath "file subpath")
 AnnotationAssertion(rdfs:comment ccf:file_url "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:file_url "file url")
 
+# Annotation Property: ccf:has_extraction_set (has extraction set)
+
+AnnotationAssertion(rdfs:comment ccf:has_extraction_set "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_extraction_set "has extraction set")
+
+# Annotation Property: ccf:has_object_reference (has object reference)
+
+AnnotationAssertion(rdfs:comment ccf:has_object_reference "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_object_reference "has object reference")
+
+# Annotation Property: ccf:has_placement (has placement)
+
+AnnotationAssertion(rdfs:comment ccf:has_placement "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_placement "has placement")
+
+# Annotation Property: ccf:has_placements (has placements)
+
+AnnotationAssertion(rdfs:comment ccf:has_placements "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_placements "has placements"@en)
+
+# Annotation Property: ccf:has_reference_organ (has reference organ)
+
+AnnotationAssertion(rdfs:comment ccf:has_reference_organ "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:has_reference_organ "has reference organ")
+
+# Annotation Property: ccf:illustration_node (illustration node)
+
+AnnotationAssertion(rdfs:comment ccf:illustration_node "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:illustration_node "illustration node"@en)
+
+# Annotation Property: ccf:image_file (image file)
+
+AnnotationAssertion(rdfs:comment ccf:image_file "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:image_file "image file"@en)
+
+# Annotation Property: ccf:node_name (node name)
+
+AnnotationAssertion(rdfs:comment ccf:node_name "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:node_name "node name"@en)
+
 # Annotation Property: ccf:organ_owner_sex (organ owner sex)
 
 AnnotationAssertion(rdfs:comment ccf:organ_owner_sex "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
@@ -122,10 +182,35 @@ AnnotationAssertion(rdfs:label ccf:organ_owner_sex "organ owner sex")
 AnnotationAssertion(rdfs:comment ccf:organ_side "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:organ_side "organ side")
 
+# Annotation Property: ccf:part_of_illustration (part of illustration)
+
+AnnotationAssertion(rdfs:comment ccf:part_of_illustration "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:part_of_illustration "part of illustration"@en)
+
+# Annotation Property: ccf:placement_date (placement date)
+
+AnnotationAssertion(rdfs:comment ccf:placement_date "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:placement_date "placement date"@en)
+
+# Annotation Property: ccf:placement_for (placement for)
+
+AnnotationAssertion(rdfs:comment ccf:placement_for "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:placement_for "placement for")
+
+# Annotation Property: ccf:placement_relative_to (placement relative to)
+
+AnnotationAssertion(rdfs:comment ccf:placement_relative_to "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:placement_relative_to "placement relative to")
+
 # Annotation Property: ccf:representation_of (representation of)
 
 AnnotationAssertion(rdfs:comment ccf:representation_of "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:representation_of "representation of")
+
+# Annotation Property: ccf:represents_bbox_of (represents bounding box of)
+
+AnnotationAssertion(rdfs:comment ccf:represents_bbox_of "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:represents_bbox_of "represents bounding box of"@en)
 
 # Annotation Property: ccf:rotation_unit (rotation unit)
 
@@ -195,87 +280,51 @@ AnnotationAssertion(rdfs:label ccf:z_scaling "z scaling")
 AnnotationAssertion(rdfs:label ccf:z_translation "z translation")
 
 
-############################
-#   Object Properties
-############################
-
-# Object Property: ccf:extraction_set_for (extraction set for)
-
-AnnotationAssertion(rdfs:comment ccf:extraction_set_for "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:extraction_set_for "extraction set for"@en)
-
-# Object Property: ccf:has_extraction_set (has extraction set)
-
-AnnotationAssertion(rdfs:comment ccf:has_extraction_set "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:has_extraction_set "has extraction set")
-
-# Object Property: ccf:has_object_reference (has object reference)
-
-AnnotationAssertion(rdfs:comment ccf:has_object_reference "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:has_object_reference "has object reference")
-
-# Object Property: ccf:has_placement (has placement)
-
-AnnotationAssertion(rdfs:comment ccf:has_placement "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:has_placement "has placement")
-
-# Object Property: ccf:has_reference_organ (has reference organ)
-
-AnnotationAssertion(rdfs:comment ccf:has_reference_organ "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:has_reference_organ "has reference organ")
-
-# Object Property: ccf:placement_for (placement for)
-
-AnnotationAssertion(rdfs:comment ccf:placement_for "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:placement_for "placement for")
-
-# Object Property: ccf:placement_relative_to (placement relative to)
-
-AnnotationAssertion(rdfs:comment ccf:placement_relative_to "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:placement_relative_to "placement relative to")
-
-# Object Property: ccf:represents_bbox_of (represents bounding box of)
-
-AnnotationAssertion(rdfs:comment ccf:represents_bbox_of "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:represents_bbox_of "represents bounding box of"@en)
-
-
 
 ############################
 #   Classes
 ############################
 
-# Class: ccf:extraction_set (extraction set)
+# Class: ccf:ExtractionSet (Extraction Set)
 
-AnnotationAssertion(rdfs:comment ccf:extraction_set "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:extraction_set "extraction set")
-SubClassOf(ccf:extraction_set ObjectSomeValuesFrom(ccf:extraction_set_for ccf:spatial_entity))
+AnnotationAssertion(rdfs:comment ccf:ExtractionSet "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:ExtractionSet "Extraction Set"@en)
 
-# Class: ccf:retired_spatial_entity (retired spatial entity)
+# Class: ccf:FtuIllustration (Functional Tissue Unit (FTU) Illustration)
 
-AnnotationAssertion(rdfs:comment ccf:retired_spatial_entity "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:retired_spatial_entity "retired spatial entity")
-SubClassOf(ccf:retired_spatial_entity ccf:spatial_entity)
+AnnotationAssertion(rdfs:comment ccf:FtuIllustration "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:FtuIllustration "Functional Tissue Unit (FTU) Illustration"@en)
 
-# Class: ccf:spatial_entity (spatial entity)
+# Class: ccf:FtuIllustrationNode (Functional Tissue Unit (FTU) Node)
 
-AnnotationAssertion(rdfs:comment ccf:spatial_entity "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:spatial_entity "spatial entity")
-SubClassOf(ccf:spatial_entity ObjectSomeValuesFrom(ccf:has_extraction_set ccf:extraction_set))
-SubClassOf(ccf:spatial_entity ObjectSomeValuesFrom(ccf:has_object_reference ccf:spatial_object_reference))
-SubClassOf(ccf:spatial_entity ObjectSomeValuesFrom(ccf:has_placement ccf:spatial_placement))
-SubClassOf(ccf:spatial_entity ObjectSomeValuesFrom(ccf:has_reference_organ ccf:spatial_entity))
+AnnotationAssertion(rdfs:comment ccf:FtuIllustrationNode "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:FtuIllustrationNode "Functional Tissue Unit (FTU) Node"@en)
 
-# Class: ccf:spatial_object_reference (spatial object reference)
+# Class: ccf:ImageFile (Image File)
 
-AnnotationAssertion(rdfs:comment ccf:spatial_object_reference "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:spatial_object_reference "spatial object reference")
+AnnotationAssertion(rdfs:comment ccf:ImageFile "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:ImageFile "Image File"@en)
 
-# Class: ccf:spatial_placement (spatial placement)
+# Class: ccf:RetiredSpatialEntity (Retired Spatial Entity)
 
-AnnotationAssertion(rdfs:comment ccf:spatial_placement "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:spatial_placement "spatial placement")
-SubClassOf(ccf:spatial_placement ObjectSomeValuesFrom(ccf:placement_for ccf:spatial_entity))
+AnnotationAssertion(rdfs:comment ccf:RetiredSpatialEntity "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:RetiredSpatialEntity "Retired Spatial Entity"@en)
+SubClassOf(ccf:RetiredSpatialEntity ccf:SpatialEntity)
+
+# Class: ccf:SpatialEntity (Spatial Entity)
+
+AnnotationAssertion(rdfs:comment ccf:SpatialEntity "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:SpatialEntity "Spatial Entity"@en)
+
+# Class: ccf:SpatialObjectReference (Spatial Object Reference)
+
+AnnotationAssertion(rdfs:comment ccf:SpatialObjectReference "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:SpatialObjectReference "Spatial Object Reference"@en)
+
+# Class: ccf:SpatialPlacement (Spatial Placement)
+
+AnnotationAssertion(rdfs:comment ccf:SpatialPlacement "Originated from the CCF Spatial Data (CCF-SPO) ontology"@en)
+AnnotationAssertion(rdfs:label ccf:SpatialPlacement "Spatial Placement"@en)
 
 
 )

@@ -1,11 +1,6 @@
 # ------------------------------------------------------------------
 # Get the CCF Validation Tool Output
 # ------------------------------------------------------------------
-$(GENERATED_DIR)/ccf_validation_trachea.owl: | $(GENERATED_DIR)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call download_ccf_validation_owl,Trachea)
-.PRECIOUS: $(GENERATED_DIR)/ccf_validation_trachea.owl
-
 $(GENERATED_DIR)/ccf_validation_extended_trachea.owl: | $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call download_ccf_validation_extended_owl,Trachea)
@@ -16,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_trachea.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Trachea,https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0)
+	$(call generate_ccf_cell_biomarkers_component,Trachea,https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl: check_asctb2ccf $(GENERATED_DI
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Trachea,https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0)
+	$(call generate_ccf_asctb_annotations_component,Trachea,https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl
 
 # ------------------------------------------------------------------
@@ -33,11 +28,10 @@ $(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl: check_asctb2ccf $(GENERATED_
 $(EXTRACTS_DIR)/uberon_trachea.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl \
-		$(GENERATED_DIR)/ccf_validation_trachea.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_trachea.owl \
 		$(MIRRORDIR)/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/uberon_trachea.owl
 
 # ------------------------------------------------------------------
@@ -46,11 +40,10 @@ $(EXTRACTS_DIR)/uberon_trachea.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/fma_trachea.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl \
-		$(GENERATED_DIR)/ccf_validation_trachea.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_trachea.owl \
 		$(MIRRORDIR)/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/fma_trachea.owl
 
 # ------------------------------------------------------------------
@@ -59,11 +52,10 @@ $(EXTRACTS_DIR)/fma_trachea.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/cl_trachea.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl \
-		$(GENERATED_DIR)/ccf_validation_trachea.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_trachea.owl \
 		$(MIRRORDIR)/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/cl_trachea.owl
 
 # ------------------------------------------------------------------
@@ -72,11 +64,10 @@ $(EXTRACTS_DIR)/cl_trachea.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/lmha_trachea.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl \
-		$(GENERATED_DIR)/ccf_validation_trachea.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_trachea.owl \
 		$(MIRRORDIR)/lmha.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/lmha_trachea.owl
 
 # ------------------------------------------------------------------
@@ -85,18 +76,16 @@ $(EXTRACTS_DIR)/lmha_trachea.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/hgnc_trachea.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl \
-		$(GENERATED_DIR)/ccf_validation_trachea.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_trachea.owl \
 		$(MIRRORDIR)/hgnc.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/hgnc_trachea.owl
 
 # ------------------------------------------------------------------
 # Build the ASCT+B table as an OWL ontology
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_trachea.owl: $(COMPONENTSDIR) \
-		$(GENERATED_DIR)/ccf_validation_trachea.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_trachea.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl \
@@ -107,5 +96,5 @@ $(COMPONENTSDIR)/asctb_trachea.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_trachea.owl \
 		$(EXTRACTS_DIR)/hgnc_trachea.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_trachea.owl

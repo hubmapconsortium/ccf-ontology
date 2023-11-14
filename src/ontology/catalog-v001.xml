@@ -10,7 +10,6 @@
     <uri name="http://purl.org/ccf/instances/reference_3d_organs.owl" uri="instances/reference_3d_organs.owl"/>
 
     <!-- ASCT+B Ontology Components -->
-    <uri name="http://purl.org/ccf/components/asctb_larynx.owl" uri="components/asctb_larynx.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_uterus.owl" uri="components/asctb_uterus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_urinary_bladder.owl" uri="components/asctb_urinary_bladder.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_ureter.owl" uri="components/asctb_ureter.owl"/>
@@ -24,15 +23,16 @@
     <uri name="http://purl.org/ccf/components/asctb_prostate.owl" uri="components/asctb_prostate.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_placenta.owl" uri="components/asctb_placenta.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_peripheral_nervous_system.owl" uri="components/asctb_peripheral_nervous_system.owl"/>
+    <uri name="http://purl.org/ccf/components/asctb_palatine_tonsil.owl" uri="components/asctb_palatine_tonsil.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_pancreas.owl" uri="components/asctb_pancreas.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_ovary.owl" uri="components/asctb_ovary.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_muscular_system.owl" uri="components/asctb_muscular_system.owl"/>
+    <uri name="http://purl.org/ccf/components/asctb_mammary_gland.owl" uri="components/asctb_mammary_gland.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_main_bronchus.owl" uri="components/asctb_main_bronchus.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_lymph_vasculature.owl" uri="components/asctb_lymph_vasculature.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_lymph_node.owl" uri="components/asctb_lymph_node.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_lung.owl" uri="components/asctb_lung.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_liver.owl" uri="components/asctb_liver.owl"/>
-    <uri name="http://purl.org/ccf/components/asctb_palatine_tonsil.owl" uri="components/asctb_palatine_tonsil.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_large_intestine.owl" uri="components/asctb_large_intestine.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_knee.owl" uri="components/asctb_knee.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_kidney.owl" uri="components/asctb_kidney.owl"/>
@@ -43,6 +43,7 @@
     <uri name="http://purl.org/ccf/components/asctb_bone_marrow.owl" uri="components/asctb_bone_marrow.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_blood_vasculature.owl" uri="components/asctb_blood_vasculature.owl"/>
     <uri name="http://purl.org/ccf/components/asctb_blood.owl" uri="components/asctb_blood.owl"/>
+    <uri name="http://purl.org/ccf/components/asctb_anatomical_systems.owl" uri="components/asctb_anatomical_systems.owl"/>
 
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>

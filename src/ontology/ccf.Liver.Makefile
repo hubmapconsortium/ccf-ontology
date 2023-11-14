@@ -1,11 +1,6 @@
 # ------------------------------------------------------------------
 # Get the CCF Validation Tool Output
 # ------------------------------------------------------------------
-$(GENERATED_DIR)/ccf_validation_liver.owl: | $(GENERATED_DIR)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call download_ccf_validation_owl,Liver)
-.PRECIOUS: $(GENERATED_DIR)/ccf_validation_liver.owl
-
 $(GENERATED_DIR)/ccf_validation_extended_liver.owl: | $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call download_ccf_validation_extended_owl,Liver)
@@ -16,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_liver.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Liver,https://docs.google.com/spreadsheets/d/1F8ZXt1naE1pJFjfsAd6wK7x22D3qRW5O0E2d9gUKAik/edit#gid=1694828397)
+	$(call generate_ccf_cell_biomarkers_component,Liver,https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_liver.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Liver,https://docs.google.com/spreadsheets/d/1F8ZXt1naE1pJFjfsAd6wK7x22D3qRW5O0E2d9gUKAik/edit#gid=1694828397)
+	$(call generate_ccf_asctb_annotations_component,Liver,https://docs.google.com/spreadsheets/d/1U1UFN1m7fkWj-UgYDNTCfGZUv-opzCjEEYypihDjjSQ/edit#gid=1694828397)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_liver.owl
 
 # ------------------------------------------------------------------
@@ -33,11 +28,10 @@ $(GENERATED_DIR)/ccf_asctb_annotations_liver.owl: check_asctb2ccf $(GENERATED_DI
 $(EXTRACTS_DIR)/uberon_liver.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_liver.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl \
-		$(GENERATED_DIR)/ccf_validation_liver.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_liver.owl \
 		$(MIRRORDIR)/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/uberon_liver.owl
 
 # ------------------------------------------------------------------
@@ -46,11 +40,10 @@ $(EXTRACTS_DIR)/uberon_liver.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/fma_liver.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_liver.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl \
-		$(GENERATED_DIR)/ccf_validation_liver.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_liver.owl \
 		$(MIRRORDIR)/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/fma_liver.owl
 
 # ------------------------------------------------------------------
@@ -59,11 +52,10 @@ $(EXTRACTS_DIR)/fma_liver.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/cl_liver.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_liver.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl \
-		$(GENERATED_DIR)/ccf_validation_liver.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_liver.owl \
 		$(MIRRORDIR)/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/cl_liver.owl
 
 # ------------------------------------------------------------------
@@ -72,11 +64,10 @@ $(EXTRACTS_DIR)/cl_liver.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/lmha_liver.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_liver.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl \
-		$(GENERATED_DIR)/ccf_validation_liver.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_liver.owl \
 		$(MIRRORDIR)/lmha.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/lmha_liver.owl
 
 # ------------------------------------------------------------------
@@ -85,18 +76,16 @@ $(EXTRACTS_DIR)/lmha_liver.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/hgnc_liver.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_liver.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl \
-		$(GENERATED_DIR)/ccf_validation_liver.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_liver.owl \
 		$(MIRRORDIR)/hgnc.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/hgnc_liver.owl
 
 # ------------------------------------------------------------------
 # Build the ASCT+B table as an OWL ontology
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_liver.owl: $(COMPONENTSDIR) \
-		$(GENERATED_DIR)/ccf_validation_liver.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_liver.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_liver.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_liver.owl \
@@ -107,5 +96,5 @@ $(COMPONENTSDIR)/asctb_liver.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_liver.owl \
 		$(EXTRACTS_DIR)/hgnc_liver.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_liver.owl

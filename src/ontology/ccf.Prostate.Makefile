@@ -1,11 +1,6 @@
 # ------------------------------------------------------------------
 # Get the CCF Validation Tool Output
 # ------------------------------------------------------------------
-$(GENERATED_DIR)/ccf_validation_prostate.owl: | $(GENERATED_DIR)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call download_ccf_validation_owl,Prostate)
-.PRECIOUS: $(GENERATED_DIR)/ccf_validation_prostate.owl
-
 $(GENERATED_DIR)/ccf_validation_extended_prostate.owl: | $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call download_ccf_validation_extended_owl,Prostate)
@@ -16,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_prostate.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Prostate,https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481)
+	$(call generate_ccf_cell_biomarkers_component,Prostate,https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl: check_asctb2ccf $(GENERATED_D
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Prostate,https://docs.google.com/spreadsheets/d/1_O5yXOesG93dobMHRSIvVAt9xj7mDnEAYdRJcHYJ84U/edit#gid=1757780481)
+	$(call generate_ccf_asctb_annotations_component,Prostate,https://docs.google.com/spreadsheets/d/1hlSptGNXzyM7vxsH930YMf6gZkHVgHUE-Qc_4uFAmoU/edit#gid=1239199370)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl
 
 # ------------------------------------------------------------------
@@ -33,11 +28,10 @@ $(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl: check_asctb2ccf $(GENERATED
 $(EXTRACTS_DIR)/uberon_prostate.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl \
-		$(GENERATED_DIR)/ccf_validation_prostate.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_prostate.owl \
 		$(MIRRORDIR)/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/uberon_prostate.owl
 
 # ------------------------------------------------------------------
@@ -46,11 +40,10 @@ $(EXTRACTS_DIR)/uberon_prostate.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/fma_prostate.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl \
-		$(GENERATED_DIR)/ccf_validation_prostate.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_prostate.owl \
 		$(MIRRORDIR)/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/fma_prostate.owl
 
 # ------------------------------------------------------------------
@@ -59,11 +52,10 @@ $(EXTRACTS_DIR)/fma_prostate.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/cl_prostate.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl \
-		$(GENERATED_DIR)/ccf_validation_prostate.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_prostate.owl \
 		$(MIRRORDIR)/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/cl_prostate.owl
 
 # ------------------------------------------------------------------
@@ -72,11 +64,10 @@ $(EXTRACTS_DIR)/cl_prostate.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/lmha_prostate.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl \
-		$(GENERATED_DIR)/ccf_validation_prostate.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_prostate.owl \
 		$(MIRRORDIR)/lmha.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/lmha_prostate.owl
 
 # ------------------------------------------------------------------
@@ -85,18 +76,16 @@ $(EXTRACTS_DIR)/lmha_prostate.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/hgnc_prostate.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl \
-		$(GENERATED_DIR)/ccf_validation_prostate.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_prostate.owl \
 		$(MIRRORDIR)/hgnc.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/hgnc_prostate.owl
 
 # ------------------------------------------------------------------
 # Build the ASCT+B table as an OWL ontology
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_prostate.owl: $(COMPONENTSDIR) \
-		$(GENERATED_DIR)/ccf_validation_prostate.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_prostate.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_prostate.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_prostate.owl \
@@ -107,5 +96,5 @@ $(COMPONENTSDIR)/asctb_prostate.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_prostate.owl \
 		$(EXTRACTS_DIR)/hgnc_prostate.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_prostate.owl

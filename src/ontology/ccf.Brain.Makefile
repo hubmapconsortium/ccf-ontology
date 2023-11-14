@@ -1,11 +1,6 @@
 # ------------------------------------------------------------------
 # Get the CCF Validation Tool Output
 # ------------------------------------------------------------------
-$(GENERATED_DIR)/ccf_validation_brain.owl: | $(GENERATED_DIR)
-	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call download_ccf_validation_owl,Brain)
-.PRECIOUS: $(GENERATED_DIR)/ccf_validation_brain.owl
-
 $(GENERATED_DIR)/ccf_validation_extended_brain.owl: | $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
 	$(call download_ccf_validation_extended_owl,Brain)
@@ -16,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_brain.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Brain,https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441)
+	$(call generate_ccf_cell_biomarkers_component,Brain,https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl
 
 # ------------------------------------------------------------------
@@ -24,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_brain.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Brain,https://docs.google.com/spreadsheets/d/1u0m_ktn6jy-V0l52pH1l_9H81nGClRbXygPEId4pU3c/edit#gid=2056967441)
+	$(call generate_ccf_asctb_annotations_component,Brain,https://docs.google.com/spreadsheets/d/1DrsZo9QUgnye6qX9hGKQoXVruRbM3LZPT2tzUy-SixI/edit#gid=2056967441)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_brain.owl
 
 # ------------------------------------------------------------------
@@ -33,11 +28,10 @@ $(GENERATED_DIR)/ccf_asctb_annotations_brain.owl: check_asctb2ccf $(GENERATED_DI
 $(EXTRACTS_DIR)/uberon_brain.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_brain.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl \
-		$(GENERATED_DIR)/ccf_validation_brain.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_brain.owl \
 		$(MIRRORDIR)/uberon.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_uberon_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/uberon_brain.owl
 
 # ------------------------------------------------------------------
@@ -46,11 +40,10 @@ $(EXTRACTS_DIR)/uberon_brain.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/fma_brain.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_brain.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl \
-		$(GENERATED_DIR)/ccf_validation_brain.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_brain.owl \
 		$(MIRRORDIR)/fma.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_fma_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/fma_brain.owl
 
 # ------------------------------------------------------------------
@@ -59,11 +52,10 @@ $(EXTRACTS_DIR)/fma_brain.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/cl_brain.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_brain.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl \
-		$(GENERATED_DIR)/ccf_validation_brain.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_brain.owl \
 		$(MIRRORDIR)/cl.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_cl_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/cl_brain.owl
 
 # ------------------------------------------------------------------
@@ -72,11 +64,10 @@ $(EXTRACTS_DIR)/cl_brain.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/lmha_brain.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_brain.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl \
-		$(GENERATED_DIR)/ccf_validation_brain.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_brain.owl \
 		$(MIRRORDIR)/lmha.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_lmha_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/lmha_brain.owl
 
 # ------------------------------------------------------------------
@@ -85,18 +76,16 @@ $(EXTRACTS_DIR)/lmha_brain.owl: $(EXTRACTS_DIR) \
 $(EXTRACTS_DIR)/hgnc_brain.owl: $(EXTRACTS_DIR) \
 		$(GENERATED_DIR)/ccf_asctb_annotations_brain.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl \
-		$(GENERATED_DIR)/ccf_validation_brain.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_brain.owl \
 		$(MIRRORDIR)/hgnc.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Extracting $@)
-	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^))
+	$(call extract_hgnc_terms,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^))
 .PRECIOUS: $(EXTRACTS_DIR)/hgnc_brain.owl
 
 # ------------------------------------------------------------------
 # Build the ASCT+B table as an OWL ontology
 # ------------------------------------------------------------------
 $(COMPONENTSDIR)/asctb_brain.owl: $(COMPONENTSDIR) \
-		$(GENERATED_DIR)/ccf_validation_brain.owl \
 		$(GENERATED_DIR)/ccf_validation_extended_brain.owl \
 		$(GENERATED_DIR)/ccf_cell_biomarkers_brain.owl \
 		$(GENERATED_DIR)/ccf_asctb_annotations_brain.owl \
@@ -107,5 +96,5 @@ $(COMPONENTSDIR)/asctb_brain.owl: $(COMPONENTSDIR) \
 		$(EXTRACTS_DIR)/lmha_brain.owl \
 		$(EXTRACTS_DIR)/hgnc_brain.owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Making $@)
-	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^),$(word 11,$^))
+	$(call make_asctb_component,$(word 2,$^),$(word 3,$^),$(word 4,$^),$(word 5,$^),$(word 6,$^),$(word 7,$^),$(word 8,$^),$(word 9,$^),$(word 10,$^))
 .PRECIOUS: $(COMPONENTSDIR)/asctb_brain.owl

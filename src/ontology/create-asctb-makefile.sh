@@ -36,6 +36,9 @@ then
 elif [[ $ORGAN_NAME = 'spinal_cord' ]]
 then
 	VALIDATION_TOOL_ORGAN_NAME='Spinal_Cord'
+elif [[ $ORGAN_NAME = 'anatomical_systems' ]]
+then
+	VALIDATION_TOOL_ORGAN_NAME='Anatomical_Systems'
 elif [[ $ORGAN_NAME = 'mammary_gland' ]]
 then
 	VALIDATION_TOOL_ORGAN_NAME='Mammary_Gland'

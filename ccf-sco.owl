@@ -10,12 +10,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/ccf/ccf-sco.owl">
-        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.2.1/ccf-sco.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.org/ccf/releases/2.3.0/ccf-sco.owl"/>
         <dc:description>This ontology models the concepts that are related to donated tissue samples.</dc:description>
         <dc:title>Common Coordinate Framework for Specimen Data (CCF-SCO) Ontology</dc:title>
         <terms:format>application/owl+xml</terms:format>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>2.2.1</owl:versionInfo>
+        <owl:versionInfo>2.3.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -86,6 +86,15 @@
     
 
 
+    <!-- http://purl.org/ccf/comes_from -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/comes_from">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>comes from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/ccf/consortium_name -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/ccf/consortium_name">
@@ -95,11 +104,83 @@
     
 
 
+    <!-- http://purl.org/ccf/created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/created_by">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>created by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/ccf/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/ccf/description">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label>description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/extracted_by -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/extracted_by">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>extracted by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/generates_dataset -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/generates_dataset">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>generates dataset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/has_biological_sex -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/has_biological_sex">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>has biological sex</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/has_dataset_item -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/has_dataset_item">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>has dataset item</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/has_ethnicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/has_ethnicity">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>has ethnicity</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/has_race -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/has_race">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>has race</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/has_registration_location -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/has_registration_location">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>has registration location</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -118,6 +199,33 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/ccf/height_unit">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label>height unit</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/part_of_tissue_block -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/part_of_tissue_block">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>part of tissue block</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/provided_by -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/provided_by">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>provided by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/provides -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/provides">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>provides</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -154,6 +262,15 @@
     <owl:AnnotationProperty rdf:about="http://purl.org/ccf/section_size_unit">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label>section size unit</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/ccf/subdivided_into_sections -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ccf/subdivided_into_sections">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label>subdivided into sections</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -254,134 +371,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/ccf/comes_from -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/comes_from">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>comes from</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/created_by -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/created_by">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>created by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/extracted_by -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/extracted_by">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>extracted by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/generates_dataset -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/generates_dataset">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>generates dataset</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/has_biological_sex -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/has_biological_sex">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>has biological sex</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/has_dataset_item -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/has_dataset_item">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>has dataset item</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/has_ethnicity -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/has_ethnicity">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>has ethnicity</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/has_race -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/has_race">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>has race</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/has_registration_location -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/has_registration_location">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>has registration location</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/part_of_tissue_block -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/part_of_tissue_block">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>part of tissue block</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/provided_by -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/provided_by">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>provided by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/provides -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/provides">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>provides</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/ccf/subdivided_into_sections -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ccf/subdivided_into_sections">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>subdivided into sections</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -393,7 +382,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA10608-0 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA10608-0">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/race"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Race"/>
     </owl:Class>
     
 
@@ -401,7 +390,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA10610-6 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA10610-6">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/race"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Race"/>
     </owl:Class>
     
 
@@ -409,7 +398,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA10611-4 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA10611-4">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/race"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Race"/>
     </owl:Class>
     
 
@@ -417,7 +406,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA19555-4 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA19555-4">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/ethnicity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Ethnicity"/>
     </owl:Class>
     
 
@@ -425,7 +414,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA2-8 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA2-8">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/biological_sex"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/BiologicalSex"/>
     </owl:Class>
     
 
@@ -433,7 +422,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA3-6 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA3-6">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/biological_sex"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/BiologicalSex"/>
     </owl:Class>
     
 
@@ -441,7 +430,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA4457-3 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA4457-3">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/race"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Race"/>
     </owl:Class>
     
 
@@ -449,7 +438,7 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA6156-9 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA6156-9">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/race"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Race"/>
     </owl:Class>
     
 
@@ -457,225 +446,157 @@
     <!-- http://purl.bioontology.org/ontology/LNC/LA6214-6 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/LNC/LA6214-6">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/ethnicity"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Ethnicity"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/biological_sex -->
+    <!-- http://purl.org/ccf/BiologicalSex -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/biological_sex">
+    <owl:Class rdf:about="http://purl.org/ccf/BiologicalSex">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>biological sex</rdfs:label>
+        <rdfs:label xml:lang="en">Biological Sex</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/collection -->
+    <!-- http://purl.org/ccf/Collection -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/collection">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/has_dataset_item"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/dataset"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/ccf/Collection">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>collection</rdfs:label>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/dataset -->
+    <!-- http://purl.org/ccf/Dataset -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/dataset">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/created_by"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/operator"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/provided_by"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/tissue_mapping_center"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/ccf/Dataset">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>dataset</rdfs:label>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/donor -->
+    <!-- http://purl.org/ccf/Donor -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/donor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/person"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/provides"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/sample"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/ccf/Donor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Person"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>donor</rdfs:label>
+        <rdfs:label xml:lang="en">Donor</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/ethnicity -->
+    <!-- http://purl.org/ccf/Ethnicity -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/ethnicity">
+    <owl:Class rdf:about="http://purl.org/ccf/Ethnicity">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>ethnicity</rdfs:label>
+        <rdfs:label xml:lang="en">Ethnicity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/operator -->
+    <!-- http://purl.org/ccf/Operator -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/operator">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/person"/>
+    <owl:Class rdf:about="http://purl.org/ccf/Operator">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Person"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>operator</rdfs:label>
+        <rdfs:label xml:lang="en">Operator</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/person -->
+    <!-- http://purl.org/ccf/PI -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/person">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/has_biological_sex"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/biological_sex"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/has_ethnicity"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/ethnicity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/has_race"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/race"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/ccf/PI">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Person"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>person</rdfs:label>
+        <rdfs:label xml:lang="en">Principal Investigator</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/pi -->
+    <!-- http://purl.org/ccf/Person -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/pi">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/person"/>
+    <owl:Class rdf:about="http://purl.org/ccf/Person">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>principal investigator</rdfs:label>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/protocol -->
+    <!-- http://purl.org/ccf/Protocol -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/protocol">
+    <owl:Class rdf:about="http://purl.org/ccf/Protocol">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>protocol</rdfs:label>
+        <rdfs:label xml:lang="en">Protocol</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/publication -->
+    <!-- http://purl.org/ccf/Publication -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/publication">
+    <owl:Class rdf:about="http://purl.org/ccf/Publication">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>publication</rdfs:label>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/race -->
+    <!-- http://purl.org/ccf/Race -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/race">
+    <owl:Class rdf:about="http://purl.org/ccf/Race">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>race</rdfs:label>
+        <rdfs:label xml:lang="en">Race</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/sample -->
+    <!-- http://purl.org/ccf/Sample -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/sample">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/comes_from"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/donor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/extracted_by"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/operator"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/generates_dataset"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/dataset"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/provided_by"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/tissue_mapping_center"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/ccf/Sample">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>sample</rdfs:label>
+        <rdfs:label xml:lang="en">Sample</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/tissue_block -->
+    <!-- http://purl.org/ccf/TissueBlock -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/tissue_block">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/sample"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/subdivided_into_sections"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/tissue_section"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/ccf/TissueBlock">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Sample"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>tissue block</rdfs:label>
+        <rdfs:label xml:lang="en">Tissue Block</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/tissue_mapping_center -->
+    <!-- http://purl.org/ccf/TissueMappingCenter -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/tissue_mapping_center">
+    <owl:Class rdf:about="http://purl.org/ccf/TissueMappingCenter">
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>tissue mapping center</rdfs:label>
+        <rdfs:label xml:lang="en">Tissue Mapping Center</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ccf/tissue_section -->
+    <!-- http://purl.org/ccf/TissueSection -->
 
-    <owl:Class rdf:about="http://purl.org/ccf/tissue_section">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/sample"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/ccf/part_of_tissue_block"/>
-                <owl:someValuesFrom rdf:resource="http://purl.org/ccf/tissue_block"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    <owl:Class rdf:about="http://purl.org/ccf/TissueSection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Sample"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label>tissue section</rdfs:label>
+        <rdfs:label xml:lang="en">Tissue Section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ccf/TissueSuspension -->
+
+    <owl:Class rdf:about="http://purl.org/ccf/TissueSuspension">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Sample"/>
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label xml:lang="en">Tissue Suspension</rdfs:label>
     </owl:Class>
     
 

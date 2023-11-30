@@ -7,7 +7,7 @@ Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
-
+Prefix(schema:=<http://schema.org/>)
 
 Ontology(<http://purl.org/ccf/ccf-sco-edit.owl>
 <http://purl.org/ccf/releases/latest/ccf-sco-edit.owl>
@@ -31,7 +31,7 @@ Declaration(Class(ccf:Donor))
 Declaration(Class(ccf:Ethnicity))
 Declaration(Class(ccf:Operator))
 Declaration(Class(ccf:PI))
-Declaration(Class(ccf:Person))
+Declaration(Class(schema:Person))
 Declaration(Class(ccf:Protocol))
 Declaration(Class(ccf:Publication))
 Declaration(Class(ccf:Race))
@@ -341,7 +341,7 @@ AnnotationAssertion(rdfs:label ccf:Dataset "Dataset"@en)
 
 AnnotationAssertion(rdfs:comment ccf:Donor "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:Donor "Donor"@en)
-SubClassOf(ccf:Donor ccf:Person)
+SubClassOf(ccf:Donor schema:Person)
 
 # Class: ccf:Ethnicity (Ethnicity)
 
@@ -352,18 +352,18 @@ AnnotationAssertion(rdfs:label ccf:Ethnicity "Ethnicity"@en)
 
 AnnotationAssertion(rdfs:comment ccf:Operator "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:Operator "Operator"@en)
-SubClassOf(ccf:Operator ccf:Person)
+SubClassOf(ccf:Operator schema:Person)
 
 # Class: ccf:PI (Principal Investigator)
 
 AnnotationAssertion(rdfs:comment ccf:PI "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
 AnnotationAssertion(rdfs:label ccf:PI "Principal Investigator"@en)
-SubClassOf(ccf:PI ccf:Person)
+SubClassOf(ccf:PI schema:Person)
 
-# Class: ccf:Person (Person)
+# Class: schema:Person (Person)
 
-AnnotationAssertion(rdfs:comment ccf:Person "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
-AnnotationAssertion(rdfs:label ccf:Person "Person"@en)
+AnnotationAssertion(rdfs:comment schema:Person "Originated from the CCF Specimen (CCF-SCO) ontology"@en)
+AnnotationAssertion(rdfs:label schema:Person "Person"@en)
 
 # Class: ccf:Protocol (Protocol)
 

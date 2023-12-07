@@ -481,7 +481,7 @@
     <!-- http://purl.org/ccf/Donor -->
 
     <owl:Class rdf:about="http://purl.org/ccf/Donor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Person"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label xml:lang="en">Donor</rdfs:label>
     </owl:Class>
@@ -500,7 +500,7 @@
     <!-- http://purl.org/ccf/Operator -->
 
     <owl:Class rdf:about="http://purl.org/ccf/Operator">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Person"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label xml:lang="en">Operator</rdfs:label>
     </owl:Class>
@@ -510,18 +510,9 @@
     <!-- http://purl.org/ccf/PI -->
 
     <owl:Class rdf:about="http://purl.org/ccf/PI">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Person"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label xml:lang="en">Principal Investigator</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ccf/Person -->
-
-    <owl:Class rdf:about="http://purl.org/ccf/Person">
-        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
-        <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
 
@@ -597,6 +588,15 @@
         <rdfs:subClassOf rdf:resource="http://purl.org/ccf/Sample"/>
         <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
         <rdfs:label xml:lang="en">Tissue Suspension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <rdfs:comment xml:lang="en">Originated from the CCF Specimen (CCF-SCO) ontology</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
     </owl:Class>
     
 

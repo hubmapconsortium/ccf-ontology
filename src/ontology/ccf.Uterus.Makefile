@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_uterus.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_uterus.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Uterus,https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642)
+	$(call generate_ccf_cell_biomarkers_component,Uterus,https://docs.google.com/spreadsheets/d/1RasOQCB4oP_1kvZL7Xv40TID6_365FQ-cgX2fGR54gw/edit#gid=603441642)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_uterus.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_uterus.owl: check_asctb2ccf $(GENERATED_DIR
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_uterus.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Uterus,https://docs.google.com/spreadsheets/d/1Ei-scFQ5N-giPMm9_TKt3-hAFPveAyibCCulXDTBbig/edit#gid=603441642)
+	$(call generate_ccf_asctb_annotations_component,Uterus,https://docs.google.com/spreadsheets/d/1RasOQCB4oP_1kvZL7Xv40TID6_365FQ-cgX2fGR54gw/edit#gid=603441642)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_uterus.owl
 
 # ------------------------------------------------------------------

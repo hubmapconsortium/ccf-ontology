@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_ovary.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_ovary.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Ovary,https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951)
+	$(call generate_ccf_cell_biomarkers_component,Ovary,https://docs.google.com/spreadsheets/d/1bPMrORa7CQa2JpVkRF_jHmA_GdS1qBryXl9riMZUBJU/edit#gid=756296951)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_ovary.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_ovary.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_ovary.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Ovary,https://docs.google.com/spreadsheets/d/1tk0zBaCqaUXn96uhcgAiUTbO03zYnI-0DQ9OmHdxFQQ/edit#gid=756296951)
+	$(call generate_ccf_asctb_annotations_component,Ovary,https://docs.google.com/spreadsheets/d/1bPMrORa7CQa2JpVkRF_jHmA_GdS1qBryXl9riMZUBJU/edit#gid=756296951)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_ovary.owl
 
 # ------------------------------------------------------------------

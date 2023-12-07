@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_spinal_cord.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_spinal_cord.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,SpinalCord,https://docs.google.com/spreadsheets/d/10stOnKN9uucxrI665_tfu-PWC33E-0HCP1QMdFgYJ0s/edit#gid=243784891)
+	$(call generate_ccf_cell_biomarkers_component,SpinalCord,https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_spinal_cord.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_spinal_cord.owl: check_asctb2ccf $(GENERATE
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_spinal_cord.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,SpinalCord,https://docs.google.com/spreadsheets/d/10stOnKN9uucxrI665_tfu-PWC33E-0HCP1QMdFgYJ0s/edit#gid=243784891)
+	$(call generate_ccf_asctb_annotations_component,SpinalCord,https://docs.google.com/spreadsheets/d/1B8Yacpa0S_KuNqGGtKb83HTodKY_XGnIMy8tFCEIEdE/edit#gid=243784891)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_spinal_cord.owl
 
 # ------------------------------------------------------------------

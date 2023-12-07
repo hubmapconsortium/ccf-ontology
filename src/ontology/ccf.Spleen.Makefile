@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_spleen.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_spleen.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Spleen,https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346)
+	$(call generate_ccf_cell_biomarkers_component,Spleen,https://docs.google.com/spreadsheets/d/1AEKYXAKP1oRM2krnbU_Un89JfxYEm_gjjwwJTEt1SiI/edit#gid=69626346)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_spleen.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_spleen.owl: check_asctb2ccf $(GENERATED_DIR
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_spleen.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Spleen,https://docs.google.com/spreadsheets/d/1KugrRJwk_IlvOpCpDffvk9YKFbSFd4PtJgAzxgrAmtM/edit#gid=69626346)
+	$(call generate_ccf_asctb_annotations_component,Spleen,https://docs.google.com/spreadsheets/d/1AEKYXAKP1oRM2krnbU_Un89JfxYEm_gjjwwJTEt1SiI/edit#gid=69626346)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_spleen.owl
 
 # ------------------------------------------------------------------

@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_trachea.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Trachea,https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0)
+	$(call generate_ccf_cell_biomarkers_component,Trachea,https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_trachea.owl: check_asctb2ccf $(GENERATED_DI
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Trachea,https://docs.google.com/spreadsheets/d/1GhOK8hoAE56CxSscEvqLD8-jAa_3SMbTVNF9gt9oI5M/edit#gid=0)
+	$(call generate_ccf_asctb_annotations_component,Trachea,https://docs.google.com/spreadsheets/d/1fQK7XcXugC8eJZQyviNLevEUMoDT6cxxWp2AuH2gyws/edit#gid=0)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_trachea.owl
 
 # ------------------------------------------------------------------

@@ -11,7 +11,7 @@ $(GENERATED_DIR)/ccf_validation_extended_blood.owl: | $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_cell_biomarkers_blood.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_cell_biomarkers_component,Blood,https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662)
+	$(call generate_ccf_cell_biomarkers_component,Blood,https://docs.google.com/spreadsheets/d/1wx2y8_t7NsAs8hPnr6u_N1QK8y_lC3t1G0DnD3LNUnQ/edit#gid=543201897)
 .PRECIOUS: $(GENERATED_DIR)/ccf_cell_biomarkers_blood.owl
 
 # ------------------------------------------------------------------
@@ -19,7 +19,7 @@ $(GENERATED_DIR)/ccf_cell_biomarkers_blood.owl: check_asctb2ccf $(GENERATED_DIR)
 # ------------------------------------------------------------------
 $(GENERATED_DIR)/ccf_asctb_annotations_blood.owl: check_asctb2ccf $(GENERATED_DIR)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: Generating $@)
-	$(call generate_ccf_asctb_annotations_component,Blood,https://docs.google.com/spreadsheets/d/1bvIeKFyLP1wNh5TFQgt74zS2shd24Nfbm2CEFVtYCiQ/edit#gid=939446662)
+	$(call generate_ccf_asctb_annotations_component,Blood,https://docs.google.com/spreadsheets/d/1wx2y8_t7NsAs8hPnr6u_N1QK8y_lC3t1G0DnD3LNUnQ/edit#gid=543201897)
 .PRECIOUS: $(GENERATED_DIR)/ccf_asctb_annotations_blood.owl
 
 # ------------------------------------------------------------------

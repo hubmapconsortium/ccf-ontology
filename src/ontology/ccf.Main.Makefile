@@ -131,7 +131,7 @@ build_ccf_bso: $(CCF_BSO).owl
 $(CCF_BSO).owl: $(CCF_BSO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Biological Structure (CCF-BSO) ontology)
 	$(ROBOT) merge --input $< \
-		filter --exclude-terms invalid-terms.txt --trim true \
+		remove --term-file invalid-terms.txt --select "self" \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce --reasoner ELK \
@@ -173,7 +173,7 @@ build_ccf_spo: $(CCF_SPO).owl
 $(CCF_SPO).owl: $(CCF_SPO_SRC)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF Spatial (CCF-SPO) ontology)
 	$(ROBOT) merge --input $< \
-		filter --exclude-terms invalid-terms.txt --trim true \
+		remove --term-file invalid-terms.txt --select "self" \
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
@@ -198,7 +198,7 @@ $(CCF).owl: $(CCF_BSO).owl $(CCF_SPO).owl $(CCF_SCO).owl
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: overriding default ODK $(ONT).owl command)
 	$(info [$(shell date +%Y-%m-%d\ %H:%M:%S)] make: creating CCF ontology)
 	$(ROBOT) merge --input $(word 1,$^) --input $(word 2,$^) --input $(word 3,$^) \
-		filter --exclude-terms invalid-terms.txt --trim true \
+		remove --term-file invalid-terms.txt --select "self" \
 		reason --reasoner ELK \
 			--equivalent-classes-allowed asserted-only \
 			--exclude-tautologies structural \

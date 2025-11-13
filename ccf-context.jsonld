@@ -5,6 +5,7 @@
     "ccf": "http://purl.org/ccf/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
 
     "label": "rdfs:label",
     "description": "rdfs:comment",
@@ -111,6 +112,10 @@
     "thumbnail": "ccf:thumbnail",
     "file": "ccf:file_url",
     "file_format": "ccf:file_format",
-    "file_subpath": "ccf:file_subpath"
+    "file_subpath": "ccf:file_subpath",
+    "sameAs": {
+      "@id": "owl:sameAs",
+      "@type": "@id"
+    }
   }
 }
